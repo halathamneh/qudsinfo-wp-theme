@@ -1,0 +1,11 @@
+<svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="98" width="98" y="-1" x="-1"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path stroke="null" id="svg_2" fill="#fff" d="m47.500015,6.670822c-22.919849,0 -41.499985,17.310649 -41.499985,38.664582c0,12.167744 6.034768,23.02115 15.465833,30.108626l0,14.74229l14.130358,-7.803286c3.771086,1.05013 7.766168,1.616953 11.903794,1.616953c22.919849,0 41.499985,-17.310649 41.499985,-38.664582s-18.580136,-38.664582 -41.499985,-38.664582zm4.124222,52.068304l-10.568319,-11.341611l-20.621111,11.341611l22.683222,-24.229805l10.826083,11.341611l20.363347,-11.341611l-22.683222,24.229805z"/>
+ </g>
+</svg>

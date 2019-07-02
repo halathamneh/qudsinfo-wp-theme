@@ -1,0 +1,87 @@
+.sip-point .sip-popup .sip-popup-inner {
+  padding: 0.75rem !important;
+}
+
+.sip-popup-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.sip-popup-content {
+  font-size: 0.7rem;
+}
+
+.sip-points-keymap {
+  ul {
+    list-style: none;
+    li {
+      list-style: none;
+      font-weight: bold;
+      font-size: 1rem;
+      p {
+        margin: 0 0 1rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+}
+
+.point-images-carousel {
+  @extend .owl-carousel;
+}
+
+.know-quds-list {
+  &.row {
+    margin: 0;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    height: 300px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include media-breakpoint-down("sm") {
+      height: 200px;
+    }
+    h3 {
+      position: relative;
+      font-weight: bold;
+      text-shadow: 1px 1px 10px #000;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.5s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 5%;
+      left: 4%;
+      width: 92%;
+      height: 90%;
+      border: 2px solid #fff;
+    }
+    &:hover {
+      background-color: #888;
+      &:before {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+    }
+  }
+}

@@ -1,0 +1,65 @@
+#blog article.book-post {
+  h3 {
+    font-size: 1.25rem;
+  }
+  .author-bar {
+    background-color: #eee;
+    text-align: center;
+
+    .blockquote {
+      font-size: 1rem;
+    }
+  }
+  .book-extras {
+    padding-bottom: 1.5rem;
+  }
+  .books-meta {
+    margin: 0 0.75rem 0;
+    display: block;
+    padding-right: 0.75rem;
+    border-right: 2px solid #aaa;
+    height:100%;
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .sharing-buttons{
+    margin: 0 0.75rem 0;
+    padding-right: 0.75rem;
+    border-right: 2px solid #aaa;
+    height:100%;
+  }
+  .bk-download-links {
+    padding: 1rem 0;
+    background-color: #fff;
+    position: sticky;
+    top:3.5rem
+  }
+  .bk-download {
+    margin: 0 0 0.5rem;
+    display: block;
+    white-space: normal
+  }
+
+  .blog-post-entry {
+    .blockquote {
+      h3 {
+        font-size: 0.7rem;
+      }
+      background-color: #eee;
+      font-size: 1rem;
+      padding: 1rem 4.5rem 1rem 1rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      &:after {
+        content: '\f10e';
+        font-family: FontAwesome;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+      }
+    }
+  }
+}

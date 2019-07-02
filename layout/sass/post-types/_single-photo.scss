@@ -1,0 +1,181 @@
+.single-pics {
+  .container.photo-page {
+    padding: 0 15px;
+  }
+}
+
+.container.photo-page {
+  background: #fff;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 90px solid #272727;
+
+  #blog {
+    padding: 0;
+    margin: 0;
+
+    .breadcrumb {
+      padding: 0.5rem;
+      margin: 0;
+      .breadcrumb-item {
+        &.active a {
+          color: $breadcrumb-active-color;
+        }
+        &+.breadcrumb-item::before {
+          padding:0 0.25rem;
+        }
+      }
+    }
+
+    article {
+      margin: 0;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        text-align: right;
+        color: #777;
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+      .blog-header-catlink {
+        background-color: #aaa;
+      }
+      .image-col {
+        background: #272727;
+        position: sticky;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        img {
+          max-width: 100%;
+          height: auto;
+          width: auto;
+          max-height: 85vh;
+        }
+        .image-holder {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 4rem;
+          -webkit-transition: 0.2s;
+          -moz-transition: 0.2s;
+          -ms-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s;
+          overflow: hidden;
+          @include media-breakpoint-up(md) {
+
+            height: 85vh;
+          }
+          .pics-carousel {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .owl-nav {
+              .owl-prev, .owl-next {
+                position: absolute;
+                top: 50%;
+                padding: 0.4rem 0.7rem;
+                background-color: rgba(255, 255, 255, 0.75);
+                color: #000;
+                opacity: 0.75;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+              .owl-next {
+                left: -10rem;
+              }
+              .owl-prev {
+                right: -10rem;
+              }
+            }
+          }
+          .owl-thumbs {
+            padding: 0.75rem 0;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: -10rem;
+            transition: all 0.2s;
+            width: 100%;
+            z-index: 99;
+            background: rgba(0, 0, 0, 0.75);
+            .owl-thumb-item {
+              -webkit-appearance: none;
+              border: none;
+              background: none;
+              padding: 0;
+              width: 50px;
+              cursor: pointer;
+            }
+          }
+        }
+        &:hover {
+          .pics-carousel .owl-nav {
+            .owl-next {
+              left: 0.5rem
+            }
+            .owl-prev {
+              right: 0.5rem;
+            }
+          }
+          .owl-thumbs {
+            bottom: 0;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+      .content-col {
+        padding: 1rem;
+        overflow-y: auto;
+        height: 100%;
+      }
+    }
+  }
+  .blog-post-image {
+    padding: 15px;
+    background: #272727;
+  }
+  .jp-relatedposts-post-date {
+    display: none;
+  }
+  .jp-relatedposts-post-title {
+    a {
+      color: #efefef;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+
+  .navigation-links {
+    margin-right: auto;
+    display: flex;
+    font-size: 0.75rem;
+    align-items: center;
+    .previous, .next {
+      display: inline-block;
+      padding: 0.3rem 0.5rem;
+      margin-right: 0.2rem;
+      background-color: #709e3a;
+      white-space: nowrap;
+      text-overflow: clip;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+
+  }
+}

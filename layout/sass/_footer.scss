@@ -1,0 +1,108 @@
+#footer {
+  width: 100%;
+  background: #2F2F2F url("../images/footer.png") repeat-x center bottom;
+  padding: 40px 0 90px;
+  position: relative;
+  overflow: hidden;
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    text-align: right;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .copyright {
+    width: 100%;
+    line-height: normal;
+    color: #888888;
+    font-size: 0.8rem;
+    text-align: center;
+    a {
+      color: #888888;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .widget {
+    .widget-title {
+      margin: 0 0 20px 0;
+      padding: 0;
+      &:before {
+        display: none;
+      }
+      h3 {
+        line-height: 1.15;
+        color: #888888;
+      }
+    }
+    ul {
+      li {
+        margin: 0 0 10px 0;
+        padding: 0 20px 0 0;
+        border-bottom: none;
+        transition: all 0.2s;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          line-height: 1.5;
+          color: #fff;
+          &:hover {
+            color: #52944E;
+          }
+        }
+        &:before {
+          color: #888888;
+        }
+        &:hover {
+          padding-right: 28px;
+        }
+      }
+    }
+  }
+  .green-m {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 75px;
+    background-color: #2F2F2F;
+    background: -moz-linear-gradient(left, rgba(47, 47, 47, 0) 0%, rgba(47, 47, 47, 0.65) 35%, rgba(47, 47, 47, 0.65) 50%, rgba(47, 47, 47, 0.65) 65%, rgba(47, 47, 47, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(47, 47, 47, 0) 0%, rgba(47, 47, 47, 0.65) 35%, rgba(47, 47, 47, 0.65) 50%, rgba(47, 47, 47, 0.65) 65%, rgba(47, 47, 47, 0) 100%);
+    background: linear-gradient(to right, rgba(47, 47, 47, 0) 0%, rgba(47, 47, 47, 0.65) 35%, rgba(47, 47, 47, 0.65) 50%, rgba(47, 47, 47, 0.65) 65%, rgba(47, 47, 47, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f2f2f', endColorstr='#002f2f2f', GradientType=1);
+    /*animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+  }
+}
+
+.widget_wpcom_social_media_icons_widget {
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #footer {
+    .footer-logo {
+      text-align: center;
+    }
+    .col-sm-3 {
+      margin-top: 40px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+.widget_polylang .screen-reader-text {
+  display: none;
+}
