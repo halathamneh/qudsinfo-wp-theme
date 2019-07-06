@@ -213,11 +213,10 @@ jQuery(document).ready(function ($) {
         setColorOnFrontPageService();
         sticky_menu();
         sticky_index();
-        alignSubSubMenu();
+        // alignSubSubMenu();
 
         if(document.querySelectorAll('#news-bar').length) {
             newsbar();
-            console.log("hihi");
         }
 
         if (otd_handler) {
@@ -227,7 +226,10 @@ jQuery(document).ready(function ($) {
         masonryInit();
         fancyboxInit();
         if ($(".aqsa-distance").length)
-            getLocation();
+            $(".aqsa-distance").show();
+            $('#aqsa-distance-button').on('click', function () {
+                getLocation()
+            });
 
         $('[data-toggle="tooltip"]').tooltip();
 

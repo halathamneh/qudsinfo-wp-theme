@@ -15,7 +15,7 @@
         </div>
         <span><?= __("Please allow location permission to find your distance from Aqsa", 'illdy') ?></span>
         <div class="section-content">
-        
+            <button class="btn btn-light btn-lg" id="aqsa-distance-button">احسب بعدك!</button>
         </div>
     </div>
 </section><!--/#aqsa-distance.front-page-section-->

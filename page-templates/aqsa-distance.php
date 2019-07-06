@@ -19,14 +19,14 @@
                             the_post();
                             ?>
                             <h2><?php the_title() ?></h2>
-                            <section id="aqsa-distance" class="front-page-section aqsa-distance" style="display: none;">
+                            <section id="aqsa-distance" class="front-page-section aqsa-distance">
                                 <div class="container">
                                     <div class="section-header">
                                         بعدك عن الأقصى
                                     </div>
-                                    <span>قم بتفعيل خدمة الموقع (GPS) لحساب بعدك عن الأقصى</span>
+<!--                                    <span>قم بتفعيل خدمة الموقع (GPS) لحساب بعدك عن الأقصى</span>-->
                                     <div class="section-content">
-
+                                        <button class="btn btn-light btn-lg" id="aqsa-distance-button">احسب بعدك!</button>
                                     </div>
                                 </div>
                             </section>
