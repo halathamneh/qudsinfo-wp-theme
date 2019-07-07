@@ -1,0 +1,90 @@
+.wallpapers {
+  background-color: #222;
+  .card-img-overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0.2+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#33000000', GradientType=0); /* IE6-9 */
+    color: #fff;
+    text-align: center;
+    transition: all 1s;
+
+    h5 {
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+
+  }
+  .paginate-links {
+    text-align: center;
+  }
+
+  .page-numbers {
+    padding: .5rem 1rem;
+    color: $text-muted;
+    display: inline-block;
+    margin: 0 .25rem;
+    &.current {
+      border: 1px solid $text-muted;
+    }
+  }
+
+  .page-heading {
+    padding-bottom: 0;
+    h1 {
+      margin: 2rem 0;
+    }
+  }
+
+  .nav-pills {
+    background-color: #313131;
+    padding: 1.5rem;
+    margin: 3rem -15px 0;
+    .nav-label {
+      color: #ddd;
+      padding: .5rem 1rem;
+    }
+    .nav-link {
+      color: #fff;
+      font-weight: bold;
+
+      &.active {
+        border: 1px solid $success;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .wallpaper-col {
+    padding: 7px;
+  }
+  .wallpapers-content {
+    background-color: #dcdcdc;
+    margin: 0 -15px;
+    padding: 4rem 1rem;
+    .row {
+      margin: 0;
+    }
+  }
+
+  .card {
+    height: 260px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 3px rgba(50, 50, 50, .75);
+    position: relative;
+    transition: all .25s;
+
+    &:hover {
+      transform: scale(1.05);
+      z-index: 5;
+      box-shadow: 0 0 30px rgba(50, 50, 50, .75);
+
+      .card-img {
+        z-index: 9;
+        position: relative;
+      }
+    }
+  }
+}

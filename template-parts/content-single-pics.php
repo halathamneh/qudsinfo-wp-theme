@@ -24,12 +24,19 @@ if ($is_building) {
                 <h2 class="d-md-none"><?php the_title(); ?></h2>
                 <div class="image-holder">
                     <?php
+                    $images = [];
                     $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
                     $thumb_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail');
                     ?>
                     <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
                         <?php
-                        $images = get_field('gallery_images');
+                        if(pll_current_language() === 'ar') {
+                            $images = get_field('gallery_images');
+                        } else {
+                            global $polylang;
+                            $translationIds = $polylang->model->get_translations('post', get_the_ID());
+                            $images = get_field('gallery_images', $translationIds['ar']);
+                        }
                         if (!empty($images) && is_array($images) && count($images)) {
                             foreach ($images as $image) : ?>
                                 <a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fancybox="images"

@@ -1,0 +1,74 @@
+
+.audio-posts {
+  margin-top: 15px;
+  .card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .audio-post {
+    padding: 0.5rem;
+    h3 {
+      font-size:1.5rem;
+      font-weight: bold;
+      margin:1rem 1rem 2rem;
+    }
+  }
+  .sound-carousel {
+    .owl-stage-outer {
+      margin-top: 3rem;
+    }
+    .owl-controls {
+      position: absolute;
+      top: -3rem;
+      width: 100%;
+      .owl-nav {
+        display: flex;
+        width:75%;
+        margin:auto;
+        .owl-prev, .owl-next {
+          padding: 0.5rem 1rem;
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid;
+          -webkit-transition: 0.2s;
+          -moz-transition: 0.2s;
+          -ms-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s;
+          &:hover {
+            background-color: #666;
+            color: #fff;
+          }
+        }
+        .owl-next {
+          margin-right:auto;
+        }
+      }
+      .owl-dots {
+        width: 50%;
+        margin: -2rem auto 0;
+        text-align: center;
+
+        .owl-dot {
+          width: 1rem;
+          height: 1rem;
+          background-color: #eee;
+          display: inline-block;
+          border-radius: 50%;
+          margin: 0.5rem;
+          -webkit-transition: 0.2s;
+          -moz-transition: 0.2s;
+          -ms-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s;
+          &.active {
+            background-color: #aaaaaa;
+          }
+          &:hover {
+            background-color: #878787;
+          }
+        }
+      }
+    }
+  }
+}

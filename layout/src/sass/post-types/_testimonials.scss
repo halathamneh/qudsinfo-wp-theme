@@ -1,0 +1,106 @@
+#testimonials {
+  width: 100%;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  background: #6a305e;
+  background: -moz-linear-gradient(top, #6a305e 0%, #451c56 100%);
+  background: -webkit-linear-gradient(top, #6a305e 0%, #451c56 100%);
+  background: linear-gradient(to bottom, #6a305e 0%, #451c56 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a305e', endColorstr='#451c56', GradientType=0);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  .section-header {
+    width: 100%;
+    margin-bottom: 40px;
+    h3 {
+      color: #ffffff;
+    }
+  }
+  .section-content {
+    width: 100%;
+    .testimonials-carousel {
+      width: 100%;
+      .carousel-testimonial {
+        text-align: center;
+        .testimonial-image {
+          width: 100%;
+          margin-bottom: 25px;
+          img {
+            width: 127px;
+            height: 127px;
+            display: inline;
+            border-radius: 50%;
+          }
+        }
+        .testimonial-content {
+          width: 100%;
+          background-color: #682e66;
+          margin-bottom: 55px;
+          padding: 25px 50px;
+          position: relative;
+          blockquote {
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            border-left: none;
+            color: #ffffff;
+          }
+          &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            margin-right: auto;
+            margin-left: auto;
+            border-style: solid;
+            border-width: 19px 18px 0 18px;
+            border-color: #682e66 transparent transparent transparent;
+            position: absolute;
+            right: 0;
+            bottom: -19px;
+            left: 0;
+          }
+        }
+        .testimonial-meta {
+          width: 100%;
+          line-height: normal;
+          font-weight: 900;
+          font-size: 20px;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+      .owl-controls {
+        width: 100%;
+        margin-top: 20px;
+        .owl-dots {
+          width: 100%;
+          .owl-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            margin: 0 7.5px;
+            display: inline-block;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            border-radius: 50%;
+            &:hover {
+              background: transparent;
+              border: 1px solid #ffffff;
+            }
+          }
+          .owl-dot.active {
+            background: transparent;
+            border: 1px solid #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

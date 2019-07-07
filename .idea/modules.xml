@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/qudsinfo-wp-theme.iml" filepath="$PROJECT_DIR$/.idea/qudsinfo-wp-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/qudsinfo-theme.iml" filepath="$PROJECT_DIR$/.idea/qudsinfo-theme.iml" />
     </modules>
   </component>
 </project>

@@ -25,7 +25,7 @@ $general_entry = get_theme_mod( 'illdy_about_general_entry', __( 'It is an amazn
 							<p><?php echo illdy_sanitize_html( $general_entry ); ?></p>
 						</div><!--/.col-sm-10.col-sm-offset-1-->
 					<?php endif; ?>
-					<div class="clogo"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/layout/images/about-bg2.png?5" scale="0"></div>
+					<div class="clogo"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/layout/src/images/about-bg2.png?5" scale="0"></div>
 				</div><!--/.row-->
 			</div><!--/.container-->
 		</div><!--/.section-header-->

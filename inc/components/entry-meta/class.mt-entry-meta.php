@@ -214,13 +214,13 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
             if( $display_tags_post_meta == 1 ) {
                 if( get_the_tag_list() ) {
                     $output .= '<ul class="blog-post-tags">';
-                        $output .= '<li>'. __( 'الوسوم:  ', 'illdy' ) .'</li>';
+                        $output .= '<li>'. __( 'Tags:  ', 'illdy' ) .'</li>';
                         $output .= get_the_tag_list( '<li>','</li><li>','</li>' );
                     $output .= '</ul><!--/.blog-post-tags-->';
                 } else if(get_the_term_list($post->ID,"pics-hashtags")) {
 
                     $output .= '<ul class="blog-post-tags">';
-                        $output .= '<li>'. __( 'الوسوم:  ', 'illdy' ) .'</li>';
+                        $output .= '<li>'. __( 'Tags:  ', 'illdy' ) .'</li>';
                         $output .= get_the_term_list(get_the_ID(),'pics-hashtags','<li>','</li><li>','</li>');
                     $output .= '</ul><!--/.blog-post-tags-->';
                 }
