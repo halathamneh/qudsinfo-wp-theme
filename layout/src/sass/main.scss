@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Tajawal:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-@import "font-awesome/font-awesome";
+$fa-font-path: "../fonts";
+@import "~font-awesome/scss/font-awesome";
 
 /*$dropdown-link-active-color: #fff;
 $dropdown-link-active-bg: #59af30;*/
