@@ -338,6 +338,7 @@ function getLanguagesForJS() {
 
 include_once "inc/featured-posts.php";
 
+require 'inc/Helpers.php';
 require 'inc/register.sidebars.php';
 require 'inc/infos-handler.php';
 require 'inc/custom_posts_types.php';
