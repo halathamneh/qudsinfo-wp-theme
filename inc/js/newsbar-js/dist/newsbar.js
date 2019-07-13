@@ -27903,6 +27903,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  margin: 0 8px;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject5() {
   var data = _taggedTemplateLiteral(["\n  width: 100%;\n  padding: 8px;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  input {\n    padding: 8px;\n    display: block;\n    flex: 1;\n    margin: 0 8px;\n  }\n"]);
 
@@ -27978,6 +27988,8 @@ var SaveButtonContainer = _styled.default.div(_templateObject4());
 
 var ListItemStyled = _styled.default.li(_templateObject5());
 
+var CharCount = _styled.default.code(_templateObject6());
+
 var ListItem =
 /*#__PURE__*/
 function (_Component) {
@@ -28019,9 +28031,9 @@ function (_Component) {
       return _react.default.createElement(ListItemStyled, null, _react.default.createElement("input", {
         type: "text",
         name: "news_item[]",
-        value: this.state.value || this.props.text,
+        value: this.state.value !== null ? this.state.value : this.props.text.replace(/\\"/g, '"'),
         onChange: this.valueChanged
-      }), _react.default.createElement(Button, {
+      }), _react.default.createElement(CharCount, null, this.state.value !== null ? this.state.value.length : this.props.text.length), _react.default.createElement(Button, {
         type: "button",
         onClick: function onClick() {
           return _this2.props.moveUp(_this2.props.index);
@@ -28169,7 +28181,7 @@ function (_Component2) {
         value: this.state.newValue,
         onChange: this.handleChange,
         onKeyDown: this.newValueKeyDown
-      }), _react.default.createElement(Button, {
+      }), _react.default.createElement(CharCount, null, this.state.newValue.length), _react.default.createElement(Button, {
         type: "button",
         onClick: this.addItem
       }, _react.default.createElement("span", {

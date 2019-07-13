@@ -67,6 +67,10 @@ const ListItemStyled = styled.li`
   }
 `;
 
+const CharCount = styled.code`
+  margin: 0 8px;
+`;
+
 class ListItem extends Component {
   state = {
     value: null
@@ -78,9 +82,11 @@ class ListItem extends Component {
         <input
           type="text"
           name="news_item[]"
-          value={this.state.value || this.props.text}
+          value={this.state.value !== null ? this.state.value : this.props.text.replace(/\\"/g, '"')}
           onChange={this.valueChanged}
         />
+
+          <CharCount>{this.state.value !== null ? this.state.value.length : this.props.text.length}</CharCount>
 
         <Button
           type="button"
@@ -176,6 +182,7 @@ class NewsList extends Component {
             onChange={this.handleChange}
             onKeyDown={this.newValueKeyDown}
           />
+          <CharCount>{this.state.newValue.length}</CharCount>
           <Button type={"button"} onClick={this.addItem}>
             <span className="dashicons dashicons-plus-alt" />
           </Button>

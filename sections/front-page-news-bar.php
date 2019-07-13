@@ -20,7 +20,7 @@ if(count($newsList)) :
                 <div class="news-list-wrapper">
                     <ul class="news-list">
                         <?php foreach ($newsList as $item) : ?>
-                            <li><?= $item ?></a></li>
+                            <li><?= stripslashes($item) ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
