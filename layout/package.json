@@ -16,7 +16,8 @@
     "sass": "^1.22.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
+    "build": "parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
   },
   "author": "",
   "license": "ISC"

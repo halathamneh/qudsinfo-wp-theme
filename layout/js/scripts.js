@@ -186,7 +186,7 @@ jQuery(document).ready(function ($) {
     function newsbar() {
         const elem = document.querySelector('#news-bar .news-list');
         const width = elem.getBoundingClientRect().width;
-        const maxMargin = -1 * elem.scrollWidth + width;
+        const maxMargin = -1 * elem.scrollWidth;
         elem.style.marginRight = width + "px";
         window.stopBar = false;
         elem.addEventListener('mouseenter', function () {
