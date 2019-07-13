@@ -43,7 +43,7 @@ class NewsBar
             'edit.php?post_type=news',
             __( 'شريط الأخبار', 'illdy' ),
             __( 'شريط الأخبار', 'illdy' ),
-            'manage_options',
+            'edit_posts',
             'newsbar-settings',
             [$this, 'render_admin_page']
         );
