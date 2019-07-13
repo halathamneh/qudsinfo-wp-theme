@@ -19,7 +19,7 @@ if (function_exists('z_taxonomy_image_url') && !empty($image = z_taxonomy_image_
 elseif (has_post_thumbnail())://(get_post_type() == 'news' || get_post_type() == 'pics'):
     $image_bg = esc_url($post_thumbnail[0]);
 endif;
-if(is_avi()) {
+if(Helpers::is_avi()) {
     $rand_image = get_rnd_header_image();
     $image_bg = esc_url($rand_image["img_url"]);
 }
@@ -35,7 +35,7 @@ if (!is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_
     <div class="container">
         <div class="row">
 
-            <?php if (!is_avi() && !is_photos() && !is_lectures() && (is_page_template('page-templates/blog.php') ||
+            <?php if (!Helpers::is_avi() && !Helpers::is_photos() && !Helpers::is_lectures() && (is_page_template('page-templates/blog.php') ||
                     is_page_template('page-templates/page-news.php') ||
                     is_singular())): ?>
                 <div class="col-sm-12 top-page-title">
@@ -52,15 +52,15 @@ if (!is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_
                 </div><!--/.col-sm-12-->
             <?php elseif (is_404()): ?>
                 <div class="col-sm-12 top-page-title"><h2 style="font-size: 8rem;">404 :(</h2></div>
-            <?php elseif (is_avi()) : ?>
+            <?php elseif (Helpers::is_avi()) : ?>
                 <div class="col-sm-12 top-page-title">
                     <h2>معلوماتنا</h2>
                 </div>
-            <?php elseif (is_photos()) : ?>
+            <?php elseif (Helpers::is_photos()) : ?>
                 <div class="col-sm-12 top-page-title">
                     <h2>المعالم والصور</h2>
                 </div>
-            <?php elseif (is_lectures()) :
+            <?php elseif (Helpers::is_lectures()) :
                 get_template_part('template-parts/lectures', 'header');
             else : ?>
                 <div class="col-sm-12 top-page-title">
@@ -68,7 +68,7 @@ if (!is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_
                 </div><!--/.col-sm-12-->
             <?php endif; ?>
         </div><!--/.row-->
-        <?php if (is_avi()) : ?>
+        <?php if (Helpers::is_avi()) : ?>
             <?php $pt = basename(get_page_template()); ?>
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item">

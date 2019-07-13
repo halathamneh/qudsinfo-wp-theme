@@ -1,12 +1,12 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: haitham
  * Date: 10/16/17
  * Time: 8:27 PM
  */
-class FrontPage
+
+class TodayInfo
 {
 
     public $today_info;
@@ -65,7 +65,7 @@ class FrontPage
             'info_array' => $info_array,
         ];
 
-        self::view('today-info', $data);
+        Helpers::view('today-info', $data);
     }
 
     public function set_today_info()
@@ -124,19 +124,6 @@ class FrontPage
         return $info_array;
     }
 
-    public function get_image_id($image_url)
-    {
-        global $wpdb;
-        $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url));
-        return $attachment[0];
-    }
-
-
-    public static function view(string $template, array $vars = [])
-    {
-        extract($vars);
-        include('views/' . $template . '.php');
-    }
 }
 
-$GLOBALS['FP'] = new FrontPage();
+$GLOBALS['todayInfo'] = new TodayInfo();

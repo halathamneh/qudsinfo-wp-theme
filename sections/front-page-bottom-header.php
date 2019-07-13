@@ -6,8 +6,8 @@
  * @subpackage illdy
  */
 
-global $FP;
-$image = wp_get_attachment_image_src(get_post_thumbnail_id($FP->today_info->ID), 'large');
+global $todayInfo;
+$image = wp_get_attachment_image_src(get_post_thumbnail_id($todayInfo->today_info->ID), 'large');
 $image_bg = esc_url($image[0]);
 $header_attr = ' style="background-image: url(' . $image_bg . ')" ';
 $overlay_attr = ' style="background-image: url(\'' . get_template_directory_uri() . '/layout/images/patterns/footer.png\')" ';
@@ -16,8 +16,7 @@ $overlay_attr = ' style="background-image: url(\'' . get_template_directory_uri(
     <div class="header-overlay" <?= $overlay_attr ?>></div>
 
     <?php
-    global $FP;
-    $post = $FP->today_info;
+    $post = $todayInfo->today_info;
     ?>
     <div class="info-of-today">
         <div class="container">

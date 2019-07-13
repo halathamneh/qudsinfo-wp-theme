@@ -8,10 +8,10 @@
 ?>
 
 <?php
-global $FP;
+
 $counter_background_type = get_theme_mod( 'illdy_counter_background_type', 'image' );
 $counter_background_image_url = get_theme_mod( 'illdy_counter_background_image', esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-counter.jpg' ) );
-$counter_background_image_id = $FP->get_image_id($counter_background_image_url);
+$counter_background_image_id = Helpers::get_image_id($counter_background_image_url);
 $counter_background_image = wp_get_attachment_image_src($counter_background_image_id, 'large');
 $counter_background_color = get_theme_mod( 'illdy_counter_background_color', '#000000' );
 ?>

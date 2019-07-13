@@ -193,139 +193,6 @@ function dequeue_jquery_migrate(&$scripts)
 }
 
 /**
- *    Widgets
- */
-if (!function_exists('illdy_widgets')) {
-    add_action('widgets_init', 'illdy_widgets');
-
-    function illdy_widgets()
-    {
-
-        // Blog Sidebar
-        register_sidebar(array(
-            'name'          => __('Blog Sidebar', 'illdy'),
-            'id'            => 'blog-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<div class="widget-title"><h3>',
-            'after_title'   => '</h3></div>',
-        ));
-
-        register_sidebar(array(
-            'name'          => __('Info Page', 'illdy'),
-            'id'            => 'infos-page',
-            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<div class="widget-title"><h3>',
-            'after_title'   => '</h3></div>',
-        ));
-
-        // Footer Sidebar 1
-        register_sidebar(array(
-            'name'          => __('Footer Sidebar 1', 'illdy'),
-            'id'            => 'footer-sidebar-1',
-            'description'   => __('The widgets added in this sidebar will appear in first block from footer.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<div class="widget-title"><h3>',
-            'after_title'   => '</h3></div>',
-        ));
-
-        // Footer Sidebar 2
-        register_sidebar(array(
-            'name'          => __('Footer Sidebar 2', 'illdy'),
-            'id'            => 'footer-sidebar-2',
-            'description'   => __('The widgets added in this sidebar will appear in second block from footer.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<div class="widget-title"><h3>',
-            'after_title'   => '</h3></div>',
-        ));
-
-        // Footer Sidebar 3
-        register_sidebar(array(
-            'name'          => __('Footer Sidebar 3', 'illdy'),
-            'id'            => 'footer-sidebar-3',
-            'description'   => __('The widgets added in this sidebar will appear in third block from footer.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<div class="widget-title"><h3>',
-            'after_title'   => '</h3></div>',
-        ));
-
-        // About Sidebar
-        register_sidebar(array(
-            'name'          => __('Front page - About Sidebar', 'illdy'),
-            'id'            => 'front-page-about-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in about section from front page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-0 %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '',
-            'after_title'   => '',
-        ));
-
-        // Projects Sidebar
-        register_sidebar(array(
-            'name'          => __('Front page - Projects Sidebar', 'illdy'),
-            'id'            => 'front-page-projects-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in projects section from front page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="col-sm-3 col-xs-6 no-padding %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '',
-            'after_title'   => '',
-        ));
-
-        // Services Sidebar
-        register_sidebar(array(
-            'name'          => __('Front page - Services Sidebar', 'illdy'),
-            'id'            => 'front-page-services-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in services section from front page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="col-sm-6 col-md-4 %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '',
-            'after_title'   => '',
-        ));
-
-        // Counter Sidebar
-        register_sidebar(array(
-            'name'          => __('Front page - Counter Sidebar', 'illdy'),
-            'id'            => 'front-page-counter-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in counter section from front page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="col-sm-4 %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '',
-            'after_title'   => '',
-        ));
-
-        // Team Sidebar
-        register_sidebar(array(
-            'name'          => __('Front page - Team Sidebar', 'illdy'),
-            'id'            => 'front-page-team-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in team section from front page.', 'illdy'),
-            'before_widget' => '<div id="%1$s" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '',
-            'after_title'   => '',
-        ));
-
-        // WooCommerce Sidebar
-        if (class_exists('WooCommerce')) {
-            register_sidebar(array(
-                'name'          => __('WooCommerce Sidebar', 'illdy'),
-                'id'            => 'woocommerce-sidebar',
-                'description'   => __('The widgets added in this sidebar will appear in WooCommerce pages.', 'illdy'),
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<div class="widget-title"><h3>',
-                'after_title'   => '</h3></div>',
-            ));
-        }
-    }
-}
-
-/**
  *  Checkbox helper function
  */
 if (!function_exists('illdy_value_checkbox_helper')) {
@@ -427,22 +294,6 @@ function filter_search($query)
 
 add_filter('pre_get_posts', 'filter_search');
 
-function is_avi()
-{
-    return is_page_template('page-templates/infos.php') ||
-        is_page_template('page-templates/audio.php') || is_page_template('page-templates/videos.php') ||
-        get_query_var('cat') != '';
-}
-
-function is_photos() {
-    return is_page_template('page-templates/photos.php');
-}
-
-function is_lectures()
-{
-    return basename(get_page_template()) === 'lectures.php';
-}
-
 $matches = [];
 $input_line = $_SERVER['REQUEST_URI'];
 preg_match("/our-info\/category\/([0-9]+)\/([^\/]+)\/?(.*)$/", $input_line, $matches);
@@ -487,8 +338,9 @@ function getLanguagesForJS() {
 
 include_once "inc/featured-posts.php";
 
+require 'inc/register.sidebars.php';
 require 'inc/infos-handler.php';
 require 'inc/custom_posts_types.php';
 require 'inc/acf.php';
-require 'inc/theme-classes.php';
+require 'inc/theme.classes.php';
 

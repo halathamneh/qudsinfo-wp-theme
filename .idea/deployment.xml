@@ -5,7 +5,7 @@
       <paths name="qudsinfo.com-theme">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/wp-content/themes/illdy" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/wp-content/themes/qudsinfo-wp-theme" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
