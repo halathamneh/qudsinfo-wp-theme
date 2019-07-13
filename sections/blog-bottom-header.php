@@ -8,7 +8,7 @@
 ?>
 <?php
 
-$BH_classes = is_lectures() ? " lectures-header" : "";
+$BH_classes = Helpers::is_lectures() ? " lectures-header" : "";
 $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 
 $header_attr = "";
@@ -23,9 +23,9 @@ if(Helpers::is_avi()) {
     $rand_image = get_rnd_header_image();
     $image_bg = esc_url($rand_image["img_url"]);
 }
-if (!is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_type() == 'blogs' && is_single()) || is_search()) {
+if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_type() == 'blogs' && is_single()) || is_search()) {
     $header_attr = ' data-z-index="0" data-parallax="scroll" data-image-src="' . $image_bg . '" ';
-} elseif (is_lectures() || (get_post_type() == 'blogs' && is_single())) {
+} elseif (Helpers::is_lectures() || (get_post_type() == 'blogs' && is_single())) {
     $header_attr = ' style="background-image: url(' . $image_bg . ')"';
 }
 ?>
