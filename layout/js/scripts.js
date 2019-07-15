@@ -186,8 +186,10 @@ jQuery(document).ready(function ($) {
     function newsbar() {
         const elem = document.querySelector('#news-bar .news-list');
         const width = elem.getBoundingClientRect().width;
-        const maxMargin = -1 * elem.scrollWidth;
-        elem.style.marginRight = width + "px";
+        let currentPos = -1 * width;
+        const maxTranslate = elem.scrollWidth;
+        elem.style.willChange = "transform";
+        elem.style.transform = "translateX(-"+currentPos+"px)";
         window.stopBar = false;
         elem.addEventListener('mouseenter', function () {
             window.stopBar = true;
@@ -195,14 +197,23 @@ jQuery(document).ready(function ($) {
         elem.addEventListener('mouseleave', function () {
             window.stopBar = false;
         });
-        setInterval(function () {
+        function animLoop(render, element) {
+            var running, lastFrame = +new Date;
+            function loop(now) {
+                requestAnimationFrame( loop );
+                running = render( now - lastFrame );
+                lastFrame = now;
+            }
+            loop(lastFrame);
+        }
+        animLoop(function (deltaT) {
             if(window.stopBar) return;
-            var newMargin = parseInt(elem.style.marginRight) - 1;
-            elem.style.marginRight = newMargin + "px";
-            if(newMargin <= maxMargin) {
-                elem.style.marginRight = width + "px";
-            } 
-        }, 10)
+            currentPos += 1.25;
+            elem.style.transform = "translateX("+currentPos+"px)";
+            if(currentPos >= maxTranslate) {
+                currentPos = -1 * width;
+            }
+        });
     }
 
     // Called Functions
