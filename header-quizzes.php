@@ -79,9 +79,9 @@ if (!is_404()) {
     if ($no_header)
         $header_classes .= ' small-header';
     else {
-        if (!is_lectures() && !(get_post_type() == 'pics' && is_single()) || is_search()) {
+        if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) || is_search()) {
             $header_attr = ' data-parallax="scroll" data-image-src="' . $image_bg . '" ';
-        } elseif (is_lectures()) {
+        } elseif (Helpers::is_lectures()) {
             $header_attr = ' style="background-image: url(' . $image_bg . ')"';
         }
         if (is_front_page()) {
