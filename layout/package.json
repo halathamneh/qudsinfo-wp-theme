@@ -16,8 +16,8 @@
     "sass": "^1.22.3"
   },
   "scripts": {
-    "dev": "parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
-    "build": "parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
+    "css:watch": "parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
+    "css:build": "parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
   },
   "author": "",
   "license": "ISC"

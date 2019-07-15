@@ -225,11 +225,7 @@ jQuery(document).ready(function ($) {
 
         masonryInit();
         fancyboxInit();
-        if ($(".aqsa-distance").length)
-            $(".aqsa-distance").show();
-            $('#aqsa-distance-button').on('click', function () {
-                getLocation()
-            });
+        aqsaDistance();
 
         $('[data-toggle="tooltip"]').tooltip();
 
@@ -481,38 +477,49 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    //var x = document.getElementById("demo");
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showDistance, showError);
-        } else {
-            console.log("Geolocation is not supported by this browser.");
+
+    function aqsaDistance() {
+
+        var $aqsaDistance = $(".aqsa-distance");
+        var $sectionContent = $aqsaDistance.find('.section-content');
+        if ($aqsaDistance.length)
+            $('#aqsa-distance-button').on('click', function () {
+                $aqsaDistance.find('.section-content').addClass('loading');
+                getLocation()
+            });
+
+        //var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showDistance, showError);
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+                $sectionContent.addClass('done');
+            }
         }
-    }
 
-    function showDistance(position) {
-        var _data = {
-            action: "ajax_distance",
-            lat: position.coords.latitude,
-            lon: position.coords.longitude,
-        };
-        var distance_section = $('.aqsa-distance');
-        $.post({
-            url: scripts_data.ajaxurl,
-            data: _data,
-            success: function (data) {
-                if (data !== -1) {
-                    var distance = Math.round(parseInt(data) * 100) / 100;
+        function showDistance(position) {
+            var _data = {
+                action: "ajax_distance",
+                lat: position.coords.latitude,
+                lon: position.coords.longitude,
+            };
+            $.post({
+                url: scripts_data.ajaxurl,
+                data: _data,
+                success: function (data) {
 
-                    if (distance > 0) {
-                        distance_section.find('.section-content').text(distance + " كيلو متر");
-                        distance_section.find('span').hide();
-                        distance_section.find('.section-content').show();
-                        distance_section.slideDown();
+                    if (data !== -1) {
+                        var distance = Math.round(parseInt(data) * 100) / 100;
+
+                        if (distance > 0) {
+                            $sectionContent.addClass('done');
+                            $sectionContent.html("<span class='result'>" + distance + " كيلو متر" + "</span>");
+                        }
                     }
                 }
-            }
-        });
+            });
+        }
     }
 
     function distance_fallback(msg) {

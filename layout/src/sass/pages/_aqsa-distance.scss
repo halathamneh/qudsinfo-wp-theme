@@ -1,0 +1,157 @@
+$ad-primary: #FF6E41;
+$ad-secondary: #eab44e;
+$transition-duration: 2s;
+$path-length: 157px; // Retrieved using SVG's getTotalLength()
+
+#aqsa-distance {
+  background: #BDC4D6;
+  color: $ad-primary;
+  text-align: left;
+  position: relative;
+  padding: 90px 0;
+  .rtl & {
+    text-align: right;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/aqsa-distance-earth.png) no-repeat 10% 5%;
+    background-size: 50%;
+  }
+
+  .section-header {
+    font-size: 1.6rem;
+    margin: 0 8px 1rem;
+  }
+
+  .section-content {
+    position: relative;
+  }
+
+  img {
+    height: 100px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  svg {
+    overflow: visible;
+    width: 50px;
+    height: 75px;
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: -100px;
+    transition: all .25s;
+    position: absolute;
+    right: 0;
+    top: 24px;
+
+    g {
+      animation: slide $transition-duration linear infinite;
+
+      &:nth-child(2) {
+        animation-delay: $transition-duration / 4;
+
+        path {
+          animation-delay: $transition-duration / 4;
+          stroke-dasharray: 0px $path-length + 1;
+          stroke-dashoffset: 1px;
+        }
+      }
+    }
+
+    path{
+      stroke: url(#gradient);
+      stroke-width: 20px;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 0 $path-length;
+      stroke-dashoffset: 0;
+      animation: escalade $transition-duration cubic-bezier(0.8, 0, 0.2, 1) infinite;
+    }
+  }
+  .loading {
+    .btn-aqsa-distance {
+      visibility: hidden;
+      opacity: 0;
+      margin-bottom: -100px;
+    }
+    svg {
+      visibility: visible;
+      opacity: 1;
+      margin-bottom: 0;
+    }
+  }
+  .done {
+    .btn-aqsa-distance, svg {
+      display: none;
+    }
+  }
+
+  .result {
+    text-shadow: 5px 5px 15px rgba(50,50,50,.5);
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes escalade {
+  0% {
+    stroke-dasharray: 0 $path-length;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: $path-length - 1 $path-length;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: $path-length - 1 $path-length;
+    stroke-dashoffset: -($path-length - 1);
+  }
+}
+
+.btn-aqsa-distance {
+  visibility: visible;
+  opacity: 1;
+  transition: all .25s;
+  margin-bottom: 0;
+  border: none;
+  position: relative;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  background: $ad-primary; /* Old browsers */
+  background: linear-gradient(to right,  $ad-primary 20%,$ad-secondary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: 10px 10px 30px 0 rgba(70,70,70,.5);
+  &:after, &:before {
+    content: '';
+    background-color: rgba(255,255,255,.25);
+    height: 7px;
+    border-radius: 7px;
+    position: absolute;
+    top: 5px;
+  }
+  &:after {
+    width: 30px;
+    left: 30px;
+  }
+  &:before {
+    width: 15px;
+    left: 65px;
+  }
+}
