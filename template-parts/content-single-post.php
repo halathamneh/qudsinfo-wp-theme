@@ -14,9 +14,16 @@
                     <h2><?php the_title() ?></h2>
                     <?php
                     echo nl2br(get_the_content());
-                    ?>
+
+                    $source = get_field('source');
+                    if ($source !== '') : ?>
+                        <div class="alert alert-secondary mt-5">
+                            <b><?= __('Source:', 'illdy') ?></b>
+                            <p><?= $source ?></p>
+                        </div>
+                    <?php endif; ?>
                 </div>
-                <?php if ( has_post_thumbnail() ): ?>
+                <?php if (has_post_thumbnail()): ?>
                     <div class="blog-post-image col-xs-12 col-sm-12">
                         <?php //the_post_thumbnail( 'illdy-blog-list' ); ?>
                         <?php
@@ -43,7 +50,13 @@
                 <h2><?php the_title() ?></h2>
                 <?php
                 echo nl2br(get_the_content());
-                ?>
+
+                if ($source !== '') : ?>
+                    <div class="alert alert-secondary mt-5">
+                        <b><?= __('Source:', 'illdy') ?></b>
+                        <p><?= $source ?></p>
+                    </div>
+                <?php endif; ?>
             </div>
             <div class="info-extra">
                 <?php
@@ -53,16 +66,16 @@
                     'post_type' => 'info-details',
                 );
                 $wiki_query = new WP_Query($wiki_args);
-                if ( $wiki_query->have_posts() ) : $wiki_query->the_post(); ?>
+                if ($wiki_query->have_posts()) : $wiki_query->the_post(); ?>
                     <a href="<?= get_permalink() ?>">اعرف أكثر</a>
                 <?php endif;
                 ?>
 
                 <?php
                 do_action('mtl_single_after_content');
-//                if ( comments_open() || get_comments_number() ) :
-//                    comments_template();
-//                endif;
+                //                if ( comments_open() || get_comments_number() ) :
+                //                    comments_template();
+                //                endif;
                 ?>
             </div>
         </div>

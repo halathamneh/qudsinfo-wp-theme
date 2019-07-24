@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-06-19 22:50+0300\n"
-"PO-Revision-Date: 2019-06-19 22:52+0300\n"
+"POT-Creation-Date: 2019-07-24 22:01+0300\n"
+"PO-Revision-Date: 2019-07-24 22:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: Colorlib\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -127,116 +127,19 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:209
-msgid "Blog Sidebar"
-msgstr ""
-
-#: functions.php:211 functions.php:221
-msgid "The widgets added in this sidebar will appear in blog page."
-msgstr ""
-
-#: functions.php:219
-msgid "Info Page"
-msgstr ""
-
-#: functions.php:230
-msgid "Footer Sidebar 1"
-msgstr ""
-
-#: functions.php:232
-msgid ""
-"The widgets added in this sidebar will appear in first block from footer."
-msgstr ""
-
-#: functions.php:241
-msgid "Footer Sidebar 2"
-msgstr ""
-
-#: functions.php:243
-msgid ""
-"The widgets added in this sidebar will appear in second block from footer."
-msgstr ""
-
-#: functions.php:252
-msgid "Footer Sidebar 3"
-msgstr ""
-
-#: functions.php:254
-msgid ""
-"The widgets added in this sidebar will appear in third block from footer."
-msgstr ""
-
-#: functions.php:263
-msgid "Front page - About Sidebar"
-msgstr ""
-
-#: functions.php:265
-msgid ""
-"The widgets added in this sidebar will appear in about section from front "
-"page."
-msgstr ""
-
-#: functions.php:274
-msgid "Front page - Projects Sidebar"
-msgstr ""
-
-#: functions.php:276
-msgid ""
-"The widgets added in this sidebar will appear in projects section from front "
-"page."
-msgstr ""
-
-#: functions.php:285
-msgid "Front page - Services Sidebar"
-msgstr ""
-
-#: functions.php:287
-msgid ""
-"The widgets added in this sidebar will appear in services section from front "
-"page."
-msgstr ""
-
-#: functions.php:296
-msgid "Front page - Counter Sidebar"
-msgstr ""
-
-#: functions.php:298
-msgid ""
-"The widgets added in this sidebar will appear in counter section from front "
-"page."
-msgstr ""
-
-#: functions.php:307
-msgid "Front page - Team Sidebar"
-msgstr ""
-
-#: functions.php:309
-msgid ""
-"The widgets added in this sidebar will appear in team section from front "
-"page."
-msgstr ""
-
-#: functions.php:319
-msgid "WooCommerce Sidebar"
-msgstr ""
-
-#: functions.php:321
-msgid "The widgets added in this sidebar will appear in WooCommerce pages."
-msgstr ""
-
-#: functions.php:461
+#: functions.php:309 yarpp-template-thumbnail.php:7
 msgid "See more:"
 msgstr "اقرأ أيضاً:"
 
-#: functions.php:485 sections/front-page-aqsa-distance.php:16
+#: functions.php:333
 msgid "Please allow location permission to find your distance from Aqsa"
 msgstr "لحساب بعدك عن الأقصى، اسمح الوصول إلى موقعك"
 
-#: functions.php:486
+#: functions.php:334
 msgid "Please enable location to find your distance from Aqsa"
 msgstr "قم بتفعيل خدمة الموقع لحساب بعدك عن الأقصى"
 
-#: functions.php:487
+#: functions.php:335
 msgid "Something went wrong, please try again!"
 msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى"
 
@@ -263,6 +166,10 @@ msgstr "بحث..."
 #: header.php:109 template-parts/header-top-nav.php:34
 msgid "Search for:"
 msgstr "بحث عن:"
+
+#: inc/NewsBar.php:44 inc/NewsBar.php:45
+msgid "شريط الأخبار"
+msgstr ""
 
 #: inc/components/entry-meta/class.mt-entry-meta.php:67
 #: inc/components/entry-meta/class.mt-entry-meta.php:94
@@ -320,7 +227,7 @@ msgstr ""
 
 #: inc/components/entry-meta/class.mt-entry-meta.php:217
 #: inc/components/entry-meta/class.mt-entry-meta.php:223
-msgid "الوسوم:  "
+msgid "Tags:  "
 msgstr ""
 
 #: inc/components/nav-walker/class.mt-nav-walker.php:132
@@ -1503,7 +1410,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:212
 #: inc/customizer/panels/sections-order.php:242
 #: inc/customizer/panels/sections-order.php:273 page-news.php:18
-#: sections/front-page-latest-news.php:10
+#: sections/front-page-latest-news.php:10 sections/front-page-news-bar.php:19
 msgid "Latest News"
 msgstr "آخر الأخبار"
 
@@ -1820,6 +1727,103 @@ msgstr ""
 
 #: inc/featured-posts.php:13
 msgid "تحديد هذا التدوينة كمميزة"
+msgstr ""
+
+#: inc/register.sidebars.php:11
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:13 inc/register.sidebars.php:23
+msgid "The widgets added in this sidebar will appear in blog page."
+msgstr ""
+
+#: inc/register.sidebars.php:21
+msgid "Info Page"
+msgstr ""
+
+#: inc/register.sidebars.php:32
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: inc/register.sidebars.php:34
+msgid ""
+"The widgets added in this sidebar will appear in first block from footer."
+msgstr ""
+
+#: inc/register.sidebars.php:43
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: inc/register.sidebars.php:45
+msgid ""
+"The widgets added in this sidebar will appear in second block from footer."
+msgstr ""
+
+#: inc/register.sidebars.php:54
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: inc/register.sidebars.php:56
+msgid ""
+"The widgets added in this sidebar will appear in third block from footer."
+msgstr ""
+
+#: inc/register.sidebars.php:65
+msgid "Front page - About Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:67
+msgid ""
+"The widgets added in this sidebar will appear in about section from front "
+"page."
+msgstr ""
+
+#: inc/register.sidebars.php:76
+msgid "Front page - Projects Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:78
+msgid ""
+"The widgets added in this sidebar will appear in projects section from front "
+"page."
+msgstr ""
+
+#: inc/register.sidebars.php:87
+msgid "Front page - Services Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:89
+msgid ""
+"The widgets added in this sidebar will appear in services section from front "
+"page."
+msgstr ""
+
+#: inc/register.sidebars.php:98
+msgid "Front page - Counter Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:100
+msgid ""
+"The widgets added in this sidebar will appear in counter section from front "
+"page."
+msgstr ""
+
+#: inc/register.sidebars.php:109
+msgid "Front page - Team Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:111
+msgid ""
+"The widgets added in this sidebar will appear in team section from front "
+"page."
+msgstr ""
+
+#: inc/register.sidebars.php:121
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: inc/register.sidebars.php:123
+msgid "The widgets added in this sidebar will appear in WooCommerce pages."
 msgstr ""
 
 #: inc/template-tags.php:10
@@ -2234,20 +2238,20 @@ msgstr ""
 msgid "Development"
 msgstr ""
 
-#: sections/front-page-aqsa-distance.php:14
+#: sections/front-page-aqsa-distance.php:15
 msgid "Your distance from Aqsa"
 msgstr "بعدك عن الأقصى"
 
-#: sections/front-page-bottom-header.php:28
+#: sections/front-page-bottom-header.php:27
 msgid "Info Of Today"
 msgstr "معلومة اليوم"
 
-#: sections/front-page-bottom-header.php:37
+#: sections/front-page-bottom-header.php:36
 #: sections/front-page-latest-info.php:61
 msgid "View Info"
 msgstr "عرض المعلومة"
 
-#: sections/front-page-bottom-header.php:39
+#: sections/front-page-bottom-header.php:38
 msgid "View All Information"
 msgstr "عرض جميع المعلومات"
 
@@ -2452,33 +2456,38 @@ msgstr ""
 msgid "Pages:"
 msgstr "الصفحات"
 
-#: template-parts/content-single-pics.php:66
+#: template-parts/content-single-pics.php:73
 msgid "Photos & Landmarks"
 msgstr "الصور والمعالم"
 
-#: template-parts/content-single-pics.php:78
+#: template-parts/content-single-pics.php:85
 msgid "Share Image:"
 msgstr "شارك الصورة:"
 
-#: template-parts/content-single-pics.php:88
+#: template-parts/content-single-pics.php:95
 msgid "Landmark Location:"
 msgstr "موقع المعلم بالنسبة للمسجد الأقصى:"
 
-#: template-parts/content-single-pics.php:94
+#: template-parts/content-single-pics.php:101
 msgid "Landmark Location relative to Dome of the rock:"
 msgstr "موقع المعلم بالنسبة لقبة الصخرة:"
 
-#: template-parts/content-single-pics.php:100
+#: template-parts/content-single-pics.php:107
 msgid "Landmark History:"
 msgstr "تاريخ المعلم:"
 
-#: template-parts/content-single-pics.php:106
+#: template-parts/content-single-pics.php:113
 msgid "Reason of the name:"
 msgstr "سبب التسمية:"
 
-#: template-parts/content-single-pics.php:112
+#: template-parts/content-single-pics.php:119
 msgid "Builder Name:"
 msgstr "اسم الباني:"
+
+#: template-parts/content-single-post.php:21
+#: template-parts/content-single-post.php:56
+msgid "Source:"
+msgstr "المصدر:"
 
 #: template-parts/infos-drawer.php:30
 msgid "اختر الموضوع"
