@@ -16,7 +16,7 @@
                     echo nl2br(get_the_content());
 
                     $source = get_field('source');
-                    if ($source !== '') : ?>
+                    if (!is_null($source) && $source !== '') : ?>
                         <div class="alert alert-secondary mt-5">
                             <b><?= __('Source:', 'illdy') ?></b>
                             <p><?= $source ?></p>
@@ -51,7 +51,7 @@
                 <?php
                 echo nl2br(get_the_content());
 
-                if ($source !== '') : ?>
+                if (!is_null($source) && $source !== '') : ?>
                     <div class="alert alert-secondary mt-5">
                         <b><?= __('Source:', 'illdy') ?></b>
                         <p><?= $source ?></p>
