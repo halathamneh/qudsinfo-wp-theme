@@ -58,7 +58,9 @@
         font-family: "FontAwesome";
         color: #52944E;
         position: absolute;
-        right: 0;
+        .rtl & {
+          right: 0;
+        }
       }
 
       a {
