@@ -106,8 +106,11 @@
     text-decoration: none;
   }
   img {
-    float: right !important;
+    float: left !important;
     margin: 0 5px !important;
+    .rtl & {
+      float: right !important;
+    }
   }
   span {
     line-height: 2pc;
