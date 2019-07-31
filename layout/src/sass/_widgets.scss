@@ -54,12 +54,15 @@
       position: relative;
 
       &:before {
-        content: "\f104";
+        content: "\f105";
         font-family: "FontAwesome";
         color: #52944E;
         position: absolute;
+        left: 0;
         .rtl & {
+          content: "\f104";
           right: 0;
+          left: auto;
         }
       }
 
