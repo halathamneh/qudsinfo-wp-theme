@@ -17,7 +17,7 @@
 <!--        <span>--><?//= __("Please allow location permission to find your distance from Aqsa", 'illdy') ?><!--</span>-->
 
         <div class="section-content">
-            <button class="btn btn-lg btn-aqsa-distance" id="aqsa-distance-button">اضغط هنا لحساب بعدك!</button>
+            <button class="btn btn-lg btn-aqsa-distance" id="aqsa-distance-button"><?= __('Click to find distance!', 'illdy') ?></button>
             <svg viewBox="0 0 100 150" width="50" height="75">
                 <g>
                     <path d="M 50,100 A 1,1 0 0 1 50,0"/>

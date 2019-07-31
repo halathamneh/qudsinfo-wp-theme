@@ -8,7 +8,9 @@
 ?>
 <?php
 $services_general_title = get_theme_mod( 'illdy_services_general_title', __( 'Services', 'illdy' ) );
+$services_general_title = __('Our Services', 'illdy');
 $services_general_entry = get_theme_mod( 'illdy_services_general_entry', __( 'In order to help you grow your business, our carefully selected experts can advise you in in the following areas:', 'illdy' ) );
+$services_general_entry = __('For the purpose of spreading Knowledge about Jerusalem, we offer you these services:', 'illdy');
 ?>
 <section id="services" class="front-page-section">
 	<?php if( $services_general_title || $services_general_entry ): ?>

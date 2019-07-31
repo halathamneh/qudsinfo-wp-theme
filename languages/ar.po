@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-07-24 22:01+0300\n"
-"PO-Revision-Date: 2019-07-24 22:01+0300\n"
+"POT-Creation-Date: 2019-07-31 21:44+0300\n"
+"PO-Revision-Date: 2019-07-31 21:44+0300\n"
 "Last-Translator: \n"
 "Language-Team: Colorlib\n"
 "Language: ar\n"
@@ -1590,7 +1590,7 @@ msgstr ""
 msgid "Control various options for services section from front page."
 msgstr ""
 
-#: inc/customizer/panels/services.php:72 sections/front-page-services.php:11
+#: inc/customizer/panels/services.php:72 sections/front-page-services.php:12
 msgid ""
 "In order to help you grow your business, our carefully selected experts can "
 "advise you in in the following areas:"
@@ -2226,21 +2226,40 @@ msgstr ""
 msgid "بحث"
 msgstr ""
 
-#: sections/front-page-about.php:47
+#: sections/front-page-about.php:12
+msgid ""
+"Because we believe that culture is the first step to get Jerusalem back, we "
+"seek to raise self –awareness and Jerusalemite-oriented intellect in the "
+"Muslim Arab society with all its’ sects, support Jerusalemite citizens by "
+"spreading words about their plight, and adopt new ideas that are concerned "
+"in the Jerusalemite matter; all through preparation of youth committees "
+"capable of supporting the cause, with high efficiency and good skill."
+msgstr ""
+"لأننا نؤمن بأن الثقافة هي أولى الخطوات في استعادة المقدسات، لذلك نسعى لزيادة "
+"الوعي والفكر المقدسي في المجتمع العربي والمسلم بكافة طوائفه، ودعم صمود "
+"المرابطين في الأقصى والقدس بنشر معاناتهم، وتبني الأفكار الوليدة المختصة "
+"بالأمور المقدسية، وكل ذلك من خلال إعداد لجان شبابية قادرة على دعم القضية "
+"بكفاءة ومهارة عالية."
+
+#: sections/front-page-about.php:48
 msgid "Typography"
 msgstr ""
 
-#: sections/front-page-about.php:48
+#: sections/front-page-about.php:49
 msgid "Design"
 msgstr ""
 
-#: sections/front-page-about.php:49
+#: sections/front-page-about.php:50
 msgid "Development"
 msgstr ""
 
 #: sections/front-page-aqsa-distance.php:15
 msgid "Your distance from Aqsa"
 msgstr "بعدك عن الأقصى"
+
+#: sections/front-page-aqsa-distance.php:20
+msgid "Click to find distance!"
+msgstr "اضغط هنا لحساب بعدك!"
 
 #: sections/front-page-bottom-header.php:27
 msgid "Info Of Today"
@@ -2339,23 +2358,33 @@ msgstr ""
 msgid "Project 4"
 msgstr ""
 
-#: sections/front-page-services.php:46
+#: sections/front-page-services.php:11
+msgid "Our Services"
+msgstr "ماذا نقدم؟"
+
+#: sections/front-page-services.php:13
+msgid ""
+"For the purpose of spreading Knowledge about Jerusalem, we offer you these "
+"services:"
+msgstr "لأن هدفنا نشر المعرفة المقدسية، نضع بين أيديكم هذه الخدمات:"
+
+#: sections/front-page-services.php:48
 msgid "Web Design"
 msgstr ""
 
-#: sections/front-page-services.php:46 sections/front-page-services.php:47
-#: sections/front-page-services.php:48
+#: sections/front-page-services.php:48 sections/front-page-services.php:49
+#: sections/front-page-services.php:50
 msgid ""
 "Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt "
 "tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in "
 "mauris. Pellentesque commodo..."
 msgstr ""
 
-#: sections/front-page-services.php:47
+#: sections/front-page-services.php:49
 msgid "Web Development"
 msgstr ""
 
-#: sections/front-page-services.php:48
+#: sections/front-page-services.php:50
 msgid "SEO Analisys"
 msgstr ""
 

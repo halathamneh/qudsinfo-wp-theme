@@ -20,8 +20,11 @@ $path-length: 157px; // Retrieved using SVG's getTotalLength()
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../images/aqsa-distance-earth.png) no-repeat 10% 5%;
+    background: url(../images/aqsa-distance-earth.png) no-repeat 90% 5%;
     background-size: 50%;
+    .rtl & {
+      background-position: 10% 5%;
+    }
   }
 
   .section-header {

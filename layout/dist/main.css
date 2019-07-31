@@ -18438,8 +18438,11 @@ select.selectpicker {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/aqsa-distance-earth.a97ca118.png) no-repeat 10% 5%;
+  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/aqsa-distance-earth.a97ca118.png) no-repeat 90% 5%;
   background-size: 50%;
+}
+.rtl #aqsa-distance:before {
+  background-position: 10% 5%;
 }
 #aqsa-distance .section-header {
   font-size: 1.6rem;
