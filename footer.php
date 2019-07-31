@@ -65,7 +65,7 @@ $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_d
                                 data-customizer="copyright-credit"><?php printf('%s <a href="%s" title="%s" target="_blank">%s</a>.', __('Theme:', 'illdy'), esc_url('http://colorlib.com/wp/themes/illdy'), __('Illdy', 'illdy'), __('Illdy', 'illdy')); ?></span> <?php echo illdy_sanitize_html($footer_copyright); ?>
                     </p>
                 <?php else: ?>
-                    <p class="copyright">© جميع الحقوق محفوظة - معلومة مقدسية <?= date("Y") ?></p>
+                    <p class="copyright">© <?= __('All rights reserved - Qudsinfo.com', 'illdy') ?> <?= date("Y") ?></p>
                 <?php endif; ?>
             </div><!--/.col-sm-3-->
         </div><!--/.row-->
