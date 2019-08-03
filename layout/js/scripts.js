@@ -176,7 +176,7 @@ jQuery(document).ready(function ($) {
         $select.on('change', function () {
             var value = $(this).val();
             var url = '/qudsnews';
-            if(value !== "all") {
+            if (value !== "all") {
                 url += "?news-groups=" + value;
             }
             window.location.href = url;
@@ -189,7 +189,7 @@ jQuery(document).ready(function ($) {
         let currentPos = -1 * width;
         const maxTranslate = elem.scrollWidth;
         elem.style.willChange = "transform";
-        elem.style.transform = "translateX(-"+currentPos+"px)";
+        elem.style.transform = "translateX(-" + currentPos + "px)";
         window.stopBar = false;
         elem.addEventListener('mouseenter', function () {
             window.stopBar = true;
@@ -197,20 +197,24 @@ jQuery(document).ready(function ($) {
         elem.addEventListener('mouseleave', function () {
             window.stopBar = false;
         });
+
         function animLoop(render, element) {
             var running, lastFrame = +new Date;
+
             function loop(now) {
-                requestAnimationFrame( loop );
-                running = render( now - lastFrame );
+                requestAnimationFrame(loop);
+                running = render(now - lastFrame);
                 lastFrame = now;
             }
+
             loop(lastFrame);
         }
+
         animLoop(function (deltaT) {
-            if(window.stopBar) return;
+            if (window.stopBar) return;
             currentPos += 1.25;
-            elem.style.transform = "translateX("+currentPos+"px)";
-            if(currentPos >= maxTranslate) {
+            elem.style.transform = "translateX(" + currentPos + "px)";
+            if (currentPos >= maxTranslate) {
                 currentPos = -1 * width;
             }
         });
@@ -226,7 +230,7 @@ jQuery(document).ready(function ($) {
         sticky_index();
         // alignSubSubMenu();
 
-        if(document.querySelectorAll('#news-bar').length) {
+        if (document.querySelectorAll('#news-bar').length) {
             newsbar();
         }
 
@@ -243,9 +247,33 @@ jQuery(document).ready(function ($) {
         if (scripts_data.isFront)
             counterNumber();
 
-        if($('select[name="sort-by"]').length)
+        if ($('select[name="sort-by"]').length)
             newsSort();
+
+
+        $('.owl-carousel').owlCarousel({
+            rtl: isRtl(),
+            autoHeight: false,
+            responsive : {
+                // breakpoint from 0 up
+                0: {
+                    items: 1,
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 2,
+                },
+                // breakpoint from 768 up
+                960: {
+                    items: 3,
+                }
+            }
+        })
     });
+
+    function isRtl() {
+        return $('body.rtl').length > 0
+    }
 
     // Window Resize
     if (scripts_data.isFront)
@@ -584,7 +612,7 @@ jQuery(document).ready(function ($) {
             }
         });
         mixer.toggleOn(toggleDefault)
-            .then(function() {
+            .then(function () {
                 return mixer.toggleOff('all')
             })
     }

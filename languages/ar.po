@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-07-31 22:23+0300\n"
-"PO-Revision-Date: 2019-07-31 22:23+0300\n"
+"POT-Creation-Date: 2019-08-03 22:10+0300\n"
+"PO-Revision-Date: 2019-08-03 22:27+0300\n"
 "Last-Translator: \n"
 "Language-Team: Colorlib\n"
 "Language: ar\n"
@@ -1413,7 +1413,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:182
 #: inc/customizer/panels/sections-order.php:212
 #: inc/customizer/panels/sections-order.php:242
-#: inc/customizer/panels/sections-order.php:273 page-news.php:18
+#: inc/customizer/panels/sections-order.php:273
 #: sections/front-page-latest-news.php:10 sections/front-page-news-bar.php:19
 msgid "Latest News"
 msgstr "آخر الأخبار"
@@ -2194,25 +2194,25 @@ msgstr ""
 msgid "[View with PicLens]"
 msgstr ""
 
-#: page-news.php:20
-msgid "Sort By:"
-msgstr "فرز:"
+#: page-news.php:41
+msgid "Quds News"
+msgstr "الأخبار المقدسية"
 
-#: page-news.php:26
-msgid "All"
-msgstr "الكل"
-
-#: page-news.php:80 page-templates/news-team.php:100
+#: page-news.php:97 page-templates/news-team.php:100
 #: sections/front-page-latest-news.php:68 template-parts/content-blog.php:35
 #: template-parts/content-blog.php:36 template-parts/content-infos.php:20
 #: template-parts/content.php:21
 msgid "أكمل القراءة"
 msgstr ""
 
-#: page-news.php:81 page-templates/news-team.php:101
+#: page-news.php:98 page-templates/news-team.php:101
 #: sections/front-page-latest-news.php:68
 msgid "أكمل القراءة "
 msgstr ""
+
+#: page-news.php:118
+msgid "Show More"
+msgstr "عرض المزيد"
 
 #: page-templates/wallpapers.php:42
 msgid "Desktop"
@@ -2737,3 +2737,9 @@ msgstr ""
 #| msgid "Products"
 msgid "Product Categories"
 msgstr "المنتجات"
+
+#~ msgid "Sort By:"
+#~ msgstr "فرز:"
+
+#~ msgid "All"
+#~ msgstr "الكل"
