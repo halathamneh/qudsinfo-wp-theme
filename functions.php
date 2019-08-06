@@ -269,7 +269,7 @@ function get_rnd_header_image()
 
 function filter_search($query)
 {
-    if ($query->is_search) {
+    if ($query->is_search && $query->is_main_query() && !is_admin() ) {
         if (isset($_GET['filter']))
             switch ($_GET['filter']) {
                 case "post":
