@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/qudsin5/public_html/wp-content/themes/
+    - export DEPLOYPATH=/home/qudsin5/public_html/wp-content/themes/qudsinfo-wp-theme
     - /bin/cp -R . $DEPLOYPATH
