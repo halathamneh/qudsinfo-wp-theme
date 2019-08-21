@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/qudsin5/public_html/wp-content/themes/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R . $DEPLOYPATH
