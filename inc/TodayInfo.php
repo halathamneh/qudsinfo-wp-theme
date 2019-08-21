@@ -84,7 +84,7 @@ class TodayInfo
     public function getTodaysInfo()
     {
         $info_id = get_option('todays_info', null);
-        if ($info_id !==  null) {
+        if ($info_id !==  null && function_exists('pll_get_post')) {
             $info_id = pll_get_post( $info_id );
             return get_post($info_id);
         }
