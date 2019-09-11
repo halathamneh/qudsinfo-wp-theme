@@ -23,7 +23,7 @@ $ips = new WP_Query($args);
 
 if (!wp_is_mobile()) :?>
     <div class="col-md-2 knowquds-list">
-        <h3 class="cats-title">اختر:</h3>
+        <h3 class="cats-title"><?= __("Select", "qi-theme") ?>:</h3>
         <ul>
             <?php
             while ($ips->have_posts()) : $ip = $ips->next_post(); ?>

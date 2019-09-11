@@ -3,7 +3,7 @@
  *    The template for displaying the single info details content.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <div class="row flex-row-reverse">
@@ -44,7 +44,7 @@
                     }
 
                     wp_link_pages(array(
-                        'before' => '<div class="link-pages">' . __('Pages:', 'illdy'),
+                        'before' => '<div class="link-pages">' . __('Pages:', 'qi-theme'),
                         'after'  => '</div><!--/.link-pages-->',
                     ));
                     ?>

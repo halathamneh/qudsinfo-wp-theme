@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_team';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /********************** TEAM  ******************/
@@ -13,8 +13,8 @@ $wp_customize->add_panel( $panel_id,
         'priority'          => 108,
         'capability'        => 'edit_theme_options',
         'theme_supports'    => '',
-        'title'             => __( 'Team', 'illdy' ),
-        'description'       => __( 'Control various options for team section from front page.', 'illdy' ),
+        'title'             => __( 'Team', 'qi-theme' ),
+        'description'       => __( 'Control various options for team section from front page.', 'qi-theme' ),
     )
 );
 
@@ -23,7 +23,7 @@ $wp_customize->add_panel( $panel_id,
 /***********************************************/
 $wp_customize->add_section( $prefix . '_team_general' ,
     array(
-        'title'     => __( 'General', 'illdy' ),
+        'title'     => __( 'General', 'qi-theme' ),
         'panel'     => $panel_id,
         'priority'  => 1
     )
@@ -41,7 +41,7 @@ $wp_customize->add_control(
     $prefix . '_team_general_show',
     array(
         'type'      => 'checkbox',
-        'label'     => __( 'Show this section?', 'illdy' ),
+        'label'     => __( 'Show this section?', 'qi-theme' ),
         'section'   => $prefix . '_team_general',
         'priority'  => 1
     )
@@ -51,15 +51,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_team_general_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Team', 'illdy' ),
+        'default'           => __( 'Team', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_team_general_title',
     array(
-        'label'         => __( 'Title', 'illdy' ),
-        'description'   => __( 'Add the title for this section.', 'illdy'),
+        'label'         => __( 'Title', 'qi-theme' ),
+        'description'   => __( 'Add the title for this section.', 'qi-theme'),
         'section'       => $prefix . '_team_general',
         'priority'      => 2
     )
@@ -69,15 +69,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_team_general_entry',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Meet the people that are going to take your business to the next level.', 'illdy' ),
+        'default'           => __( 'Meet the people that are going to take your business to the next level.', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_team_general_entry',
     array(
-        'label'         => __( 'Entry', 'illdy' ),
-        'description'   => __( 'Add the content for this section.', 'illdy'),
+        'label'         => __( 'Entry', 'qi-theme' ),
+        'description'   => __( 'Add the content for this section.', 'qi-theme'),
         'section'       => $prefix . '_team_general',
         'priority'      => 3,
         'type'          => 'textarea'

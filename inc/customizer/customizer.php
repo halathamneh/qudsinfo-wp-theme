@@ -12,7 +12,7 @@ if(!function_exists('illdy_customize_register')) {
         $wp_customize->get_setting( 'header_image_data'  )->transport = 'postMessage';
 
         // Get Sections
-        $wp_customize->get_section( 'header_image' )->title = __( 'Blog Header Image', 'illdy' );
+        $wp_customize->get_section( 'header_image' )->title = __( 'Blog Header Image', 'qi-theme' );
 
         /**********************************************/
         /*************** INIT ************************/

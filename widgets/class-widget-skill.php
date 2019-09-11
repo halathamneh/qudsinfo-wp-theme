@@ -5,7 +5,7 @@ class Illdy_Widget_Skill extends WP_Widget {
     * Register widget with WordPress.
     */
     function __construct() {
-        parent::__construct( 'illdy_skill', __( '[Illdy] - Skill', 'illdy' ), array( 'description' => __( 'Add this widget in "Front page - About Sidebar".', 'illdy' ), ) );
+        parent::__construct( 'illdy_skill', __( '[Illdy] - Skill', 'qi-theme' ), array( 'description' => __( 'Add this widget in "Front page - About Sidebar".', 'qi-theme' ), ) );
     
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
         add_action( 'admin_footer-widgets.php', array( $this, 'print_scripts' ), 9999 );
@@ -705,7 +705,7 @@ class Illdy_Widget_Skill extends WP_Widget {
     * @param array $instance Previously saved values from database.
     */
     public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Skill', 'illdy' );
+        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Skill', 'qi-theme' );
         $percentage = !empty( $instance['percentage'] ) ? absint( $instance['percentage'] ) : '';
         $icon = !empty( $instance['icon'] ) ? esc_html( $instance['icon'] ) : '';
         $color = !empty( $instance['color'] ) ? esc_attr( $instance['color'] ) : '';
@@ -714,19 +714,19 @@ class Illdy_Widget_Skill extends WP_Widget {
         ?>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'percentage' ); ?>"><?php _e( 'Percentage:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'percentage' ); ?>"><?php _e( 'Percentage:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'percentage' ); ?>" name="<?php echo $this->get_field_name( 'percentage' ); ?>" type="number" value="<?php echo esc_attr( $percentage ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e( 'Icon:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e( 'Icon:', 'qi-theme' ); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'icon' ); ?>" name="<?php echo $this->get_field_name( 'icon' ); ?>">
-                <option value="all-font-awesome-icons"><?php _e( 'All Font Awesome Icons', 'illdy' ); ?></option>
+                <option value="all-font-awesome-icons"><?php _e( 'All Font Awesome Icons', 'qi-theme' ); ?></option>
                 <?php foreach( $get_fontawesome_icons as $key => $get_fontawesome_icon ): ?>
                     <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $icon, $key ); ?>><?php echo esc_html( $get_fontawesome_icon ); ?></option>
                 <?php endforeach; ?>
@@ -734,7 +734,7 @@ class Illdy_Widget_Skill extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color:', 'illdy' ); ?></label><br>
+            <label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color:', 'qi-theme' ); ?></label><br>
             <input type="text" name="<?php echo $this->get_field_name( 'color' ); ?>" class="color-picker" id="<?php echo $this->get_field_id( 'color' ); ?>" value="<?php echo $color; ?>" data-default-color="#000000" />
         </p>
     <?php

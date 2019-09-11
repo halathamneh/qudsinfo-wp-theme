@@ -3,12 +3,12 @@
  *	The template for displaying the projects section in front page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php
-$general_title = get_theme_mod( 'illdy_projects_general_title', esc_html__( 'Projects', 'illdy' ) );
-$general_entry = get_theme_mod( 'illdy_projects_general_entry', esc_html__( 'You\'ll love our work. Check it out!', 'illdy' ) );
+$general_title = get_theme_mod( 'illdy_projects_general_title', esc_html__( 'Projects', 'qi-theme' ) );
+$general_entry = get_theme_mod( 'illdy_projects_general_entry', esc_html__( 'You\'ll love our work. Check it out!', 'qi-theme' ) );
 ?>
 <section id="projects" class="front-page-section" style="<?php if( !$general_title && !$general_entry ): echo 'padding-top: 0;'; endif; ?>">
 	<?php /*<div class="top-pr-image"></div>*/ ?>
@@ -44,10 +44,10 @@ $general_entry = get_theme_mod( 'illdy_projects_general_entry', esc_html__( 'You
 						'after_title'	=> ''
 					);
 
-					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 1', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-1.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
-					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 2', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-2.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
-					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 3', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-3.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
-					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 4', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-4.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
+					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 1', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-1.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
+					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 2', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-2.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
+					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 3', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-3.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
+					the_widget( 'Illdy_Widget_Project', 'title='. __( 'Project 4', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-project-4.jpg' ) .'&url='. esc_url( '#' ), $the_widget_args );
 				endif;
 				?>
 			</div><!--/.row-->

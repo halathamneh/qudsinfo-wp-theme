@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_projects';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /****************** PROJECTS  ******************/
@@ -13,8 +13,8 @@ $wp_customize->add_panel( $panel_id,
         'priority'          => 103,
         'capability'        => 'edit_theme_options',
         'theme_supports'    => '',
-        'title'             => __( 'Projects', 'illdy' ),
-        'description'       => __( 'Control various options for projects section from front page.', 'illdy' ),
+        'title'             => __( 'Projects', 'qi-theme' ),
+        'description'       => __( 'Control various options for projects section from front page.', 'qi-theme' ),
     )
 );
 
@@ -23,7 +23,7 @@ $wp_customize->add_panel( $panel_id,
 /***********************************************/
 $wp_customize->add_section( $prefix . '_projects_general' ,
     array(
-        'title'     => __( 'General', 'illdy' ),
+        'title'     => __( 'General', 'qi-theme' ),
         'panel'     => $panel_id,
         'priority'  => 1
     )
@@ -41,7 +41,7 @@ $wp_customize->add_control(
     $prefix . '_projects_general_show',
     array(
         'type'      => 'checkbox',
-        'label'     => __( 'Show this section?', 'illdy' ),
+        'label'     => __( 'Show this section?', 'qi-theme' ),
         'section'   => $prefix . '_projects_general',
         'priority'  => 1
     )
@@ -51,15 +51,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_projects_general_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Projects', 'illdy' ),
+        'default'           => __( 'Projects', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_projects_general_title',
     array(
-        'label'         => __( 'Title', 'illdy' ),
-        'description'   => __( 'Add the title for this section.', 'illdy'),
+        'label'         => __( 'Title', 'qi-theme' ),
+        'description'   => __( 'Add the title for this section.', 'qi-theme'),
         'section'       => $prefix . '_projects_general',
         'priority'      => 2
     )
@@ -69,15 +69,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_projects_general_entry',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'You\'ll love our work. Check it out!', 'illdy' ),
+        'default'           => __( 'You\'ll love our work. Check it out!', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_projects_general_entry',
     array(
-        'label'         => __( 'Entry', 'illdy' ),
-        'description'   => __( 'Add the content for this section.', 'illdy'),
+        'label'         => __( 'Entry', 'qi-theme' ),
+        'description'   => __( 'Add the content for this section.', 'qi-theme'),
         'section'       => $prefix . '_projects_general',
         'priority'      => 3,
         'type'          => 'textarea'

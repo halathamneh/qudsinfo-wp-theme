@@ -8,7 +8,7 @@ class Qudsinfo_Faq extends WP_Widget
      */
     function __construct()
     {
-        parent::__construct('qudsinfo-faq', __('FAQs', 'illdy'), array('description' => __('This widget will show random FAQs.', 'illdy'),));
+        parent::__construct('qudsinfo-faq', __('FAQs', 'qi-theme'), array('description' => __('This widget will show random FAQs.', 'qi-theme'),));
     }
 
     /**
@@ -25,7 +25,7 @@ class Qudsinfo_Faq extends WP_Widget
 
         $numberofposts = !empty($instance['numberofposts']) ? absint($instance['numberofposts']) : '';
 
-        echo '<div class="widget-title"><h3>' . __('Frequent Questions', 'illdy') . '</h3></div>';
+        echo '<div class="widget-title"><h3>' . __('Frequent Questions', 'qi-theme') . '</h3></div>';
 
 
         $post_query_args = array(
@@ -52,7 +52,7 @@ class Qudsinfo_Faq extends WP_Widget
                     '<div class="faq-content">' .
                     '   <h2 class="faq-question">' . esc_html(get_the_title()) . '</h2>' .
                     '   <div class="faq-answer">' . get_the_content() . '</div>' .
-                    '   <button type="button" data-target="#faq-item-' . $post->ID . '" class="btn faq-hide-btn btn-outline-secondary">' . __('Close', 'illdy') . '</button>' .
+                    '   <button type="button" data-target="#faq-item-' . $post->ID . '" class="btn faq-hide-btn btn-outline-secondary">' . __('Close', 'qi-theme') . '</button>' .
                     '</div>' .
                     '</div>';
                 $output .= '</div><!--/.widget-recent-post.clearfix-->';
@@ -74,7 +74,7 @@ class Qudsinfo_Faq extends WP_Widget
                     })
                 </script>';
         } else {
-            echo __('No FAQs found.', 'illdy');
+            echo __('No FAQs found.', 'qi-theme');
         }
 
         wp_reset_postdata();
@@ -92,8 +92,8 @@ class Qudsinfo_Faq extends WP_Widget
     public function form($instance)
     {
         $display_title = !empty($instance['display_title']) ? $instance['display_title'] : '';
-        $title         = !empty($instance['title']) ? sanitize_text_field($instance['title']) : __('[Illdy] - Recent Posts', 'illdy');
-        $numberofposts = !empty($instance['numberofposts']) ? absint($instance['numberofposts']) : __('4', 'illdy');
+        $title         = !empty($instance['title']) ? sanitize_text_field($instance['title']) : __('[Illdy] - Recent Posts', 'qi-theme');
+        $numberofposts = !empty($instance['numberofposts']) ? absint($instance['numberofposts']) : __('4', 'qi-theme');
         ?>
 
         <p>
@@ -101,18 +101,18 @@ class Qudsinfo_Faq extends WP_Widget
                    type="checkbox" <?php if ($display_title == 'on'): echo 'checked="checked"'; endif; ?>
                    id="<?php echo $this->get_field_id('display_title'); ?>"
                    name="<?php echo $this->get_field_name('display_title'); ?>"/>
-            <label for="<?php echo $this->get_field_id('display_title'); ?>"><?php _e('Display title?', 'illdy'); ?></label>
+            <label for="<?php echo $this->get_field_id('display_title'); ?>"><?php _e('Display title?', 'qi-theme'); ?></label>
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'illdy'); ?></label>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'qi-theme'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>"
                    name="<?php echo $this->get_field_name('title'); ?>" type="text"
                    value="<?php echo esc_attr($title); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id('numberofposts'); ?>"><?php _e('Number of posts:', 'illdy'); ?></label>
+            <label for="<?php echo $this->get_field_id('numberofposts'); ?>"><?php _e('Number of posts:', 'qi-theme'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('numberofposts'); ?>"
                    name="<?php echo $this->get_field_name('numberofposts'); ?>" type="number"
                    value="<?php echo esc_attr($numberofposts); ?>">

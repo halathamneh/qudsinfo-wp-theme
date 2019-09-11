@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-08-03 22:10+0300\n"
-"PO-Revision-Date: 2019-08-03 22:27+0300\n"
+"POT-Creation-Date: 2019-09-10 21:08+0300\n"
+"PO-Revision-Date: 2019-09-10 21:18+0300\n"
 "Last-Translator: \n"
-"Language-Team: Colorlib\n"
+"Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: footer.php:65 header-quizzes.php:11 header.php:11
 #: inc/customizer/panels/general-options.php:155
-msgid "Illdy"
+msgid "qi-theme"
 msgstr ""
 
 #: footer.php:68
@@ -2194,23 +2194,23 @@ msgstr ""
 msgid "[View with PicLens]"
 msgstr ""
 
-#: page-news.php:41
+#: page-news.php:51
 msgid "Quds News"
 msgstr "الأخبار المقدسية"
 
-#: page-news.php:97 page-templates/news-team.php:100
+#: page-news.php:113 page-templates/news-team.php:100
 #: sections/front-page-latest-news.php:68 template-parts/content-blog.php:35
 #: template-parts/content-blog.php:36 template-parts/content-infos.php:20
 #: template-parts/content.php:21
 msgid "أكمل القراءة"
 msgstr ""
 
-#: page-news.php:98 page-templates/news-team.php:101
+#: page-news.php:114 page-templates/news-team.php:101
 #: sections/front-page-latest-news.php:68
 msgid "أكمل القراءة "
 msgstr ""
 
-#: page-news.php:118
+#: page-news.php:137
 msgid "Show More"
 msgstr "عرض المزيد"
 
@@ -2476,6 +2476,10 @@ msgstr "التصنيفات"
 msgid "Archive"
 msgstr "الأرشيف"
 
+#: taxonomy-knowquds.php:23
+msgid "Select from the menu"
+msgstr "اختر من القائمة"
+
 #: template-parts/content-none.php:10
 msgid "لم يتم العثور على شيء"
 msgstr ""
@@ -2530,6 +2534,10 @@ msgstr ""
 #: template-parts/infos-drawer.php:108
 msgid "جميع المعلومات"
 msgstr ""
+
+#: template-parts/knowquds-list.php:26
+msgid "Select"
+msgstr "اختر"
 
 #: widgets/class-widget-counter.php:8
 msgid "[Illdy] - Counter"

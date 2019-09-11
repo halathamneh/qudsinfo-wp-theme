@@ -29,7 +29,7 @@ if(!function_exists('illdy_comment')) {
             case 'trackback' :
         ?>
         <li class="post pingback">
-            <p><?php _e( 'Pingback:', 'illdy' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'illdy' ), ' ' ); ?></p>
+            <p><?php _e( 'Pingback:', 'qi-theme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'qi-theme' ), ' ' ); ?></p>
         <?php
                 break;
             default :
@@ -43,13 +43,13 @@ if(!function_exists('illdy_comment')) {
                         </div><!--/.comment-gravatar-->
                     </div><!--/.col-sm-2-->
                     <div class="col-sm-10">
-                        <?php printf( __( '%s', 'illdy' ), sprintf( '%s', get_comment_author_link() ) ); ?>
-                        <time class="comment-time" datetime="<?php printf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ); ?>"><?php printf( __( '%1$s at %2$s', 'illdy' ), get_comment_date(), get_comment_time() ); ?></time>
+                        <?php printf( __( '%s', 'qi-theme' ), sprintf( '%s', get_comment_author_link() ) ); ?>
+                        <time class="comment-time" datetime="<?php printf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ); ?>"><?php printf( __( '%1$s at %2$s', 'qi-theme' ), get_comment_date(), get_comment_time() ); ?></time>
                         <div class="comment-entry markup-format">
                             <?php comment_text(); ?>
                             <?php
                             if(  $comment->comment_approved == '0' ):
-                                _e( 'Your comment is awaiting moderation.', 'illdy' );
+                                _e( 'Your comment is awaiting moderation.', 'qi-theme' );
                             endif;
                             ?>
                         </div><!--/.comment-entry.markup-format-->

@@ -529,6 +529,10 @@
       left: 0;
       z-index: 990;
 
+      .admin-bar & {
+        top: 32px;
+      }
+
       &.fixed {
         padding: 0;
         position: fixed;

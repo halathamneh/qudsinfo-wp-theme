@@ -3,7 +3,7 @@
  *    The template for displaying the latest info section in front page.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 
 $thoughts_catid = 2351;
@@ -13,7 +13,7 @@ $thoughts_catid = 2351;
     <div class="container">
         <div class="header-quick row no-gutters">
             <div class="quick-section news-section col-md-8 pl-md-2">
-                <h3 class="header-quick-title"><i class="fa fa-newspaper-o"></i> <?= __("Latest Quds News", 'illdy') ?></h3>
+                <h3 class="header-quick-title"><i class="fa fa-newspaper-o"></i> <?= __("Latest Quds News", 'qi-theme') ?></h3>
                 
                 <?php $query_args = array(
                     'post_type'      => 'news',
@@ -37,7 +37,7 @@ $thoughts_catid = 2351;
                                                     class="fa fa-clock-o"></i> <?= get_the_date() ?></span>
                                 <a href="<?php the_permalink() ?>"><h3><?= mb_strimwidth(get_the_title(),0,70,'...') ?></h3></a>
                                 <div class="news-description"><?php the_excerpt() ?></div>
-                                <a href="<?php the_permalink() ?>" class="btn btn-outline-dark"><?= __("Continue Reading", "illdy") ?> <i
+                                <a href="<?php the_permalink() ?>" class="btn btn-outline-dark"><?= __("Continue Reading", 'qi-theme') ?> <i
                                             class="fa fa-angle-<?= is_rtl() ? "left" : "right" ?>"></i></a>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ $thoughts_catid = 2351;
 
             </div>
             <div class="quick-section thought-section col-md-4">
-                <h3 class="header-quick-title"><i class="fa fa-heart-o"></i> <?= __("Thought of the day", 'illdy') ?></h3>
+                <h3 class="header-quick-title"><i class="fa fa-heart-o"></i> <?= __("Thought of the day", 'qi-theme') ?></h3>
                 <?php $query_args = array(
                     'post_type'      => 'post',
                     'post_status'    => 'publish',

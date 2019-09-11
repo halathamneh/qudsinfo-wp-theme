@@ -3,7 +3,7 @@
  *    The template for dispalying the archive.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();
@@ -20,7 +20,7 @@ get_template_part('sections/blog', 'bottom-header');
                         <?php endif; ?>
                         <div class="card-body">
                             <div class="alert alert-info">
-                                <i class="fa fa-info-circle"></i> اختر من القائمة
+                                <i class="fa fa-info-circle"></i> <?= __('Select from the menu', 'qi-theme') ?>
                             </div>
                             <?php echo term_description(); ?>
                         </div>

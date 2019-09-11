@@ -8,9 +8,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Blog Sidebar
         register_sidebar(array(
-            'name'          => __('Blog Sidebar', 'illdy'),
+            'name'          => __('Blog Sidebar', 'qi-theme'),
             'id'            => 'blog-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<div class="widget-title"><h3>',
@@ -18,9 +18,9 @@ if (!function_exists('illdy_widgets')) {
         ));
 
         register_sidebar(array(
-            'name'          => __('Info Page', 'illdy'),
+            'name'          => __('Info Page', 'qi-theme'),
             'id'            => 'infos-page',
-            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in blog page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<div class="widget-title"><h3>',
@@ -29,9 +29,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Footer Sidebar 1
         register_sidebar(array(
-            'name'          => __('Footer Sidebar 1', 'illdy'),
+            'name'          => __('Footer Sidebar 1', 'qi-theme'),
             'id'            => 'footer-sidebar-1',
-            'description'   => __('The widgets added in this sidebar will appear in first block from footer.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in first block from footer.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<div class="widget-title"><h3>',
@@ -40,9 +40,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Footer Sidebar 2
         register_sidebar(array(
-            'name'          => __('Footer Sidebar 2', 'illdy'),
+            'name'          => __('Footer Sidebar 2', 'qi-theme'),
             'id'            => 'footer-sidebar-2',
-            'description'   => __('The widgets added in this sidebar will appear in second block from footer.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in second block from footer.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<div class="widget-title"><h3>',
@@ -51,9 +51,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Footer Sidebar 3
         register_sidebar(array(
-            'name'          => __('Footer Sidebar 3', 'illdy'),
+            'name'          => __('Footer Sidebar 3', 'qi-theme'),
             'id'            => 'footer-sidebar-3',
-            'description'   => __('The widgets added in this sidebar will appear in third block from footer.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in third block from footer.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<div class="widget-title"><h3>',
@@ -62,9 +62,9 @@ if (!function_exists('illdy_widgets')) {
 
         // About Sidebar
         register_sidebar(array(
-            'name'          => __('Front page - About Sidebar', 'illdy'),
+            'name'          => __('Front page - About Sidebar', 'qi-theme'),
             'id'            => 'front-page-about-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in about section from front page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in about section from front page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-0 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '',
@@ -73,9 +73,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Projects Sidebar
         register_sidebar(array(
-            'name'          => __('Front page - Projects Sidebar', 'illdy'),
+            'name'          => __('Front page - Projects Sidebar', 'qi-theme'),
             'id'            => 'front-page-projects-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in projects section from front page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in projects section from front page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="col-sm-3 col-xs-6 no-padding %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '',
@@ -84,9 +84,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Services Sidebar
         register_sidebar(array(
-            'name'          => __('Front page - Services Sidebar', 'illdy'),
+            'name'          => __('Front page - Services Sidebar', 'qi-theme'),
             'id'            => 'front-page-services-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in services section from front page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in services section from front page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="col-sm-6 col-md-4 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '',
@@ -95,9 +95,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Counter Sidebar
         register_sidebar(array(
-            'name'          => __('Front page - Counter Sidebar', 'illdy'),
+            'name'          => __('Front page - Counter Sidebar', 'qi-theme'),
             'id'            => 'front-page-counter-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in counter section from front page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in counter section from front page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="col-sm-4 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '',
@@ -106,9 +106,9 @@ if (!function_exists('illdy_widgets')) {
 
         // Team Sidebar
         register_sidebar(array(
-            'name'          => __('Front page - Team Sidebar', 'illdy'),
+            'name'          => __('Front page - Team Sidebar', 'qi-theme'),
             'id'            => 'front-page-team-sidebar',
-            'description'   => __('The widgets added in this sidebar will appear in team section from front page.', 'illdy'),
+            'description'   => __('The widgets added in this sidebar will appear in team section from front page.', 'qi-theme'),
             'before_widget' => '<div id="%1$s" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '',
@@ -118,9 +118,9 @@ if (!function_exists('illdy_widgets')) {
         // WooCommerce Sidebar
         if (class_exists('WooCommerce')) {
             register_sidebar(array(
-                'name'          => __('WooCommerce Sidebar', 'illdy'),
+                'name'          => __('WooCommerce Sidebar', 'qi-theme'),
                 'id'            => 'woocommerce-sidebar',
-                'description'   => __('The widgets added in this sidebar will appear in WooCommerce pages.', 'illdy'),
+                'description'   => __('The widgets added in this sidebar will appear in WooCommerce pages.', 'qi-theme'),
                 'before_widget' => '<div id="%1$s" class="widget %2$s">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<div class="widget-title"><h3>',

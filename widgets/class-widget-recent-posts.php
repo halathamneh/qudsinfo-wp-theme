@@ -5,7 +5,7 @@ class Illdy_Widget_Recent_Posts extends WP_Widget {
      * Register widget with WordPress.
      */
     function __construct() {
-        parent::__construct( 'illdy_recent_posts', __( '[Illdy] - Recent Posts', 'illdy' ), array( 'description' => __( 'Thiw widget will display the latest posts with thumbnail image on the left side.', 'illdy' ), ) );
+        parent::__construct( 'illdy_recent_posts', __( '[Illdy] - Recent Posts', 'qi-theme' ), array( 'description' => __( 'Thiw widget will display the latest posts with thumbnail image on the left side.', 'qi-theme' ), ) );
     }
 
     /**
@@ -60,7 +60,7 @@ class Illdy_Widget_Recent_Posts extends WP_Widget {
 
             }
         } else {
-            echo __( 'No posts found.', 'illdy' );
+            echo __( 'No posts found.', 'qi-theme' );
         }
 
         wp_reset_postdata();
@@ -77,22 +77,22 @@ class Illdy_Widget_Recent_Posts extends WP_Widget {
      */
     public function form( $instance ) {
         $display_title = !empty( $instance['display_title'] ) ? $instance['display_title'] : '';
-        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Recent Posts', 'illdy' );
-        $numberofposts = !empty( $instance['numberofposts'] ) ? absint( $instance['numberofposts'] ) : __( '4', 'illdy' );
+        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Recent Posts', 'qi-theme' );
+        $numberofposts = !empty( $instance['numberofposts'] ) ? absint( $instance['numberofposts'] ) : __( '4', 'qi-theme' );
         ?>
 
         <p>
             <input class="checkbox" type="checkbox" <?php if( $display_title == 'on' ): echo 'checked="checked"'; endif; ?> id="<?php echo $this->get_field_id( 'display_title' ); ?>" name="<?php echo $this->get_field_name( 'display_title' ); ?>" /> 
-            <label for="<?php echo $this->get_field_id( 'display_title' ); ?>"><?php _e( 'Display title?', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'display_title' ); ?>"><?php _e( 'Display title?', 'qi-theme' ); ?></label>
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'numberofposts' ); ?>"><?php _e( 'Number of posts:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'numberofposts' ); ?>"><?php _e( 'Number of posts:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'numberofposts' ); ?>" name="<?php echo $this->get_field_name( 'numberofposts' ); ?>" type="number" value="<?php echo esc_attr( $numberofposts ); ?>">
         </p>
         <?php 

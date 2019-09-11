@@ -64,7 +64,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
         public function single_blog_entry_meta_output() {
             global $post;
 
-            $categories_list = get_the_category_list( esc_html__( ', ', 'illdy' ) );
+            $categories_list = get_the_category_list( esc_html__( ', ', 'qi-theme' ) );
             $number_comments = get_comments_number();
 
             $display_post_posted_on_meta = get_theme_mod( 'illdy_enable_post_posted_on_blog_posts', 1 );
@@ -78,7 +78,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
                 $output .= '<div class="blog-post-meta blog-meta">';
                 $output .= '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author_meta( 'display_name' , $author_id )) .'</span>';
                 $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-                $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'illdy' ) .'">%s '. __( 'تعليقات', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'illdy' ) .'">'. __( 'تعليق واحد', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'illdy' ) .'</span>' ) : '' );
+                $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'qi-theme' ) .'">%s '. __( 'تعليقات', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'qi-theme' ) .'">'. __( 'تعليق واحد', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'qi-theme' ) .'</span>' ) : '' );
                 $output .= '</div><!--/.blog-post-meta-->';
 
                 echo $output;
@@ -91,7 +91,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
         public function single_news_entry_meta_output() {
             global $post;
 
-            $categories_list = get_the_category_list( esc_html__( ', ', 'illdy' ) );
+            $categories_list = get_the_category_list( esc_html__( ', ', 'qi-theme' ) );
             $number_comments = get_comments_number();
 
             $display_post_posted_on_meta = get_theme_mod( 'illdy_enable_post_posted_on_blog_posts', 1 );
@@ -105,7 +105,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
                 $output .= '<div class="blog-post-meta news-meta">';
                 //$output .= '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author_meta( 'display_name' , $author_id )) .'</span>';
                 $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-                $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'illdy' ) .'">%s '. __( 'تعليقات', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'illdy' ) .'">'. __( 'تعليق واحد', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'illdy' ) .'</span>' ) : '' );
+                $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'qi-theme' ) .'">%s '. __( 'تعليقات', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'qi-theme' ) .'">'. __( 'تعليق واحد', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'qi-theme' ) .'</span>' ) : '' );
                 $output .= '</div><!--/.blog-post-meta-->';
 
                 echo $output;
@@ -118,7 +118,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
         public function single_entry_meta_output() {
             global $post;
 
-            $categories_list = get_the_category_list( esc_html__( ', ', 'illdy' ) );
+            $categories_list = get_the_category_list( esc_html__( ', ', 'qi-theme' ) );
             $number_comments = get_comments_number();
 
             $display_post_posted_on_meta = get_theme_mod( 'illdy_enable_post_posted_on_blog_posts', 1 );
@@ -132,7 +132,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
                  $output .= '<div class="blog-post-meta">';
                     $output .= '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author_meta( 'display_name' , $author_id )) .'</span>';
                     $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-                    $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'illdy' ) .'">%s '. __( 'تعليقات', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'illdy' ) .'">'. __( 'تعليق واحد', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'illdy' ) .'</span>' ) : '' );
+                    $output .= ( ( $display_number_comments == 1 ) ? ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'لا تعليقات بعد!', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'تعليقات', 'qi-theme' ) .'">%s '. __( 'تعليقات', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( 'تعليق واحد', 'qi-theme' ) .'">'. __( 'تعليق واحد', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'التعليقات مغلقة', 'qi-theme' ) .'</span>' ) : '' );
                 $output .= '</div><!--/.blog-post-meta-->';
 
                 echo $output;
@@ -154,7 +154,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
             $output .= '<div class="blog-post-meta news-meta">';
             //$output .= ( ( $post_standard_enable_author == 1 ) ? '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author() ) .'</span>' : '' );
             $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-            $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'illdy' ) .'">%s '. __( 'comments', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'illdy' ) .'">'. __( '1 comment', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'illdy' ) .'</span>' );
+            $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'qi-theme' ) .'">%s '. __( 'comments', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'qi-theme' ) .'">'. __( '1 comment', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'qi-theme' ) .'</span>' );
             $output .= '</div><!--/.blog-post-meta-->';
 
             echo $output;
@@ -175,7 +175,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
             $output .= '<div class="blog-post-meta blog-meta">';
             $output .= ( ( $post_standard_enable_author == 1 ) ? '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author() ) .'</span>' : '' );
             $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-            $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'illdy' ) .'">%s '. __( 'comments', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'illdy' ) .'">'. __( '1 comment', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'illdy' ) .'</span>' );
+            $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'qi-theme' ) .'">%s '. __( 'comments', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'qi-theme' ) .'">'. __( '1 comment', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'qi-theme' ) .'</span>' );
             $output .= '</div><!--/.blog-post-meta-->';
 
             echo $output;
@@ -196,7 +196,7 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
             $output .= '<div class="blog-post-meta">';
                 $output .= ( ( $post_standard_enable_author == 1 ) ? '<span class="post-meta-author"><i class="fa fa-user"></i>'. esc_html( get_the_author() ) .'</span>' : '' );
                 $output .= '<span class="post-meta-time"><i class="fa fa-calendar"></i><time datetime="'. sprintf( '%s-%s-%s', get_the_date( 'Y' ), get_the_date( 'm' ), get_the_date( 'd' ) ) .'">'. sprintf( '%s %s, %s', get_the_date( 'F' ), get_the_date( 'd' ), get_the_date( 'Y' ) ) .'</time></span>';
-                $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'illdy' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'illdy' ) .'">%s '. __( 'comments', 'illdy' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'illdy' ) .'">'. __( '1 comment', 'illdy' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'illdy' ) .'</span>' );
+                $output .= ( comments_open() ) ? ( $number_comments == 0 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'No comments', 'qi-theme' ) .'</span>' ) : ( $number_comments > 1 ) ? sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="%s '. __( 'comments', 'qi-theme' ) .'">%s '. __( 'comments', 'qi-theme' ) .'</a></span>', get_comments_link(), $number_comments, $number_comments ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i><a class="meta-comments" href="%s" title="'. __( '1 comment', 'qi-theme' ) .'">'. __( '1 comment', 'qi-theme' ) .'</a></span>', get_comments_link() ) : sprintf( '<span class="post-meta-comments"><i class="fa fa-comment-o"></i>'. __( 'Comments are off for this post', 'qi-theme' ) .'</span>' );
             $output .= '</div><!--/.blog-post-meta-->';
 
             echo $output;
@@ -214,13 +214,13 @@ if( !class_exists( 'MTL_Entry_Meta_Output' ) ) {
             if( $display_tags_post_meta == 1 ) {
                 if( get_the_tag_list() ) {
                     $output .= '<ul class="blog-post-tags">';
-                        $output .= '<li>'. __( 'Tags:  ', 'illdy' ) .'</li>';
+                        $output .= '<li>'. __( 'Tags:  ', 'qi-theme' ) .'</li>';
                         $output .= get_the_tag_list( '<li>','</li><li>','</li>' );
                     $output .= '</ul><!--/.blog-post-tags-->';
                 } else if(get_the_term_list($post->ID,"pics-hashtags")) {
 
                     $output .= '<ul class="blog-post-tags">';
-                        $output .= '<li>'. __( 'Tags:  ', 'illdy' ) .'</li>';
+                        $output .= '<li>'. __( 'Tags:  ', 'qi-theme' ) .'</li>';
                         $output .= get_the_term_list(get_the_ID(),'pics-hashtags','<li>','</li><li>','</li>');
                     $output .= '</ul><!--/.blog-post-tags-->';
                 }

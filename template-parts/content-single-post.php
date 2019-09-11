@@ -3,7 +3,7 @@
  *    The template for displaying the single content.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
@@ -18,7 +18,7 @@
                     $source = get_field('source');
                     if (!is_null($source) && $source !== '') : ?>
                         <div class="alert alert-secondary mt-5">
-                            <b><?= __('Source:', 'illdy') ?></b>
+                            <b><?= __('Source:', 'qi-theme') ?></b>
                             <p><?= $source ?></p>
                         </div>
                     <?php endif; ?>
@@ -53,7 +53,7 @@
 
                 if (!is_null($source) && $source !== '') : ?>
                     <div class="alert alert-secondary mt-5">
-                        <b><?= __('Source:', 'illdy') ?></b>
+                        <b><?= __('Source:', 'qi-theme') ?></b>
                         <p><?= $source ?></p>
                     </div>
                 <?php endif; ?>

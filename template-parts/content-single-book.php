@@ -3,7 +3,7 @@
  *    The template for displaying the single content.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post book-post'); ?>>
@@ -52,7 +52,7 @@
 
                 <?php
                 wp_link_pages(array(
-                    'before' => '<div class="link-pages">' . __('Pages:', 'illdy'),
+                    'before' => '<div class="link-pages">' . __('Pages:', 'qi-theme'),
                     'after'  => '</div><!--/.link-pages-->',
                 ));
                 ?>

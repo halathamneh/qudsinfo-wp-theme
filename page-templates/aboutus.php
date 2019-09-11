@@ -5,7 +5,7 @@
  *	The template for displaying Custom Page Template: About Us.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();

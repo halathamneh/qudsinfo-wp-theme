@@ -4,7 +4,7 @@ YARPP Template: Qudsinfo Related
 Description: Requires a theme which supports post thumbnails
 Author: Haitham Athamneh
 */ ?>
-<h3><?= __('See more:', 'illdy') ?></h3>
+<h3><?= __('See more:', 'qi-theme') ?></h3>
 <?php if (have_posts()): ?>
     <ul>
         <?php while (have_posts()) : the_post(); ?>

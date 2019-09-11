@@ -3,18 +3,18 @@
  *    The template for displaying the header.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php
 $img_logo = get_theme_mod('illdy_img_logo', esc_url(get_template_directory_uri() . '/layout/images/header-logo.png'));
-$text_logo = get_theme_mod('illdy_text_logo', __('Illdy', 'illdy'));
+$text_logo = get_theme_mod('illdy_text_logo', __('qi-theme', 'qi-theme'));
 $jumbotron_general_image = get_theme_mod('illdy_jumbotron_general_image', esc_url(get_template_directory_uri() . '/layout/images/front-page/front-page-header.png'));
 $preloader_enable = get_theme_mod('illdy_preloader_enable', 1);
 $category = get_query_var('cat') != '' ? get_query_var('cat') : 0;
 $object = $wp_query->get_queried_object();
 if (is_search())
-    $title = esc_html__(get_search_query() . " - Search Results", 'illdy');
+    $title = esc_html__(get_search_query() . " - Search Results", 'qi-theme');
 elseif($object instanceof WP_Term)
     $title = single_term_title('', false) . ' - ' . get_bloginfo('name');
 else
@@ -102,11 +102,11 @@ if (!is_404()) {
             <form role="search" method="get" class="search-form responsive-menu-search"
                   action="<?php echo home_url('/'); ?>">
                 <?php
-                $placeholder = esc_attr_x('Search...', 'placeholder', 'illdy'); ?>
+                $placeholder = esc_attr_x('Search...', 'placeholder', 'qi-theme'); ?>
                 <input type="search" id="s"
                        placeholder="<?php echo $placeholder; ?>"
                        value="<?php echo esc_attr(get_search_query()); ?>" name="s"
-                       title="<?php echo esc_attr_x('Search for:', 'label', 'illdy'); ?>"/>
+                       title="<?php echo esc_attr_x('Search for:', 'label', 'qi-theme'); ?>"/>
                 <span class="sbutton"><i class="fa fa-search"></i></span>
             </form><!--/.search-form-->
             <ul>

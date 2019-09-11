@@ -3,11 +3,11 @@
  *    The template for displaying the search form in sidebar.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php
-$placeholder = esc_attr_x('بحث في المعلومات والصور والأخبار ...', 'placeholder', 'illdy');
+$placeholder = esc_attr_x('بحث في المعلومات والصور والأخبار ...', 'placeholder', 'qi-theme');
 $ia = "active";
 $pa = "";
 ?>
@@ -15,7 +15,7 @@ $pa = "";
     <div class="search-form-box">
         <input type="search" id="s" placeholder="<?php echo $placeholder; ?>"
                value="<?php echo esc_attr(get_search_query()); ?>" name="s"
-               title="<?php echo esc_attr_x('بحث عن:', 'label', 'illdy'); ?>"/>
+               title="<?php echo esc_attr_x('بحث عن:', 'label', 'qi-theme'); ?>"/>
         <?php if(isset($_GET["filter"]) && !empty($_GET["filter"])) $selected = $_GET['filter']; ?>
         <select name="filter" id="searchFilter" class="selectpicker">
             <option value="-1" disabled <?= !isset($selected) ? "selected" : "" ?>><?php esc_html_e("ابحث في:") ?></option>

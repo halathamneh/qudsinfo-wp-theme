@@ -5,7 +5,7 @@
  *    The template for displaying Custom Page Template: No Sidebar.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header(); ?>
@@ -97,8 +97,8 @@
                                             <?php the_excerpt(); ?>
                                         </div><!--/.post-entry-->
                                         <a href="<?php the_permalink(); ?>"
-                                           title="<?php _e('أكمل القراءة', 'illdy'); ?>"
-                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'illdy'); ?><i
+                                           title="<?php _e('أكمل القراءة', 'qi-theme'); ?>"
+                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'qi-theme'); ?><i
                                                     class="fa fa-chevron-circle-left"></i></a>
                                     </div>
                                 </div><!--/.post-->

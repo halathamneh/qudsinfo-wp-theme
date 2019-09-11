@@ -3,7 +3,7 @@
  *    The template for displaying the bottom header section in front page.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 
 global $todayInfo;
@@ -24,7 +24,7 @@ $overlay_attr = ' style="background-image: url(\'' . get_template_directory_uri(
 
                 <div class="iot-content col-sm-12 p-3">
                     <div class="iot-headline">
-                        <span class="badge badge-success"><i class="fa fa-asterisk"></i> <?= __('Info Of Today', 'illdy') ?></span>
+                        <span class="badge badge-success"><i class="fa fa-asterisk"></i> <?= __('Info Of Today', 'qi-theme') ?></span>
                     </div>
                     <a href="<?php the_permalink($post->ID) ?>"><h3 class="iot-title"><?= $post->post_title ?></h3></a>
                     <div class="iot-data">
@@ -33,9 +33,9 @@ $overlay_attr = ' style="background-image: url(\'' . get_template_directory_uri(
                     <div id="to_type" style="display: none;">
                         <p><?php echo wp_strip_all_tags($post->post_content) ?></p>
                     </div>
-                    <a href="<?= get_permalink($post->ID) ?>" class="btn btn-success"><?= __('View Info', 'illdy') ?> <i
+                    <a href="<?= get_permalink($post->ID) ?>" class="btn btn-success"><?= __('View Info', 'qi-theme') ?> <i
                                 class="fa <?= is_rtl() ? "fa-angle-left" : "fa-angle-right" ?>"></i></a>
-                    <a href="/our-info/" class="btn btn-link text-white"><?= __("View All Information", 'illdy') ?></a>
+                    <a href="/our-info/" class="btn btn-link text-white"><?= __("View All Information", 'qi-theme') ?></a>
                 </div>
             </div>
         </div>

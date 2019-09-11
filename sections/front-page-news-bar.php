@@ -3,7 +3,7 @@
  *    The template for displaying the latest news section in front page.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 
@@ -16,7 +16,7 @@ if(count($newsList)) :
 <section id="news-bar" class="front-page-section">
         <div class="container">
             <div class="news-bar-content">
-                <h3><?= __('Latest News', 'illdy') ?></h3>
+                <h3><?= __('Latest News', 'qi-theme') ?></h3>
                 <div class="news-list-wrapper">
                     <ul class="news-list">
                         <?php foreach ($newsList as $item) : ?>

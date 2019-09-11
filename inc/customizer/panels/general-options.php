@@ -3,7 +3,7 @@
     $panel_id = 'illdy_panel_general';
 
     // Set prefix
-    $prefix = 'illdy';
+    $prefix = 'qi-theme';
 
     // Change panel for Site Title & Tagline Section
     $site_title        = $wp_customize->get_section( 'title_tagline' );
@@ -40,8 +40,8 @@
             'priority' => 1,
             'capability' => 'edit_theme_options',
             'theme_supports' => '',
-            'title' => __( 'General Options', 'illdy' ),
-            'description' => __('You can change the site layout in this area as well as your contact details (the ones displayed in the header & footer) ', 'illdy'),
+            'title' => __( 'General Options', 'qi-theme' ),
+            'description' => __('You can change the site layout in this area as well as your contact details (the ones displayed in the header & footer) ', 'qi-theme'),
         )
     );
 
@@ -51,7 +51,7 @@
 
     $wp_customize->add_section( $prefix . '_preloader_section',
         array(
-            'title'       => __( 'Preloader', 'illdy' ),
+            'title'       => __( 'Preloader', 'qi-theme' ),
             'priority'    => 1,
             'panel'       => $panel_id
         )
@@ -68,7 +68,7 @@
         $prefix . '_preloader_enable',
         array(
             'type'          => 'checkbox',
-            'label'         => __( 'Enable the preloader?', 'illdy' ),
+            'label'         => __( 'Enable the preloader?', 'qi-theme' ),
             'section'       => $prefix . '_preloader_section',
             'priority'      => 1
         )
@@ -87,7 +87,7 @@
         $wp_customize, 
         $prefix . '_preloader_background_color',
         array(
-            'label'     => __( 'Background Color', 'illdy' ),
+            'label'     => __( 'Background Color', 'qi-theme' ),
             'section'   => $prefix . '_preloader_section',
             'settings'  => $prefix . '_preloader_background_color',
             'priority'  => 2
@@ -107,7 +107,7 @@
         $wp_customize, 
         $prefix . '_preloader_primary_color',
         array(
-            'label'     => __( 'Primary Color', 'illdy' ),
+            'label'     => __( 'Primary Color', 'qi-theme' ),
             'section'   => $prefix . '_preloader_section',
             'settings'  => $prefix . '_preloader_primary_color',
             'priority'  => 3
@@ -127,7 +127,7 @@
         $wp_customize, 
         $prefix . '_preloader_secondly_color',
         array(
-            'label'     => __( 'Secondly Color', 'illdy' ),
+            'label'     => __( 'Secondly Color', 'qi-theme' ),
             'section'   => $prefix . '_preloader_section',
             'settings'  => $prefix . '_preloader_secondly_color',
             'priority'  => 4
@@ -141,7 +141,7 @@
     /* Logo */
     $wp_customize->add_section( $prefix.'_general_section' ,
         array(
-            'title'       => __( 'Logo', 'illdy' ),
+            'title'       => __( 'Logo', 'qi-theme' ),
             'priority'    => 2,
             'panel' 	  => $panel_id
         )
@@ -152,7 +152,7 @@
     $wp_customize->add_setting($prefix.'_text_logo',
         array(
             'sanitize_callback' => 'illdy_sanitize_html',
-            'default'           => __('Illdy', 'illdy'),
+            'default'           => __('qi-theme', 'qi-theme'),
             'transport'         => 'postMessage'
         )
     );
@@ -160,8 +160,8 @@
     $wp_customize->add_control(
         $prefix.'_text_logo',
         array(
-            'label' 		=> __('Enter company name', 'illdy'),
-            'description'   => __('This field is best used when you don\'t have a professional image logo', 'illdy'),
+            'label' 		=> __('Enter company name', 'qi-theme'),
+            'description'   => __('This field is best used when you don\'t have a professional image logo', 'qi-theme'),
             'section' 		=> $prefix.'_general_section',
             'priority' 		=> 2
         )
@@ -181,7 +181,7 @@
         new WP_Customize_Image_Control(
             $wp_customize, $prefix . '_img_logo',
             array(
-                'label'     => __( 'Image Site Logo', 'illdy' ),
+                'label'     => __( 'Image Site Logo', 'qi-theme' ),
                 'section'   => $prefix.'_general_section',
                 'settings'  => $prefix . '_img_logo',
                 'priority'  => 2
@@ -196,8 +196,8 @@
 
     $wp_customize->add_section( $prefix.'_general_contact_section' ,
         array(
-            'title'         => __( 'Contact Details', 'illdy' ),
-            'description'   => __( 'These are the contact details displayed in the Contact us section from front page.', 'illdy' ),
+            'title'         => __( 'Contact Details', 'qi-theme' ),
+            'description'   => __( 'These are the contact details displayed in the Contact us section from front page.', 'qi-theme' ),
             'priority'      => 3,
             'panel'         => $panel_id
         )
@@ -214,8 +214,8 @@
 
 	$wp_customize->add_control( 'illdy_contact_bar_facebook_url',
 		array(
-			'label'          => __( 'Facebook URL', 'illdy' ),
-			'description'    => __( 'Will be displayed in the contact section from front page.', 'illdy' ),
+			'label'          => __( 'Facebook URL', 'qi-theme' ),
+			'description'    => __( 'Will be displayed in the contact section from front page.', 'qi-theme' ),
 			'section'        => $prefix.'_general_contact_section',
 			'settings'       => 'illdy_contact_bar_facebook_url',
 			'priority'       => 10
@@ -233,8 +233,8 @@
 
 	$wp_customize->add_control( $prefix.'_contact_bar_twitter_url',
 		array(
-			'label'          => __( 'Twitter URL', 'illdy' ),
-			'description'    => __('Will be displayed in the contact section from front page.', 'illdy'),
+			'label'          => __( 'Twitter URL', 'qi-theme' ),
+			'description'    => __('Will be displayed in the contact section from front page.', 'qi-theme'),
 			'section'        => $prefix.'_general_contact_section',
 			'settings'       => $prefix.'_contact_bar_twitter_url',
 			'priority'       => 10
@@ -252,8 +252,8 @@
 
 	$wp_customize->add_control( $prefix.'_contact_bar_linkedin_url',
 		array(
-			'label'          => __( 'LinkedIN URL', 'illdy' ),
-			'description'    => __('Will be displayed in the contact section from front page.', 'illdy'),
+			'label'          => __( 'LinkedIN URL', 'qi-theme' ),
+			'description'    => __('Will be displayed in the contact section from front page.', 'qi-theme'),
 			'section'        => $prefix.'_general_contact_section',
 			'settings'       => $prefix.'_contact_bar_linkedin_url',
 			'priority'       => 10
@@ -264,15 +264,15 @@
     $wp_customize->add_setting( $prefix.'_email',
         array(
             'sanitize_callback'  => 'sanitize_text_field',
-            'default'            => __( 'contact@site.com', 'illdy' ),
+            'default'            => __( 'contact@site.com', 'qi-theme' ),
             'transport'          => 'postMessage'
         )
     );
 
     $wp_customize->add_control( $prefix.'_email',
         array(
-            'label'         => __( 'Email addr.', 'illdy' ),
-            'description'   => __( 'Will be displayed in the contact section from front page.', 'illdy'),
+            'label'         => __( 'Email addr.', 'qi-theme' ),
+            'description'   => __( 'Will be displayed in the contact section from front page.', 'qi-theme'),
             'section'       => $prefix.'_general_contact_section',
             'settings'      => $prefix.'_email',
             'priority'      => 10
@@ -284,15 +284,15 @@
     $wp_customize->add_setting( $prefix.'_phone',
         array(
             'sanitize_callback'  => 'illdy_sanitize_html',
-            'default'            => __( '(555) 555-5555', 'illdy' ),
+            'default'            => __( '(555) 555-5555', 'qi-theme' ),
             'transport'          => 'postMessage'
         )
     );
 
     $wp_customize->add_control( $prefix.'_phone',
         array(
-            'label'         => __( 'Phone number', 'illdy' ),
-            'description'   => __( 'Will be displayed in the contact section from front page.', 'illdy'),
+            'label'         => __( 'Phone number', 'qi-theme' ),
+            'description'   => __( 'Will be displayed in the contact section from front page.', 'qi-theme'),
             'section'       => $prefix.'_general_contact_section',
             'settings'      => $prefix.'_phone',
             'priority'      => 12
@@ -304,7 +304,7 @@
         $prefix . '_address1',
         array(
             'sanitize_callback'  => 'illdy_sanitize_html',
-            'default'            => __( 'Street 221B Baker Street, ', 'illdy' ),
+            'default'            => __( 'Street 221B Baker Street, ', 'qi-theme' ),
             'transport'          => 'postMessage'
         )
     );
@@ -312,8 +312,8 @@
     $wp_customize->add_control(
         $prefix . '_address1',
         array(
-            'label'         => __( 'Address 1', 'illdy' ),
-            'description'   => __( 'Will be displayed in the contact section from front page.', 'illdy'),
+            'label'         => __( 'Address 1', 'qi-theme' ),
+            'description'   => __( 'Will be displayed in the contact section from front page.', 'qi-theme'),
             'section'       => $prefix . '_general_contact_section',
             'priority'      => 13
         )
@@ -324,7 +324,7 @@
         $prefix . '_address2',
         array(
             'sanitize_callback'  => 'illdy_sanitize_html',
-            'default'            => __( 'London, UK', 'illdy' ),
+            'default'            => __( 'London, UK', 'qi-theme' ),
             'transport'          => 'postMessage'
         )
     );
@@ -332,8 +332,8 @@
     $wp_customize->add_control(
         $prefix . '_address2',
         array(
-            'label'         => __( 'Address 2', 'illdy' ),
-            'description'   => __( 'Will be displayed in the contact section from front page.', 'illdy'),
+            'label'         => __( 'Address 2', 'qi-theme' ),
+            'description'   => __( 'Will be displayed in the contact section from front page.', 'qi-theme'),
             'section'       => $prefix . '_general_contact_section',
             'priority'      => 13
         )
@@ -344,8 +344,8 @@
     /***********************************************/
     $wp_customize->add_section( $prefix.'_general_footer_section' ,
         array(
-            'title'       => __( 'Footer Details', 'illdy' ),
-            'description' => __( 'Change the footer copyright message from here. Note: no HTML allowed.', 'illdy'),
+            'title'       => __( 'Footer Details', 'qi-theme' ),
+            'description' => __( 'Change the footer copyright message from here. Note: no HTML allowed.', 'qi-theme'),
             'priority'    => 4,
             'panel' => $panel_id
         )
@@ -363,7 +363,7 @@
         $prefix . '_general_footer_display_copyright',
         array(
             'type'          => 'checkbox',
-            'label'         => __( 'Display theme copyright in the footer?', 'illdy' ),
+            'label'         => __( 'Display theme copyright in the footer?', 'qi-theme' ),
             'section'       => $prefix . '_general_footer_section',
             'priority'      => 1
         )
@@ -374,7 +374,7 @@
         $prefix . '_footer_copyright',
         array(
             'sanitize_callback' => 'illdy_sanitize_html',
-            'default'           => __( '&copy; Copyright 2016. All Rights Reserved.', 'illdy' ),
+            'default'           => __( '&copy; Copyright 2016. All Rights Reserved.', 'qi-theme' ),
             'transport'         => 'postMessage'
         )
     );
@@ -382,7 +382,7 @@
     $wp_customize->add_control(
         $prefix . '_footer_copyright',
         array(
-            'label'     => __( 'Footer Copyright', 'illdy' ),
+            'label'     => __( 'Footer Copyright', 'qi-theme' ),
             'section'   => $prefix . '_general_footer_section',
             'priority'  => 2
         )
@@ -402,7 +402,7 @@
         new WP_Customize_Image_Control(
             $wp_customize, $prefix . '_img_footer_logo',
             array(
-                'label'     => __( 'Footer Logo', 'illdy' ),
+                'label'     => __( 'Footer Logo', 'qi-theme' ),
                 'section'   => $prefix.'_general_footer_section',
                 'settings'  => $prefix . '_img_footer_logo',
                 'priority'  => 3

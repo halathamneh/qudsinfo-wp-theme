@@ -27,11 +27,11 @@
                 <form role="search" method="get" class="search-form header-menu"
                       action="<?php echo home_url('/'); ?>">
                     <?php
-                    $placeholder = __('Search...', 'illdy'); ?>
+                    $placeholder = __('Search...', 'qi-theme'); ?>
                     <input type="search" id="s"
                            placeholder="<?php echo $placeholder; ?>"
                            value="<?php echo esc_attr(get_search_query()); ?>" name="s"
-                           title="<?php echo __('Search for:', 'illdy'); ?>"/>
+                           title="<?php echo __('Search for:', 'qi-theme'); ?>"/>
                     <span class="sbutton"><i class="fa fa-search"></i></span>
                 </form><!--/.search-form-->
             </div>

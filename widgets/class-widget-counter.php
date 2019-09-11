@@ -5,7 +5,7 @@ class Illdy_Widget_Counter extends WP_Widget {
      * Register widget with WordPress.
      */
     function __construct() {
-        parent::__construct( 'illdy_counter', __( '[Illdy] - Counter', 'illdy' ), array( 'description' => __( 'Add this widget in "Front page - Counter Sidebar".', 'illdy' ), ) );
+        parent::__construct( 'illdy_counter', __( '[Illdy] - Counter', 'qi-theme' ), array( 'description' => __( 'Add this widget in "Front page - Counter Sidebar".', 'qi-theme' ), ) );
     }
 
     /**
@@ -43,38 +43,38 @@ class Illdy_Widget_Counter extends WP_Widget {
      * @param array $instance Previously saved values from database.
      */
     public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? esc_html( $instance['title'] ) : __( '[Illdy] - Recent Posts', 'illdy' );
-        $data_from = ! empty( $instance['data_from'] ) ? absint( $instance['data_from'] ) : __( '1', 'illdy' );
-        $data_to = ! empty( $instance['data_to'] ) ? absint( $instance['data_to'] ) : __( '260', 'illdy' );
-        $data_speed = ! empty( $instance['data_speed'] ) ? absint( $instance['data_speed'] ) : __( '2000', 'illdy' );
-        $data_refresh_interval = ! empty( $instance['data_refresh_interval'] ) ? absint( $instance['data_refresh_interval'] ) : __( '100', 'illdy' );
+        $title = ! empty( $instance['title'] ) ? esc_html( $instance['title'] ) : __( '[Illdy] - Recent Posts', 'qi-theme' );
+        $data_from = ! empty( $instance['data_from'] ) ? absint( $instance['data_from'] ) : __( '1', 'qi-theme' );
+        $data_to = ! empty( $instance['data_to'] ) ? absint( $instance['data_to'] ) : __( '260', 'qi-theme' );
+        $data_speed = ! empty( $instance['data_speed'] ) ? absint( $instance['data_speed'] ) : __( '2000', 'qi-theme' );
+        $data_refresh_interval = ! empty( $instance['data_refresh_interval'] ) ? absint( $instance['data_refresh_interval'] ) : __( '100', 'qi-theme' );
         ?>
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'data_from' ); ?>"><?php _e( 'Data from:', 'illdy' ); ?></label>
-            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'The number the element should start at.', 'illdy' ); ?></span>
+            <label for="<?php echo $this->get_field_id( 'data_from' ); ?>"><?php _e( 'Data from:', 'qi-theme' ); ?></label>
+            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'The number the element should start at.', 'qi-theme' ); ?></span>
             <input class="widefat" id="<?php echo $this->get_field_id( 'data_from' ); ?>" name="<?php echo $this->get_field_name( 'data_from' ); ?>" type="number" value="<?php echo esc_attr( $data_from ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'data_to' ); ?>"><?php _e( 'Data to:', 'illdy' ); ?></label>
-            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'The number the element should end at.', 'illdy' ); ?></span>
+            <label for="<?php echo $this->get_field_id( 'data_to' ); ?>"><?php _e( 'Data to:', 'qi-theme' ); ?></label>
+            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'The number the element should end at.', 'qi-theme' ); ?></span>
             <input class="widefat" id="<?php echo $this->get_field_id( 'data_to' ); ?>" name="<?php echo $this->get_field_name( 'data_to' ); ?>" type="number" value="<?php echo esc_attr( $data_to ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'data_speed' ); ?>"><?php _e( 'Data speed:', 'illdy' ); ?></label>
-            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'How long it should take to count between the target numbers.', 'illdy' ); ?></span>
+            <label for="<?php echo $this->get_field_id( 'data_speed' ); ?>"><?php _e( 'Data speed:', 'qi-theme' ); ?></label>
+            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'How long it should take to count between the target numbers.', 'qi-theme' ); ?></span>
             <input class="widefat" id="<?php echo $this->get_field_id( 'data_speed' ); ?>" name="<?php echo $this->get_field_name( 'data_speed' ); ?>" type="number" value="<?php echo esc_attr( $data_speed ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'data_refresh_interval' ); ?>"><?php _e( 'Data refresh interval:', 'illdy' ); ?></label>
-            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'How often the element should be updated.', 'illdy' ); ?></span>
+            <label for="<?php echo $this->get_field_id( 'data_refresh_interval' ); ?>"><?php _e( 'Data refresh interval:', 'qi-theme' ); ?></label>
+            <span class="widefat" style="font-style: italic; display: block;"><?php _e( 'How often the element should be updated.', 'qi-theme' ); ?></span>
             <input class="widefat" id="<?php echo $this->get_field_id( 'data_refresh_interval' ); ?>" name="<?php echo $this->get_field_name( 'data_refresh_interval' ); ?>" type="number" value="<?php echo esc_attr( $data_refresh_interval ); ?>">
         </p>
         <?php 

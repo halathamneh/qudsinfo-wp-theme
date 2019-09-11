@@ -3,7 +3,7 @@
  *	The template for displaying the page content.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-post' ); ?>>
@@ -18,7 +18,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before'	=> '<div class="link-pages">' . __( 'Pages:', 'illdy' ),
+			'before'	=> '<div class="link-pages">' . __( 'Pages:', 'qi-theme' ),
 			'after'		=> '</div><!--/.link-pages-->'
 		) );
 		?>

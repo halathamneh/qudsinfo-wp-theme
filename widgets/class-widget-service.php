@@ -5,7 +5,7 @@ class Illdy_Widget_Service extends WP_Widget {
     * Register widget with WordPress.
     */
     function __construct() {
-        parent::__construct( 'illdy_service', __( '[Illdy] - Service', 'illdy' ), array( 'description' => __( 'Add this widget in "Front page - Services Sidebar".', 'illdy' ), ) );
+        parent::__construct( 'illdy_service', __( '[Illdy] - Service', 'qi-theme' ), array( 'description' => __( 'Add this widget in "Front page - Services Sidebar".', 'qi-theme' ), ) );
     
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
         add_action( 'admin_footer-widgets.php', array( $this, 'print_scripts' ), 9999 );
@@ -709,7 +709,7 @@ class Illdy_Widget_Service extends WP_Widget {
     * @param array $instance Previously saved values from database.
     */
     public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Skill', 'illdy' );
+        $title = ! empty( $instance['title'] ) ? sanitize_text_field( $instance['title'] ) : __( '[Illdy] - Skill', 'qi-theme' );
         $icon = !empty( $instance['icon'] ) ? sanitize_text_field( $instance['icon'] ) : '';
         $entry = !empty( $instance['entry'] ) ? esc_textarea( $instance['entry'] ) : '';
         $link = !empty( $instance['link'] ) ? sanitize_text_field( $instance['link'] ) : null;
@@ -719,14 +719,14 @@ class Illdy_Widget_Service extends WP_Widget {
         ?>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'qi-theme' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e( 'Icon:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e( 'Icon:', 'qi-theme' ); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'icon' ); ?>" name="<?php echo $this->get_field_name( 'icon' ); ?>">
-                <option value="all-font-awesome-icons"><?php _e( 'All Font Awesome Icons', 'illdy' ); ?></option>
+                <option value="all-font-awesome-icons"><?php _e( 'All Font Awesome Icons', 'qi-theme' ); ?></option>
                 <?php foreach( $get_fontawesome_icons as $key => $get_fontawesome_icon ): ?>
                     <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $icon, $key ); ?>><?php echo esc_html( $get_fontawesome_icon ); ?></option>
                 <?php endforeach; ?>
@@ -734,12 +734,12 @@ class Illdy_Widget_Service extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'entry' ); ?>"><?php _e( 'Entry:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'entry' ); ?>"><?php _e( 'Entry:', 'qi-theme' ); ?></label>
             <textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'entry' ); ?>" name="<?php echo $this->get_field_name( 'entry' ); ?>"><?php echo esc_textarea( $entry ); ?></textarea></p>
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link to page:', 'illdy' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link to page:', 'qi-theme' ); ?></label>
             <?php // <input class="widefat" id="<?php echo $this->get_field_id( 'link' ); " name="<?php echo $this->get_field_name( 'link' ); " type="text" value="<?php echo esc_attr( $link ); "> ?>
             <select class="widefat" name="<?php echo $this->get_field_name( 'link' );?>" id="<?php echo $this->get_field_id( 'link' );?>">
                 <option selected="selected" disabled="disabled" value="0"><?php echo esc_attr( __( 'Select page...' ) ); ?></option>
@@ -759,7 +759,7 @@ class Illdy_Widget_Service extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color:', 'illdy' ); ?></label><br>
+            <label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color:', 'qi-theme' ); ?></label><br>
             <input type="text" name="<?php echo $this->get_field_name( 'color' ); ?>" class="color-picker" id="<?php echo $this->get_field_id( 'color' ); ?>" value="<?php echo $color; ?>" data-default-color="#000000" />
         </p>
     <?php 

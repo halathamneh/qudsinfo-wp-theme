@@ -3,13 +3,13 @@
  *	The template for displaying the latest news section in front page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php
-$general_title = get_theme_mod( 'illdy_latest_news_general_title', __( 'Latest News', 'illdy' ) );
-$general_entry = get_theme_mod( 'illdy_latest_news_general_entry', __( 'If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'illdy' ) );
-$button_text = get_theme_mod( 'illdy_latest_news_button_text', __( 'See blog', 'illdy' ) );
+$general_title = get_theme_mod( 'illdy_latest_news_general_title', __( 'Latest News', 'qi-theme' ) );
+$general_entry = get_theme_mod( 'illdy_latest_news_general_entry', __( 'If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'qi-theme' ) );
+$button_text = get_theme_mod( 'illdy_latest_news_button_text', __( 'See blog', 'qi-theme' ) );
 $button_url = get_theme_mod( 'illdy_latest_news_button_url', esc_url( '#' ) );
 $number_of_posts = get_theme_mod( 'illdy_latest_news_number_of_posts', absint( 3 ) );
 ?>
@@ -65,7 +65,7 @@ $number_of_posts = get_theme_mod( 'illdy_latest_news_number_of_posts', absint( 3
 								<div class="post-entry">
 									<?php the_excerpt(); ?>
 								</div><!--/.post-entry-->
-								<a href="<?php the_permalink(); ?>" title="<?php _e( 'أكمل القراءة', 'illdy' ); ?>" class="post-button"><?php _e( 'أكمل القراءة ', 'illdy' ); ?><i class="fa fa-chevron-circle-left"></i></a>
+								<a href="<?php the_permalink(); ?>" title="<?php _e( 'أكمل القراءة', 'qi-theme' ); ?>" class="post-button"><?php _e( 'أكمل القراءة ', 'qi-theme' ); ?><i class="fa fa-chevron-circle-left"></i></a>
 							</div><!--/.post-->
 						</div><!--/.col-sm-4-->
 					<?php endwhile; ?>

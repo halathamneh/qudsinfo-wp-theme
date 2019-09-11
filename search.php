@@ -3,7 +3,7 @@
  *    The template for displaying the search.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php

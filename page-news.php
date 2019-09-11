@@ -5,7 +5,7 @@
  *    The template for dispalying Custom Page Template: Blog.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 
@@ -48,7 +48,7 @@ if (isset($_GET['group']) && !empty($_GET['group'])) {
         </svg>
         <div class="news-page__header-content">
             <div class="container">
-                <h1><?= __('Quds News', 'illdy') ?></h1>
+                <h1><?= __('Quds News', 'qi-theme') ?></h1>
             </div>
         </div>
     </div>
@@ -110,8 +110,8 @@ if (isset($_GET['group']) && !empty($_GET['group'])) {
                                             <?php the_excerpt(); ?>
                                         </div><!--/.post-entry-->
                                         <a href="<?php the_permalink(); ?>"
-                                           title="<?php _e('أكمل القراءة', 'illdy'); ?>"
-                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'illdy'); ?>
+                                           title="<?php _e('أكمل القراءة', 'qi-theme'); ?>"
+                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'qi-theme'); ?>
                                             <i
                                                     class="fa fa-chevron-circle-left"></i></a>
                                     </div>
@@ -134,7 +134,7 @@ if (isset($_GET['group']) && !empty($_GET['group'])) {
                     <div class="d-flex align-items-center justify-content-center my-4">
                         <a href="/qudsnews/?group=<?= $term->slug ?>"
                            class="btn btn-lg btn-success d-inline-flex align-items-center justify-content-center"
-                        ><?= __('Show More', 'illdy') ?></a>
+                        ><?= __('Show More', 'qi-theme') ?></a>
                     </div>
                 <?php endif; ?>
             </section><!--/#blog-->

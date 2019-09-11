@@ -3,7 +3,7 @@
  *	The template for displaying the counter section in front page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 
@@ -38,7 +38,7 @@ endif;
 						'before_title'	=> '',
 						'after_title'	=> ''
 				);
-				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'معلومة على الموقع', 'illdy' ) .'&data_from=1&data_to='.$count_posts->publish.'&data_speed=2000&data_refresh_interval=100', $the_widget_args );
+				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'معلومة على الموقع', 'qi-theme' ) .'&data_from=1&data_to='.$count_posts->publish.'&data_speed=2000&data_refresh_interval=100', $the_widget_args );
 				*/
 			else:
 				$the_widget_args = array(
@@ -48,9 +48,9 @@ endif;
 					'after_title'	=> ''
 				);
 
-				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Projects', 'illdy' ) .'&data_from=1&data_to=260&data_speed=2000&data_refresh_interval=100', $the_widget_args );
-				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Clients', 'illdy' ) .'&data_from=1&data_to=120&data_speed=2000&data_refresh_interval=100', $the_widget_args );
-				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Coffes', 'illdy' ) .'&data_from=1&data_to=260&data_speed=2000&data_refresh_interval=100', $the_widget_args );
+				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Projects', 'qi-theme' ) .'&data_from=1&data_to=260&data_speed=2000&data_refresh_interval=100', $the_widget_args );
+				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Clients', 'qi-theme' ) .'&data_from=1&data_to=120&data_speed=2000&data_refresh_interval=100', $the_widget_args );
+				the_widget( 'Illdy_Widget_Counter', 'title='. __( 'Coffes', 'qi-theme' ) .'&data_from=1&data_to=260&data_speed=2000&data_refresh_interval=100', $the_widget_args );
 			endif;
 			?>
 		</div><!--/.row-->

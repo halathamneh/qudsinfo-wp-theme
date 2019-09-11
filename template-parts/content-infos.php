@@ -3,7 +3,7 @@
  *	The template for dispalying the content.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 
@@ -17,6 +17,6 @@
 			<div class="post-entry">
 				<?php the_excerpt(); ?>
 			</div><!--/.post-entry-->
-			<a href="<?php the_permalink(); ?>" title="<?php _e( 'أكمل القراءة', 'illdy' ); ?>" class="post-button"><?php _e( 'أكمل القراءة', 'illdy' ); ?><i class="fa fa-chevron-circle-left"></i></a>
+			<a href="<?php the_permalink(); ?>" title="<?php _e( 'أكمل القراءة', 'qi-theme' ); ?>" class="post-button"><?php _e( 'أكمل القراءة', 'qi-theme' ); ?><i class="fa fa-chevron-circle-left"></i></a>
 		</div><!--/.post-->
 </article><!--/#post-<?php the_ID(); ?>.blog-post-->

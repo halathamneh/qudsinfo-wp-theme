@@ -3,7 +3,7 @@
  *	The template for displaying WooCommerce.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php get_header(); ?>
@@ -31,8 +31,8 @@
 						'after_title'	=> '</h3></div>'
 					);
 
-					the_widget( 'WC_Widget_Cart', 'title=' . __( 'WooCommerce Title', 'illdy' ), $the_widget_title );
-					the_widget( 'WC_Widget_Product_Categories', 'title=' . __( 'Product Categories', 'illdy' ), $the_widget_title );
+					the_widget( 'WC_Widget_Cart', 'title=' . __( 'WooCommerce Title', 'qi-theme' ), $the_widget_title );
+					the_widget( 'WC_Widget_Product_Categories', 'title=' . __( 'Product Categories', 'qi-theme' ), $the_widget_title );
 					?>
 				</div><!--/#sidebar-->
 			</div><!--/.col-sm-4-->

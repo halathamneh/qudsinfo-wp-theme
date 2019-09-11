@@ -4,7 +4,7 @@
 /***********************************************/
 $wp_customize->add_section( $prefix.'_general_sections_order' ,
     array(
-        'title'       => __( 'Sections Order', 'illdy' ),
+        'title'       => __( 'Sections Order', 'qi-theme' ),
         'priority'    => 101
     )
 );
@@ -20,21 +20,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_first_section',
     array(
-        'label'         => __( 'First section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the first section from front page.', 'illdy' ),
+        'label'         => __( 'First section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the first section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -50,21 +50,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_second_section',
     array(
-        'label'         => __( 'Second section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the second section from front page.', 'illdy' ),
+        'label'         => __( 'Second section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the second section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' )
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' )
         )
     )
 );
@@ -80,21 +80,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_third_section',
     array(
-        'label'         => __( 'Third section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the third section from front page.', 'illdy' ),
+        'label'         => __( 'Third section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the third section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -110,21 +110,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_fourth_section',
     array(
-        'label'         => __( 'Fourth section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the fourth section from front page.', 'illdy' ),
+        'label'         => __( 'Fourth section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the fourth section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -140,21 +140,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_fifth_section',
     array(
-        'label'         => __( 'Fifth section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the fifth section from front page.', 'illdy' ),
+        'label'         => __( 'Fifth section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the fifth section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -170,21 +170,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_sixth_section',
     array(
-        'label'         => __( 'Sixth section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the sixth section from front page.', 'illdy' ),
+        'label'         => __( 'Sixth section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the sixth section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -200,21 +200,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_seventh_section',
     array(
-        'label'         => __( 'Seventh section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the seventh section from front page.', 'illdy' ),
+        'label'         => __( 'Seventh section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the seventh section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -230,21 +230,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_eighth_section',
     array(
-        'label'         => __( 'Eighth section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the eighth section from front page.', 'illdy' ),
+        'label'         => __( 'Eighth section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the eighth section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );
@@ -261,21 +261,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     $prefix . '_general_sections_order_ninth_section',
     array(
-        'label'         => __( 'Ninth section', 'illdy' ),
-        'description'   => __( 'Please select what you want to display on the ninth section from front page.', 'illdy' ),
+        'label'         => __( 'Ninth section', 'qi-theme' ),
+        'description'   => __( 'Please select what you want to display on the ninth section from front page.', 'qi-theme' ),
         'type'          => 'select',
         'section'       => $prefix . '_general_sections_order',
         'choices'       => array(
-            1   => __( 'About', 'illdy' ),
-            2   => __( 'Projects', 'illdy' ),
-            3   => __( 'Testimonials', 'illdy' ),
-            4   => __( 'Services', 'illdy' ),
-            5   => __( 'Latest News', 'illdy' ),
-            6   => __( 'Counter', 'illdy' ),
-            7   => __( 'Team', 'illdy' ),
-            8   => __( 'Contact us', 'illdy' ),
-            9   => __( 'Latest Info', 'illdy' ),
-            10   => __( 'Lectures', 'illdy' ),
+            1   => __( 'About', 'qi-theme' ),
+            2   => __( 'Projects', 'qi-theme' ),
+            3   => __( 'Testimonials', 'qi-theme' ),
+            4   => __( 'Services', 'qi-theme' ),
+            5   => __( 'Latest News', 'qi-theme' ),
+            6   => __( 'Counter', 'qi-theme' ),
+            7   => __( 'Team', 'qi-theme' ),
+            8   => __( 'Contact us', 'qi-theme' ),
+            9   => __( 'Latest Info', 'qi-theme' ),
+            10   => __( 'Lectures', 'qi-theme' ),
         )
     )
 );

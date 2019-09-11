@@ -3,14 +3,14 @@
  *	The template for displaying services section in front page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php
-$services_general_title = get_theme_mod( 'illdy_services_general_title', __( 'Services', 'illdy' ) );
-$services_general_title = __('Our Services', 'illdy');
-$services_general_entry = get_theme_mod( 'illdy_services_general_entry', __( 'In order to help you grow your business, our carefully selected experts can advise you in in the following areas:', 'illdy' ) );
-$services_general_entry = __('For the purpose of spreading Knowledge about Jerusalem, we offer you these services:', 'illdy');
+$services_general_title = get_theme_mod( 'illdy_services_general_title', __( 'Services', 'qi-theme' ) );
+$services_general_title = __('Our Services', 'qi-theme');
+$services_general_entry = get_theme_mod( 'illdy_services_general_entry', __( 'In order to help you grow your business, our carefully selected experts can advise you in in the following areas:', 'qi-theme' ) );
+$services_general_entry = __('For the purpose of spreading Knowledge about Jerusalem, we offer you these services:', 'qi-theme');
 ?>
 <section id="services" class="front-page-section">
 	<?php if( $services_general_title || $services_general_entry ): ?>
@@ -45,9 +45,9 @@ $services_general_entry = __('For the purpose of spreading Knowledge about Jerus
 						'after_title'	=> ''
 					);
 
-					the_widget( 'Illdy_Widget_Service', 'title='. __( 'Web Design', 'illdy' ) .'&icon=fa-pencil&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'illdy' ) .'&color=#f18b6d', $the_widget_args );
-					the_widget( 'Illdy_Widget_Service', 'title='. __( 'Web Development', 'illdy' ) .'&icon=fa-code&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'illdy' ) .'&color=#f1d204', $the_widget_args );
-					the_widget( 'Illdy_Widget_Service', 'title='. __( 'SEO Analisys', 'illdy' ) .'&icon=fa-search&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'illdy' ) .'&color=#6a4d8a', $the_widget_args );
+					the_widget( 'Illdy_Widget_Service', 'title='. __( 'Web Design', 'qi-theme' ) .'&icon=fa-pencil&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'qi-theme' ) .'&color=#f18b6d', $the_widget_args );
+					the_widget( 'Illdy_Widget_Service', 'title='. __( 'Web Development', 'qi-theme' ) .'&icon=fa-code&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'qi-theme' ) .'&color=#f1d204', $the_widget_args );
+					the_widget( 'Illdy_Widget_Service', 'title='. __( 'SEO Analisys', 'qi-theme' ) .'&icon=fa-search&entry='. __( 'Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...', 'qi-theme' ) .'&color=#6a4d8a', $the_widget_args );
 				endif;
 				?>
 			</div><!--/.row-->

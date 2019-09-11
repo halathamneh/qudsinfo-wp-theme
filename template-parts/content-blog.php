@@ -3,7 +3,7 @@
  *    The template for dispalying the content.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 
@@ -32,7 +32,7 @@ $featured = get_post_meta($post->ID, 'featured-blog')[0] == "yes";
             </div><!--/.blog-post-entry-->
 
         </div>
-        <a href="<?php the_permalink(); ?>" title="<?php _e('أكمل القراءة', 'illdy'); ?>"
-           class="blog-post-button"><?php _e('أكمل القراءة', 'illdy'); ?></a>
+        <a href="<?php the_permalink(); ?>" title="<?php _e('أكمل القراءة', 'qi-theme'); ?>"
+           class="blog-post-button"><?php _e('أكمل القراءة', 'qi-theme'); ?></a>
     </div>
 </article><!--/#post-<?php the_ID(); ?>.blog-post-->

@@ -3,7 +3,7 @@
  *    The template for dispalying the single.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();
@@ -18,7 +18,7 @@ if (have_posts()):
                 <?php get_template_part('template-parts/knowquds','list'); ?>
                 <div class="col-md-10">
                     <section id="blog">
-                        <?= do_shortcode('[image_point id="' . $post->ID . '"]'); ?>
+                        <?= do_shortcode('[knowquds id="' . $post->ID . '"]'); ?>
                     </section><!--/#blog-->
                 </div>
 

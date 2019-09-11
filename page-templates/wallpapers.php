@@ -5,7 +5,7 @@
  *    The template for displaying Custom Page Template: No Sidebar.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();
@@ -39,11 +39,11 @@ $pagination_query = $post_query;
                     <li class="nav-label">نوع الصورة:</li>
                     <li class="nav-item">
                         <a href="/wallpapers/?type=desktop"
-                           class="nav-link <?= $type == 'desktop' ? 'active' : '' ?>"><?= __('Desktop', 'illdy') ?></a>
+                           class="nav-link <?= $type == 'desktop' ? 'active' : '' ?>"><?= __('Desktop', 'qi-theme') ?></a>
                     </li>
                     <li class="nav-item">
                         <a href="/wallpapers/?type=mobile"
-                           class="nav-link <?= $type == 'mobile' ? 'active' : '' ?>"><?= __('Mobile', 'illdy') ?></a>
+                           class="nav-link <?= $type == 'mobile' ? 'active' : '' ?>"><?= __('Mobile', 'qi-theme') ?></a>
                     </li>
                 </ul>
             </div>

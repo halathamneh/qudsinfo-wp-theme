@@ -5,7 +5,7 @@
  *    The template for dispalying Custom Page Template: Blog.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 $sections_order_first_section = get_theme_mod('illdy_general_sections_order_first_section', 1);
 $sections_order_second_section = get_theme_mod('illdy_general_sections_order_second_section', 2);

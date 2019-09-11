@@ -40,7 +40,7 @@ if (!function_exists('illdy_setup')) {
         require_once('widgets/class-widget-person.php');
 
         // Load Theme Textdomain
-        load_theme_textdomain('illdy', get_template_directory() . '/languages');
+        load_theme_textdomain('qi-theme', get_template_directory() . '/languages');
 
         // Add Theme Support
         add_theme_support('woocommerce');
@@ -77,7 +77,7 @@ if (!function_exists('illdy_setup')) {
 
         // Register Nav Menus
         register_nav_menus(array(
-            'primary-menu' => __('Primary Menu', 'illdy'),
+            'primary-menu' => __('Primary Menu', 'qi-theme'),
         ));
     }
 }
@@ -306,7 +306,7 @@ function navigation_links($next = true, $previous = true)
 {
     ?>
     <div class="navigation-links">
-        <span><?= __("See more:", 'illdy') ?></span>
+        <span><?= __("See more:", 'qi-theme') ?></span>
         <?php if ($previous) : ?>
             <div class="previous">
                 <?= get_previous_post_link('&laquo; %link', "%title", false, '59', 'pics-cats') ?>
@@ -330,9 +330,9 @@ add_filter('jwt_auth_expire', 'jwt_token_expiration');
 
 function getLanguagesForJS() {
     return [
-        'aqsa_distance.permission' => __("Please allow location permission to find your distance from Aqsa", 'illdy'),
-        'aqsa_distance.enable_gps' => __("Please enable location to find your distance from Aqsa", 'illdy'),
-        'aqsa_distance.error' => __("Something went wrong, please try again!", 'illdy'),
+        'aqsa_distance.permission' => __("Please allow location permission to find your distance from Aqsa", 'qi-theme'),
+        'aqsa_distance.enable_gps' => __("Please enable location to find your distance from Aqsa", 'qi-theme'),
+        'aqsa_distance.error' => __("Something went wrong, please try again!", 'qi-theme'),
     ];
 }
 

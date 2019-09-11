@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_latest_info';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /*************** LATEST INFO ******************/
@@ -14,8 +14,8 @@ $wp_customize->add_panel( $panel_id,
         'priority'          => 101,
         'capability'        => 'edit_theme_options',
         'theme_supports'    => '',
-        'title'             => __( 'Latest News', 'illdy' ),
-        'description'       => __( 'Control various options for latest news section from front page.', 'illdy' ),
+        'title'             => __( 'Latest News', 'qi-theme' ),
+        'description'       => __( 'Control various options for latest news section from front page.', 'qi-theme' ),
     )
 );
 */
@@ -25,10 +25,10 @@ $wp_customize->add_panel( $panel_id,
 /***********************************************/
 $wp_customize->add_section( $prefix . '_latest_info_general' ,
     array(
-        'title'         => __( 'Latest Info', 'illdy' ),
-        'description'   => __( 'Control various options for latest info section from front page.', 'illdy' ),
+        'title'         => __( 'Latest Info', 'qi-theme' ),
+        'description'   => __( 'Control various options for latest info section from front page.', 'qi-theme' ),
         'priority'      => 106
-        // 'title'       => __( 'General', 'illdy' ),
+        // 'title'       => __( 'General', 'qi-theme' ),
         // 'panel' 	  => $panel_id
     )
 );
@@ -45,7 +45,7 @@ $wp_customize->add_control(
     $prefix . '_latest_info_general_show',
     array(
         'type'      => 'checkbox',
-        'label'     => __( 'Show this section?', 'illdy' ),
+        'label'     => __( 'Show this section?', 'qi-theme' ),
         'section'   => $prefix . '_latest_info_general',
         'priority'  => 1
     )
@@ -55,15 +55,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_latest_info_general_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Latest Info', 'illdy' ),
+        'default'           => __( 'Latest Info', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_latest_info_general_title',
     array(
-        'label'         => __( 'Title', 'illdy' ),
-        'description'   => __( 'Add the title for this section.', 'illdy'),
+        'label'         => __( 'Title', 'qi-theme' ),
+        'description'   => __( 'Add the title for this section.', 'qi-theme'),
         'section'       => $prefix . '_latest_info_general',
         'priority'      => 2
     )
@@ -73,15 +73,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_latest_info_general_entry',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'illdy' ),
+        'default'           => __( 'If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_latest_info_general_entry',
     array(
-        'label'         => __( 'Entry', 'illdy' ),
-        'description'   => __( 'Add the content for this section.', 'illdy'),
+        'label'         => __( 'Entry', 'qi-theme' ),
+        'description'   => __( 'Add the content for this section.', 'qi-theme'),
         'section'       => $prefix . '_latest_info_general',
         'priority'      => 3,
         'type'          => 'textarea'
@@ -92,15 +92,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_latest_info_button_text',
     array(
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => __( 'See blog', 'illdy' ),
+        'default'           => __( 'See blog', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_latest_info_button_text',
     array(
-        'label'         => __( 'Button Text', 'illdy' ),
-        'description'   => __( 'Add the button text for this section.', 'illdy'),
+        'label'         => __( 'Button Text', 'qi-theme' ),
+        'description'   => __( 'Add the button text for this section.', 'qi-theme'),
         'section'       => $prefix . '_latest_info_general',
         'priority'      => 4
     )
@@ -116,8 +116,8 @@ $wp_customize->add_setting( 'illdy_latest_info_button_url',
 );
 $wp_customize->add_control( 'illdy_latest_info_button_url',
     array(
-        'label'          => __( 'Button Text', 'illdy' ),
-        'description'    => __( 'Add the button URL for this section.', 'illdy'),
+        'label'          => __( 'Button Text', 'qi-theme' ),
+        'description'    => __( 'Add the button URL for this section.', 'qi-theme'),
         'section'        => $prefix . '_latest_info_general',
         'settings'       => 'illdy_latest_info_button_url',
         'priority'       => 5
@@ -134,8 +134,8 @@ $wp_customize->add_setting( $prefix .'_latest_info_number_of_posts',
 $wp_customize->add_control(
     $prefix .'_latest_info_number_of_posts',
     array(
-        'label'         => __( 'Number of posts', 'illdy' ),
-        'description'   => __( 'Add the number of posts to show in this section.', 'illdy'),
+        'label'         => __( 'Number of posts', 'qi-theme' ),
+        'description'   => __( 'Add the number of posts to show in this section.', 'qi-theme'),
         'section'       => $prefix . '_latest_info_general',
         'priority'      => 5
     )

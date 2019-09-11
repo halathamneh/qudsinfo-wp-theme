@@ -3,7 +3,7 @@
  *	The template for dispalying the page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php get_header(); ?>

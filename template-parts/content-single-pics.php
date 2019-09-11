@@ -3,7 +3,7 @@
  *    The template for displaying the single content.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 
 $post_term = wp_get_post_terms(get_the_ID(), 'pics-cats');
@@ -70,7 +70,7 @@ if ($is_building) {
                 <div>
                     <nav aria-label="breadcrumb" role="navigation">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="<?= site_url('photos') ?>"><?= __("Photos & Landmarks", 'illdy') ?></a></li>
+                            <li class="breadcrumb-item"><a href="<?= site_url('photos') ?>"><?= __("Photos & Landmarks", 'qi-theme') ?></a></li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 <a href="<?php echo get_term_link(get_the_terms(get_the_ID(), 'pics-cats')[0]); ?>"
                                 ><?php echo get_the_terms(get_the_ID(), 'pics-cats')[0]->name; ?></a>
@@ -82,7 +82,7 @@ if ($is_building) {
                 <?php navigation_links(true, false); ?>
             </div>
             <h2><?php the_title(); ?></h2>
-            <div class="sharing-buttons"><i><?= __("Share Image:", 'illdy') ?> </i>
+            <div class="sharing-buttons"><i><?= __("Share Image:", 'qi-theme') ?> </i>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
             </div>
@@ -92,31 +92,31 @@ if ($is_building) {
                 if ($is_building && ($location || $location_to_dome || $history || $name_reason || $builtby)) {
                     if ($location) : ?>
                         <div class="b_group">
-                            <span class="b_label"><?= __('Landmark Location:', 'illdy') ?></span>
+                            <span class="b_label"><?= __('Landmark Location:', 'qi-theme') ?></span>
                             <span class="b_text"><?= $location ?></span>
                         </div>
                     <?php endif;
                     if ($location_to_dome) : ?>
                         <div class="b_group">
-                            <span class="b_label"><?= __("Landmark Location relative to Dome of the rock:", 'illdy') ?></span>
+                            <span class="b_label"><?= __("Landmark Location relative to Dome of the rock:", 'qi-theme') ?></span>
                             <span class="b_text"><?= $location_to_dome ?></span>
                         </div>
                     <?php endif;
                     if ($history) : ?>
                         <div class="b_group">
-                            <span class="b_label"><?= __("Landmark History:", 'illdy') ?></span>
+                            <span class="b_label"><?= __("Landmark History:", 'qi-theme') ?></span>
                             <span class="b_text b_textarea"><?= $history ?></span>
                         </div>
                     <?php endif;
                     if ($name_reason) : ?>
                         <div class="b_group">
-                            <span class="b_label"><?= __("Reason of the name:", 'illdy') ?></span>
+                            <span class="b_label"><?= __("Reason of the name:", 'qi-theme') ?></span>
                             <span class="b_text b_textarea"><?= $name_reason ?></span>
                         </div>
                     <?php endif;
                     if ($builtby) : ?>
                         <div class="b_group">
-                            <span class="b_label"><?= __("Builder Name:", 'illdy') ?></span>
+                            <span class="b_label"><?= __("Builder Name:", 'qi-theme') ?></span>
                             <span class="b_text"><?= $builtby ?></span>
                         </div>
                     <?php endif;

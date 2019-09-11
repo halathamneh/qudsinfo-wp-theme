@@ -46,14 +46,14 @@ function my_theme_register_required_plugins() {
 
 		// JetPack
 		array(
-			'name'		=> esc_html__( 'JetPack', 'illdy' ),
+			'name'		=> esc_html__( 'JetPack', 'qi-theme' ),
 			'slug'		=> 'jetpack',
 			'required'	=> false
 		),
 
 		// Contact Form 7
 		array(
-			'name'		=> esc_html__( 'Contact Form 7', 'illdy' ),
+			'name'		=> esc_html__( 'Contact Form 7', 'qi-theme' ),
 			'slug'		=> 'contact-form-7',
 			'required'	=> false
 		),

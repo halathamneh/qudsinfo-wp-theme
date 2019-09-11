@@ -14,27 +14,27 @@ function cptui_register_my_cpts_infos_details() {
      */
     
     $labels = array(
-        "name" => __( 'الموضوعات', 'illdy' ),
-        "singular_name" => __( 'موضوع', 'illdy' ),
-        "menu_name" => __( 'الموضوعات', 'illdy' ),
-        "all_items" => __( 'الموضوعات', 'illdy' ),
-        "add_new" => __( 'موضوع جديد', 'illdy' ),
-        "add_new_item" => __( 'إضافة موضوع جديد', 'illdy' ),
-        "edit_item" => __( 'تعديل موضوع', 'illdy' ),
-        "new_item" => __( 'موضوع جديد', 'illdy' ),
-        "view_item" => __( 'عرض الموضوع', 'illdy' ),
-        "search_items" => __( 'بحث عن موضوع', 'illdy' ),
-        "not_found" => __( 'لم نجد الموضوع', 'illdy' ),
-        "featured_image" => __( 'صورة الموضوع', 'illdy' ),
-        "use_featured_image" => __( 'استعملها ك صورة للموضوع', 'illdy' ),
-        "archives" => __( 'أرشيف الموضوعات', 'illdy' ),
-        "insert_into_item" => __( 'إضافة إلى الموضوع', 'illdy' ),
-        "uploaded_to_this_item" => __( 'المرفوع لهذا الموضوع', 'illdy' ),
-        "items_list" => __( 'قائمة الموضوعات', 'illdy' ),
+        "name" => __( 'الموضوعات', 'qi-theme' ),
+        "singular_name" => __( 'موضوع', 'qi-theme' ),
+        "menu_name" => __( 'الموضوعات', 'qi-theme' ),
+        "all_items" => __( 'الموضوعات', 'qi-theme' ),
+        "add_new" => __( 'موضوع جديد', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة موضوع جديد', 'qi-theme' ),
+        "edit_item" => __( 'تعديل موضوع', 'qi-theme' ),
+        "new_item" => __( 'موضوع جديد', 'qi-theme' ),
+        "view_item" => __( 'عرض الموضوع', 'qi-theme' ),
+        "search_items" => __( 'بحث عن موضوع', 'qi-theme' ),
+        "not_found" => __( 'لم نجد الموضوع', 'qi-theme' ),
+        "featured_image" => __( 'صورة الموضوع', 'qi-theme' ),
+        "use_featured_image" => __( 'استعملها ك صورة للموضوع', 'qi-theme' ),
+        "archives" => __( 'أرشيف الموضوعات', 'qi-theme' ),
+        "insert_into_item" => __( 'إضافة إلى الموضوع', 'qi-theme' ),
+        "uploaded_to_this_item" => __( 'المرفوع لهذا الموضوع', 'qi-theme' ),
+        "items_list" => __( 'قائمة الموضوعات', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'الموضوعات', 'illdy' ),
+        "label" => __( 'الموضوعات', 'qi-theme' ),
         "labels" => $labels,
         "description" => "موضوعات تصنيفات المعلومات",
         "public" => true,
@@ -75,27 +75,27 @@ function cptui_register_my_cpts_news() {
      */
     
     $labels = array(
-        "name" => __( 'الأخبار', 'illdy' ),
-        "singular_name" => __( 'خبر', 'illdy' ),
-        "menu_name" => __( 'الأخبار', 'illdy' ),
-        "all_items" => __( 'كل الأخبار', 'illdy' ),
-        "add_new" => __( 'خبر جديد', 'illdy' ),
-        "add_new_item" => __( 'إضافة خبر جديد', 'illdy' ),
-        "edit_item" => __( 'تعديل خبر', 'illdy' ),
-        "new_item" => __( 'خبر جديد', 'illdy' ),
-        "view_item" => __( 'عرض الخبر', 'illdy' ),
-        "search_items" => __( 'بحث عن خبر', 'illdy' ),
-        "not_found" => __( 'لم نجد الخبر', 'illdy' ),
-        "featured_image" => __( 'صورة الخبر', 'illdy' ),
-        "use_featured_image" => __( 'استعملها ك صورة للخبر', 'illdy' ),
-        "archives" => __( 'أرشيف الأخبار', 'illdy' ),
-        "insert_into_item" => __( 'إضافة إلى الخبر', 'illdy' ),
-        "uploaded_to_this_item" => __( 'المرفوع لهذا الخبر', 'illdy' ),
-        "items_list" => __( 'قائمة الأخبار', 'illdy' ),
+        "name" => __( 'الأخبار', 'qi-theme' ),
+        "singular_name" => __( 'خبر', 'qi-theme' ),
+        "menu_name" => __( 'الأخبار', 'qi-theme' ),
+        "all_items" => __( 'كل الأخبار', 'qi-theme' ),
+        "add_new" => __( 'خبر جديد', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة خبر جديد', 'qi-theme' ),
+        "edit_item" => __( 'تعديل خبر', 'qi-theme' ),
+        "new_item" => __( 'خبر جديد', 'qi-theme' ),
+        "view_item" => __( 'عرض الخبر', 'qi-theme' ),
+        "search_items" => __( 'بحث عن خبر', 'qi-theme' ),
+        "not_found" => __( 'لم نجد الخبر', 'qi-theme' ),
+        "featured_image" => __( 'صورة الخبر', 'qi-theme' ),
+        "use_featured_image" => __( 'استعملها ك صورة للخبر', 'qi-theme' ),
+        "archives" => __( 'أرشيف الأخبار', 'qi-theme' ),
+        "insert_into_item" => __( 'إضافة إلى الخبر', 'qi-theme' ),
+        "uploaded_to_this_item" => __( 'المرفوع لهذا الخبر', 'qi-theme' ),
+        "items_list" => __( 'قائمة الأخبار', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'الأخبار', 'illdy' ),
+        "label" => __( 'الأخبار', 'qi-theme' ),
         "labels" => $labels,
         "description" => "آخر الأخبار",
         "public" => true,
@@ -129,21 +129,21 @@ function cptui_register_my_cpts_pics() {
      */
     
     $labels = array(
-        "name" => __( 'أرشيف المعالم والصور', 'illdy' ),
-        "singular_name" => __( 'صورة/معلم', 'illdy' ),
-        "menu_name" => __( 'المعالم والصور', 'illdy' ),
-        "all_items" => __( 'كل الصور', 'illdy' ),
-        "add_new" => __( 'معلم/صورة جديدة', 'illdy' ),
-        "add_new_item" => __( 'إضافة معلم/صورة جديدة', 'illdy' ),
-        "edit_item" => __( 'تعديل معلم/صورة', 'illdy' ),
-        "new_item" => __( 'معلم/صورة جديدة', 'illdy' ),
-        "view_item" => __( 'عرض المعلم/الصورة', 'illdy' ),
-        "featured_image" => __( 'اختر الصورة من هنا', 'illdy' ),
-        "archives" => __( 'أرشيف المعالم والصور', 'illdy' ),
+        "name" => __( 'أرشيف المعالم والصور', 'qi-theme' ),
+        "singular_name" => __( 'صورة/معلم', 'qi-theme' ),
+        "menu_name" => __( 'المعالم والصور', 'qi-theme' ),
+        "all_items" => __( 'كل الصور', 'qi-theme' ),
+        "add_new" => __( 'معلم/صورة جديدة', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة معلم/صورة جديدة', 'qi-theme' ),
+        "edit_item" => __( 'تعديل معلم/صورة', 'qi-theme' ),
+        "new_item" => __( 'معلم/صورة جديدة', 'qi-theme' ),
+        "view_item" => __( 'عرض المعلم/الصورة', 'qi-theme' ),
+        "featured_image" => __( 'اختر الصورة من هنا', 'qi-theme' ),
+        "archives" => __( 'أرشيف المعالم والصور', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'أرشيف المعالم والصور', 'illdy' ),
+        "label" => __( 'أرشيف المعالم والصور', 'qi-theme' ),
         "labels" => $labels,
         "description" => "أرشيف صور معالم الأقصى",
         "public" => true,
@@ -176,12 +176,12 @@ function cptui_register_my_cpts_audio() {
      */
     
     $labels = array(
-        "name" => __( 'المعلومات الصوتية', 'illdy' ),
-        "singular_name" => __( 'معلومة صوتية', 'illdy' ),
+        "name" => __( 'المعلومات الصوتية', 'qi-theme' ),
+        "singular_name" => __( 'معلومة صوتية', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'المعلومات الصوتية', 'illdy' ),
+        "label" => __( 'المعلومات الصوتية', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -214,12 +214,12 @@ function cptui_register_my_cpts_videos() {
      */
     
     $labels = array(
-        "name" => __( 'المعلومات المرئية', 'illdy' ),
-        "singular_name" => __( 'معلومة مرئية', 'illdy' ),
+        "name" => __( 'المعلومات المرئية', 'qi-theme' ),
+        "singular_name" => __( 'معلومة مرئية', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'المعلومات المرئية', 'illdy' ),
+        "label" => __( 'المعلومات المرئية', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -252,12 +252,12 @@ function cptui_register_my_cpts_products() {
      */
     
     $labels = array(
-        "name" => __( 'منتجاتنا', 'illdy' ),
-        "singular_name" => __( 'منتج', 'illdy' ),
+        "name" => __( 'منتجاتنا', 'qi-theme' ),
+        "singular_name" => __( 'منتج', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'منتجاتنا', 'illdy' ),
+        "label" => __( 'منتجاتنا', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -290,25 +290,25 @@ function cptui_register_my_cpts_book() {
      */
     
     $labels = array(
-        "name" => __( 'الكتب', 'illdy' ),
-        "singular_name" => __( 'كتاب', 'illdy' ),
-        "menu_name" => __( 'المكتبة', 'illdy' ),
-        "all_items" => __( 'جميع الكتب', 'illdy' ),
-        "add_new" => __( 'كتاب جديد', 'illdy' ),
-        "add_new_item" => __( 'إضافة كتاب جديد', 'illdy' ),
-        "edit_item" => __( 'تعديل كتاب', 'illdy' ),
-        "new_item" => __( 'كتاب جديد', 'illdy' ),
-        "view_item" => __( 'عرض الكتاب', 'illdy' ),
-        "search_items" => __( 'بحص عن كتاب', 'illdy' ),
-        "not_found" => __( 'لم نجد الكتاب الذي تبحث عنه', 'illdy' ),
-        "featured_image" => __( 'غلاف الكتاب', 'illdy' ),
-        "set_featured_image" => __( 'اختر صورة غلاف', 'illdy' ),
-        "remove_featured_image" => __( 'إزالة صورة الغلاف', 'illdy' ),
-        "use_featured_image" => __( 'اختيار كصورة غلاف', 'illdy' ),
+        "name" => __( 'الكتب', 'qi-theme' ),
+        "singular_name" => __( 'كتاب', 'qi-theme' ),
+        "menu_name" => __( 'المكتبة', 'qi-theme' ),
+        "all_items" => __( 'جميع الكتب', 'qi-theme' ),
+        "add_new" => __( 'كتاب جديد', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة كتاب جديد', 'qi-theme' ),
+        "edit_item" => __( 'تعديل كتاب', 'qi-theme' ),
+        "new_item" => __( 'كتاب جديد', 'qi-theme' ),
+        "view_item" => __( 'عرض الكتاب', 'qi-theme' ),
+        "search_items" => __( 'بحص عن كتاب', 'qi-theme' ),
+        "not_found" => __( 'لم نجد الكتاب الذي تبحث عنه', 'qi-theme' ),
+        "featured_image" => __( 'غلاف الكتاب', 'qi-theme' ),
+        "set_featured_image" => __( 'اختر صورة غلاف', 'qi-theme' ),
+        "remove_featured_image" => __( 'إزالة صورة الغلاف', 'qi-theme' ),
+        "use_featured_image" => __( 'اختيار كصورة غلاف', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'الكتب', 'illdy' ),
+        "label" => __( 'الكتب', 'qi-theme' ),
         "labels" => $labels,
         "description" => "مكتبة مقدسية",
         "public" => true,
@@ -342,31 +342,31 @@ function cptui_register_my_cpts_blogs() {
      */
     
     $labels = array(
-        "name" => __( 'المدونات', 'illdy' ),
-        "singular_name" => __( 'مدونة', 'illdy' ),
-        "menu_name" => __( 'المدونات', 'illdy' ),
-        "all_items" => __( 'كل المدونات', 'illdy' ),
-        "add_new" => __( 'مدونة جديدة', 'illdy' ),
-        "add_new_item" => __( 'إضافة مدونة جديدة', 'illdy' ),
-        "edit_item" => __( 'تعديل المدونة', 'illdy' ),
-        "new_item" => __( 'مدونة جديدة', 'illdy' ),
-        "view_item" => __( 'عرض المدونة', 'illdy' ),
-        "search_items" => __( 'بحث عن مدونة', 'illdy' ),
-        "not_found" => __( 'لا يوجد مدونات', 'illdy' ),
-        "not_found_in_trash" => __( 'لا يوجد مدونات في المحذوفات', 'illdy' ),
-        "featured_image" => __( 'صورة المدونة', 'illdy' ),
-        "set_featured_image" => __( 'تحديد صورة المدونة', 'illdy' ),
-        "remove_featured_image" => __( 'إزالة صورة المدونة', 'illdy' ),
-        "use_featured_image" => __( 'استخدام كصورة للمدونة', 'illdy' ),
-        "archives" => __( 'أرشيف المدونات', 'illdy' ),
-        "insert_into_item" => __( 'إدراج في المدونة', 'illdy' ),
-        "uploaded_to_this_item" => __( 'مرفوع لهذه المدونة', 'illdy' ),
-        "filter_items_list" => __( 'تصفية قائمة المدونات', 'illdy' ),
-        "items_list" => __( 'قائمة المدونات', 'illdy' ),
+        "name" => __( 'المدونات', 'qi-theme' ),
+        "singular_name" => __( 'مدونة', 'qi-theme' ),
+        "menu_name" => __( 'المدونات', 'qi-theme' ),
+        "all_items" => __( 'كل المدونات', 'qi-theme' ),
+        "add_new" => __( 'مدونة جديدة', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة مدونة جديدة', 'qi-theme' ),
+        "edit_item" => __( 'تعديل المدونة', 'qi-theme' ),
+        "new_item" => __( 'مدونة جديدة', 'qi-theme' ),
+        "view_item" => __( 'عرض المدونة', 'qi-theme' ),
+        "search_items" => __( 'بحث عن مدونة', 'qi-theme' ),
+        "not_found" => __( 'لا يوجد مدونات', 'qi-theme' ),
+        "not_found_in_trash" => __( 'لا يوجد مدونات في المحذوفات', 'qi-theme' ),
+        "featured_image" => __( 'صورة المدونة', 'qi-theme' ),
+        "set_featured_image" => __( 'تحديد صورة المدونة', 'qi-theme' ),
+        "remove_featured_image" => __( 'إزالة صورة المدونة', 'qi-theme' ),
+        "use_featured_image" => __( 'استخدام كصورة للمدونة', 'qi-theme' ),
+        "archives" => __( 'أرشيف المدونات', 'qi-theme' ),
+        "insert_into_item" => __( 'إدراج في المدونة', 'qi-theme' ),
+        "uploaded_to_this_item" => __( 'مرفوع لهذه المدونة', 'qi-theme' ),
+        "filter_items_list" => __( 'تصفية قائمة المدونات', 'qi-theme' ),
+        "items_list" => __( 'قائمة المدونات', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'المدونات', 'illdy' ),
+        "label" => __( 'المدونات', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -401,26 +401,26 @@ function cptui_register_my_cpts_wallpapers() {
      */
 
     $labels = array(
-        "name" => __( 'الخلفيات', 'illdy' ),
-        "singular_name" => __( 'خلفية', 'illdy' ),
-        "menu_name" => __( 'الخلفيات', 'illdy' ),
-        "all_items" => __( 'كل الخلفيات', 'illdy' ),
-        "add_new" => __( 'خلفية جديدة', 'illdy' ),
-        "add_new_item" => __( 'إضافة خلفية جديدة', 'illdy' ),
-        "edit_item" => __( 'تعديل الخلفية', 'illdy' ),
-        "new_item" => __( 'خلفية جديدة', 'illdy' ),
-        "view_item" => __( 'عرض الخلفية', 'illdy' ),
-        "search_items" => __( 'بحث عن خلفية', 'illdy' ),
-        "not_found" => __( 'لا يوجد خلفيات', 'illdy' ),
-        "not_found_in_trash" => __( 'لا يوجد خلفيات في المحذوفات', 'illdy' ),
-        "archives" => __( 'أرشيف الخلفيات', 'illdy' ),
-        "uploaded_to_this_item" => __( 'مرفوع لهذه الخلفية', 'illdy' ),
-        "filter_items_list" => __( 'تصفية قائمة الخلفيات', 'illdy' ),
-        "items_list" => __( 'قائمة الخلفيات', 'illdy' ),
+        "name" => __( 'الخلفيات', 'qi-theme' ),
+        "singular_name" => __( 'خلفية', 'qi-theme' ),
+        "menu_name" => __( 'الخلفيات', 'qi-theme' ),
+        "all_items" => __( 'كل الخلفيات', 'qi-theme' ),
+        "add_new" => __( 'خلفية جديدة', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة خلفية جديدة', 'qi-theme' ),
+        "edit_item" => __( 'تعديل الخلفية', 'qi-theme' ),
+        "new_item" => __( 'خلفية جديدة', 'qi-theme' ),
+        "view_item" => __( 'عرض الخلفية', 'qi-theme' ),
+        "search_items" => __( 'بحث عن خلفية', 'qi-theme' ),
+        "not_found" => __( 'لا يوجد خلفيات', 'qi-theme' ),
+        "not_found_in_trash" => __( 'لا يوجد خلفيات في المحذوفات', 'qi-theme' ),
+        "archives" => __( 'أرشيف الخلفيات', 'qi-theme' ),
+        "uploaded_to_this_item" => __( 'مرفوع لهذه الخلفية', 'qi-theme' ),
+        "filter_items_list" => __( 'تصفية قائمة الخلفيات', 'qi-theme' ),
+        "items_list" => __( 'قائمة الخلفيات', 'qi-theme' ),
     );
 
     $args = array(
-        "label" => __( 'الخلفيات', 'illdy' ),
+        "label" => __( 'الخلفيات', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -454,26 +454,26 @@ function cptui_register_my_cpts_faq() {
      */
 
     $labels = array(
-        "name" => __( 'الأسئلة الشائعة', 'illdy' ),
-        "singular_name" => __( 'سؤال', 'illdy' ),
-        "menu_name" => __( 'الأسئلة الشائعة', 'illdy' ),
-        "all_items" => __( 'كل الأسئلة', 'illdy' ),
-        "add_new" => __( 'سؤال جديد', 'illdy' ),
-        "add_new_item" => __( 'إضافة سؤال جديد', 'illdy' ),
-        "edit_item" => __( 'تعديل السؤال', 'illdy' ),
-        "new_item" => __( 'سؤال جديد', 'illdy' ),
-        "view_item" => __( 'عرض السؤال', 'illdy' ),
-        "search_items" => __( 'بحث عن سؤال', 'illdy' ),
-        "not_found" => __( 'لا يوجد أسئلة', 'illdy' ),
-        "not_found_in_trash" => __( 'لا يوجد أسئلة في المحذوفات', 'illdy' ),
-        "archives" => __( 'أرشيف الأسئلة', 'illdy' ),
-        "uploaded_to_this_item" => __( 'مرفوع لهذا السؤال', 'illdy' ),
-        "filter_items_list" => __( 'تصفية قائمة الأسئلة', 'illdy' ),
-        "items_list" => __( 'قائمة الأسئلة', 'illdy' ),
+        "name" => __( 'الأسئلة الشائعة', 'qi-theme' ),
+        "singular_name" => __( 'سؤال', 'qi-theme' ),
+        "menu_name" => __( 'الأسئلة الشائعة', 'qi-theme' ),
+        "all_items" => __( 'كل الأسئلة', 'qi-theme' ),
+        "add_new" => __( 'سؤال جديد', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة سؤال جديد', 'qi-theme' ),
+        "edit_item" => __( 'تعديل السؤال', 'qi-theme' ),
+        "new_item" => __( 'سؤال جديد', 'qi-theme' ),
+        "view_item" => __( 'عرض السؤال', 'qi-theme' ),
+        "search_items" => __( 'بحث عن سؤال', 'qi-theme' ),
+        "not_found" => __( 'لا يوجد أسئلة', 'qi-theme' ),
+        "not_found_in_trash" => __( 'لا يوجد أسئلة في المحذوفات', 'qi-theme' ),
+        "archives" => __( 'أرشيف الأسئلة', 'qi-theme' ),
+        "uploaded_to_this_item" => __( 'مرفوع لهذا السؤال', 'qi-theme' ),
+        "filter_items_list" => __( 'تصفية قائمة الأسئلة', 'qi-theme' ),
+        "items_list" => __( 'قائمة الأسئلة', 'qi-theme' ),
     );
 
     $args = array(
-        "label" => __( 'الأسئلة الشائعة', 'illdy' ),
+        "label" => __( 'الأسئلة الشائعة', 'qi-theme' ),
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -509,22 +509,22 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'تصنيفات الأخبار', 'illdy' ),
-        "singular_name" => __( 'تصنيف الخبر', 'illdy' ),
-        "menu_name" => __( 'تصنيفات الأخبار', 'illdy' ),
-        "all_items" => __( 'كل تصنيفات الأخبار', 'illdy' ),
-        "edit_item" => __( 'تعديل التصنيف', 'illdy' ),
-        "view_item" => __( 'عرض التصنيف', 'illdy' ),
-        "update_item" => __( 'تحديث اسم التصنيف', 'illdy' ),
-        "add_new_item" => __( 'إضافة تصنيف خبر', 'illdy' ),
-        "new_item_name" => __( 'اسم التصنيف', 'illdy' ),
-        "parent_item" => __( 'التصنيف الأب', 'illdy' ),
-        "search_items" => __( 'بحث في تصنيفات الأخبار', 'illdy' ),
-        "popular_items" => __( 'تصنيفات أخبار مشهورة', 'illdy' ),
+        "name" => __( 'تصنيفات الأخبار', 'qi-theme' ),
+        "singular_name" => __( 'تصنيف الخبر', 'qi-theme' ),
+        "menu_name" => __( 'تصنيفات الأخبار', 'qi-theme' ),
+        "all_items" => __( 'كل تصنيفات الأخبار', 'qi-theme' ),
+        "edit_item" => __( 'تعديل التصنيف', 'qi-theme' ),
+        "view_item" => __( 'عرض التصنيف', 'qi-theme' ),
+        "update_item" => __( 'تحديث اسم التصنيف', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة تصنيف خبر', 'qi-theme' ),
+        "new_item_name" => __( 'اسم التصنيف', 'qi-theme' ),
+        "parent_item" => __( 'التصنيف الأب', 'qi-theme' ),
+        "search_items" => __( 'بحث في تصنيفات الأخبار', 'qi-theme' ),
+        "popular_items" => __( 'تصنيفات أخبار مشهورة', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'تصنيفات الأخبار', 'illdy' ),
+        "label" => __( 'تصنيفات الأخبار', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,
@@ -546,22 +546,22 @@ function cptui_register_my_taxes() {
      */
 
     $labels = array(
-        "name" => __( 'مجموعات الأخبار', 'illdy' ),
-        "singular_name" => __( 'مجموعة', 'illdy' ),
-        "menu_name" => __( 'مجموعات الأخبار', 'illdy' ),
-        "all_items" => __( 'كل مجموعات الأخبار', 'illdy' ),
-        "edit_item" => __( 'تعديل المجموعة', 'illdy' ),
-        "view_item" => __( 'عرض المجموعة', 'illdy' ),
-        "update_item" => __( 'تحديث اسم المجموعة', 'illdy' ),
-        "add_new_item" => __( 'إضافة مجموعة أخبار', 'illdy' ),
-        "new_item_name" => __( 'اسم المجموعة', 'illdy' ),
-        "parent_item" => __( 'المجموعة الأب', 'illdy' ),
-        "search_items" => __( 'بحث في مجموعات الأخبار', 'illdy' ),
-        "popular_items" => __( 'مجموعات أخبار مشهورة', 'illdy' ),
+        "name" => __( 'مجموعات الأخبار', 'qi-theme' ),
+        "singular_name" => __( 'مجموعة', 'qi-theme' ),
+        "menu_name" => __( 'مجموعات الأخبار', 'qi-theme' ),
+        "all_items" => __( 'كل مجموعات الأخبار', 'qi-theme' ),
+        "edit_item" => __( 'تعديل المجموعة', 'qi-theme' ),
+        "view_item" => __( 'عرض المجموعة', 'qi-theme' ),
+        "update_item" => __( 'تحديث اسم المجموعة', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة مجموعة أخبار', 'qi-theme' ),
+        "new_item_name" => __( 'اسم المجموعة', 'qi-theme' ),
+        "parent_item" => __( 'المجموعة الأب', 'qi-theme' ),
+        "search_items" => __( 'بحث في مجموعات الأخبار', 'qi-theme' ),
+        "popular_items" => __( 'مجموعات أخبار مشهورة', 'qi-theme' ),
     );
 
     $args = array(
-        "label" => __( 'مجموعات الأخبار', 'illdy' ),
+        "label" => __( 'مجموعات الأخبار', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,
@@ -583,12 +583,12 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'هاشتاجات الأخبار', 'illdy' ),
-        "singular_name" => __( 'هاشتاج خبر', 'illdy' ),
+        "name" => __( 'هاشتاجات الأخبار', 'qi-theme' ),
+        "singular_name" => __( 'هاشتاج خبر', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'هاشتاجات الأخبار', 'illdy' ),
+        "label" => __( 'هاشتاجات الأخبار', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => false,
@@ -610,14 +610,14 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'تصنيفات الصور', 'illdy' ),
-        "singular_name" => __( 'تصنيف صورة', 'illdy' ),
-        "menu_name" => __( 'تصنيفات الصور', 'illdy' ),
-        "all_items" => __( 'كل التصنفات', 'illdy' ),
+        "name" => __( 'تصنيفات الصور', 'qi-theme' ),
+        "singular_name" => __( 'تصنيف صورة', 'qi-theme' ),
+        "menu_name" => __( 'تصنيفات الصور', 'qi-theme' ),
+        "all_items" => __( 'كل التصنفات', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'تصنيفات الصور', 'illdy' ),
+        "label" => __( 'تصنيفات الصور', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,
@@ -638,14 +638,14 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'هاشتاجات الصور', 'illdy' ),
-        "singular_name" => __( 'هاشتاج صورة', 'illdy' ),
-        "menu_name" => __( 'هاشتاجات الصور', 'illdy' ),
-        "all_items" => __( 'كل الهاشتاجات', 'illdy' ),
+        "name" => __( 'هاشتاجات الصور', 'qi-theme' ),
+        "singular_name" => __( 'هاشتاج صورة', 'qi-theme' ),
+        "menu_name" => __( 'هاشتاجات الصور', 'qi-theme' ),
+        "all_items" => __( 'كل الهاشتاجات', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'هاشتاجات الصور', 'illdy' ),
+        "label" => __( 'هاشتاجات الصور', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => false,
@@ -666,12 +666,12 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'مؤلفين الكتب', 'illdy' ),
-        "singular_name" => __( 'كاتب', 'illdy' ),
+        "name" => __( 'مؤلفين الكتب', 'qi-theme' ),
+        "singular_name" => __( 'كاتب', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'مؤلفين الكتب', 'illdy' ),
+        "label" => __( 'مؤلفين الكتب', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,
@@ -692,28 +692,28 @@ function cptui_register_my_taxes() {
      */
     
     $labels = array(
-        "name" => __( 'أقسام المكتبة', 'illdy' ),
-        "singular_name" => __( 'قسم', 'illdy' ),
-        "menu_name" => __( 'أقسام المكتبة', 'illdy' ),
-        "all_items" => __( 'جميع الأقسام', 'illdy' ),
-        "edit_item" => __( 'تعديل قسم', 'illdy' ),
-        "view_item" => __( 'عرض قسم', 'illdy' ),
-        "update_item" => __( 'تغيير اسم القسم', 'illdy' ),
-        "add_new_item" => __( 'إضافة قسم جديد', 'illdy' ),
-        "new_item_name" => __( 'اسم القسم الجديد', 'illdy' ),
-        "parent_item" => __( 'اسم القسم الأب', 'illdy' ),
-        "parent_item_colon" => __( 'القسم الأب:', 'illdy' ),
-        "search_items" => __( 'بحث في الأقسام', 'illdy' ),
-        "popular_items" => __( 'أكثر الأقسام تفاعلا', 'illdy' ),
-        "separate_items_with_commas" => __( 'افصل الأقسام بفواصل', 'illdy' ),
-        "add_or_remove_items" => __( 'إضافة أو حذف قسم', 'illdy' ),
-        "choose_from_most_used" => __( 'اختر من أكثر الأقسام استخداما', 'illdy' ),
-        "not_found" => __( 'لا يوجد أقسام', 'illdy' ),
-        "no_terms" => __( 'لا يوجد أقسام', 'illdy' ),
+        "name" => __( 'أقسام المكتبة', 'qi-theme' ),
+        "singular_name" => __( 'قسم', 'qi-theme' ),
+        "menu_name" => __( 'أقسام المكتبة', 'qi-theme' ),
+        "all_items" => __( 'جميع الأقسام', 'qi-theme' ),
+        "edit_item" => __( 'تعديل قسم', 'qi-theme' ),
+        "view_item" => __( 'عرض قسم', 'qi-theme' ),
+        "update_item" => __( 'تغيير اسم القسم', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة قسم جديد', 'qi-theme' ),
+        "new_item_name" => __( 'اسم القسم الجديد', 'qi-theme' ),
+        "parent_item" => __( 'اسم القسم الأب', 'qi-theme' ),
+        "parent_item_colon" => __( 'القسم الأب:', 'qi-theme' ),
+        "search_items" => __( 'بحث في الأقسام', 'qi-theme' ),
+        "popular_items" => __( 'أكثر الأقسام تفاعلا', 'qi-theme' ),
+        "separate_items_with_commas" => __( 'افصل الأقسام بفواصل', 'qi-theme' ),
+        "add_or_remove_items" => __( 'إضافة أو حذف قسم', 'qi-theme' ),
+        "choose_from_most_used" => __( 'اختر من أكثر الأقسام استخداما', 'qi-theme' ),
+        "not_found" => __( 'لا يوجد أقسام', 'qi-theme' ),
+        "no_terms" => __( 'لا يوجد أقسام', 'qi-theme' ),
     );
     
     $args = array(
-        "label" => __( 'أقسام المكتبة', 'illdy' ),
+        "label" => __( 'أقسام المكتبة', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,
@@ -735,28 +735,28 @@ function cptui_register_my_taxes() {
      */
 
     $labels = array(
-        "name" => __( 'تصنيفات الأسئلة', 'illdy' ),
-        "singular_name" => __( 'تصنيف', 'illdy' ),
-        "menu_name" => __( 'تصنيفات الأسئلة', 'illdy' ),
-        "all_items" => __( 'جميع التصنيفات', 'illdy' ),
-        "edit_item" => __( 'تعديل تصنيف', 'illdy' ),
-        "view_item" => __( 'عرض التصنيف', 'illdy' ),
-        "update_item" => __( 'تغيير اسم التصنيف', 'illdy' ),
-        "add_new_item" => __( 'إضافة تصنيف جديد', 'illdy' ),
-        "new_item_name" => __( 'اسم التصنيف الجديد', 'illdy' ),
-        "parent_item" => __( 'اسم التصنيف الأب', 'illdy' ),
-        "parent_item_colon" => __( 'التصنيف الأب:', 'illdy' ),
-        "search_items" => __( 'بحث في التصنيفات', 'illdy' ),
-        "popular_items" => __( 'أكثر التصنيفات تفاعلا', 'illdy' ),
-        "separate_items_with_commas" => __( 'افصل التصنيفات بفواصل', 'illdy' ),
-        "add_or_remove_items" => __( 'إضافة أو حذف تصنيف', 'illdy' ),
-        "choose_from_most_used" => __( 'اختر من أكثر التصنيفات استخداما', 'illdy' ),
-        "not_found" => __( 'لا يوجد تصنيفات', 'illdy' ),
-        "no_terms" => __( 'لا يوجد تصنيفات', 'illdy' ),
+        "name" => __( 'تصنيفات الأسئلة', 'qi-theme' ),
+        "singular_name" => __( 'تصنيف', 'qi-theme' ),
+        "menu_name" => __( 'تصنيفات الأسئلة', 'qi-theme' ),
+        "all_items" => __( 'جميع التصنيفات', 'qi-theme' ),
+        "edit_item" => __( 'تعديل تصنيف', 'qi-theme' ),
+        "view_item" => __( 'عرض التصنيف', 'qi-theme' ),
+        "update_item" => __( 'تغيير اسم التصنيف', 'qi-theme' ),
+        "add_new_item" => __( 'إضافة تصنيف جديد', 'qi-theme' ),
+        "new_item_name" => __( 'اسم التصنيف الجديد', 'qi-theme' ),
+        "parent_item" => __( 'اسم التصنيف الأب', 'qi-theme' ),
+        "parent_item_colon" => __( 'التصنيف الأب:', 'qi-theme' ),
+        "search_items" => __( 'بحث في التصنيفات', 'qi-theme' ),
+        "popular_items" => __( 'أكثر التصنيفات تفاعلا', 'qi-theme' ),
+        "separate_items_with_commas" => __( 'افصل التصنيفات بفواصل', 'qi-theme' ),
+        "add_or_remove_items" => __( 'إضافة أو حذف تصنيف', 'qi-theme' ),
+        "choose_from_most_used" => __( 'اختر من أكثر التصنيفات استخداما', 'qi-theme' ),
+        "not_found" => __( 'لا يوجد تصنيفات', 'qi-theme' ),
+        "no_terms" => __( 'لا يوجد تصنيفات', 'qi-theme' ),
     );
 
     $args = array(
-        "label" => __( 'تصنيفات الأسئلة', 'illdy' ),
+        "label" => __( 'تصنيفات الأسئلة', 'qi-theme' ),
         "labels" => $labels,
         "public" => true,
         "hierarchical" => true,

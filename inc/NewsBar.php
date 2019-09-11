@@ -41,8 +41,8 @@ class NewsBar
     {
         add_submenu_page(
             'edit.php?post_type=news',
-            __( 'شريط الأخبار', 'illdy' ),
-            __( 'شريط الأخبار', 'illdy' ),
+            __( 'شريط الأخبار', 'qi-theme' ),
+            __( 'شريط الأخبار', 'qi-theme' ),
             'edit_posts',
             'newsbar-settings',
             [$this, 'render_admin_page']

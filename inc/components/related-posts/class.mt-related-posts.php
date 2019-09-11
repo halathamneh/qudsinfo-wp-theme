@@ -119,7 +119,7 @@ if( !class_exists( 'MTL_Related_Posts_Output' ) ) {
 					$output .= '<div class="row">';
 						$output .= '<div class="col-sm-12">';
 							$output .= '<div class="related-article-title">';
-								$output .= __( 'معلومات ذات صلة', 'illdy' );
+								$output .= __( 'معلومات ذات صلة', 'qi-theme' );
 							$output .= '</div><!--/.related-article-title-->';
 						$output .= '</div><!--/.col-sm-12-->';
 

@@ -3,7 +3,7 @@
  *    The template for dispalying the sidebar.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 $has_index = $post->post_type == 'info-details' && have_rows("paragraphs");
 ?>
@@ -21,9 +21,9 @@ $has_index = $post->post_type == 'info-details' && have_rows("paragraphs");
                     'after_title'   => '</h3></div>',
                 );
                 
-                the_widget('Illdy_Widget_Recent_Posts', 'title=' . __('Recent Posts', 'illdy') . '&display_title=on&numberofposts=4', $the_widget_args);
-                the_widget('WP_Widget_Categories', 'title=' . __('Categories', 'illdy'), $the_widget_args);
-                the_widget('WP_Widget_Archives', 'title=' . __('Archive', 'illdy'), $the_widget_args);
+                the_widget('Illdy_Widget_Recent_Posts', 'title=' . __('Recent Posts', 'qi-theme') . '&display_title=on&numberofposts=4', $the_widget_args);
+                the_widget('WP_Widget_Categories', 'title=' . __('Categories', 'qi-theme'), $the_widget_args);
+                the_widget('WP_Widget_Archives', 'title=' . __('Archive', 'qi-theme'), $the_widget_args);
             endif;
         ?>
     </div><!--/#sidebar-->

@@ -5,7 +5,7 @@
  *    The template for dispalying Custom Page Template: Blog.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();

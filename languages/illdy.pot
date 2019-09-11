@@ -119,7 +119,7 @@ msgid "Theme:"
 msgstr ""
 
 #: footer.php:57 header.php:11 inc/customizer/panels/general-options.php:155
-msgid "Illdy"
+msgid 'qi-theme'
 msgstr ""
 
 #: functions.php:70

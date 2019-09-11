@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_testimonials';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /****************** TESTIMONIALS  **************/
@@ -14,8 +14,8 @@ $wp_customize->add_panel( $panel_id,
         'priority'          => 101,
         'capability'        => 'edit_theme_options',
         'theme_supports'    => '',
-        'title'             => __( 'Testimonials', 'illdy' ),
-        'description'       => __( 'Control various options for testimonials section from front page.', 'illdy' ),
+        'title'             => __( 'Testimonials', 'qi-theme' ),
+        'description'       => __( 'Control various options for testimonials section from front page.', 'qi-theme' ),
     )
 );
 */
@@ -25,10 +25,10 @@ $wp_customize->add_panel( $panel_id,
 /***********************************************/
 $wp_customize->add_section( $prefix . '_testimonials_general' ,
     array(
-        'title'         => __( 'Testimonials', 'illdy' ),
-        'description'   => __( 'Control various options for testimonials section from front page.', 'illdy' ),
+        'title'         => __( 'Testimonials', 'qi-theme' ),
+        'description'   => __( 'Control various options for testimonials section from front page.', 'qi-theme' ),
         'priority'      => 104
-        // 'title'     => __( 'General', 'illdy' ),
+        // 'title'     => __( 'General', 'qi-theme' ),
         // 'panel'     => $panel_id,
         // 'priority'  => 1
     )
@@ -46,7 +46,7 @@ $wp_customize->add_control(
     $prefix . '_testimonials_general_show',
     array(
         'type'      => 'checkbox',
-        'label'     => __( 'Show this section?', 'illdy' ),
+        'label'     => __( 'Show this section?', 'qi-theme' ),
         'section'   => $prefix . '_testimonials_general',
         'priority'  => 1
     )
@@ -56,15 +56,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_testimonials_general_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Testimonials', 'illdy' ),
+        'default'           => __( 'Testimonials', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_testimonials_general_title',
     array(
-        'label'             => __( 'Title', 'illdy' ),
-        'description'       => __( 'Add the title for this section.', 'illdy'),
+        'label'             => __( 'Title', 'qi-theme' ),
+        'description'       => __( 'Add the title for this section.', 'qi-theme'),
         'section'           => $prefix . '_testimonials_general',
         'priority'          => 2,
         'active_callback'   => 'is_active_jetpack_testimonials'
@@ -84,7 +84,7 @@ $wp_customize->add_control(
     new WP_Customize_Image_Control(
         $wp_customize, $prefix . '_testimonials_general_background_image',
         array(
-            'label'             => __( 'Background Image', 'illdy' ),
+            'label'             => __( 'Background Image', 'qi-theme' ),
             'section'           => $prefix .'_testimonials_general',
             'settings'          => $prefix . '_testimonials_general_background_image',
             'priority'          => 3,
@@ -103,8 +103,8 @@ $wp_customize->add_setting( $prefix .'_testimonials_number_of_posts',
 $wp_customize->add_control(
     $prefix .'_testimonials_number_of_posts',
     array(
-        'label'             => __( 'Number of posts', 'illdy' ),
-        'description'       => __( 'Add the number of posts to show in this section.', 'illdy'),
+        'label'             => __( 'Number of posts', 'qi-theme' ),
+        'description'       => __( 'Add the number of posts to show in this section.', 'qi-theme'),
         'section'           => $prefix . '_testimonials_general',
         'priority'          => 4,
         'active_callback'   => 'is_active_jetpack_testimonials'
@@ -124,8 +124,8 @@ $wp_customize->add_control(
     new Illdy_Text_Custom_Control(
         $wp_customize, $prefix . '_testimonials_general_text',
         array(
-            'label'             => __( 'Install JetPack', 'illdy' ),
-            'description'       => __( 'Install JetPack and enable Custom Post Type: Testimonials to work these settings.', 'illdy' ),
+            'label'             => __( 'Install JetPack', 'qi-theme' ),
+            'description'       => __( 'Install JetPack and enable Custom Post Type: Testimonials to work these settings.', 'qi-theme' ),
             'section'           => $prefix .'_testimonials_general',
             'settings'          => $prefix . '_testimonials_general_text',
             'priority'          => 5,

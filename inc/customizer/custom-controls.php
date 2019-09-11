@@ -37,7 +37,7 @@ if( !class_exists( 'Illdy_CF7_Custom_Control' ) ) {
                         $contact_forms[$cform->ID] = $cform->post_title;
                     }
                 } else {
-                    $contact_forms[0] = __('No contact forms found', 'illdy');
+                    $contact_forms[0] = __('No contact forms found', 'qi-theme');
                 }
             }
             return $contact_forms;
@@ -49,7 +49,7 @@ if( !class_exists( 'Illdy_CF7_Custom_Control' ) ) {
             if ( !empty($Pixova_Lite_contact_forms ) ) { ?>
                 <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
                 <select <?php esc_url($this->link()); ?> style="width:100%;">
-                <?php echo '<option value="default">'.__('Select your contact form', 'illdy').'</option>';
+                <?php echo '<option value="default">'.__('Select your contact form', 'qi-theme').'</option>';
                 foreach ($Pixova_Lite_contact_forms as $form_id => $form_title) {
                     echo '<option value="' . sanitize_key( $form_id ). '" >' . esc_html( $form_title ). '</option>';
                 }

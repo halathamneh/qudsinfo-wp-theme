@@ -5,7 +5,7 @@
  *    The template for displaying Custom Page Template: Frequently Asked Questions.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php get_header();

@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_jumbotron';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /***************** JUMBOTRON  ******************/
@@ -14,8 +14,8 @@ $wp_customize->add_panel( $panel_id,
         'priority'          => 100,
         'capability'        => 'edit_theme_options',
         'theme_supports'    => '',
-        'title'             => __( 'Jumbotron', 'illdy' ),
-        'description'       => __( 'Control various options for header image from front page.', 'illdy' ),
+        'title'             => __( 'Jumbotron', 'qi-theme' ),
+        'description'       => __( 'Control various options for header image from front page.', 'qi-theme' ),
     )
 );
 */
@@ -25,9 +25,9 @@ $wp_customize->add_panel( $panel_id,
 /***********************************************/
 $wp_customize->add_section( $prefix.'_jumbotron_general' ,
     array(
-        'title'     => __( 'Jumbotron', 'illdy' ),
+        'title'     => __( 'Jumbotron', 'qi-theme' ),
         'priority'  => 100
-        // 'title'     => __( 'General', 'illdy' ),
+        // 'title'     => __( 'General', 'qi-theme' ),
         // 'panel'     => $panel_id
     )
 );
@@ -45,7 +45,7 @@ $wp_customize->add_control(
     new WP_Customize_Image_Control(
         $wp_customize, $prefix . '_jumbotron_general_image',
         array(
-            'label'     => __( 'Image', 'illdy' ),
+            'label'     => __( 'Image', 'qi-theme' ),
             'section'   => $prefix .'_jumbotron_general',
             'settings'  => $prefix . '_jumbotron_general_image',
             'priority'  => 1
@@ -57,15 +57,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_jumbotron_general_first_row_from_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Clean', 'illdy' ),
+        'default'           => __( 'Clean', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_first_row_from_title',
     array(
-        'label'         => __( 'First word from title', 'illdy' ),
-        'description'   => __( 'Add first word in the title.', 'illdy'),
+        'label'         => __( 'First word from title', 'qi-theme' ),
+        'description'   => __( 'Add first word in the title.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 2
     )
@@ -75,15 +75,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_jumbotron_general_second_row_from_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Slick', 'illdy' ),
+        'default'           => __( 'Slick', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_second_row_from_title',
     array(
-        'label'         => __( 'Second word from title', 'illdy' ),
-        'description'   => __( 'Add second word in the title.', 'illdy'),
+        'label'         => __( 'Second word from title', 'qi-theme' ),
+        'description'   => __( 'Add second word in the title.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 3
     )
@@ -93,15 +93,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_jumbotron_general_third_row_from_title',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'Pixel Perfect', 'illdy' ),
+        'default'           => __( 'Pixel Perfect', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_third_row_from_title',
     array(
-        'label'         => __( 'Third word from title', 'illdy' ),
-        'description'   => __( 'Add third word in the title.', 'illdy'),
+        'label'         => __( 'Third word from title', 'qi-theme' ),
+        'description'   => __( 'Add third word in the title.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 4
     )
@@ -111,15 +111,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_jumbotron_general_entry',
     array(
         'sanitize_callback' => 'illdy_sanitize_html',
-        'default'           => __( 'lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!', 'illdy' ),
+        'default'           => __( 'lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_entry',
     array(
-        'label'         => __( 'Entry', 'illdy' ),
-        'description'   => __( 'The content added in this field will show below title.', 'illdy'),
+        'label'         => __( 'Entry', 'qi-theme' ),
+        'description'   => __( 'The content added in this field will show below title.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 5,
         'type'          => 'textarea'
@@ -130,15 +130,15 @@ $wp_customize->add_control(
 $wp_customize->add_setting( $prefix .'_jumbotron_general_first_button_title',
     array(
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => __( 'Learn more', 'illdy' ),
+        'default'           => __( 'Learn more', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_first_button_title',
     array(
-        'label'         => __( 'First button title', 'illdy' ),
-        'description'   => __( 'Add the text for first button.', 'illdy'),
+        'label'         => __( 'First button title', 'qi-theme' ),
+        'description'   => __( 'Add the text for first button.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 6
     )
@@ -154,8 +154,8 @@ $wp_customize->add_setting( 'illdy_jumbotron_general_first_button_url',
 );
 $wp_customize->add_control( 'illdy_jumbotron_general_first_button_url',
     array(
-        'label'          => __( 'First button URL', 'illdy' ),
-        'description'    => __( 'Add the URL for first button.', 'illdy' ),
+        'label'          => __( 'First button URL', 'qi-theme' ),
+        'description'    => __( 'Add the URL for first button.', 'qi-theme' ),
         'section'        => $prefix . '_jumbotron_general',
         'settings'       => 'illdy_jumbotron_general_first_button_url',
         'priority'       => 7
@@ -166,15 +166,15 @@ $wp_customize->add_control( 'illdy_jumbotron_general_first_button_url',
 $wp_customize->add_setting( $prefix .'_jumbotron_general_second_button_title',
     array(
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => __( 'Download', 'illdy' ),
+        'default'           => __( 'Download', 'qi-theme' ),
         'transport'         => 'postMessage'
     )
 );
 $wp_customize->add_control(
     $prefix .'_jumbotron_general_second_button_title',
     array(
-        'label'         => __( 'Second button title', 'illdy' ),
-        'description'   => __( 'Add the text for second button.', 'illdy'),
+        'label'         => __( 'Second button title', 'qi-theme' ),
+        'description'   => __( 'Add the text for second button.', 'qi-theme'),
         'section'       => $prefix . '_jumbotron_general',
         'priority'      => 8
     )
@@ -190,8 +190,8 @@ $wp_customize->add_setting( 'illdy_jumbotron_general_second_button_url',
 );
 $wp_customize->add_control( 'illdy_jumbotron_general_second_button_url',
     array(
-        'label'          => __( 'Second button URL', 'illdy' ),
-        'description'    => __( 'Add the URL for second button.', 'illdy' ),
+        'label'          => __( 'Second button URL', 'qi-theme' ),
+        'description'    => __( 'Add the URL for second button.', 'qi-theme' ),
         'section'        => $prefix . '_jumbotron_general',
         'settings'       => 'illdy_jumbotron_general_second_button_url',
         'priority'       => 9

@@ -129,7 +129,7 @@ if(!class_exists('MTL_Extended_Menu_Walker') ) {
                     $fb_output .= ' id="' . $menu_id . '"';
                 if ( $menu_class )
                     $fb_output .= ' class="' . $menu_class . '"';
-                $fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">'. __('Add a menu', 'illdy'). '</a></li>';
+                $fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">'. __('Add a menu', 'qi-theme'). '</a></li>';
                 if ( $container )
                     $fb_output .= '</' . $container . '>';
                 echo $fb_output;
@@ -149,13 +149,13 @@ if(!class_exists('MTL_Extended_Menu_Walker') ) {
                     $fb_output .= ' id="' . $menu_id . '"';
                 if ( $menu_class )
                     $fb_output .= ' class="' . $menu_class . '"';
-                $fb_output .= '<li><a href="'. esc_url( home_url() ) .'" title="'. esc_attr( 'Home', 'illdy' ) .'">'. esc_html( 'Home', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#projects" title="'. esc_attr( 'Projects', 'illdy' ) .'">'. esc_html( 'Projects', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#testimonials" title="'. esc_attr( 'Testimonials', 'illdy' ) .'">'. esc_html( 'Testimonials', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#services" title="'. esc_attr( 'Services', 'illdy' ) .'">'. esc_html( 'Services', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#latest-news" title="'. esc_attr( 'News', 'illdy' ) .'">'. esc_html( 'News', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#team" title="'. esc_attr( 'Team', 'illdy' ) .'">'. esc_html( 'Team', 'illdy' ) .'</a></li>';
-                $fb_output .= '<li><a href="#contact-us" title="'. esc_attr( 'Contact', 'illdy' ) .'">'. esc_html( 'Contact', 'illdy' ) .'</a></li>';
+                $fb_output .= '<li><a href="'. esc_url( home_url() ) .'" title="'. esc_attr( 'Home', 'qi-theme' ) .'">'. esc_html( 'Home', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#projects" title="'. esc_attr( 'Projects', 'qi-theme' ) .'">'. esc_html( 'Projects', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#testimonials" title="'. esc_attr( 'Testimonials', 'qi-theme' ) .'">'. esc_html( 'Testimonials', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#services" title="'. esc_attr( 'Services', 'qi-theme' ) .'">'. esc_html( 'Services', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#latest-news" title="'. esc_attr( 'News', 'qi-theme' ) .'">'. esc_html( 'News', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#team" title="'. esc_attr( 'Team', 'qi-theme' ) .'">'. esc_html( 'Team', 'qi-theme' ) .'</a></li>';
+                $fb_output .= '<li><a href="#contact-us" title="'. esc_attr( 'Contact', 'qi-theme' ) .'">'. esc_html( 'Contact', 'qi-theme' ) .'</a></li>';
                 if ( $container )
                     $fb_output .= '</' . $container . '>';
                 echo $fb_output;

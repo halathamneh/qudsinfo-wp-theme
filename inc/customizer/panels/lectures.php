@@ -3,7 +3,7 @@
 $panel_id = 'illdy_panel_latest_info';
 
 // Set prefix
-$prefix = 'illdy';
+$prefix = 'qi-theme';
 
 /***********************************************/
 /*************** Lectures ******************/
@@ -15,10 +15,10 @@ $prefix = 'illdy';
 /***********************************************/
 $wp_customize->add_section( $prefix . '_lectures_general' ,
     array(
-        'title'         => __( 'Lectures', 'illdy' ),
-        'description'   => __( 'Control various options for Lectures section from front page.', 'illdy' ),
+        'title'         => __( 'Lectures', 'qi-theme' ),
+        'description'   => __( 'Control various options for Lectures section from front page.', 'qi-theme' ),
         'priority'      => 106
-        // 'title'       => __( 'General', 'illdy' ),
+        // 'title'       => __( 'General', 'qi-theme' ),
         // 'panel' 	  => $panel_id
     )
 );
@@ -35,7 +35,7 @@ $wp_customize->add_control(
     $prefix . '_lectures_general_show',
     array(
         'type'      => 'checkbox',
-        'label'     => __( 'Show this section?', 'illdy' ),
+        'label'     => __( 'Show this section?', 'qi-theme' ),
         'section'   => $prefix . '_lectures_general',
         'priority'  => 1
     )

@@ -3,7 +3,7 @@
  *    The template for dispalying the archive.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 
 /** @var WP_Term $quiz */

@@ -3,7 +3,7 @@
  *    The template for dispalying the bottom header section in blog.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php

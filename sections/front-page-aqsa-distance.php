@@ -3,7 +3,7 @@
  *    The template for displaying about section in front page.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php
@@ -12,12 +12,12 @@
     <div class="container">
         <div class="section-header">
             <img src="<?= get_template_directory_uri() . "/layout/src/images/pin.png" ?>" alt="">
-            <?= __("Your distance from Aqsa", 'illdy') ?>
+            <?= __("Your distance from Aqsa", 'qi-theme') ?>
         </div>
-<!--        <span>--><?//= __("Please allow location permission to find your distance from Aqsa", 'illdy') ?><!--</span>-->
+<!--        <span>--><?//= __("Please allow location permission to find your distance from Aqsa", 'qi-theme') ?><!--</span>-->
 
         <div class="section-content">
-            <button class="btn btn-lg btn-aqsa-distance" id="aqsa-distance-button"><?= __('Click to find distance!', 'illdy') ?></button>
+            <button class="btn btn-lg btn-aqsa-distance" id="aqsa-distance-button"><?= __('Click to find distance!', 'qi-theme') ?></button>
             <svg viewBox="0 0 100 150" width="50" height="75">
                 <g>
                     <path d="M 50,100 A 1,1 0 0 1 50,0"/>

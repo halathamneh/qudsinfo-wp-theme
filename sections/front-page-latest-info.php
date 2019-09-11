@@ -3,13 +3,13 @@
  *    The template for displaying the latest info section in front page.
  *
  * @package WordPress
- * @subpackage illdy
+ * @subpackage QudsInfoTheme
  */
 ?>
 <?php
-$general_title = __('Our Info', 'illdy'); //get_theme_mod('illdy_latest_info_general_title', __('Latest Info', 'illdy'));
-$general_entry = get_theme_mod('illdy_latest_info_general_entry', __('If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'illdy'));
-$button_text = __('Browse all Our Info', 'illdy'); //get_theme_mod('illdy_latest_info_button_text', __('See blog', 'illdy'));
+$general_title = __('Our Info', 'qi-theme'); //get_theme_mod('illdy_latest_info_general_title', __('Latest Info', 'qi-theme'));
+$general_entry = get_theme_mod('illdy_latest_info_general_entry', __('If you are interested in the latest articles in the industry, take a sneak peek at our blog. You’ve got nothing to loose!', 'qi-theme'));
+$button_text = __('Browse all Our Info', 'qi-theme'); //get_theme_mod('illdy_latest_info_button_text', __('See blog', 'qi-theme'));
 $button_url = get_theme_mod('illdy_latest_info_button_url', esc_url('#'));
 $number_of_posts = get_theme_mod('illdy_latest_info_number_of_posts', absint(3));
 ?>
@@ -58,7 +58,7 @@ $number_of_posts = get_theme_mod('illdy_latest_info_number_of_posts', absint(3))
                         <div class="card-body">
                             <h4 class="card-title"><?= get_the_title() ?></h4>
                             <p class="card-text"><?= get_the_excerpt() ?></p>
-                            <a href="<?= get_permalink() ?>" class="btn btn-light"><?= __("View Info", 'illdy') ?></a>
+                            <a href="<?= get_permalink() ?>" class="btn btn-light"><?= __("View Info", 'qi-theme') ?></a>
                         </div>
                     </div>
                 <?php endwhile; ?>

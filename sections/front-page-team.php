@@ -3,12 +3,12 @@
  *	The template for dispalying the team section in front page.
  *
  *	@package WordPress
- *	@subpackage illdy
+ *	@subpackage QudsInfoTheme
  */
 ?>
 <?php
-$general_title = get_theme_mod( 'illdy_team_general_title', __( 'Team', 'illdy' ) );
-$general_entry = get_theme_mod( 'illdy_team_general_entry', __( 'Meet the people that are going to take your business to the next level.', 'illdy' ) );
+$general_title = get_theme_mod( 'illdy_team_general_title', __( 'Team', 'qi-theme' ) );
+$general_entry = get_theme_mod( 'illdy_team_general_entry', __( 'Meet the people that are going to take your business to the next level.', 'qi-theme' ) );
 ?>
 <section id="team" class="front-page-section">
 	<?php if( $general_title || $general_entry ): ?>
@@ -43,9 +43,9 @@ $general_entry = get_theme_mod( 'illdy_team_general_entry', __( 'Meet the people
 						'after_title'	=> ''
 					);
 
-					the_widget( 'Illdy_Widget_Person', 'title='. __( 'Mark Lawrance', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-1.jpg' ) .'&position='. __( 'Web Designer', 'illdy' ) .'&entry='. __( 'Creative, detail-oriented, always focused.', 'illdy' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#f18b6d', $the_widget_args );
-					the_widget( 'Illdy_Widget_Person', 'title='. __( 'Jane  Stenton', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-2.jpg' ) .'&position='. __( 'SEO Specialist', 'illdy' ) .'&entry='. __( 'Curious, tech-geeck and gets serious when it comes to work.', 'illdy' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#f1d204', $the_widget_args );
-					the_widget( 'Illdy_Widget_Person', 'title='. __( 'John Smith', 'illdy' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-3.jpg' ) .'&position='. __( 'Developer', 'illdy' ) .'&entry='. __( 'Enthusiastic, passionate with great sense of humor.', 'illdy' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#6a4d8a', $the_widget_args );
+					the_widget( 'Illdy_Widget_Person', 'title='. __( 'Mark Lawrance', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-1.jpg' ) .'&position='. __( 'Web Designer', 'qi-theme' ) .'&entry='. __( 'Creative, detail-oriented, always focused.', 'qi-theme' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#f18b6d', $the_widget_args );
+					the_widget( 'Illdy_Widget_Person', 'title='. __( 'Jane  Stenton', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-2.jpg' ) .'&position='. __( 'SEO Specialist', 'qi-theme' ) .'&entry='. __( 'Curious, tech-geeck and gets serious when it comes to work.', 'qi-theme' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#f1d204', $the_widget_args );
+					the_widget( 'Illdy_Widget_Person', 'title='. __( 'John Smith', 'qi-theme' ) .'&image='. esc_url( '/layout/images/front-page/front-page-team-3.jpg' ) .'&position='. __( 'Developer', 'qi-theme' ) .'&entry='. __( 'Enthusiastic, passionate with great sense of humor.', 'qi-theme' ) .'&facebook_url='. esc_url( '#' ) .'&twitter_url='. esc_url( '#' ) .'&linkedin_url='. esc_url( '#' ) .'&color=#6a4d8a', $the_widget_args );
 				endif;
 				?>
 			</div><!--/.row-->

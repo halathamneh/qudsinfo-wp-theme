@@ -12584,6 +12584,9 @@ body.rtl {
   left: 0;
   z-index: 990;
 }
+.admin-bar #header.sticky .top-header {
+  top: 32px;
+}
 #header.sticky .top-header.fixed {
   padding: 0;
   position: fixed;
@@ -15729,6 +15732,9 @@ a:not(.btn)[data-fancybox]:after {
   background-color: #eee;
 }
 .cats-list > ul, .knowquds-list > ul {
+  padding: 8px 0 8px 8px;
+}
+.rtl .cats-list > ul, .rtl .knowquds-list > ul {
   padding: 8px 8px 8px 0;
 }
 .cats-list > ul > li, .knowquds-list > ul > li {
@@ -15779,6 +15785,9 @@ a:not(.btn)[data-fancybox]:after {
   color: #000 !important;
 }
 .cats-list .cats-title, .knowquds-list .cats-title {
+  margin: 15px 0 0 5px;
+}
+.rtl .cats-list .cats-title, .rtl .knowquds-list .cats-title {
   margin: 15px 5px 0 0;
 }
 .cats-list.dropdown ul > li > ul, .dropdown.knowquds-list ul > li > ul {
