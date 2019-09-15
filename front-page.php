@@ -34,7 +34,9 @@ else:
 
 get_template_part('sections/front-page', 'bottom-header');
 
-get_template_part('sections/front-page', 'news-bar');
+if(pll_current_language() === "ar") {
+    get_template_part('sections/front-page', 'news-bar');
+}
 
 get_template_part('sections/front-page', 'aqsa-distance');
 
