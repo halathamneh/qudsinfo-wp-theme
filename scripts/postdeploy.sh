@@ -6,6 +6,5 @@ do
   cp $file $DEPLOYPATH$file
 done
 
-cd ../layout
-npm run build
+cd ../layout npm run build
 cp -r dist $DEPLOYPATH/layout/dist
