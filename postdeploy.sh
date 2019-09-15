@@ -10,5 +10,6 @@ do
 done
 
 cd ~/repositories/qudsinfo-wp-theme/layout
+~/bin/npm install
 ~/bin/npm run css:build
 rsync -aR dist $DEPLOYPATH/layout/dist
