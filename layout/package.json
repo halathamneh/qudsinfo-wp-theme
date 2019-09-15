@@ -18,8 +18,8 @@
     "sass": "^1.22.3"
   },
   "scripts": {
-    "css:watch": "parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
-    "css:build": "parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
+    "css:watch": "./node_modules/.bin/parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
+    "css:build": "./node_modules/.bin/parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
   },
   "author": "",
   "license": "ISC"
