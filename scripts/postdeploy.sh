@@ -7,5 +7,5 @@ do
 done
 
 cd ../layout
-npm run build
+~/bin/npm run build
 cp -r dist $DEPLOYPATH/layout/dist

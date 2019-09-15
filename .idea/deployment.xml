@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="qudsinfo.com-theme" uploadOnCheckin="fc646405-7b7c-47c6-ba53-361e6b34ae7e">
+  <component name="PublishConfigData" serverName="qudsinfo.com-theme">
     <serverData>
       <paths name="qudsinfo.com-theme">
         <serverdata>
@@ -10,6 +10,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="qudsinfo.com-theme" />
   </component>
 </project>
