@@ -20,13 +20,14 @@ if ($is_building) {
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
     <div class="row">
         <div class="col-md-7 image-col col-sm-12">
-            <?php if (has_post_thumbnail()) : ?>
                 <h2 class="d-md-none"><?php the_title(); ?></h2>
                 <div class="image-holder">
                     <?php
                     $images = [];
-                    $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-                    $thumb_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail');
+                    if (has_post_thumbnail()) {
+	                    $post_image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+	                    $thumb_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+                    }
                     ?>
                     <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
                         <?php
@@ -43,7 +44,7 @@ if ($is_building) {
                                    data-caption="<?= get_the_title() ?>"><img
                                             src="<?php echo esc_url($image['sizes']['large']); ?>"/></a>
                             <?php endforeach;
-                        } else { ?>
+                        } elseif(isset($post_image)) { ?>
                             <a href="<?php echo esc_url($post_image[0]); ?>"
                                data-fancybox="images"
                                data-caption="<?= get_the_title() ?>"><img
@@ -57,13 +58,12 @@ if ($is_building) {
                                 <button class="owl-thumb-item"><img src="<?= $image['sizes']['thumbnail'] ?>" alt="">
                                 </button>
                             <?php endforeach;
-                        } else { ?>
+                        } elseif (isset($thumb_image)) { ?>
                             <button class="owl-thumb-item"><img src="<?= $thumb_image[0] ?>" alt=""></button>
                         <?php } ?>
                     </div>
 
                 </div>
-            <?php endif; ?>
         </div>
         <div class="col-md-5 content-col col-sm-12">
             <div class="d-flex flex-wrap-reverse">
