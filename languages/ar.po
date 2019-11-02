@@ -2939,6 +2939,9 @@ msgstr "خيارات متعددة"
 msgid "true-false"
 msgstr "صح خطأ"
 
+msgid "Your results"
+msgstr "نتيجتك"
+
 #, fuzzy
 #~| msgid "Continue Reading"
 #~ msgid "Continue Reading "

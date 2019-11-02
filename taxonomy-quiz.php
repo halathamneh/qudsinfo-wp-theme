@@ -28,7 +28,7 @@ if (isset($_GET['level']) && term_exists($_GET['level'], 'quiz-levels')
                 <div class="col-md-12">
                     <section id="blog">
                         <div class="text-center mb-5">
-                            <span class="d-inline-block badge badge-light mb-4">مسابقات معلومة مقدسية</span>
+                            <span class="d-inline-block badge badge-light mb-4"><?= __("Qudsinfo Quizzes", 'qi-theme') ?></span>
                             <h1><?= $quiz->name; ?></h1>
                         </div>
                         <?= do_shortcode('[HDquiz quiz="' . $quiz->term_id . '" level="' . $level . '" type="'.$type.'"]') ?>
