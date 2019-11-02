@@ -54,11 +54,11 @@ if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(
                 <div class="col-sm-12 top-page-title"><h2 style="font-size: 8rem;">404 :(</h2></div>
             <?php elseif (Helpers::is_avi()) : ?>
                 <div class="col-sm-12 top-page-title">
-                    <h2>معلوماتنا</h2>
+                    <h2><?= __("Our Information", 'qi-theme') ?></h2>
                 </div>
             <?php elseif (Helpers::is_photos()) : ?>
                 <div class="col-sm-12 top-page-title">
-                    <h2>المعالم والصور</h2>
+                    <h2><?= __("Milestones and Pictures", 'qi-theme') ?></h2>
                 </div>
             <?php elseif (Helpers::is_lectures()) :
                 get_template_part('template-parts/lectures', 'header');
@@ -73,16 +73,16 @@ if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'infos.php' || get_query_var('cat') != '' ? ' active' : '' ?>"
-                       href="<?= home_url('/our-info/') ?>"><i class="fa fa-database"></i> <span>المكتوبة</span></a>
+                       href="<?= home_url('/our-info/') ?>"><i class="fa fa-database"></i> <span><?= __("Written", "qi-theme") ?></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'videos.php' ? ' active' : '' ?>"
                        href="<?= home_url('/our-info/videos/') ?>"><i class="fa fa-video-camera"></i>
-                        <span>المرئية</span></a>
+                        <span><?= __("Videos", "qi-theme") ?></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'audio.php' ? ' active' : '' ?>"
-                       href="<?= home_url('/our-info/audio/') ?>"><i class="fa fa-headphones"></i> <span>المسموعة</span></a>
+                       href="<?= home_url('/our-info/audio/') ?>"><i class="fa fa-headphones"></i> <span><?= __("Audio", "qi-theme") ?></span></a>
                 </li>
             </ul>
         <?php endif; ?>

@@ -32,14 +32,14 @@ get_template_part('sections/blog', 'bottom-header');
                             <div class="row">
                                 <?php if ( ! wp_is_mobile() ) : ?>
                                     <div class="col-sm-3 cats-list books">
-                                        <h3 class="cats-title">اختر الموضوع</h3>
+                                        <h3 class="cats-title"><?= __("Choose Subject", "qi-theme") ?></h3>
                                         <ul>
                                             <li <?php if ( $category == 0 ) {
                                                 echo 'class="active"';
                                             } ?>>
-                                                <a href="javascript:;" data-catid="0"
+                                                <a href="javascript:" data-catid="0"
                                                    class="front-category">
-                                                    <div class="front-cat-name"><?php echo __('جميع الكتب'); ?></div>
+                                                    <div class="front-cat-name"><?= __('All Books', 'qi-theme'); ?></div>
                                                 </a><!--/.post-->
                                             </li><!--/.col-sm-4-->
                                             <?php
@@ -50,7 +50,7 @@ get_template_part('sections/blog', 'bottom-header');
                                                 <li <?php if ( $category == $cat->term_id ) {
                                                     echo 'class="active"';
                                                 } ?>>
-                                                    <a href="javascript:;" data-catid="<?= $cat->term_id ?>"
+                                                    <a href="javascript:" data-catid="<?= $cat->term_id ?>"
                                                        class="front-category">
                                                         <div class="front-cat-name"><?= $cat->name; ?></div>
                                                     </a><!--/.post-->
@@ -63,7 +63,7 @@ get_template_part('sections/blog', 'bottom-header');
                                         <span>اختر:</span>
                                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="selected-value"><?php echo $category == 0 ? __('جميع الكتب') : get_term_field('name', intval($category)); ?></span>
+                                            <span class="selected-value"><?php echo $category == 0 ? __('All Books', 'qi-theme') : get_term_field('name', intval($category)); ?></span>
                                             <span class="caret"></span>
                                         </button>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -71,7 +71,7 @@ get_template_part('sections/blog', 'bottom-header');
                                                 echo 'class="active"';
                                             } ?>>
                                                 <a href="javascript:;" data-catid="0" class="front-category">
-                                                    <div class="front-cat-name"><?php echo __('جميع الكتب'); ?></div>
+                                                    <div class="front-cat-name"><?= __('All Books', 'qi-theme'); ?></div>
                                                 </a><!--/.post-->
                                             </li><!--/.col-sm-4-->
                                             <?php

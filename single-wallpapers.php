@@ -27,8 +27,8 @@ if (have_posts()):
                     <div class="d-flex my-3 my-md-0 flex-column flex-md-row align-items-center">
                         <i class="fa fa-arrow-down mx-3 text-light mb-3" style="font-size: 4rem;"></i>
                         <div class="wallpapers-downloads d-flex flex-column">
-                            <?= $desktopWallpaper ? '<a href="' . $desktopWallpaper['url'] . '" class="btn btn-success mb-3"><i class="fa fa-download"></i> تنزيل لسطح المكتب</a>' : ''; ?>
-                            <?= $mobileWallpaper ? '<a href="' . $mobileWallpaper['url'] . '" class="btn btn-success"><i class="fa fa-download"></i> تنزيل للموبايل</a>' : ''; ?>
+                            <?= $desktopWallpaper ? '<a href="' . $desktopWallpaper['url'] . '" class="btn btn-success mb-3"><i class="fa fa-download"></i> '.__("Download for desktop", 'qi-theme').'</a>' : ''; ?>
+                            <?= $mobileWallpaper ? '<a href="' . $mobileWallpaper['url'] . '" class="btn btn-success"><i class="fa fa-download"></i> '.__("Download for mobile", 'qi-theme').'</a>' : ''; ?>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ if (have_posts()):
                         <li class="nav-item">
                             <a class="nav-link active" id="pills-desktop-tab" data-toggle="tab"
                                href="#pills-desktop"
-                               role="tab" aria-controls="pills-desktop" aria-selected="true">سطح المكتب</a>
+                               role="tab" aria-controls="pills-desktop" aria-selected="true"><?= __("Desktop", 'qi-theme') ?></a>
                         </li>
                     <?php endif; ?>
 
@@ -47,7 +47,7 @@ if (have_posts()):
                                data-toggle="tab" href="#pills-mobile"
                                role="tab"
                                aria-controls="pills-mobile"
-                               aria-selected="<?= $desktopWallpaper ? 'false' : ' true' ?>">موبايل</a>
+                               aria-selected="<?= $desktopWallpaper ? 'false' : ' true' ?>"><?= __("Mobile", 'qi-theme') ?></a>
                         </li>
                     <?php endif; ?>
                 </ul>

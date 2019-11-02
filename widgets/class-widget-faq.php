@@ -21,6 +21,11 @@ class Qudsinfo_Faq extends WP_Widget
      */
     public function widget($args, $instance)
     {
+
+        if(pll_current_language() === "en") {
+            return;
+        }
+
         echo $args['before_widget'];
 
         $numberofposts = !empty($instance['numberofposts']) ? absint($instance['numberofposts']) : '';

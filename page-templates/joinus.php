@@ -29,13 +29,13 @@ get_template_part('sections/blog', 'bottom-header');
                                     $image = wp_get_attachment_image_url($img_id, 'team-list-item');
                                     ?>
                                     <div class="team-item-image" style="background-image: url('<?= $image ?>')"></div>
-                                    <h2>فريق المحتوى العلمي</h2>
+                                    <h2><?= __("Content Team", "qi-theme") ?></h2>
                                     <div class="team-item-description">
                                         <?php the_field('content_description'); ?>
                                     </div>
                                     <div class="team-list-link">
                                         <a class="btn btn-success btn-lg" href="<?php the_field('content_form_link') ?>">
-                                            انضم لفريق المحتوى
+                                            <?= __("Join Content Team", 'qi-theme') ?>
                                         </a>
                                     </div>
                                 </div>
@@ -45,13 +45,13 @@ get_template_part('sections/blog', 'bottom-header');
                                     $image = wp_get_attachment_image_url($img_id, 'team-list-item');
                                     ?>
                                     <div class="team-item-image" style="background-image: url('<?= $image ?>')"></div>
-                                    <h2>فريق المحاضرات</h2>
+                                    <h2><?= __("Lectures Team", 'qi-theme') ?></h2>
                                     <div class="team-item-description">
                                         <?php the_field('lectures_description'); ?>
                                     </div>
                                     <div class="team-list-link">
                                         <a class="btn btn-success btn-lg" href="<?php the_field('lectures_form_link') ?>">
-                                            انضم لفريق المحاضرات
+                                            <?= __("Join Lectures Team", 'qi-theme') ?>
                                         </a>
                                     </div>
                                 </div>
@@ -61,16 +61,16 @@ get_template_part('sections/blog', 'bottom-header');
                                     $image = wp_get_attachment_image_url($img_id, 'thumbnail');
                                     ?>
                                     <div class="team-item-image" style="background-image: url('<?= $image ?>')"></div>
-                                    <h2>الفريق الإعلامي</h2>
+                                    <h2><?= __("Media Team", 'qi-theme') ?></h2>
                                     <div class="team-item-description">
                                         <?php the_field('media_description'); ?>
                                     </div>
                                     <div class="team-list-link">
                                         <a class="btn btn-success btn-lg mb-2" href="<?php the_field('media_form_link') ?>">
-                                            انضم لفريق النشر
+                                            <?= __("Join Publishing Team", 'qi-theme') ?>
                                         </a>
                                         <a class="btn btn-success btn-lg" href="<?php the_field('news_form_link') ?>">
-                                            انضم لفريق الأخبار
+                                            <?= __("Join News Team", 'qi-theme') ?>
                                         </a>
                                     </div>
                                 </div>

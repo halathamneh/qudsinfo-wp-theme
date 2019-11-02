@@ -22,7 +22,7 @@ get_template_part('sections/blog', 'bottom-header');
             foreach ($cats as $cat) :
                 $checked = false;
                 if ($cat->parent == "0") :
-                    if (strpos($cat->name, "الأقصى") > -1) {
+                    if (strpos($cat->name, "الأقصى") > -1 || strpos($cat->name, "Al-Aqsa") > -1) {
                         $firstItem = $cat->term_id;
                         $checked = true;
                     } ?>

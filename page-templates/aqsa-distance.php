@@ -22,11 +22,11 @@
                             <section id="aqsa-distance" class="front-page-section aqsa-distance">
                                 <div class="container">
                                     <div class="section-header">
-                                        بعدك عن الأقصى
+                                        <?= __("Distance from Aqsa", "qi-theme") ?>
                                     </div>
 <!--                                    <span>قم بتفعيل خدمة الموقع (GPS) لحساب بعدك عن الأقصى</span>-->
                                     <div class="section-content">
-                                        <button class="btn btn-light btn-lg" id="aqsa-distance-button">احسب بعدك!</button>
+                                        <button class="btn btn-light btn-lg" id="aqsa-distance-button"><?= __("Find your distance!", "qi-theme") ?></button>
                                     </div>
                                 </div>
                             </section>

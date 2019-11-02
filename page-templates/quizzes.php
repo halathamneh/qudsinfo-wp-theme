@@ -60,7 +60,7 @@
                                         <form action="<?= get_term_link($quiz, 'quiz') ?>" method="get">
                                             <span class="d-inline-block mb-4 font-weight-bold"><?= $quiz->name ?></span>
                                             <hr class="my-1">
-                                            <small class="d-inline-block mb-2">اختر المستوى</small>
+                                            <small class="d-inline-block mb-2"><?= __("Choose level", 'qi-theme') ?></small>
                                             <div class="btn-group-toggle btn-group-sm" data-toggle="buttons">
                                                 <?php $i = 0; foreach ($levels as $level) : /** @var WP_Term $level */ ?>
                                                     <label class="btn btn-outline-secondary<?= $i == 0 ? ' active' : '' ?>">
@@ -69,7 +69,7 @@
                                                     </label>
                                                 <?php endforeach; ?>
                                             </div>
-                                            <small class="d-inline-block my-2">نوع المسابقة</small>
+                                            <small class="d-inline-block my-2"><?= __("Quiz Type", 'qi-theme') ?></small>
                                             <div class="btn-group-toggle btn-group-sm" data-toggle="buttons">
                                                 <?php $i = 0; foreach ($types as $type) : /** @var WP_Term $type */ ?>
                                                     <label class="btn btn-outline-secondary<?= $i == 0 ? ' active' : '' ?>">
@@ -79,7 +79,7 @@
                                                 <?php endforeach; ?>
                                             </div>
                                             <hr class="mt-3 mb-4">
-                                            <button type="submit" class="btn btn-sm btn-success">بدء المسابقة</button>
+                                            <button type="submit" class="btn btn-sm btn-success"><?= __("Start the quiz", 'qi-theme') ?></button>
                                         </form>
                                     </div>
                                 </div>
@@ -88,8 +88,8 @@
                     <?php
                     endforeach;
                 else : ?>
-                    <div class="text-center text-muted p-5 w-100"><i class="fa fa-exclamation-triangle"></i> لا يوجد أي
-                        مسابقات
+                    <div class="text-center text-muted p-5 w-100">
+                        <i class="fa fa-exclamation-triangle"></i> <?= __("No quizzes yet.", 'qi-theme') ?>
                     </div>
                 <?php endif; ?>
             </div><!--/.row-->

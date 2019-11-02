@@ -1498,13 +1498,13 @@ if (function_exists('acf_add_local_field_group')):
                 ),
             ),
             'location' => array(
-                array(
-                    array(
-                        'param' => 'page',
-                        'operator' => '==',
-                        'value' => '161',
-                    ),
-                ),
+	            array(
+		            array(
+			            'param' => 'page_template',
+			            'operator' => '==',
+			            'value' => 'page-templates/lectures.php',
+		            ),
+	            ),
             ),
             'menu_order' => 0,
             'position' => 'normal',

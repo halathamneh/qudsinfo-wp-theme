@@ -22,7 +22,7 @@
                                 <div class="my-5">
                                     <div class="card shadow-lg">
                                         <div class="card-body">
-                                            <h2 class="mb-4">فريق الأخبار</h2>
+                                            <h2 class="mb-4"><?= __("News Team", 'qi-theme') ?></h2>
                                             <div>
                                                 <?php the_content(); ?>
                                             </div>
@@ -44,14 +44,14 @@
             </div>
             <div class="news-team__stats py-5">
                 <div class="container">
-                    <h2 class="text-center">إحصاءات الأخبار</h2>
+                    <h2 class="text-center"><?= __("News Statistics", 'qi-theme') ?></h2>
                     <div class="news-stats">
                         <div class="news-stats__item">
-                            <span>عدد الأخبار التي تم نشرها</span>
+                            <span><?= __("No. of published news", 'qi-theme') ?></span>
                             <div class="shadow-lg circle fill"><?= get_field('news_count') ?></div>
                         </div>
                         <div class="news-stats__item">
-                            <span>عدد التقارير التي تم إعدادها</span>
+                            <span><?= __("No. of reports written", 'qi-theme') ?></span>
                             <div class="shadow-lg circle outline"><?= get_field('reports_count') ?></div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
             <div class="news-team__image"></div>
             <div class="news-team__latest">
                 <div class="container">
-                    <h2>آخر الأخبار</h2>
+                    <h2><?= __("Latest News", 'qi-theme') ?></h2>
                     <?php
                     $post_query_args = array(
                         'post_type' => array('news'),
@@ -97,8 +97,8 @@
                                             <?php the_excerpt(); ?>
                                         </div><!--/.post-entry-->
                                         <a href="<?php the_permalink(); ?>"
-                                           title="<?php _e('أكمل القراءة', 'qi-theme'); ?>"
-                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'qi-theme'); ?><i
+                                           title="<?php _e('Continue Reading', 'qi-theme'); ?>"
+                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('Continue Reading', 'qi-theme'); ?> <i
                                                     class="fa fa-chevron-circle-left"></i></a>
                                     </div>
                                 </div><!--/.post-->
@@ -106,7 +106,7 @@
                         <?php endwhile; ?>
                     </div><!--/.row-->
                     <div class="d-flex justify-content-center mt-5">
-                        <a href="/qudsnews" class="btn btn-secondary btn-lg mt-3">عرض جميع الأخبار <i
+                        <a href="/qudsnews" class="btn btn-secondary btn-lg mt-3"><?= __("Open News Page", 'qi-theme') ?> <i
                                     class="fa fa-chevron-circle-left"></i></a>
                     </div>
 

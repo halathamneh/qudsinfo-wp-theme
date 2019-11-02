@@ -1,22 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-09-10 21:08+0300\n"
-"PO-Revision-Date: 2019-09-10 21:18+0300\n"
+"POT-Creation-Date: 2019-11-02 17:21+0200\n"
+"PO-Revision-Date: 2019-11-02 17:22+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_x;_x;esc_html__\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: .\n"
+"X-Poedit-SearchPathExcluded-0: **/*.js\n"
 
 #: comments.php:24 comments.php:46
 msgid "Comment navigation"
@@ -38,7 +38,8 @@ msgstr "التعليقات مغلقة."
 msgid "Name"
 msgstr "الاسم"
 
-#: comments.php:86 sections/front-page-contact-us.php:116
+#: comments.php:86 page-templates/lectures.php:141
+#: sections/front-page-contact-us.php:116
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
@@ -433,8 +434,7 @@ msgstr ""
 msgid "المكتبة"
 msgstr ""
 
-#: inc/custom_posts_types.php:296 page-templates/books.php:42
-#: page-templates/books.php:66 page-templates/books.php:74
+#: inc/custom_posts_types.php:296
 msgid "جميع الكتب"
 msgstr ""
 
@@ -948,8 +948,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:178
 #: inc/customizer/panels/sections-order.php:208
 #: inc/customizer/panels/sections-order.php:238
-#: inc/customizer/panels/sections-order.php:269
-#: sections/front-page-about.php:10
+#: inc/customizer/panels/sections-order.php:269 sections/front-page-about.php:10
 msgid "About"
 msgstr "من نحن"
 
@@ -964,8 +963,7 @@ msgid "General"
 msgstr ""
 
 #: inc/customizer/panels/about.php:44 inc/customizer/panels/contact-us.php:48
-#: inc/customizer/panels/counter.php:44
-#: inc/customizer/panels/latest-info.php:48
+#: inc/customizer/panels/counter.php:44 inc/customizer/panels/latest-info.php:48
 #: inc/customizer/panels/latest-news.php:48
 #: inc/customizer/panels/lectures.php:38 inc/customizer/panels/projects.php:44
 #: inc/customizer/panels/services.php:44 inc/customizer/panels/team.php:44
@@ -1034,13 +1032,11 @@ msgstr ""
 msgid "Control various options for contact us section from front page."
 msgstr ""
 
-#: inc/customizer/panels/contact-us.php:76
-#: sections/front-page-contact-us.php:18
+#: inc/customizer/panels/contact-us.php:76 sections/front-page-contact-us.php:18
 msgid "And we will get in touch as son as possible."
 msgstr ""
 
-#: inc/customizer/panels/contact-us.php:95
-#: sections/front-page-contact-us.php:20
+#: inc/customizer/panels/contact-us.php:95 sections/front-page-contact-us.php:20
 msgid "Address"
 msgstr ""
 
@@ -1293,8 +1289,8 @@ msgstr ""
 
 #: inc/customizer/panels/jumbotron.php:114
 msgid ""
-"lldy is a great one-page theme, perfect for developers and designers but "
-"also for someone who just wants a new website for his business. Try it now!"
+"lldy is a great one-page theme, perfect for developers and designers but also "
+"for someone who just wants a new website for his business. Try it now!"
 msgstr ""
 
 #: inc/customizer/panels/jumbotron.php:122
@@ -1361,8 +1357,7 @@ msgstr ""
 
 #: inc/customizer/panels/latest-info.php:76
 #: inc/customizer/panels/latest-news.php:76
-#: sections/front-page-latest-info.php:11
-#: sections/front-page-latest-news.php:11
+#: sections/front-page-latest-info.php:11 sections/front-page-latest-news.php:11
 msgid ""
 "If you are interested in the latest articles in the industry, take a sneak "
 "peek at our blog. You’ve got nothing to loose!"
@@ -1413,7 +1408,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:182
 #: inc/customizer/panels/sections-order.php:212
 #: inc/customizer/panels/sections-order.php:242
-#: inc/customizer/panels/sections-order.php:273
+#: inc/customizer/panels/sections-order.php:273 page-templates/news-team.php:63
 #: sections/front-page-latest-news.php:10 sections/front-page-news-bar.php:19
 msgid "Latest News"
 msgstr "آخر الأخبار"
@@ -1568,8 +1563,7 @@ msgstr ""
 
 #: inc/customizer/panels/sections-order.php:204
 msgid ""
-"Please select what you want to display on the seventh section from front "
-"page."
+"Please select what you want to display on the seventh section from front page."
 msgstr ""
 
 #: inc/customizer/panels/sections-order.php:233
@@ -1818,8 +1812,7 @@ msgstr ""
 
 #: inc/register.sidebars.php:111
 msgid ""
-"The widgets added in this sidebar will appear in team section from front "
-"page."
+"The widgets added in this sidebar will appear in team section from front page."
 msgstr ""
 
 #: inc/register.sidebars.php:121
@@ -1916,8 +1909,8 @@ msgstr ""
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:402
 #, php-format
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:403
@@ -1948,8 +1941,8 @@ msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:936
 msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
+"The remote plugin package does not contain a folder with the desired slug and "
+"renaming did not work."
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:936
@@ -2190,23 +2183,17 @@ msgstr ""
 msgid "Contact Form 7"
 msgstr ""
 
-#: nggallery/gallery-my.php:32
-msgid "[View with PicLens]"
-msgstr ""
-
 #: page-news.php:51
 msgid "Quds News"
 msgstr "الأخبار المقدسية"
 
-#: page-news.php:113 page-templates/news-team.php:100
-#: sections/front-page-latest-news.php:68 template-parts/content-blog.php:35
-#: template-parts/content-blog.php:36 template-parts/content-infos.php:20
-#: template-parts/content.php:21
+#: page-news.php:113 sections/front-page-latest-news.php:68
+#: template-parts/content-blog.php:35 template-parts/content-blog.php:36
+#: template-parts/content-infos.php:20 template-parts/content.php:21
 msgid "أكمل القراءة"
 msgstr ""
 
-#: page-news.php:114 page-templates/news-team.php:101
-#: sections/front-page-latest-news.php:68
+#: page-news.php:114 sections/front-page-latest-news.php:68
 msgid "أكمل القراءة "
 msgstr ""
 
@@ -2214,11 +2201,173 @@ msgstr ""
 msgid "Show More"
 msgstr "عرض المزيد"
 
-#: page-templates/wallpapers.php:42
+#: page-templates/aqsa-distance.php:25
+msgid "Distance from Aqsa"
+msgstr "بعدك عن الأقصى"
+
+#: page-templates/aqsa-distance.php:29
+msgid "Find your distance!"
+msgstr "اضغط هنا لحساب بعدك!"
+
+#: page-templates/books.php:35
+msgid "Choose Subject"
+msgstr "اختر موضوع"
+
+#: page-templates/books.php:42 page-templates/books.php:66
+#: page-templates/books.php:74
+msgid "All Books"
+msgstr "جميع الكتب"
+
+#: page-templates/joinus.php:32
+msgid "Content Team"
+msgstr "فريق المحتوى"
+
+#: page-templates/joinus.php:38
+msgid "Join Content Team"
+msgstr "انضم لفريق المحتوى"
+
+#: page-templates/joinus.php:48 sections/front-page-lectures.php:26
+msgid "Lectures Team"
+msgstr "فريق المحاضرات"
+
+#: page-templates/joinus.php:54 page-templates/lectures.php:34
+msgid "Join Lectures Team"
+msgstr "انضم لفريق المحاضرات"
+
+#: page-templates/joinus.php:64
+msgid "Media Team"
+msgstr "الفريق الإعلامي"
+
+#: page-templates/joinus.php:70
+msgid "Join Publishing Team"
+msgstr "انضم لفريق النشر"
+
+#: page-templates/joinus.php:73
+msgid "Join News Team"
+msgstr "انضم لفريق الأخبار"
+
+#: page-templates/lectures.php:26
+msgid "The idea of the team"
+msgstr "فكرة الفريق"
+
+#: page-templates/lectures.php:35
+msgid "Do you find yourself able to give lectures to the public?"
+msgstr "هل تجد في نفسك القدرة على إعطاء محاضرات أمام الجمهور؟"
+
+#: page-templates/lectures.php:37
+msgid "Register now"
+msgstr "سجل الآن"
+
+#: page-templates/lectures.php:46
+msgid "The team's achievements"
+msgstr "إنجازات الفريق"
+
+#: page-templates/lectures.php:49
+msgid "Jerusalem's Lecture"
+msgstr "محاضرة مقدسية"
+
+#: page-templates/lectures.php:51
+msgid "Hours"
+msgstr "ساعة قُدّمت"
+
+#: page-templates/lectures.php:52
+msgid "Students"
+msgstr "طالب مستفيد"
+
+#: page-templates/lectures.php:59
+msgid "Team's Services"
+msgstr "ماذا نقدم؟"
+
+#: page-templates/lectures.php:79
+msgid "Goals of the team"
+msgstr "أهداف الفريق"
+
+#: page-templates/lectures.php:104
+msgid "Photos from our lectures"
+msgstr "صور من محاضراتنا"
+
+#: page-templates/lectures.php:132
+msgid "Ask for a lecture"
+msgstr "اطلب محاضرة"
+
+#: page-templates/lectures.php:135
+msgid "You can contact us by"
+msgstr "يمكنك التواصل معنا عن طريق"
+
+#: page-templates/lectures.php:138
+msgid "Phone"
+msgstr "تلفون"
+
+#: page-templates/lectures.php:145
+msgid "or by sending to us on"
+msgstr "أو الإرسال إلينا على"
+
+#: page-templates/lectures.php:146
+msgid "our Facebook page"
+msgstr "صفحتنا على الفيسبوك"
+
+#: page-templates/lectures.php:151
+msgid "Get a specialized material for the lectures."
+msgstr "احصل على مادة مخصصة للمحاضرات"
+
+#: page-templates/lectures.php:154
+msgid ""
+"If you are interested in giving Jerusalem lectures, The Qudsinfo team "
+"provides specially designed material for the lecturers."
+msgstr ""
+"إن كنت مهتماً بإعطاء محاضرات مقدسية، فريق معلومة مقدسية يقدم مادة معدة خصيصاً "
+"للمحاضرين."
+
+#: page-templates/lectures.php:156
+msgid "GET IT NOW"
+msgstr "احصل عليها الآن"
+
+#: page-templates/news-team.php:25
+msgid "News Team"
+msgstr "فريق الأخبار"
+
+#: page-templates/news-team.php:47
+msgid "News Statistics"
+msgstr "إحصاءات الأخبار"
+
+#: page-templates/news-team.php:50
+msgid "No. of published news"
+msgstr "عدد الأخبار التي تم نشرها"
+
+#: page-templates/news-team.php:54
+msgid "No. of reports written"
+msgstr "عدد التقارير التي تم إعدادها"
+
+#: page-templates/news-team.php:100 page-templates/news-team.php:101
+#: sections/front-page-slider.php:40
+msgid "Continue Reading"
+msgstr "أكمل القراءة"
+
+#: page-templates/news-team.php:109
+msgid "Open News Page"
+msgstr "عرض كل اﻷخبار"
+
+#: page-templates/quizzes.php:63
+msgid "Choose level"
+msgstr "اختر المستوى"
+
+#: page-templates/quizzes.php:72
+msgid "Quiz Type"
+msgstr "نوع المسابقة"
+
+#: page-templates/quizzes.php:82
+msgid "Start the quiz"
+msgstr "ابدأ المسابقة"
+
+#: page-templates/quizzes.php:92
+msgid "No quizzes yet."
+msgstr "لا يوجد أي مسابقات بعد."
+
+#: page-templates/wallpapers.php:42 single-wallpapers.php:40
 msgid "Desktop"
 msgstr "سطح المكتب"
 
-#: page-templates/wallpapers.php:46
+#: page-templates/wallpapers.php:46 single-wallpapers.php:50
 msgid "Mobile"
 msgstr "موبايل"
 
@@ -2230,14 +2379,34 @@ msgstr ""
 msgid "بحث"
 msgstr ""
 
+#: sections/blog-bottom-header.php:57
+msgid "Our Information"
+msgstr "معلوماتنا"
+
+#: sections/blog-bottom-header.php:61
+msgid "Milestones and Pictures"
+msgstr "المعالم والصور"
+
+#: sections/blog-bottom-header.php:76
+msgid "Written"
+msgstr "المكتوبة"
+
+#: sections/blog-bottom-header.php:81
+msgid "Videos"
+msgstr "المرئية"
+
+#: sections/blog-bottom-header.php:85
+msgid "Audio"
+msgstr "المسموعة"
+
 #: sections/front-page-about.php:12
 msgid ""
 "Because we believe that culture is the first step to get Jerusalem back, we "
 "seek to raise self –awareness and Jerusalemite-oriented intellect in the "
 "Muslim Arab society with all its’ sects, support Jerusalemite citizens by "
-"spreading words about their plight, and adopt new ideas that are concerned "
-"in the Jerusalemite matter; all through preparation of youth committees "
-"capable of supporting the cause, with high efficiency and good skill."
+"spreading words about their plight, and adopt new ideas that are concerned in "
+"the Jerusalemite matter; all through preparation of youth committees capable "
+"of supporting the cause, with high efficiency and good skill."
 msgstr ""
 "لأننا نؤمن بأن الثقافة هي أولى الخطوات في استعادة المقدسات، لذلك نسعى لزيادة "
 "الوعي والفكر المقدسي في المجتمع العربي والمسلم بكافة طوائفه، ودعم صمود "
@@ -2323,10 +2492,6 @@ msgid "Browse all Our Info"
 msgstr "تصفح جميع معلوماتنا"
 
 #: sections/front-page-lectures.php:26
-msgid "Lectures Team"
-msgstr "فريق المحاضرات"
-
-#: sections/front-page-lectures.php:26
 msgid "QudsInfo"
 msgstr "معلومة مقدسية"
 
@@ -2395,10 +2560,6 @@ msgstr ""
 #: sections/front-page-slider.php:16
 msgid "Latest Quds News"
 msgstr "آخر الأخبار المقدسية"
-
-#: sections/front-page-slider.php:40
-msgid "Continue Reading"
-msgstr "أكمل القراءة"
 
 #: sections/front-page-slider.php:49
 msgid "Thought of the day"
@@ -2476,6 +2637,14 @@ msgstr "التصنيفات"
 msgid "Archive"
 msgstr "الأرشيف"
 
+#: single-wallpapers.php:30
+msgid "Download for desktop"
+msgstr ""
+
+#: single-wallpapers.php:31
+msgid "Download for mobile"
+msgstr ""
+
 #: taxonomy-knowquds.php:23
 msgid "Select from the menu"
 msgstr "اختر من القائمة"
@@ -2484,8 +2653,7 @@ msgstr "اختر من القائمة"
 msgid "لم يتم العثور على شيء"
 msgstr ""
 
-#: template-parts/content-page-noimage.php:20
-#: template-parts/content-page.php:21
+#: template-parts/content-page-noimage.php:20 template-parts/content-page.php:21
 #: template-parts/content-single-blogs.php:29
 #: template-parts/content-single-book.php:55
 #: template-parts/content-single-info-details.php:47
@@ -2547,7 +2715,7 @@ msgstr ""
 msgid "Add this widget in \"Front page - Counter Sidebar\"."
 msgstr ""
 
-#: widgets/class-widget-counter.php:46 widgets/class-widget-faq.php:95
+#: widgets/class-widget-counter.php:46 widgets/class-widget-faq.php:100
 #: widgets/class-widget-recent-posts.php:8
 #: widgets/class-widget-recent-posts.php:80
 msgid "[Illdy] - Recent Posts"
@@ -2569,10 +2737,10 @@ msgstr ""
 msgid "100"
 msgstr ""
 
-#: widgets/class-widget-counter.php:53 widgets/class-widget-faq.php:108
+#: widgets/class-widget-counter.php:53 widgets/class-widget-faq.php:113
 #: widgets/class-widget-person.php:123 widgets/class-widget-project.php:59
-#: widgets/class-widget-recent-posts.php:90
-#: widgets/class-widget-service.php:722 widgets/class-widget-skill.php:717
+#: widgets/class-widget-recent-posts.php:90 widgets/class-widget-service.php:722
+#: widgets/class-widget-skill.php:717
 msgid "Title:"
 msgstr ""
 
@@ -2612,27 +2780,27 @@ msgstr ""
 msgid "This widget will show random FAQs."
 msgstr ""
 
-#: widgets/class-widget-faq.php:28
+#: widgets/class-widget-faq.php:33
 msgid "Frequent Questions"
 msgstr "أسئلة شائعة"
 
-#: widgets/class-widget-faq.php:55
+#: widgets/class-widget-faq.php:60
 msgid "Close"
 msgstr "إغلاق"
 
-#: widgets/class-widget-faq.php:77
+#: widgets/class-widget-faq.php:82
 msgid "No FAQs found."
 msgstr ""
 
-#: widgets/class-widget-faq.php:96 widgets/class-widget-recent-posts.php:81
+#: widgets/class-widget-faq.php:101 widgets/class-widget-recent-posts.php:81
 msgid "4"
 msgstr ""
 
-#: widgets/class-widget-faq.php:104 widgets/class-widget-recent-posts.php:86
+#: widgets/class-widget-faq.php:109 widgets/class-widget-recent-posts.php:86
 msgid "Display title?"
 msgstr ""
 
-#: widgets/class-widget-faq.php:115 widgets/class-widget-recent-posts.php:95
+#: widgets/class-widget-faq.php:120 widgets/class-widget-recent-posts.php:95
 msgid "Number of posts:"
 msgstr ""
 
@@ -2745,6 +2913,11 @@ msgstr ""
 #| msgid "Products"
 msgid "Product Categories"
 msgstr "المنتجات"
+
+#, fuzzy
+#~| msgid "Continue Reading"
+#~ msgid "Continue Reading "
+#~ msgstr "أكمل القراءة"
 
 #~ msgid "Sort By:"
 #~ msgstr "فرز:"
