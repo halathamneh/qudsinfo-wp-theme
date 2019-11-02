@@ -5,7 +5,7 @@ for file in $updatedFiles
 do
   if [ -f "./$file" ]
   then
-    rsync -avhR $file $DEPLOYPATH/$file
+    rsync -avh -I $file $DEPLOYPATH/$file
   fi
 done
 
