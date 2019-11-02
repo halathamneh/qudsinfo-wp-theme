@@ -20,7 +20,7 @@ function render_infos($page = 0, $category = false)
     $term_slug = "all";
     $out = "";
     if ($category === false) {
-        $out .= '<h2 class="current-cat-name">جميع المعلومات</h2>';
+        $out .= '<h2 class="current-cat-name">'.__('All Infos', 'qi-theme').'</h2>';
     } else {
         $term_slug = $category->slug;
         $out .= '<h2 class="current-cat-name">' . $category->name . '</h2>';
@@ -35,7 +35,7 @@ function render_infos($page = 0, $category = false)
                 $out .= '<hr>' .
                     '<div class="current-cat-wiki">' .
                     wp_trim_words(get_sub_field('text'), 100) .
-                    '<div class="read-more-part"><a href="' . get_permalink() . '" class="btn btn-success">أكمل القراءة</a></div></div>';
+                    '<div class="read-more-part"><a href="' . get_permalink() . '" class="btn btn-success">'.__('Continue Reading', 'qi-theme').'</a></div></div>';
             }
         endif;
     }
@@ -68,7 +68,7 @@ function render_infos($page = 0, $category = false)
             $out .= '<div class="card-body">' .
                 '<h4>' . get_the_title() . '</h4>' .
                 '<p class="card-text">' . get_the_excerpt() . '</p>' .
-                '<a href="' . get_the_permalink() . '" class="btn btn-outline-success">أكمل القراءة <i class="fa fa-chevron-circle-left"></i></a>' .
+                '<a href="' . get_the_permalink() . '" class="btn btn-outline-success">'.__('Continue Reading', 'qi-theme').' <i class="fa fa-chevron-circle-left"></i></a>' .
                 '</div>';
             $out .= '</div><!--/.card-->';
         endwhile;
