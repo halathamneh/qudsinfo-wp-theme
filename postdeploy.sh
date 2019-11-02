@@ -6,7 +6,7 @@ for file in $updatedFiles; do
     if [[ $file == layout* ]]; then
       updateLayout=1
     fi
-    rsync -avh -I "$file" "$DEPLOYPATH/$file"
+    rsync -avh -I "$file" "$DEPLOYPATH/$file" && echo "Done ( $file )"
   fi
 done
 
