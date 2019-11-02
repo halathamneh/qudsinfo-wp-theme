@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-02 17:21+0200\n"
-"PO-Revision-Date: 2019-11-02 17:22+0200\n"
+"POT-Creation-Date: 2019-11-02 21:14+0200\n"
+"PO-Revision-Date: 2019-11-02 21:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -38,7 +38,7 @@ msgstr "التعليقات مغلقة."
 msgid "Name"
 msgstr "الاسم"
 
-#: comments.php:86 page-templates/lectures.php:141
+#: comments.php:86 page-templates/lectures.php:140
 #: sections/front-page-contact-us.php:116
 msgid "Email"
 msgstr "البريد الإلكتروني"
@@ -55,76 +55,76 @@ msgstr "الرسالة"
 msgid "&copy; Copyright 2016. All Rights Reserved."
 msgstr "&copy; حقوق الطبع والنشر 2019. جميع الحقوق محفوظه."
 
-#: footer.php:34
+#: footer.php:36
 msgid "Products"
 msgstr "المنتجات"
 
-#: footer.php:34
+#: footer.php:36
 msgid "Our work"
 msgstr "أعمالنا"
 
-#: footer.php:34
+#: footer.php:36
 msgid "Club"
 msgstr "النادي"
 
-#: footer.php:34
+#: footer.php:36
 msgid "News"
 msgstr "الأخبار"
 
-#: footer.php:34
+#: footer.php:36
 msgid "Announcement"
 msgstr "إعلان"
 
-#: footer.php:43
+#: footer.php:45
 msgid "Information"
 msgstr "معلومات"
 
-#: footer.php:43
+#: footer.php:45
 msgid "Pricing"
 msgstr "الأسعار"
 
-#: footer.php:43
+#: footer.php:45
 msgid "Terms"
 msgstr "الشروط"
 
-#: footer.php:43
+#: footer.php:45
 msgid "Affiliates"
 msgstr ""
 
-#: footer.php:43
+#: footer.php:45
 msgid "Blog"
 msgstr "المدونة"
 
-#: footer.php:52
+#: footer.php:54
 msgid "Support"
 msgstr "الدعم"
 
-#: footer.php:52
+#: footer.php:54
 msgid "Documentation"
 msgstr ""
 
-#: footer.php:52 widgets/class-widget-faq.php:11
+#: footer.php:54 widgets/class-widget-faq.php:11
 msgid "FAQs"
 msgstr "الأسئلة الشائعة"
 
-#: footer.php:52
+#: footer.php:54
 msgid "Forums"
 msgstr "المنتدى"
 
-#: footer.php:52
+#: footer.php:54
 msgid "Contact"
 msgstr ""
 
-#: footer.php:65
+#: footer.php:67
 msgid "Theme:"
 msgstr ""
 
-#: footer.php:65 header-quizzes.php:11 header.php:11
+#: footer.php:67 header-quizzes.php:11 header.php:11
 #: inc/customizer/panels/general-options.php:155
 msgid "qi-theme"
 msgstr ""
 
-#: footer.php:68
+#: footer.php:70
 msgid "All rights reserved - Qudsinfo.com"
 msgstr "جميع الحقوق محفوظة - معلومة مقدسية"
 
@@ -171,6 +171,10 @@ msgstr "بحث..."
 #: header.php:109 template-parts/header-top-nav.php:34
 msgid "Search for:"
 msgstr "بحث عن:"
+
+#: inc/Helpers.php:53
+msgid "Language"
+msgstr ""
 
 #: inc/NewsBar.php:44 inc/NewsBar.php:45
 msgid "شريط الأخبار"
@@ -1408,7 +1412,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:182
 #: inc/customizer/panels/sections-order.php:212
 #: inc/customizer/panels/sections-order.php:242
-#: inc/customizer/panels/sections-order.php:273 page-templates/news-team.php:63
+#: inc/customizer/panels/sections-order.php:273 page-templates/news-team.php:64
 #: sections/front-page-latest-news.php:10 sections/front-page-news-bar.php:19
 msgid "Latest News"
 msgstr "آخر الأخبار"
@@ -1726,6 +1730,17 @@ msgstr ""
 #: inc/featured-posts.php:13
 msgid "تحديد هذا التدوينة كمميزة"
 msgstr ""
+
+#: inc/infos-handler.php:23 template-parts/infos-drawer.php:35
+#: template-parts/infos-drawer.php:101 template-parts/infos-drawer.php:108
+msgid "All Infos"
+msgstr "جميع المعلومات"
+
+#: inc/infos-handler.php:38 inc/infos-handler.php:71
+#: page-templates/news-team.php:101 page-templates/news-team.php:102
+#: sections/front-page-slider.php:40
+msgid "Continue Reading"
+msgstr "أكمل القراءة"
 
 #: inc/register.sidebars.php:11
 msgid "Blog Sidebar"
@@ -2209,7 +2224,7 @@ msgstr "بعدك عن الأقصى"
 msgid "Find your distance!"
 msgstr "اضغط هنا لحساب بعدك!"
 
-#: page-templates/books.php:35
+#: page-templates/books.php:35 template-parts/infos-drawer.php:30
 msgid "Choose Subject"
 msgstr "اختر موضوع"
 
@@ -2294,23 +2309,23 @@ msgstr "اطلب محاضرة"
 msgid "You can contact us by"
 msgstr "يمكنك التواصل معنا عن طريق"
 
-#: page-templates/lectures.php:138
+#: page-templates/lectures.php:137
 msgid "Phone"
 msgstr "تلفون"
 
-#: page-templates/lectures.php:145
+#: page-templates/lectures.php:144
 msgid "or by sending to us on"
 msgstr "أو الإرسال إلينا على"
 
-#: page-templates/lectures.php:146
+#: page-templates/lectures.php:145
 msgid "our Facebook page"
 msgstr "صفحتنا على الفيسبوك"
 
-#: page-templates/lectures.php:151
+#: page-templates/lectures.php:150
 msgid "Get a specialized material for the lectures."
 msgstr "احصل على مادة مخصصة للمحاضرات"
 
-#: page-templates/lectures.php:154
+#: page-templates/lectures.php:153
 msgid ""
 "If you are interested in giving Jerusalem lectures, The Qudsinfo team "
 "provides specially designed material for the lecturers."
@@ -2318,7 +2333,7 @@ msgstr ""
 "إن كنت مهتماً بإعطاء محاضرات مقدسية، فريق معلومة مقدسية يقدم مادة معدة خصيصاً "
 "للمحاضرين."
 
-#: page-templates/lectures.php:156
+#: page-templates/lectures.php:155
 msgid "GET IT NOW"
 msgstr "احصل عليها الآن"
 
@@ -2338,12 +2353,7 @@ msgstr "عدد الأخبار التي تم نشرها"
 msgid "No. of reports written"
 msgstr "عدد التقارير التي تم إعدادها"
 
-#: page-templates/news-team.php:100 page-templates/news-team.php:101
-#: sections/front-page-slider.php:40
-msgid "Continue Reading"
-msgstr "أكمل القراءة"
-
-#: page-templates/news-team.php:109
+#: page-templates/news-team.php:110
 msgid "Open News Page"
 msgstr "عرض كل اﻷخبار"
 
@@ -2693,15 +2703,6 @@ msgstr "اسم الباني:"
 #: template-parts/content-single-post.php:56
 msgid "Source:"
 msgstr "المصدر:"
-
-#: template-parts/infos-drawer.php:30
-msgid "اختر الموضوع"
-msgstr ""
-
-#: template-parts/infos-drawer.php:35 template-parts/infos-drawer.php:101
-#: template-parts/infos-drawer.php:108
-msgid "جميع المعلومات"
-msgstr ""
 
 #: template-parts/knowquds-list.php:26
 msgid "Select"
