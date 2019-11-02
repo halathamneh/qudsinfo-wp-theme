@@ -27,12 +27,12 @@ $cats = get_terms(array(
         <div class="row">
             <?php if (!wp_is_mobile()) : ?>
                 <div class="col-sm-3 cats-list">
-                    <h3 class="cats-title"><?= __("اختر الموضوع", "QI") ?></h3>
+                    <h3 class="cats-title"><?= __("Choose Subject", "qi-theme") ?></h3>
                     <ul>
                         <li <?= $category == 0 ? 'class="active"' : '' ?>>
                             <a href="javascript:;" data-catid="0"
                                class="front-category">
-                                <div class="front-cat-name"><?php echo __('جميع المعلومات'); ?></div>
+                                <div class="front-cat-name"><?php echo __('All Infos', 'qi-theme'); ?></div>
                             </a><!--/.post-->
                         </li><!--/.col-sm-4-->
                         <?php
@@ -98,14 +98,14 @@ $cats = get_terms(array(
                     <span>اختر:</span>
                     <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu1"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="selected-value"><?php echo $category == 0 ? __('جميع المعلومات') : get_term_field('name', intval($category)); ?></span>
+                        <span class="selected-value"><?php echo $category == 0 ? __('All Infos', 'qi-theme') : get_term_field('name', intval($category)); ?></span>
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li <?= $category == 0 ? 'class="active"' : '' ?>>
                             <a href="javascript:;" data-catid="0"
                                class="front-category">
-                                <div class="front-cat-name"><?php echo __('جميع المعلومات'); ?></div>
+                                <div class="front-cat-name"><?php echo __('All Infos', 'qi-theme'); ?></div>
                             </a><!--/.post-->
                         </li><!--/.col-sm-4-->
                         <?php
