@@ -133,7 +133,6 @@ if ( have_posts() ):
                     </div>
                     <div class="section-content">
                         <p><?= __( "You can contact us by", 'qi-theme' ) ?></p>
-                        <p>تستطيع التواصل معنا عن طريق:</p>
                         <ul>
                             <li><?= __( "Phone", 'qi-theme' ) ?>: <a href="tel:<?php the_field( 'phone_num' ) ?>"
                                                                      class="phone-num"><?php the_field( 'phone_num' ) ?></a>
