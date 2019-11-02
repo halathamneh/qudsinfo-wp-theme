@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="news-team__image"></div>
-            <?php if (pll_current_language() === "en") : ?>
+            <?php if (pll_current_language() !== "en") : ?>
                 <div class="news-team__latest">
                     <div class="container">
                         <h2><?= __("Latest News", 'qi-theme') ?></h2>
