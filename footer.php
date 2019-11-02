@@ -28,6 +28,8 @@ $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_d
             ?>
             <div class="col-sm-3">
                 <?php
+                echo Helpers::polylang_languages();
+
                 if ( is_active_sidebar('footer-sidebar-1') ):
                     dynamic_sidebar('footer-sidebar-1');
                 else:
