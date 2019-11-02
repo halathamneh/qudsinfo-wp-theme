@@ -19,7 +19,6 @@ $post_query_args  = array(
 	'cache_results'          => true,
 	'update_post_meta_cache' => true,
 	'update_post_term_cache' => true,
-	'lang'                   => pll_current_language(),
 	'meta_query'             => array(
 		array(
 			'key'     => $type,
@@ -64,7 +63,13 @@ $pagination_query = $post_query;
 							?>
                             <div class="col-lg-3 col-md-4 col-sm-12 col-12 wallpaper-col">
                                 <div class="card">
-                                    <a href="<?php the_permalink() ?>">
+                                    <?php
+                                    $permalink = get_the_permalink();
+		                            if ( pll_current_language() !== "ar" ) {
+		                                $permalink = str_replace("qudsinfo", "en.qudsinfo", $permalink);
+		                            }
+                                    ?>
+                                    <a href="<?= $permalink ?>">
                                         <img class="card-img" src="<?= $thumbnail ?>"/>
                                         <div class="card-img-overlay d-flex flex-column align-items-center">
 											<?php if ( pll_current_language() === "ar" ) { ?>
