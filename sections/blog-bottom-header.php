@@ -68,7 +68,7 @@ if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(
                 </div><!--/.col-sm-12-->
             <?php endif; ?>
         </div><!--/.row-->
-        <?php if (Helpers::is_avi()) : ?>
+        <?php if (Helpers::is_avi() && pll_current_language() === "ar") : ?>
             <?php $pt = basename(get_page_template()); ?>
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item">

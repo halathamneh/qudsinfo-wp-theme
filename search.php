@@ -40,11 +40,13 @@ get_header();
                     ?>
                     <?php
                     $ptypes = array(
-                        'post' => ["معلومات", "success"],
-                        'pics' => ["صور", "warning"],
-                        'news' => ["أخبار", "primary"],
-                        'book' => ["الكتب", "info"],
+                        'post' => [__("Information", 'qi-theme'), "success"],
+                        'pics' => [__("Photos", 'qi-theme'), "warning"],
                     );
+                    if(pll_current_language() === 'ar') {
+                        $ptypes['news'] = [__("News", 'qi-theme'), "primary"];
+	                    $ptypes['book'] = [__("Books", 'qi-theme'), "info"];
+                    }
                     if (have_posts()): ?>
                         <div class="card-columns">
                             <?php while (have_posts()):

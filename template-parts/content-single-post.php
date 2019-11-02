@@ -15,13 +15,15 @@
                     <?php
                     echo nl2br(get_the_content());
 
-                    $source = get_field('source');
-                    if (!is_null($source) && $source !== '') : ?>
-                        <div class="alert alert-secondary mt-5">
-                            <b><?= __('Source:', 'qi-theme') ?></b>
-                            <p><?= $source ?></p>
-                        </div>
-                    <?php endif; ?>
+                    if(pll_current_language() === 'ar') {
+	                    $source = get_field( 'source' );
+	                    if ( ! is_null( $source ) && $source !== '' ) : ?>
+                            <div class="alert alert-secondary mt-5">
+                                <b><?= __( 'Source:', 'qi-theme' ) ?></b>
+                                <p><?= $source ?></p>
+                            </div>
+	                    <?php endif;
+                    }?>
                 </div>
                 <?php if (has_post_thumbnail()): ?>
                     <div class="blog-post-image col-xs-12 col-sm-12">
@@ -35,7 +37,7 @@
                                     src="<?php echo esc_url($post_thumbnail[0]); ?>"/></a>
                     </div><!--/.blog-post-image-->
                 <?php endif; ?>
-                <div class="sharing-buttons"><i>انشر المعلومة: </i>
+                <div class="sharing-buttons"><i><?= __("Share", 'qi-theme') ?>: </i>
                     <!-- Go to www.addthis.com/dashboard to customize your tools -->
                     <div class="addthis_inline_share_toolbox"></div>
                 </div>
@@ -60,15 +62,17 @@
             </div>
             <div class="info-extra">
                 <?php
-                $category = get_the_category();
-                $wiki_args = array(
-                    'cat'       => $category[0]->term_id . ",-" . $thoughts_catid,
-                    'post_type' => 'info-details',
-                );
-                $wiki_query = new WP_Query($wiki_args);
-                if ($wiki_query->have_posts()) : $wiki_query->the_post(); ?>
-                    <a href="<?= get_permalink() ?>">اعرف أكثر</a>
-                <?php endif;
+                if(pll_current_language() === "ar") {
+	                $category   = get_the_category();
+	                $wiki_args  = array(
+		                'cat'       => $category[0]->term_id . ",-" . $thoughts_catid,
+		                'post_type' => 'info-details',
+	                );
+	                $wiki_query = new WP_Query( $wiki_args );
+	                if ( $wiki_query->have_posts() ) : $wiki_query->the_post(); ?>
+                        <a href="<?= get_permalink() ?>">اعرف أكثر</a>
+	                <?php endif;
+                }
                 ?>
 
                 <?php
