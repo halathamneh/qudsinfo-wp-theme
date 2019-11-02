@@ -74,7 +74,7 @@
                                                 <?php $i = 0; foreach ($types as $type) : /** @var WP_Term $type */ ?>
                                                     <label class="btn btn-outline-secondary<?= $i == 0 ? ' active' : '' ?>">
                                                         <input type="radio" name="type" id="level_<?= $type->term_id ?>" autocomplete="off"
-                                                               value="<?= $type->slug ?>" <?= $i++ == 0 ? 'checked' : '' ?>> <?= __($type->name, 'qi-theme') ?>
+                                                               value="<?= $type->slug ?>" <?= $i++ == 0 ? 'checked' : '' ?>> <?= __($type->slug, 'qi-theme') ?>
                                                     </label>
                                                 <?php endforeach; ?>
                                             </div>
