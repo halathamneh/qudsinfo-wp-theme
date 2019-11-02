@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-02 21:14+0200\n"
-"PO-Revision-Date: 2019-11-02 21:14+0200\n"
+"POT-Creation-Date: 2019-11-02 21:32+0200\n"
+"PO-Revision-Date: 2019-11-02 21:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -67,7 +67,7 @@ msgstr "أعمالنا"
 msgid "Club"
 msgstr "النادي"
 
-#: footer.php:36
+#: footer.php:36 search.php:47
 msgid "News"
 msgstr "الأخبار"
 
@@ -75,7 +75,7 @@ msgstr "الأخبار"
 msgid "Announcement"
 msgstr "إعلان"
 
-#: footer.php:45
+#: footer.php:45 search.php:43
 msgid "Information"
 msgstr "معلومات"
 
@@ -2373,6 +2373,10 @@ msgstr "ابدأ المسابقة"
 msgid "No quizzes yet."
 msgstr "لا يوجد أي مسابقات بعد."
 
+#: page-templates/wallpapers.php:39
+msgid "Wallpaper type"
+msgstr "نوع الصورة"
+
 #: page-templates/wallpapers.php:42 single-wallpapers.php:40
 msgid "Desktop"
 msgstr "سطح المكتب"
@@ -2381,13 +2385,23 @@ msgstr "سطح المكتب"
 msgid "Mobile"
 msgstr "موبايل"
 
+#: search.php:44
+msgid "Photos"
+msgstr "الصور"
+
+#: search.php:48
+msgid "Books"
+msgstr "الكتب"
+
 #: searchform.php:10
 msgid "بحث في المعلومات والصور والأخبار ..."
 msgstr ""
 
-#: searchform.php:30
-msgid "بحث"
-msgstr ""
+#: searchform.php:32
+#, fuzzy
+#| msgid "Search..."
+msgid "Search"
+msgstr "بحث..."
 
 #: sections/blog-bottom-header.php:57
 msgid "Our Information"
@@ -2699,10 +2713,14 @@ msgstr "سبب التسمية:"
 msgid "Builder Name:"
 msgstr "اسم الباني:"
 
-#: template-parts/content-single-post.php:21
-#: template-parts/content-single-post.php:56
+#: template-parts/content-single-post.php:22
+#: template-parts/content-single-post.php:58
 msgid "Source:"
 msgstr "المصدر:"
+
+#: template-parts/content-single-post.php:40
+msgid "Share"
+msgstr ""
 
 #: template-parts/knowquds-list.php:26
 msgid "Select"

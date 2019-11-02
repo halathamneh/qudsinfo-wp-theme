@@ -36,7 +36,7 @@ $pagination_query = $post_query;
             <div class="page-heading">
                 <h1 class="text-light"><?= get_the_title() ?></h1>
                 <ul class="nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
-                    <li class="nav-label">نوع الصورة:</li>
+                    <li class="nav-label"><?php __("Wallpaper type", 'qi-theme') ?>:</li>
                     <li class="nav-item">
                         <a href="/wallpapers/?type=desktop"
                            class="nav-link <?= $type == 'desktop' ? 'active' : '' ?>"><?= __('Desktop', 'qi-theme') ?></a>
