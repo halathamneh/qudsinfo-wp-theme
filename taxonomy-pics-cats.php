@@ -25,7 +25,6 @@ get_template_part('sections/blog', 'bottom-header');
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     global $wp_query;
                     $wp_query_args = array(
-                        'order' => 'asc',
                         'tax_query' => [
                             [
                                 "taxonomy" => 'pics-cats',
@@ -35,6 +34,8 @@ get_template_part('sections/blog', 'bottom-header');
                         'paged' => $paged,
                         'posts_per_page' => 12,
                         'post_type' => array('pics'),
+                        'orderby'                => 'title',
+                        'order'                  => 'ASC',
                     );
                     $wp_query = new WP_Query($wp_query_args);
                     ?>
