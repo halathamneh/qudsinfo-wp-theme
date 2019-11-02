@@ -336,6 +336,22 @@ function getLanguagesForJS() {
     ];
 }
 
+
+// Apply numeric post ordering for posts in admin and front end.
+// Adapted from https://www.fldtrace.com/custom-post-types-numeric-title-order
+function post_order( $wp_query ) {
+	if ( $wp_query->query['post_type'][0] == 'pics' ) {
+		add_filter( 'posts_orderby', 'orderby_post_title_int' );
+	}
+}
+add_action('pre_get_posts', 'post_order');
+
+// Cast the post_title field as an integer in SQL.
+function orderby_post_title_int( $orderby ) {
+	global $wpdb;
+	return "({$wpdb->prefix}posts.post_title+0) ASC";
+}
+
 include_once "inc/featured-posts.php";
 
 require 'inc/Helpers.php';
