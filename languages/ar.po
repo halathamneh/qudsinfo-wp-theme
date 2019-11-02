@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
 "POT-Creation-Date: 2019-11-02 21:32+0200\n"
-"PO-Revision-Date: 2019-11-02 21:33+0200\n"
+"PO-Revision-Date: 2019-11-02 21:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -2663,11 +2663,11 @@ msgstr "الأرشيف"
 
 #: single-wallpapers.php:30
 msgid "Download for desktop"
-msgstr ""
+msgstr "تنزيل لسطح المكتب"
 
 #: single-wallpapers.php:31
 msgid "Download for mobile"
-msgstr ""
+msgstr "تنزيل للموبايل"
 
 #: taxonomy-knowquds.php:23
 msgid "Select from the menu"

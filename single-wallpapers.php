@@ -23,7 +23,7 @@ if (have_posts()):
         <div class="wallpaper-post" style="background-image: url(<?= isset($bg) ? $bg : '' ?>);">
             <div class="container">
                 <div class="d-flex align-items-center flex-md-row flex-column pt-5 pb-3">
-                    <h2 class="text-light font-weight-bold flex-fill"><?php the_title(); ?></h2>
+                    <h2 class="text-light font-weight-bold flex-fill"><?= pll_current_language() === "ar" ? get_the_title() : "Wallpaper Item" ?></h2>
                     <div class="d-flex my-3 my-md-0 flex-column flex-md-row align-items-center">
                         <i class="fa fa-arrow-down mx-3 text-light mb-3" style="font-size: 4rem;"></i>
                         <div class="wallpapers-downloads d-flex flex-column">
