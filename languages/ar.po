@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-02 21:32+0200\n"
-"PO-Revision-Date: 2019-11-02 22:51+0200\n"
+"POT-Creation-Date: 2019-11-03 18:52+0200\n"
+"PO-Revision-Date: 2019-11-03 18:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -2373,15 +2373,11 @@ msgstr "ابدأ المسابقة"
 msgid "No quizzes yet."
 msgstr "لا يوجد أي مسابقات بعد."
 
-#: page-templates/wallpapers.php:39
-msgid "Wallpaper type"
-msgstr "نوع الصورة"
-
-#: page-templates/wallpapers.php:42 single-wallpapers.php:40
+#: page-templates/wallpapers.php:41 single-wallpapers.php:40
 msgid "Desktop"
 msgstr "سطح المكتب"
 
-#: page-templates/wallpapers.php:46 single-wallpapers.php:50
+#: page-templates/wallpapers.php:45 single-wallpapers.php:50
 msgid "Mobile"
 msgstr "موبايل"
 
@@ -2673,6 +2669,10 @@ msgstr "تنزيل للموبايل"
 msgid "Select from the menu"
 msgstr "اختر من القائمة"
 
+#: taxonomy-quiz.php:31
+msgid "Qudsinfo Quizzes"
+msgstr "مسابقات معلومة مقدسية"
+
 #: template-parts/content-none.php:10
 msgid "لم يتم العثور على شيء"
 msgstr ""
@@ -2720,7 +2720,7 @@ msgstr "المصدر:"
 
 #: template-parts/content-single-post.php:40
 msgid "Share"
-msgstr ""
+msgstr "مشاركة"
 
 #: template-parts/knowquds-list.php:26
 msgid "Select"
@@ -2933,14 +2933,17 @@ msgstr ""
 msgid "Product Categories"
 msgstr "المنتجات"
 
-msgid "multiple"
-msgstr "خيارات متعددة"
+#~ msgid "Wallpaper type"
+#~ msgstr "نوع الصورة"
 
-msgid "true-false"
-msgstr "صح خطأ"
+#~ msgid "multiple"
+#~ msgstr "خيارات متعددة"
 
-msgid "Your results"
-msgstr "نتيجتك"
+#~ msgid "true-false"
+#~ msgstr "صح خطأ"
+
+#~ msgid "Your results"
+#~ msgstr "نتيجتك"
 
 #, fuzzy
 #~| msgid "Continue Reading"
