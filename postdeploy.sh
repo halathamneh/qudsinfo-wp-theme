@@ -1,6 +1,6 @@
 #!/bin/bash
 updateLayout=0
-updatedFiles=$(git log --format="%H" -n 2 | xargs git diff --name-only)
+updatedFiles=$(git diff-tree -r --name-only --no-commit-id HEAD^ HEAD)
 for file in $updatedFiles; do
   if [ -f "./$file" ]; then
     if [[ $file == layout* ]]; then
