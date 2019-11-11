@@ -554,7 +554,7 @@ jQuery(document).ready(function ($) {
 
                         if (distance > 0) {
                             $sectionContent.addClass('done');
-                            $sectionContent.html("<span class='result'>" + distance + " كيلو متر" + "</span>");
+                            $sectionContent.html("<span class='result'>" + distance + scripts_data.lang['km'] + "</span>");
                         }
                     }
                 }

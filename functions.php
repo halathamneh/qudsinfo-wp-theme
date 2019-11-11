@@ -334,7 +334,8 @@ function getLanguagesForJS() {
         'aqsa_distance.permission' => __("Please allow location permission to find your distance from Aqsa", 'qi-theme'),
         'aqsa_distance.enable_gps' => __("Please enable location to find your distance from Aqsa", 'qi-theme'),
         'aqsa_distance.error' => __("Something went wrong, please try again!", 'qi-theme'),
-        'pleaseWait' => __("Please wait", 'qi-theme')
+        'pleaseWait' => __("Please wait", 'qi-theme'),
+        'km' => __("KM", 'qi-theme')
     ];
 }
 

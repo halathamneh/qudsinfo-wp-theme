@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-11 21:06+0200\n"
-"PO-Revision-Date: 2019-11-11 21:08+0200\n"
+"POT-Creation-Date: 2019-11-11 21:49+0200\n"
+"PO-Revision-Date: 2019-11-11 21:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -151,6 +151,10 @@ msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى"
 #: functions.php:337
 msgid "Please wait"
 msgstr "الرجاء الانتظار"
+
+#: functions.php:338
+msgid "KM"
+msgstr "كيلو متر"
 
 #: header-quizzes.php:17
 msgid " - نتائج البحث"
@@ -2694,7 +2698,7 @@ msgid "Qudsinfo Quizzes"
 msgstr "مسابقات معلومة مقدسية"
 
 #: template-parts/content-none.php:10
-msgid "Nothing found"
+msgid "Couldn't find any thing"
 msgstr "لم يتم العثور على شيء"
 
 #: template-parts/content-none.php:13
@@ -2960,6 +2964,9 @@ msgstr ""
 #| msgid "Products"
 msgid "Product Categories"
 msgstr "المنتجات"
+
+#~ msgid "Nothing found"
+#~ msgstr "لم يتم العثور على شيء"
 
 #~ msgid "Wallpaper type"
 #~ msgstr "نوع الصورة"

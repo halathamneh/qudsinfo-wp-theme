@@ -7,7 +7,7 @@
  */
 ?>
 <article <?php post_class( 'blog-post' ); ?>>
-	<a href="<?php echo esc_url( home_url() ); ?>" title="<?php _e( 'Nothing found', 'qi-theme' ); ?>" class="blog-post-title"><?php _e( 'Nothing found', 'qi-theme' ); ?></a>
+	<a href="<?php echo esc_url( home_url() ); ?>" title="<?php _e( "Couldn't find any thing", 'qi-theme' ); ?>" class="blog-post-title"><?php _e( "Couldn't find any thing", 'qi-theme' ); ?></a>
 	<div class="blog-post-entry">
 		<p>
 			<?= __('Try with different keywords', 'qi-theme') ?>
