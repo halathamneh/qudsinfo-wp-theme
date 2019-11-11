@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-03 18:52+0200\n"
-"PO-Revision-Date: 2019-11-03 18:54+0200\n"
+"POT-Creation-Date: 2019-11-11 20:34+0200\n"
+"PO-Revision-Date: 2019-11-11 20:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -132,21 +132,25 @@ msgstr "جميع الحقوق محفوظة - معلومة مقدسية"
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:309 yarpp-template-thumbnail.php:7
+#: functions.php:310 yarpp-template-thumbnail.php:7
 msgid "See more:"
 msgstr "اقرأ أيضاً:"
 
-#: functions.php:333
+#: functions.php:334
 msgid "Please allow location permission to find your distance from Aqsa"
 msgstr "لحساب بعدك عن الأقصى، اسمح الوصول إلى موقعك"
 
-#: functions.php:334
+#: functions.php:335
 msgid "Please enable location to find your distance from Aqsa"
 msgstr "قم بتفعيل خدمة الموقع لحساب بعدك عن الأقصى"
 
-#: functions.php:335
+#: functions.php:336
 msgid "Something went wrong, please try again!"
 msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى"
+
+#: functions.php:337
+msgid "Please wait"
+msgstr "الرجاء الانتظار"
 
 #: header-quizzes.php:17
 msgid " - نتائج البحث"
