@@ -21,10 +21,18 @@
         min-width: 10%;
         padding: 2rem 1rem;
         &:first-child {
-          padding-right: 8rem;
+          padding-left: 8rem;
         }
         &:last-child {
-          padding-left: 8rem;
+          padding-right: 8rem;
+        }
+        .rtl & {
+          &:first-child {
+            padding-right: 8rem;
+          }
+          &:last-child {
+            padding-left: 8rem;
+          }
         }
       }
       @include media-breakpoint-down('sm') {
@@ -53,9 +61,11 @@
       .section-title {
         position: relative;
         color: #000;
-        text-align: right;
         padding: 1rem 0.75rem;
         border-bottom: 1px solid #ddd;
+        .rtl & {
+          text-align: right;
+        }
         h2 {
           font-weight: 800;
           font-size: 1.2rem;
