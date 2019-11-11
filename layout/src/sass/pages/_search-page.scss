@@ -35,6 +35,8 @@
       background-color: #eee;
       border: 1px solid #ddd;
       border-left: none;
+      display: flex;
+      align-items: center;
       &::after {
         margin-left: 0.5em;
       }
