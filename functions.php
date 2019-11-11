@@ -169,10 +169,11 @@ if (!function_exists('illdy_enqueue_javascripts')) {
         wp_enqueue_script('my-scripts', get_template_directory_uri() . '/layout/js/scripts.js', $scripts_deps, filemtime(get_template_directory() . '/layout/js/scripts.min.js') + 3, true);
 
         wp_localize_script('my-scripts', 'scripts_data', array(
-            'ajaxurl'    => admin_url('admin-ajax.php'),
+            'ajaxurl'    => pll_home_url() . 'wp-admin/admin-ajax.php',
             'isFront'    => is_front_page(),
             'page_title' => get_the_title() . ' - ' . get_bloginfo('name'),
-            'lang' => getLanguagesForJS()
+            'lang' => getLanguagesForJS(),
+            'langCode' => pll_current_language()
         ));
 
 
@@ -333,6 +334,7 @@ function getLanguagesForJS() {
         'aqsa_distance.permission' => __("Please allow location permission to find your distance from Aqsa", 'qi-theme'),
         'aqsa_distance.enable_gps' => __("Please enable location to find your distance from Aqsa", 'qi-theme'),
         'aqsa_distance.error' => __("Something went wrong, please try again!", 'qi-theme'),
+        'pleaseWait' => __("Please wait", 'qi-theme')
     ];
 }
 

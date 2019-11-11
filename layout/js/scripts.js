@@ -254,7 +254,7 @@ jQuery(document).ready(function ($) {
         $('.owl-carousel').owlCarousel({
             rtl: isRtl(),
             autoHeight: false,
-            responsive : {
+            responsive: {
                 // breakpoint from 0 up
                 0: {
                     items: 1,
@@ -313,14 +313,14 @@ jQuery(document).ready(function ($) {
                 action: 'ajax_info',
                 page: page,
                 cat: cat,
-                post_type: post_type
+                post_type: post_type,
             },
             beforeSend: function () {
                 $infolist.find('.content').remove();
                 $('html, body').animate({
                     scrollTop: ($(".info-list").offset().top - 20)
                 }, 200);
-                $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> يرجى الانتظار</div>');
+                $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> ' + scripts_data.lang['pleaseWait'] + '</div>');
             },
             success: function (data) {
                 if (data != '') {
@@ -356,7 +356,7 @@ jQuery(document).ready(function ($) {
             $('html, body').animate({
                 scrollTop: titleOffset.top - 150
             }, 200);
-            $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> يرجى الانتظار</div>');
+            $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> ' + scripts_data.lang['pleaseWait'] + '</div>');
             return;
         }
 
@@ -386,7 +386,7 @@ jQuery(document).ready(function ($) {
         var _data = {
             action: 'ajax_info',
             cat: cat,
-            post_type: post_type
+            post_type: post_type,
         };
 
         // send ajax request
@@ -399,7 +399,7 @@ jQuery(document).ready(function ($) {
                 $('html, body').animate({
                     scrollTop: titleOffset.top - 150
                 }, 200);
-                $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> يرجى الانتظار</div>');
+                $infolist.append('<div class="content" id="loader"><i class="fa fa-spin fa-circle-o-notch"></i> ' + scripts_data.lang['pleaseWait'] + '</div>');
                 $header.removeAttr('data-image-src');
                 $header.removeAttr('data-parallax');
             },
@@ -407,12 +407,13 @@ jQuery(document).ready(function ($) {
                 if (data != '' && data != 0) {
                     var _json = $.parseJSON(data);
                     history.pushState(_data, _json.title, _json.url);
-
-                    console.log(_json.image || "no image");
-                    if (_json.image && _json.image !== "")
-                        $header.siblings('.parallax-mirror').find('img.parallax-slider')[0].src = _json.image;
-                    else
-                        $header.siblings('.parallax-mirror').find('img.parallax-slider')[0].src = "";
+                    var $imageEl = $header.siblings('.parallax-mirror').find('img.parallax-slider');
+                    if ($imageEl.length) {
+                        if (_json.image && _json.image !== "")
+                            $imageEl[0].src = _json.image;
+                        else
+                            $imageEl[0].src = "";
+                    }
                     //$header.parallax({imageSrc: _json.image});
 
                     document.title = _json.title;
