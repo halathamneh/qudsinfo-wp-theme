@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-11 20:34+0200\n"
-"PO-Revision-Date: 2019-11-11 20:35+0200\n"
+"POT-Creation-Date: 2019-11-11 20:49+0200\n"
+"PO-Revision-Date: 2019-11-11 20:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -2688,6 +2688,10 @@ msgstr ""
 #: template-parts/content-single.php:19
 msgid "Pages:"
 msgstr "الصفحات"
+
+#: template-parts/content-single-info-details.php:15
+msgid "Index"
+msgstr "الفهرس"
 
 #: template-parts/content-single-pics.php:73
 msgid "Photos & Landmarks"

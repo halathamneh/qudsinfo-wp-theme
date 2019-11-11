@@ -12,7 +12,7 @@
         <div class="toc-widget widget">
             <div class="widget-container">
                 <div class="widget-title">
-                    <h3><i class="fa fa-book"></i> الفهرس</h3>
+                    <h3><i class="fa fa-book"></i> <?= __("Index", 'qi-theme') ?></h3>
                     <button class="btn btn-link slide-down"><i class="fa fa-angle-down"></i></button>
                 </div>
                 <ul class="toc-items">
