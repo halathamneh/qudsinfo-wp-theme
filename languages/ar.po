@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-11 20:49+0200\n"
-"PO-Revision-Date: 2019-11-11 20:49+0200\n"
+"POT-Creation-Date: 2019-11-11 21:06+0200\n"
+"PO-Revision-Date: 2019-11-11 21:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_attr_x;_x;esc_html__\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_x;_x;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: **/*.js\n"
 
@@ -67,7 +67,7 @@ msgstr "أعمالنا"
 msgid "Club"
 msgstr "النادي"
 
-#: footer.php:36 search.php:47
+#: footer.php:36 search.php:47 searchform.php:25
 msgid "News"
 msgstr "الأخبار"
 
@@ -75,7 +75,7 @@ msgstr "الأخبار"
 msgid "Announcement"
 msgstr "إعلان"
 
-#: footer.php:45 search.php:43
+#: footer.php:45 search.php:43 searchform.php:23
 msgid "Information"
 msgstr "معلومات"
 
@@ -160,7 +160,7 @@ msgstr ""
 msgid "بحث..."
 msgstr ""
 
-#: header-quizzes.php:132 searchform.php:18
+#: header-quizzes.php:132
 msgid "بحث عن:"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr " - نتائج البحث"
 msgid "Search..."
 msgstr "بحث..."
 
-#: header.php:109 template-parts/header-top-nav.php:34
+#: header.php:109 searchform.php:18 template-parts/header-top-nav.php:34
 msgid "Search for:"
 msgstr "بحث عن:"
 
@@ -1742,7 +1742,7 @@ msgstr "جميع المعلومات"
 
 #: inc/infos-handler.php:38 inc/infos-handler.php:71
 #: page-templates/news-team.php:101 page-templates/news-team.php:102
-#: sections/front-page-slider.php:40
+#: search.php:77 sections/front-page-slider.php:40
 msgid "Continue Reading"
 msgstr "أكمل القراءة"
 
@@ -2385,17 +2385,37 @@ msgstr "سطح المكتب"
 msgid "Mobile"
 msgstr "موبايل"
 
-#: search.php:44
+#: search.php:44 searchform.php:26
 msgid "Photos"
 msgstr "الصور"
 
-#: search.php:48
+#: search.php:48 searchform.php:27
 msgid "Books"
 msgstr "الكتب"
 
 #: searchform.php:10
-msgid "بحث في المعلومات والصور والأخبار ..."
+msgid "Search in infos, pictures..."
+msgstr "بحث في المعلومات والصور والأخبار ..."
+
+#: searchform.php:21
+#, fuzzy
+#| msgid "Search for:"
+msgid "Search in:"
+msgstr "بحث عن:"
+
+#: searchform.php:22
+msgid "Everything"
 msgstr ""
+
+#: searchform.php:28
+#, fuzzy
+#| msgid "Videos"
+msgid "Video"
+msgstr "المرئية"
+
+#: searchform.php:29 sections/blog-bottom-header.php:85
+msgid "Audio"
+msgstr "المسموعة"
 
 #: searchform.php:32
 #, fuzzy
@@ -2418,10 +2438,6 @@ msgstr "المكتوبة"
 #: sections/blog-bottom-header.php:81
 msgid "Videos"
 msgstr "المرئية"
-
-#: sections/blog-bottom-header.php:85
-msgid "Audio"
-msgstr "المسموعة"
 
 #: sections/front-page-about.php:12
 msgid ""
@@ -2678,8 +2694,12 @@ msgid "Qudsinfo Quizzes"
 msgstr "مسابقات معلومة مقدسية"
 
 #: template-parts/content-none.php:10
-msgid "لم يتم العثور على شيء"
-msgstr ""
+msgid "Nothing found"
+msgstr "لم يتم العثور على شيء"
+
+#: template-parts/content-none.php:13
+msgid "Try with different keywords"
+msgstr "حاول بكلمات مختلفة"
 
 #: template-parts/content-page-noimage.php:20 template-parts/content-page.php:21
 #: template-parts/content-single-blogs.php:29

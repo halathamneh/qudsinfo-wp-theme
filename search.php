@@ -74,7 +74,7 @@ get_header();
                                             <h4 class="card-title text-dark"><?= get_the_title() ?></h4>
                                         </a>
                                         <p class="card-text"><?= get_the_excerpt() ?></p>
-                                        <a href="<?= get_permalink() ?>" class="btn btn-light">أكمل القراءة</a>
+                                        <a href="<?= get_permalink() ?>" class="btn btn-light"><?= __('Continue Reading', 'qi-theme') ?></a>
                                     </div>
                                     <?php if (!empty($cats)) : ?>
                                         <div class="card-footer">
