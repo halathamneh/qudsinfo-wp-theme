@@ -20,9 +20,10 @@
       }
     }
     input[type="search"], input[type="text"] {
-      border: none;
       padding: 1rem;
       flex: 1;
+      border: 1px solid #ddd;
+      border-right: none;
       &:focus {
         outline: none;
       }
@@ -32,8 +33,26 @@
       height: 100%;
       border-radius: 0;
       background-color: #eee;
-      border-color: #eee;
-      box-shadow: 5px 0 5px rgba(150,150,150,0.5);
+      border: 1px solid #ddd;
+      border-left: none;
+      &::after {
+        margin-left: 0.5em;
+      }
+      &::before {
+        width: 0;
+      }
+      .rtl & {
+        &::after {
+          margin-left: -0.5em;
+        }
+      }
+      .filter-option {
+        position: static;
+        padding: 0;
+        width: auto;
+        flex: 1;
+      }
+
     }
   }
 }
