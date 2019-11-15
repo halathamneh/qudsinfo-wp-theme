@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
 "POT-Creation-Date: 2019-11-11 21:49+0200\n"
-"PO-Revision-Date: 2019-11-11 21:50+0200\n"
+"PO-Revision-Date: 2019-11-15 10:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -2402,18 +2402,14 @@ msgid "Search in infos, pictures..."
 msgstr "بحث في المعلومات والصور والأخبار ..."
 
 #: searchform.php:21
-#, fuzzy
-#| msgid "Search for:"
 msgid "Search in:"
 msgstr "بحث عن:"
 
 #: searchform.php:22
 msgid "Everything"
-msgstr ""
+msgstr "كل شيء"
 
 #: searchform.php:28
-#, fuzzy
-#| msgid "Videos"
 msgid "Video"
 msgstr "المرئية"
 
@@ -2422,10 +2418,8 @@ msgid "Audio"
 msgstr "المسموعة"
 
 #: searchform.php:32
-#, fuzzy
-#| msgid "Search..."
 msgid "Search"
-msgstr "بحث..."
+msgstr "بحث"
 
 #: sections/blog-bottom-header.php:57
 msgid "Our Information"
@@ -2960,10 +2954,8 @@ msgid "WooCommerce Title"
 msgstr ""
 
 #: woocommerce.php:35
-#, fuzzy
-#| msgid "Products"
 msgid "Product Categories"
-msgstr "المنتجات"
+msgstr "تصنيفات المنتجات"
 
 #~ msgid "Nothing found"
 #~ msgstr "لم يتم العثور على شيء"
