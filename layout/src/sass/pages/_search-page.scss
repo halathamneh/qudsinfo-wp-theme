@@ -4,6 +4,8 @@
   padding: 1.5rem;
   .search-form-box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     > button {
       background-color: $success;
       color: #fff;
@@ -28,8 +30,20 @@
         border-left: none;
         border-right: 1px solid #ddd;
       }
+      @include media-breakpoint-down(sm) {
+        flex: 1 1 100%;
+        border: 1px solid #ddd !important;
+      }
       &:focus {
         outline: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .dropdown {
+        flex: 1;
+        &-toggle {
+          border: 1px solid #ddd !important;
+        }
       }
     }
     .dropdown-toggle {
@@ -39,8 +53,10 @@
       background-color: #eee;
       border: 1px solid #ddd;
       border-left: none;
+      border-right: none;
       display: flex;
       align-items: center;
+
       &::after {
         margin-left: 0.5em;
       }
