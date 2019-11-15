@@ -11,7 +11,7 @@ $placeholder = esc_attr_x('Search in infos, pictures...', 'placeholder', 'qi-the
 $ia = "active";
 $pa = "";
 ?>
-<form role="search" method="get" class="search-form info-s-form" action="<?php echo home_url('/'); ?>">
+<form role="search" method="get" class="search-form info-s-form" action="<?php echo pll_home_url('/'); ?>">
     <div class="search-form-box">
         <input type="search" id="s" placeholder="<?php echo $placeholder; ?>"
                value="<?php echo esc_attr(get_search_query()); ?>" name="s"

@@ -24,6 +24,10 @@
       flex: 1;
       border: 1px solid #ddd;
       border-right: none;
+      .rtl {
+        border-left: none;
+        border-right: 1px solid #ddd;
+      }
       &:focus {
         outline: none;
       }

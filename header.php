@@ -77,13 +77,13 @@ if (!is_404()) {
             <div class="d-flex">
                 <div class="logo-image">
                     <?php if ($img_logo): ?>
-                        <a href="<?php echo esc_url(home_url()); ?>"
+                        <a href="<?php echo esc_url(pll_home_url()); ?>"
                            title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="header-logo"><img
                                     src="<?php echo esc_url($img_logo); ?>"
                                     alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
                                     title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
                     <?php else: ?>
-                        <a href="<?php echo esc_url(home_url()); ?>"
+                        <a href="<?php echo esc_url(pll_home_url()); ?>"
                            title="<?php echo esc_attr(get_bloginfo('name')); ?>"
                            class="header-logo"><?php echo illdy_sanitize_html($text_logo); ?></a>
                     <?php endif; ?>
@@ -100,7 +100,7 @@ if (!is_404()) {
         <div class="responsive-menu-overlay"></div>
         <div class="responsive-menu-content">
             <form role="search" method="get" class="search-form responsive-menu-search"
-                  action="<?php echo home_url('/'); ?>">
+                  action="<?php echo pll_home_url('/'); ?>">
                 <?php
                 $placeholder = esc_attr_x('Search...', 'placeholder', 'qi-theme'); ?>
                 <input type="search" id="s"
