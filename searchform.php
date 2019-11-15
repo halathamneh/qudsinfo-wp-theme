@@ -21,9 +21,9 @@ $pa = "";
             <option value="-1" disabled <?= !isset($selected) ? "selected" : "" ?>><?php esc_html_e("Search in:", 'qi-theme') ?></option>
             <option value="all" <?= isset($selected) && $selected == "all" ? "selected" : "" ?>><?php esc_html_e("Everything", "qi-theme") ?></option>
             <option value="post" <?= isset($selected) && $selected == "post" ? "selected" : "" ?>><?php esc_html_e("Information", "qi-theme") ?></option>
-		    <?php if(pll_current_language() === "ar") : ?>
+            <option value="pics" <?= isset($selected) && $selected == "pics" ? "selected" : "" ?>><?php esc_html_e("Photos", "qi-theme") ?></option>
+            <?php if(pll_current_language() === "ar") : ?>
                 <option value="news" <?= isset($selected) && $selected == "news" ? "selected" : "" ?>><?php esc_html_e("News", "qi-theme") ?></option>
-                <option value="pics" <?= isset($selected) && $selected == "pics" ? "selected" : "" ?>><?php esc_html_e("Photos", "qi-theme") ?></option>
                 <option value="book" <?= isset($selected) && $selected == "book" ? "selected" : "" ?>><?php esc_html_e("Books", "qi-theme") ?></option>
                 <option value="videos" <?= isset($selected) && $selected == "videos" ? "selected" : "" ?>><?php esc_html_e("Video", "qi-theme") ?></option>
                 <option value="audio" <?= isset($selected) && $selected == "audio" ? "selected" : "" ?>><?php esc_html_e("Audio", "qi-theme") ?></option>
