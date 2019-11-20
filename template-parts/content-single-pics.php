@@ -24,9 +24,10 @@ if ($is_building) {
                 <div class="image-holder">
                     <?php
                     $images = [];
+                    $originalPostId = get_the_ID();
                     if (has_post_thumbnail()) {
-	                    $post_image  = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
-	                    $thumb_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+	                    $post_image  = wp_get_attachment_image_src( get_post_thumbnail_id( $originalPostId ), 'large' );
+	                    $thumb_image = wp_get_attachment_image_src( get_post_thumbnail_id( $originalPostId ), 'thumbnail' );
                     }
                     ?>
                     <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
@@ -35,7 +36,7 @@ if ($is_building) {
                             $images = get_field('gallery_images');
                         } else {
                             global $polylang;
-                            $translationIds = $polylang->model->get_translations('post', get_the_ID());
+                            $translationIds = $polylang->model->get_translations('post', $originalPostId);
                             $images = get_field('gallery_images', $translationIds['ar']);
                         }
                         if (!empty($images) && is_array($images) && count($images)) {

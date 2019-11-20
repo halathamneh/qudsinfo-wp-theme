@@ -94,7 +94,7 @@
       transition: all 0.5s;
       a {
         margin: 0;
-        padding: 5px 0;
+        padding: 8px;
         &:hover {
           box-shadow: none;
           background: none;
@@ -111,8 +111,12 @@
         opacity: 0;
         height: 0;
         padding: 0;
-        border-right: 3px solid #adadad;
+        border-left: 3px solid #adadad;
         transition: all 0.2s;
+        .rtl & {
+          border-left: none;
+          border-right: 3px solid #adadad;
+        }
       }
       &.expanded {
         >a {
@@ -133,6 +137,7 @@
     li.active > a {
       background-color: #fff !important;
       padding-right: 5px !important;
+      padding-left: 5px !important;
       color: #000 !important;
     }
   }
@@ -149,7 +154,11 @@
       height: auto;
       padding-bottom: 5px;
       margin-bottom: 5px;
-      margin-right: 10px;
+      margin-left: 10px;
+      .rtl & {
+        margin-left: 0;
+        margin-right: 10px;
+      }
     }
     li.active > a {
       background-color: #b4b4b4 !important;
@@ -240,9 +249,6 @@
     -webkit-box-shadow: 0 0 25px #000;
     -moz-box-shadow: 0 0 25px #000;
     box-shadow: 0 0 25px #000;
-    li {
-      text-align: center;
-    }
   }
 }
 

@@ -95,7 +95,7 @@ $cats = get_terms(array(
                 </div>
             <?php else : ?>
                 <div class="col-sm-3 cats-list dropdown">
-                    <span>اختر:</span>
+                    <span><?= __("Choose Subject", "qi-theme") ?></span>
                     <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu1"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="selected-value"><?php echo $category == 0 ? __('All Infos', 'qi-theme') : get_term_field('name', intval($category)); ?></span>

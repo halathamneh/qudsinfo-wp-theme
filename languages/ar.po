@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-11 21:49+0200\n"
-"PO-Revision-Date: 2019-11-15 10:20+0200\n"
+"POT-Creation-Date: 2019-11-15 10:55+0200\n"
+"PO-Revision-Date: 2019-11-16 12:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -67,7 +67,7 @@ msgstr "أعمالنا"
 msgid "Club"
 msgstr "النادي"
 
-#: footer.php:36 search.php:47 searchform.php:25
+#: footer.php:36 search.php:47 searchform.php:26
 msgid "News"
 msgstr "الأخبار"
 
@@ -2373,11 +2373,19 @@ msgstr "اختر المستوى"
 msgid "Quiz Type"
 msgstr "نوع المسابقة"
 
-#: page-templates/quizzes.php:82
+#: page-templates/quizzes.php:76
+msgid "true-false"
+msgstr "صح خطأ"
+
+#: page-templates/quizzes.php:77
+msgid "multiple"
+msgstr "خيارات متعددة"
+
+#: page-templates/quizzes.php:87
 msgid "Start the quiz"
 msgstr "ابدأ المسابقة"
 
-#: page-templates/quizzes.php:92
+#: page-templates/quizzes.php:97
 msgid "No quizzes yet."
 msgstr "لا يوجد أي مسابقات بعد."
 
@@ -2389,7 +2397,7 @@ msgstr "سطح المكتب"
 msgid "Mobile"
 msgstr "موبايل"
 
-#: search.php:44 searchform.php:26
+#: search.php:44 searchform.php:24
 msgid "Photos"
 msgstr "الصور"
 
@@ -2962,12 +2970,6 @@ msgstr "تصنيفات المنتجات"
 
 #~ msgid "Wallpaper type"
 #~ msgstr "نوع الصورة"
-
-#~ msgid "multiple"
-#~ msgstr "خيارات متعددة"
-
-#~ msgid "true-false"
-#~ msgstr "صح خطأ"
 
 #~ msgid "Your results"
 #~ msgstr "نتيجتك"
