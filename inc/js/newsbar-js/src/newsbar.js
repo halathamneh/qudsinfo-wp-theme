@@ -14,7 +14,11 @@ function array_move(arr, old_index, new_index) {
 }
 
 const Container = styled.div`
-  padding: 0 24px;
+  padding: 24px;
+  border: #eee;
+  background-color: #fff;
+  margin: 16px;
+  border-radius: 8px;
 `;
 
 const OrderedList = styled.ol`
@@ -48,9 +52,11 @@ const Button = styled.button`
 
 const SaveButtonContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
-  padding: 24px;
-  border-top: 2px solid #ddd;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  h1 {
+    margin: 0;
+  }
 `;
 
 const ListItemStyled = styled.li`
@@ -76,17 +82,25 @@ class ListItem extends Component {
     value: null
   };
 
-    render() {
+  render() {
     return (
       <ListItemStyled>
         <input
           type="text"
           name="news_item[]"
-          value={this.state.value !== null ? this.state.value : this.props.text.replace(/\\"/g, '"')}
+          value={
+            this.state.value !== null
+              ? this.state.value
+              : this.props.text.replace(/\\"/g, '"')
+          }
           onChange={this.valueChanged}
         />
 
-          <CharCount>{this.state.value !== null ? this.state.value.length : this.props.text.length}</CharCount>
+        <CharCount>
+          {this.state.value !== null
+            ? this.state.value.length
+            : this.props.text.length}
+        </CharCount>
 
         <Button
           type="button"
@@ -126,11 +140,11 @@ class NewsList extends Component {
     newValue: ""
   };
 
-    componentWillMount() {
-        if(this.props.items && this.props.items.length) {
-            this.setState({ items: this.props.items})
-        }
+  componentWillMount() {
+    if (this.props.items && this.props.items.length) {
+      this.setState({ items: this.props.items });
     }
+  }
 
   render() {
     return (
@@ -140,7 +154,21 @@ class NewsList extends Component {
           action={this.props.url}
           className="newsbar-settings-form"
         >
+          {this.state.items.length ? (
+            <>
+              <SaveButtonContainer>
+                <h1>شريط الأخبار اللغة {this.props.lang.toUpperCase()}</h1>
+                <button
+                  className="button button-primary button-large"
+                  type="submit"
+                >
+                  حفظ
+                </button>
+              </SaveButtonContainer>
+            </>
+          ) : null}
           <input type="hidden" name="action" value="set_newsbar_settings" />
+          <input type="hidden" name="lang" value={this.props.lang} />
 
           <OrderedList>
             {this.state.items.map((item, i) => (
@@ -155,22 +183,8 @@ class NewsList extends Component {
               />
             ))}
           </OrderedList>
-
-          {this.state.items.length ? (
-            <>
-              <SaveButtonContainer>
-                {" "}
-                <button
-                  className="button button-primary button-large"
-                  type="submit"
-                >
-                  حفظ
-                </button>
-              </SaveButtonContainer>
-              <hr />
-            </>
-          ) : null}
         </form>
+        <hr />
 
         <h3>أضف خبر للشريط</h3>
         <ListItemStyled>
@@ -225,6 +239,10 @@ class NewsList extends Component {
   };
 }
 
-const newsbarElem = document.querySelector(".newsbar-app");
-const json = newsbarElem.dataset.json ? JSON.parse(newsbarElem.dataset.json) : {};
-ReactDOM.render(<NewsList {...json} />, newsbarElem);
+const newsbarElems = document.querySelectorAll(".newsbar-app");
+newsbarElems.forEach(newsbarElem => {
+  const json = newsbarElem.dataset.json
+    ? JSON.parse(newsbarElem.dataset.json)
+    : {};
+  ReactDOM.render(<NewsList {...json} />, newsbarElem);
+});

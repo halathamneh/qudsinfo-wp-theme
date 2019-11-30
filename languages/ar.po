@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2019-11-15 10:55+0200\n"
-"PO-Revision-Date: 2019-11-16 12:24+0200\n"
+"POT-Creation-Date: 2019-11-30 13:20+0200\n"
+"PO-Revision-Date: 2019-11-30 13:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
@@ -185,8 +185,8 @@ msgid "Language"
 msgstr ""
 
 #: inc/NewsBar.php:44 inc/NewsBar.php:45
-msgid "شريط الأخبار"
-msgstr ""
+msgid "News Bar"
+msgstr "شريط الأخبار"
 
 #: inc/components/entry-meta/class.mt-entry-meta.php:67
 #: inc/components/entry-meta/class.mt-entry-meta.php:94
@@ -2233,6 +2233,7 @@ msgid "Find your distance!"
 msgstr "اضغط هنا لحساب بعدك!"
 
 #: page-templates/books.php:35 template-parts/infos-drawer.php:30
+#: template-parts/infos-drawer.php:98
 msgid "Choose Subject"
 msgstr "اختر موضوع"
 
@@ -2381,11 +2382,11 @@ msgstr "صح خطأ"
 msgid "multiple"
 msgstr "خيارات متعددة"
 
-#: page-templates/quizzes.php:87
+#: page-templates/quizzes.php:88
 msgid "Start the quiz"
 msgstr "ابدأ المسابقة"
 
-#: page-templates/quizzes.php:97
+#: page-templates/quizzes.php:98
 msgid "No quizzes yet."
 msgstr "لا يوجد أي مسابقات بعد."
 
@@ -2719,31 +2720,31 @@ msgstr "الصفحات"
 msgid "Index"
 msgstr "الفهرس"
 
-#: template-parts/content-single-pics.php:73
+#: template-parts/content-single-pics.php:74
 msgid "Photos & Landmarks"
 msgstr "الصور والمعالم"
 
-#: template-parts/content-single-pics.php:85
+#: template-parts/content-single-pics.php:86
 msgid "Share Image:"
 msgstr "شارك الصورة:"
 
-#: template-parts/content-single-pics.php:95
+#: template-parts/content-single-pics.php:96
 msgid "Landmark Location:"
 msgstr "موقع المعلم بالنسبة للمسجد الأقصى:"
 
-#: template-parts/content-single-pics.php:101
+#: template-parts/content-single-pics.php:102
 msgid "Landmark Location relative to Dome of the rock:"
 msgstr "موقع المعلم بالنسبة لقبة الصخرة:"
 
-#: template-parts/content-single-pics.php:107
+#: template-parts/content-single-pics.php:108
 msgid "Landmark History:"
 msgstr "تاريخ المعلم:"
 
-#: template-parts/content-single-pics.php:113
+#: template-parts/content-single-pics.php:114
 msgid "Reason of the name:"
 msgstr "سبب التسمية:"
 
-#: template-parts/content-single-pics.php:119
+#: template-parts/content-single-pics.php:120
 msgid "Builder Name:"
 msgstr "اسم الباني:"
 

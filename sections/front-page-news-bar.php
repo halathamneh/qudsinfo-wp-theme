@@ -10,7 +10,7 @@
 <?php
 /** @var NewsBar $newsBar */
 global $newsBar;
-$newsList = $newsBar->getNewsList();
+$newsList = $newsBar->getNewsList(pll_current_language());
 if(count($newsList)) :
 ?>
 <section id="news-bar" class="front-page-section">

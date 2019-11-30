@@ -31,7 +31,11 @@ class NewsBar
         if ( ! $newsList )
             $redirect_to .= '&failed';
         else {
-            update_option('news_list', $newsList);
+        	$option_name = 'news_list_ar'; // fallback
+        	if(isset($_POST['lang']) && in_array($_POST['lang'], ['ar', 'en'])){
+        		$option_name = 'news_list_' . $_POST['lang'];
+	        }
+            update_option($option_name, $newsList);
             $redirect_to .= '&success';
         }
         wp_redirect($redirect_to);
@@ -41,8 +45,8 @@ class NewsBar
     {
         add_submenu_page(
             'edit.php?post_type=news',
-            __( 'شريط الأخبار', 'qi-theme' ),
-            __( 'شريط الأخبار', 'qi-theme' ),
+            __( 'News Bar', 'qi-theme' ),
+            __( 'News Bar', 'qi-theme' ),
             'edit_posts',
             'newsbar-settings',
             [$this, 'render_admin_page']
@@ -50,9 +54,10 @@ class NewsBar
 
     }
 
-    public function getNewsList()
+    public function getNewsList($lang='ar')
     {
-        return get_option('news_list', []);
+    	if(!in_array($lang, ['ar', 'en'])) $lang = 'ar';
+        return get_option('news_list_' . $lang, []);
     }
 
     public function render_admin_page()
@@ -60,7 +65,8 @@ class NewsBar
 
         $data = [
             'title' => esc_html(get_admin_page_title()),
-            'newsList' => $this->getNewsList()
+            'newsListAr' => $this->getNewsList('ar'),
+            'newsListEn' => $this->getNewsList('en')
         ];
 
         Helpers::view('newsbar-settings', $data);
