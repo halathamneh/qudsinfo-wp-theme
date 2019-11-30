@@ -45,8 +45,18 @@ const Button = styled.button`
   height: 40px;
   transition: all 0.25s;
   cursor: pointer;
+  border: 1px solid #ddd;
   &:hover {
     background: #ddd;
+  }
+  &:disabled {
+    border: none;
+    span {
+      color: #ccc;
+    }
+    &:hover {
+      background-color: #fff;
+    }
   }
 `;
 
@@ -156,14 +166,12 @@ class NewsList extends Component {
         >
           <SaveButtonContainer>
             <h1>شريط الأخبار اللغة {this.props.lang.toUpperCase()}</h1>
-            {this.state.items.length ? (
-              <button
-                className="button button-primary button-large"
-                type="submit"
-              >
-                حفظ
-              </button>
-            ) : null}
+            <button
+              className="button button-primary button-large"
+              type="submit"
+            >
+              حفظ
+            </button>
           </SaveButtonContainer>
 
           <input type="hidden" name="action" value="set_newsbar_settings" />
@@ -223,7 +231,7 @@ class NewsList extends Component {
 
   removeItem = index => {
     const items = [...this.state.items];
-    items.splice(index);
+    items.splice(index, 1);
     this.setState({ items });
   };
 

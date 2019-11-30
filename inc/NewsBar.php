@@ -26,18 +26,18 @@ class NewsBar
 
     public function set_newsbar_settings()
     {
-        $newsList = $_POST['news_item'];
         $redirect_to = admin_url('/edit.php?post_type=news&page=newsbar-settings');
-        if ( ! $newsList )
-            $redirect_to .= '&failed';
-        else {
-        	$option_name = 'news_list_ar'; // fallback
-        	if(isset($_POST['lang']) && in_array($_POST['lang'], ['ar', 'en'])){
-        		$option_name = 'news_list_' . $_POST['lang'];
-	        }
-            update_option($option_name, $newsList);
-            $redirect_to .= '&success';
+        if ( isset($_POST['news_item']) ) {
+	        $newsList = $_POST['news_item'];
+        } else {
+	        $newsList = [];
         }
+        $option_name = 'news_list_ar'; // fallback
+        if(isset($_POST['lang']) && in_array($_POST['lang'], ['ar', 'en'])){
+            $option_name = 'news_list_' . $_POST['lang'];
+        }
+        update_option($option_name, $newsList);
+        $redirect_to .= '&success';
         wp_redirect($redirect_to);
     }
 
