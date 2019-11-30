@@ -154,19 +154,18 @@ class NewsList extends Component {
           action={this.props.url}
           className="newsbar-settings-form"
         >
-          {this.state.items.length ? (
-            <>
-              <SaveButtonContainer>
-                <h1>شريط الأخبار اللغة {this.props.lang.toUpperCase()}</h1>
-                <button
-                  className="button button-primary button-large"
-                  type="submit"
-                >
-                  حفظ
-                </button>
-              </SaveButtonContainer>
-            </>
-          ) : null}
+          <SaveButtonContainer>
+            <h1>شريط الأخبار اللغة {this.props.lang.toUpperCase()}</h1>
+            {this.state.items.length ? (
+              <button
+                className="button button-primary button-large"
+                type="submit"
+              >
+                حفظ
+              </button>
+            ) : null}
+          </SaveButtonContainer>
+
           <input type="hidden" name="action" value="set_newsbar_settings" />
           <input type="hidden" name="lang" value={this.props.lang} />
 
