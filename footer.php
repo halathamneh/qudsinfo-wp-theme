@@ -58,7 +58,7 @@ $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_d
             <div class="col-sm-3">
                 <?php if ( $img_footer_logo ): ?>
                     <a href="<?php echo esc_url(home_url()); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                       class="footer-logo"><img src="<?php echo esc_url($img_footer_logo); ?>"
+                       class="footer-logo text-center"><img src="<?php echo esc_url($img_footer_logo); ?>"
                                                 alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
                                                 title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
                 <?php endif; ?>
