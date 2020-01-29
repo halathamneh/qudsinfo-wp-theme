@@ -22,7 +22,11 @@ if (isset($_GET['level']) && term_exists($_GET['level'], 'quiz-levels')
     if (function_exists('z_taxonomy_image_url'))
         $quizImage = z_taxonomy_image_url($quiz->term_id, 'full');
     ?>
-    <div class="quiz-container" <?= $quizImage ? 'style="background-image: url(' . $quizImage . ');"' : '' ?>>
+
+    <div class="quiz-container">
+        <?php if($quizImage) : ?>
+            <div class="quiz-bg-image" style="background-image: url('<?= $quizImage ?>');"></div>
+        <?php endif; ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

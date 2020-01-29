@@ -1,8 +1,17 @@
-.quiz-container {
+.quiz-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 
   &:before {
     content: '';
@@ -13,6 +22,10 @@
     height: 100%;
     background-color: rgba(50, 50, 50, .6);
   }
+}
+.quiz-container {
+  position: relative;
+  background-color: #000;
 
   h1 {
     text-align: center;
@@ -23,8 +36,6 @@
 
 #hdQuestionnaireContent {
   .question {
-    border-radius: 15px;
-    padding: 1.2rem 1.6rem;
     box-shadow: 0 0 15px rgba(50, 50, 50, .5);
   }
 
