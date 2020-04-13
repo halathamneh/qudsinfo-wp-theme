@@ -44,8 +44,11 @@ function render_infos( $page = 0, $category = null ) {
 	$paged      = $page ? $page : 1;
 	$info_args  = array(
 		'paged' => $paged,
-		'cat'   => isset($category) ? $category->term_id : null
+		'cat'   => $category !== null ? $category->term_id : null,
 	);
+	if($category === null) {
+        $info_args['orderby'] = 'rand';
+    }
 	$info_query = new WP_Query( $info_args );
 
 	$out .= '<div class="masonry-grid">';
