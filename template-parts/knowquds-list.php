@@ -27,7 +27,7 @@ if (!wp_is_mobile()) :?>
         <ul>
             <?php
             while ($ips->have_posts()) : $ip = $ips->next_post(); ?>
-                <li <?= $post->ID == $ip->ID ? "class='active'" : "" ?>>
+                <li <?= isset($post) && $post->ID == $ip->ID ? "class='active'" : "" ?>>
                     <a href="<?= get_permalink($ip) ?>" class="front-category">
                         <div class="front-cat-name"><?= $ip->post_title ?></div>
                     </a>

@@ -12,7 +12,7 @@ do_action('mtl_above_content_after_header'); ?>
 // get all the categories from the database
 $category = get_query_var('cat') != '' ? get_query_var('cat') : 0;
 $page = get_query_var('paged') != '' ? get_query_var('paged') : 0;
-$term = $category != 0 ? get_term($category) : false;
+$term = $category != 0 ? get_term($category) : null;
 
 $cats = get_terms(array(
     'taxonomy' => 'category',

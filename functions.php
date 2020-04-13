@@ -6,6 +6,10 @@
  *    runs before the init hook. The init hook is too late for some features, such
  *    as indicating support for post thumbnails.
  */
+
+define('QI_THOUGHTS_CAT_ID', 2351); // خواطر
+define('QI_POETRY_CAT_ID', 16254); // شعر
+
 if (!function_exists('illdy_setup')) {
     add_action('after_setup_theme', 'illdy_setup');
     function illdy_setup()
@@ -343,7 +347,7 @@ function getLanguagesForJS() {
 // Apply numeric post ordering for posts in admin and front end.
 // Adapted from https://www.fldtrace.com/custom-post-types-numeric-title-order
 function post_order( $wp_query ) {
-	if ( $wp_query->query['post_type'][0] == 'pics' ) {
+	if ( isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == 'pics' ) {
 		add_filter( 'posts_orderby', 'orderby_post_title_int' );
 	}
 }

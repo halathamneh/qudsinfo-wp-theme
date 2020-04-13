@@ -13,13 +13,13 @@
  *
  * @return string
  */
-function render_infos( $page = 0, $category = false ) {
+function render_infos( $page = 0, $category = null ) {
 	global $post;
 
 	$thoughts_catid = 2351;
 	$term_slug      = "all";
 	$out            = "";
-	if ( $category === false ) {
+	if ( $category === null ) {
 		$out .= '<h2 class="current-cat-name">' . __( 'All Infos', 'qi-theme' ) . '</h2>';
 	} else {
 		$term_slug  = $category->slug;
@@ -44,7 +44,7 @@ function render_infos( $page = 0, $category = false ) {
 	$paged      = $page ? $page : 1;
 	$info_args  = array(
 		'paged' => $paged,
-		'cat'   => $category->term_id
+		'cat'   => isset($category) ? $category->term_id : null
 	);
 	$info_query = new WP_Query( $info_args );
 

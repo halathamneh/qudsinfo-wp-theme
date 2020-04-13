@@ -9,7 +9,7 @@
 <?php
 
 $BH_classes = Helpers::is_lectures() ? " lectures-header" : "";
-$post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+$post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(isset($post) ? $post->ID : null), 'large');
 
 $header_attr = "";
 $overlay_attr = "";
