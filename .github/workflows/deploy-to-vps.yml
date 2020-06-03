@@ -1,0 +1,22 @@
+name: Deploy to VPS
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Copy file via scp
+      uses: appleboy/scp-action@master
+      env:
+        host: ${{ secrets.DO_HOST }}
+        username: ${{ secrets.DO_USERNAME }}
+        key: ${{ secrets.DO_SSH_KEY }}
+      with:
+        source: "."
+        target: "~/www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
+
