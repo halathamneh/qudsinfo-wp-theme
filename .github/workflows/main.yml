@@ -36,5 +36,5 @@ jobs:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USERNAME }}
           key: ${{ secrets.DO_SSH_KEY }}
-          source: "."
-          target: "~/www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
+          source: "./*"
+          target: "/home/haitham/www/qudsinfo/wp-content/themes/qudsinfo-wp-theme/"
