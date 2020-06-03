@@ -8,6 +8,12 @@ cache:
   paths:
     - layout/node_modules/
 
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
 generate-assets:
   stage: build
   script:
@@ -20,10 +26,10 @@ generate-assets:
 
 deploy-assets-to-S3:
   stage: deploy
-  tags:
-    - python
   script:
     - echo "Pushing the static files"
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
     - mkdir ~/.aws/
     - touch ~/.aws/credentials
     - pip install awscli
@@ -36,6 +42,10 @@ deploy-theme-to-vps:
   stage: deploy
   script:
     - echo "Copying files to deigital ocean droplet"
-    - rsync -avuz --exclude=".*" $CI_PROJECT_DIR/ $SERVER_USER@$SERVER_IP:/home/haitham/www/qudsinfo/
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh -p22 $SERVER_USER@$SERVER_IP "mkdir www/qudsinfo/wp-content/themes/_tmp"
+    - scp -p22 -r * $SERVER_USER@$SERVER_IP:www/qudsinfo/wp-content/themes/_tmp
+    - ssh -p22 $SERVER_USER@$SERVER_IP "mv www/qudsinfo/wp-content/themes/qudsinfo-wp-theme www/qudsinfo/wp-content/themes/_old && mv www/qudsinfo/wp-content/themes/_tmp www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
+    - ssh -p22 $SERVER_USER@$SERVER_IP "rm -rf www/qudsinfo/wp-content/themes/_old"
   only:
     - master
