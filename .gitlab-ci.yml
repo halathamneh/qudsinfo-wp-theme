@@ -35,7 +35,7 @@ deploy-assets-to-S3:
 deploy-theme-to-vps:
   stage: deploy
   script:
-    - echo "Copying files to deigital ocean droplet
+    - echo "Copying files to deigital ocean droplet"
     - rsync -avuz --exclude=".*" $CI_PROJECT_DIR/ $SERVER_USER@$SERVER_IP:/home/haitham/www/qudsinfo/
   only:
     - master
