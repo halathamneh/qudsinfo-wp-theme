@@ -47,7 +47,7 @@ deploy-theme-to-vps:
     - apt-get install -y rsync
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - ssh -p22 $SERVER_USER@$SERVER_IP "rm -rf www/qudsinfo/wp-content/themes/_tmp && mkdir www/qudsinfo/wp-content/themes/_tmp"
-    - rsync avh --exclude='*/node_modules/' ./ $SERVER_USER@$SERVER_IP:www/qudsinfo/wp-content/themes/_tmp
+    - rsync -avh --exclude='*/node_modules/' ./ $SERVER_USER@$SERVER_IP:www/qudsinfo/wp-content/themes/_tmp
     - ssh -p22 $SERVER_USER@$SERVER_IP "mv www/qudsinfo/wp-content/themes/qudsinfo-wp-theme www/qudsinfo/wp-content/themes/_old && mv www/qudsinfo/wp-content/themes/_tmp www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
     - ssh -p22 $SERVER_USER@$SERVER_IP "rm -rf www/qudsinfo/wp-content/themes/_old"
   only:
