@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: "12.x"
       - name: Generate Assets
+        working-directory: "./layout"
         run: npm install && npm run css:build
 
       - name: Upload assets to S3
