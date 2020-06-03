@@ -7,7 +7,7 @@
  */
 
 $post_term = wp_get_post_terms(get_the_ID(), 'pics-cats');
-$is_building = $post_term->slug != 'beauty';
+$is_building = $post_term instanceof WP_Term && $post_term->slug != 'beauty';
 $location_to_dome = $history = $name_reason = $builtby = false;
 if ($is_building) {
     $location = get_field('location');
