@@ -32,6 +32,11 @@ jobs:
 
       - name: Copy files to VPS
         uses: appleboy/scp-action@master
+        env:
+          HOST: ${{ secrets.DO_HOST }}
+          USERNAME: ${{ secrets.DO_USERNAME }}
+          PORT: 22
+          KEY: ${{ secrets.DO_SSH_KEY }}
         with:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USERNAME }}
