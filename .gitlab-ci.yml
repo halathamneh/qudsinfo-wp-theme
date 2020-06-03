@@ -1,0 +1,41 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - layout/node_modules/
+
+generate-assets:
+  stage: build
+  script:
+    - cd layout
+    - npm install
+    - npm run css:build
+  artifacts:
+    paths:
+      - layout/dist/
+
+deploy-assets-to-S3:
+  stage: deploy
+  tags:
+    - python
+  script:
+    - echo "Pushing the static files"
+    - mkdir ~/.aws/
+    - touch ~/.aws/credentials
+    - pip install awscli
+    - printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
+    - aws s3 sync $CI_PROJECT_DIR/layout/dist s3://qudsinfowp/wp-content/themes/qudsinfo-wp-theme/layout/dist --acl public-read --delete
+    only:
+      - production
+
+deploy-theme-to-vps:
+  stage: deploy
+  script:
+    - echo "Copying files to deigital ocean droplet
+    - rsync -avuz --exclude=".*" $CI_PROJECT_DIR/ $SERVER_USER@$SERVER_IP:/home/haitham/www/qudsinfo/
+  only:
+    - production
