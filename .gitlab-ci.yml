@@ -30,7 +30,7 @@ deploy-assets-to-S3:
     - printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
     - aws s3 sync $CI_PROJECT_DIR/layout/dist s3://qudsinfowp/wp-content/themes/qudsinfo-wp-theme/layout/dist --acl public-read --delete
   only:
-    - production
+    - master
 
 deploy-theme-to-vps:
   stage: deploy
@@ -38,4 +38,4 @@ deploy-theme-to-vps:
     - echo "Copying files to deigital ocean droplet
     - rsync -avuz --exclude=".*" $CI_PROJECT_DIR/ $SERVER_USER@$SERVER_IP:/home/haitham/www/qudsinfo/
   only:
-    - production
+    - master
