@@ -13,8 +13,10 @@
  *
  * @return string
  */
-function render_infos( $page = 0, $category = null ) {
+function render_infos( $page = 0, $category = null, $lang = null ) {
 	global $post;
+
+	$lang = $lang === null ? pll_current_language() : $lang;
 
 	$thoughts_catid = 2351;
 	$term_slug      = "all";
@@ -26,7 +28,8 @@ function render_infos( $page = 0, $category = null ) {
 		$out        .= '<h2 class="current-cat-name">' . $category->name . '</h2>';
 		$wiki_args  = array(
 			'cat'       => $category->term_id,
-			'post_type' => 'info-details'
+			'post_type' => 'info-details',
+            'lang' => $lang
 		);
 		$wiki_query = new WP_Query( $wiki_args );
 		if ( $wiki_query->have_posts() ) : $wiki_query->the_post();
@@ -45,6 +48,7 @@ function render_infos( $page = 0, $category = null ) {
 	$info_args  = array(
 		'paged' => $paged,
 		'cat'   => $category !== null ? $category->term_id : null,
+        'lang'  => $lang
 	);
 	if($category === null) {
         $info_args['orderby'] = 'rand';
@@ -158,6 +162,7 @@ function get_ajax_info() {
 
 
 	$ptype = isset( $_POST['post_type'] ) ? $_POST['post_type'] : 'post';
+	$lang = isset( $_POST['lang'] ) ? $_POST['lang'] : pll_current_language();
 
 	$page_url = '';
 	$page_num = 0;
@@ -172,7 +177,7 @@ function get_ajax_info() {
 				$tid = intval( $_POST['cat'] );
 				if ( $tid ) {
 					$term      = get_term( $tid );
-					$html      = render_infos( $page_num, $term );
+					$html      = render_infos( $page_num, $term, $lang);
 					$url       = get_term_link( $term ) . $page_url;
 					$term_name = $term->name;
 					$title     = $term_name . ' - معلوماتنا - ' . get_bloginfo( 'name' );

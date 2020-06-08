@@ -343,7 +343,8 @@ jQuery(document).ready(function($) {
         action: "ajax_info",
         page: page,
         cat: cat,
-        post_type: post_type
+        post_type: post_type,
+        lang: scripts_data.langCode
       },
       beforeSend: function() {
         $infolist.find(".content").remove();
@@ -427,7 +428,8 @@ jQuery(document).ready(function($) {
     var _data = {
       action: "ajax_info",
       cat: cat,
-      post_type: post_type
+      post_type: post_type,
+      lang: scripts_data.langCode
     };
 
     // send ajax request
