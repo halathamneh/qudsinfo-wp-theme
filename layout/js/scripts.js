@@ -1,3 +1,5 @@
+const AJAX_URL = '/wp-admin/admin-ajax.php';
+
 /**
  *    jQuery Document Ready
  */
@@ -337,7 +339,7 @@ jQuery(document).ready(function($) {
       post_type = "post";
     }
     $.ajax({
-      url: scripts_data.ajaxurl,
+      url: AJAX_URL,
       type: "post",
       data: {
         action: "ajax_info",
@@ -434,7 +436,7 @@ jQuery(document).ready(function($) {
 
     // send ajax request
     $.ajax({
-      url: scripts_data.ajaxurl,
+      url: AJAX_URL,
       type: "post",
       data: _data,
       beforeSend: function() {
@@ -488,7 +490,7 @@ jQuery(document).ready(function($) {
       if (_data.action == "ajax_info") {
         var $infolist = $(".info-list");
         $.ajax({
-          url: scripts_data.ajaxurl,
+          url: AJAX_URL,
           type: "post",
           data: _data,
           beforeSend: function() {
@@ -590,7 +592,7 @@ jQuery(document).ready(function($) {
         lon: position.coords.longitude
       };
       $.post({
-        url: scripts_data.ajaxurl,
+        url: AJAX_URL,
         data: _data,
         success: function(data) {
           if (data !== -1) {

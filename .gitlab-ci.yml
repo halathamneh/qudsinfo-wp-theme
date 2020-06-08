@@ -36,7 +36,7 @@ deploy-assets-to-S3:
     - pip install awscli
     - printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
     - aws s3 sync $CI_PROJECT_DIR/layout/dist s3://qudsinfowp/wp-content/themes/qudsinfo-wp-theme/layout/dist --acl public-read --delete
-    - aws s3 sync $CI_PROJECT_DIR/layout/js s3://qudsinfowp/wp-content/themes/qudsinfo-wp-theme/layout/js --acl public-read --delete
+    - aws s3 sync $CI_PROJECT_DIR/layout/js s3://qudsinfowp/wp-content/themes/qudsinfo-wp-theme/layout/js  --acl public-read --delete
   only:
     - master
 
