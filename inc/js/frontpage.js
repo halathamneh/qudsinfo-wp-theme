@@ -71,7 +71,7 @@
                 url: FB.ajax_url,
                 type: 'get',
                 data: {
-                    action: 'load_more_infos',
+                    action: 'TI_load_more_infos',
                     offset: offset
                 },
                 beforeSend: function () {
@@ -113,7 +113,7 @@
                 url: FB.ajax_url,
                 type: 'get',
                 data: {
-                    action: 'search_infos',
+                    action: 'TI_search_infos',
                     s: s
                 },
                 beforeSend: function () {

@@ -19,10 +19,10 @@ class TodayInfo
         add_action('admin_enqueue_scripts', [$this, 'enqueueAdminScripts']);
         add_action('admin_menu', [$this, 'register_admin_pages']);
         add_action('admin_post_set_today_info', [$this, 'set_today_info']);
-        add_action('wp_ajax_fb_load_more_infos', [$this, 'load_more_infos']);
-        add_action('wp_ajax_nopriv_fb_load_more_infos', [$this, 'load_more_infos']);
-        add_action('wp_ajax_fb_search_infos', [$this, 'search_infos']);
-        add_action('wp_ajax_nopriv_fb_search_infos', [$this, 'search_infos']);
+        add_action('wp_ajax_TI_load_more_infos', [$this, 'load_more_infos']);
+        add_action('wp_ajax_nopriv_TI_load_more_infos', [$this, 'load_more_infos']);
+        add_action('wp_ajax_TI_search_infos', [$this, 'search_infos']);
+        add_action('wp_ajax_nopriv_TI_search_infos', [$this, 'search_infos']);
 
         register_setting('frontpage_settings', 'todays_info');
 
@@ -122,6 +122,30 @@ class TodayInfo
             ]);
         }
         return $info_array;
+    }
+
+    public function load_more_infos()
+    {
+        $offset = $_GET['offset'] ?? false;
+        if ( ! $offset ) {
+            echo json_encode(['status' => 1, 'result' => 'some thing wrong']);
+            exit;
+        }
+
+        echo json_encode(['status' => 0, 'result' => $this->get_posts_array($offset)]);
+        exit;
+    }
+
+    public function search_infos()
+    {
+        $s = $_GET['s'] ?? false;
+        if ( ! $s ) {
+            echo json_encode(['status' => 1, 'result' => 'some thing wrong']);
+            exit;
+        }
+
+        echo json_encode(['status' => 0, 'result' => $this->get_posts_array(0,$s)]);
+        exit;
     }
 
 }
