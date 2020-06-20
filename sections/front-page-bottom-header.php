@@ -33,7 +33,7 @@ $overlay_attr = ' style="background-image: url(\'' . get_template_directory_uri(
                     <div id="to_type" style="display: none;">
                         <p><?php echo wp_strip_all_tags($post->post_content) ?></p>
                     </div>
-                    <a href="<?= get_permalink($post->ID) ?>" class="btn btn-success"><?= __('View Info', 'qi-theme') ?> <i
+                    <a href="<?= get_permalink($post->ID) ?>" class="btn btn-primary"><?= __('View Info', 'qi-theme') ?> <i
                                 class="fa <?= is_rtl() ? "fa-angle-left" : "fa-angle-right" ?>"></i></a>
                     <a href="/our-info/" class="btn btn-link text-white"><?= __("View All Information", 'qi-theme') ?></a>
                 </div>
