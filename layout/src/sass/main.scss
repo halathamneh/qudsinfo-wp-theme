@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 $fa-font-path: "../fonts";
 @import "~font-awesome/scss/font-awesome";
 
 /*$dropdown-link-active-color: #fff;
 $dropdown-link-active-bg: #59af30;*/
-$link-color: #016533;
-
+$primary: #4e3a84;
+$link-color: $primary;
 @import "bs4/bootstrap";
 
 $hover-green: rgba(0, 107, 16, 0.8);
@@ -29,12 +29,12 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: block;
   direction: ltr;
   line-height: 1.5;
   background-color: #ffffff;
-  font-family: sans-serif;
+  font-family: "Almarai", sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #222222;
@@ -43,7 +43,6 @@ body {
   &.rtl {
     direction: rtl;
     text-align: right;
-    font-family: "Tajawal", sans-serif;
   }
 }
 
