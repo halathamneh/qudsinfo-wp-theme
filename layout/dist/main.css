@@ -15496,19 +15496,19 @@ a:not(.btn)[data-fancybox]:after {
 }
 .info-post .info-main-text {
   font-size: 1rem;
-  padding: 0 0 2rem;
+  padding: 2rem;
   color: #000;
-}
-@media (min-width: 576px) {
-  .info-post .info-main-text {
-    padding: 2rem;
-  }
 }
 .info-post .info-main-text h1 {
   margin: 8px 0 32px;
 }
 .info-post .info-main-text p {
   color: #565656;
+}
+@media (min-width: 576px) {
+  .info-post .info-main-text h1 {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 576px) {
   .info-post .info-extra {
@@ -15636,6 +15636,16 @@ a:not(.btn)[data-fancybox]:after {
   margin-left: 8px;
   flex: 1;
 }
+@media (max-width: 767.98px) {
+  .info-head {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .info-head .breadcrumb {
+    margin-left: 0;
+    font-size: 0.75rem;
+  }
+}
 
 .info-block {
   display: flex;
@@ -15644,6 +15654,11 @@ a:not(.btn)[data-fancybox]:after {
   border: 1px solid #ddd;
   border-top: 5px solid #4f3a83;
   min-height: 450px;
+}
+@media (max-width: 767.98px) {
+  .info-block {
+    flex-direction: column-reverse;
+  }
 }
 .info-block .info-side {
   background-color: #eee;
