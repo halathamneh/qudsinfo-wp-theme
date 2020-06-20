@@ -4,6 +4,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   color: #fff;
+
   &:hover {
     color: #fff;
   }
@@ -12,9 +13,12 @@
 .info-post {
   margin: 0 auto;
   float: none;
+  padding-top: 40px;
+
   #blog {
     padding-top: 0;
   }
+
   .blog-post-entry {
     background: #efefef;
 
@@ -24,10 +28,12 @@
     }
     font-size: 1.4rem;
   }
+
   .blog-post-image {
     margin: 2rem 0;
     float: none;
   }
+
   .info-main-text {
     font-size: 1rem;
     padding: 0 0 2rem;
@@ -35,41 +41,29 @@
       padding: 2rem;
     }
     color: #000;
-    border-bottom: 1px solid #ccc;
-    h2 {
-      font-size:1.5rem;
-      font-weight: bold;
-      margin-bottom:1.5rem;
-      margin-top:0;
-      @include media-breakpoint-up(sm) {
-        margin-top:1rem;
-      }
+    h1 {
+      margin: 8px 0 32px;
     }
     p {
       color: #565656;
     }
   }
+
   .info-extra {
     @include media-breakpoint-up(sm) {
       margin-top: 2rem;
     }
-    padding: 0 1.5rem;
   }
+
   .sharing-buttons {
-
-    padding-top: 0.5rem;
-
-    padding-right: 1rem;
-    padding-bottom: 0.25rem;
-    z-index: 50;
-    background-color: #efefef;
-    .addthis_inline_share_toolbox {
-      margin-top: 0.25rem;
-      margin-bottom: 0;
-    }
+    display: flex;
+    align-items: center;
+    margin: 0;
   }
+
   .yarpp-related {
     margin-bottom: 2.2rem;
+
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -91,6 +85,7 @@
       -ms-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
+
       &:hover {
         background-color: rgba(239, 239, 239, 0.4);
       }
@@ -101,16 +96,20 @@
 .more-follow {
   display: block;
   height: 38px;
+
   &:hover {
     text-decoration: none;
   }
+
   img {
     float: left !important;
     margin: 0 5px !important;
+
     .rtl & {
       float: right !important;
     }
   }
+
   span {
     line-height: 2pc;
     color: #fff;
@@ -152,6 +151,7 @@
 .yarpp-related {
   ul {
     padding: 0;
+
     li {
       display: block;
       float: right;
@@ -159,11 +159,14 @@
       position: relative;
       width: 150px;
       height: 150px;
+
       a {
         height: 100%;
+
         img {
           height: 100%;
         }
+
         span {
           display: block;
           width: 100%;
@@ -182,6 +185,7 @@
           -o-transition: all 0.5s;
           transition: all 0.5s;
         }
+
         &:hover {
           span {
             height: 80px;
@@ -191,6 +195,49 @@
         }
       }
 
+    }
+  }
+}
+
+.info-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  .breadcrumb {
+    margin-bottom: 0;
+    margin-left: 8px;
+    flex: 1;
+  }
+}
+
+.info-block {
+  display: flex;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-top: 5px solid #4f3a83;
+  min-height: 450px;
+  .info-side {
+    background-color: #eee;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-main-text {
+    flex: 1;
+    box-shadow: 0 0 30px rgba(160, 160, 160, 0.5);
+
+  }
+}
+
+.rtl {
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0;
+    padding-right: 0.5rem;
+    &::before {
+      padding-right: 0;
+      padding-left: 0.5rem;
     }
   }
 }

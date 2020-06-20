@@ -25,11 +25,10 @@
   .iot-headline {
     margin-bottom: 1rem;
     .badge {
-      line-height: 1.5;
       font-weight: normal;
       font-size: 1rem;
       padding: 0.4rem 0.8rem;
-      background-color: rgba(40, 167, 69, 0.65);
+      background-color: rgba($primary, 0.65);
     }
   }
   .iot-content {

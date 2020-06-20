@@ -15,37 +15,16 @@
   .top-header {
     width: 100%;
     padding: 0;
-    //background-color: rgba(0, 0, 0, 0.75);
     border-top: 0 solid;
-    border-bottom: 1px solid #bbb;
     height: 3.5rem;
     background-color: #fff;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 
-    /*opacity: 0.3;
-    -webkit-transition: opacity 0.3s 1.3s, padding 0.3s, background 0.3s;
-    -moz-transition: opacity 0.3s 1.3s, padding 0.3s, background 0.3s;
-    -ms-transition: opacity 0.3s 1.3s, padding 0.3s, background 0.3s;
-    -o-transition: opacity 0.3s 1.3s, padding 0.3s, background 0.3s;
-    transition: opacity 0.3s 1.3s, padding 0.3s, background 0.3s;
-
-    &:hover {
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-      opacity: 1;
-    }*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 
     .logo-image {
       height: 55px;
       width: 110px;
-      float: right;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       -ms-transition: all 0.5s;
@@ -79,11 +58,13 @@
     }
 
     .navigation-wrapper {
-      margin-left: auto;
+      margin-left: 40px;
+      margin-right: 16px;
+      flex: 1;
 
       .rtl & {
-        margin-left: 0;
-        margin-right: auto;
+        margin-left: 16px;
+        margin-right: 40px;
       }
     }
 
@@ -109,9 +90,7 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-        /*display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;*/
+        display: flex;
 
         li {
           height: 100%;
@@ -130,8 +109,15 @@
           display: flex;
           align-items: flex-start;
 
+          &.lang-item {
+            margin-left: auto;
+          }
           .rtl & {
             float: right;
+            &.lang-item {
+              margin-right: auto;
+              margin-left: 0;
+            }
           }
 
           &.notext > a > span {
@@ -171,6 +157,8 @@
           &.search-menu-button {
             float: none;
             position: initial;
+            align-items: center;
+            margin-right: 16px;
 
             .search-menu-content {
               color: #111;
@@ -183,31 +171,22 @@
               //margin-right: 0.75rem;
               position: relative;
               overflow: visible;
-              width: 100px;
 
               .search-form {
                 display: block;
                 vertical-align: middle;
 
                 input {
-                  width: 100px;
-                  height: 55px;
-                  border: none;
-                  background: transparent;
+                  height: 32px;
+                  background-color: #eee;
+                  border: 1px solid #bbb;
+                  border-radius: 32px;
                   padding-left: 40px;
-                  position: absolute;
-                  right: 0;
-                  -webkit-transition: all 0.5s;
-                  -moz-transition: all 0.5s;
-                  -ms-transition: all 0.5s;
-                  -o-transition: all 0.5s;
                   transition: all 0.5s;
 
                   .rtl & {
                     padding-left: 0;
                     padding-right: 40px;
-                    left: 0;
-                    right: auto;
                   }
 
                   &:hover {
@@ -227,32 +206,6 @@
 
                     &:-moz-placeholder { /* Firefox 18- */
                       color: #222;
-                    }
-
-                    + .sbutton {
-                      color: #222;
-                    }
-                  }
-
-                  &:focus {
-                    outline: none;
-                    background-color: #fff !important;
-                    width: 250px;
-
-                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                      color: #555;
-                    }
-
-                    &::-moz-placeholder { /* Firefox 19+ */
-                      color: #555;
-                    }
-
-                    &:-ms-input-placeholder { /* IE 10+ */
-                      color: #555;
-                    }
-
-                    &:-moz-placeholder { /* Firefox 18- */
-                      color: #555;
                     }
 
                     + .sbutton {
@@ -286,8 +239,8 @@
                   }
 
                   + .sbutton {
-                    line-height: 41px;
-                    padding: 7.5px 15px;
+                    line-height: 32px;
+                    padding: 0 14px;
                     display: block;
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
@@ -302,14 +255,7 @@
 
                     .rtl & {
                       right: 0;
-                    }
-                  }
-
-                  &:focus + .sbutton {
-                    left: -150px;
-
-                    .rtl & {
-                      right: -150px;
+                      left: auto;
                     }
                   }
                 }
@@ -367,7 +313,11 @@
               border: 1px solid #bbb;
               position: absolute;
               top: 55px;
+              #header.page-start & {
+                top: 64px;
+              }
               right: 0;
+              display: block;
               //display: none;
               visibility: hidden;
               z-index: 995;
@@ -501,43 +451,28 @@
 
     &.transparent-nav {
       padding-top: .5rem !important;
-      border-top: 1rem solid #016533;
-      //background-color: transparent;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+      border-top: 1rem solid #4e3a84;
       height: 5.5rem;
-      /*opacity: 1;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;*/
 
     }
   }
 
   &.sticky {
-    margin-top: 5.5rem;
-    //padding-top: 135px;
+    position: sticky;
+    top: 0;
+    z-index: 990;
+
     &.header-front-page {
       padding: 0;
     }
 
     .top-header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 990;
 
       .admin-bar & {
         top: 32px;
       }
 
       &.fixed {
-        padding: 0;
-        position: fixed;
-
         .open-responsive-menu {
           padding: 0.8rem 1rem;
         }
