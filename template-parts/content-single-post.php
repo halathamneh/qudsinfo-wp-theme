@@ -34,7 +34,7 @@ $categories = get_the_category();
                         $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'illdy-info-post');
                         $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
                         ?>
-                        <a href="<?php echo esc_url($post_image[0]); ?>" data-fancybox
+                        <a class="info-image" href="<?php echo esc_url($post_image[0]); ?>" data-fancybox
                            data-caption="<?= get_the_title() . '<br>' . wp_strip_all_tags(get_the_content()) ?>"><img
                                     src="<?php echo esc_url($post_thumbnail[0]); ?>"/></a>
                         <?php if (pll_current_language() === 'ar') :

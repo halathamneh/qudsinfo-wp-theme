@@ -1,6 +1,6 @@
 import "jquery"
-import * as fn from "./functions"
-import "./menu"
+import * as fn from "./js/functions"
+import "./js/menu"
 
 fn.smoothScrollAnchors();
 fn.setColorOnFrontPageService();

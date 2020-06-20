@@ -23,6 +23,7 @@
         ));
         ?>
         <li class="search-menu-button">
+            <button class="toggle-search"><i class="fa fa-search"></i></button>
             <div class="search-menu-content">
                 <form role="search" method="get" class="search-form header-menu"
                       action="<?php echo home_url('/'); ?>">
@@ -32,8 +33,9 @@
                            placeholder="<?php echo $placeholder; ?>"
                            value="<?php echo esc_attr(get_search_query()); ?>" name="s"
                            title="<?php echo __('Search for:', 'qi-theme'); ?>"/>
-                    <span class="sbutton"><i class="fa fa-search"></i></span>
+                    <button class="btn btn-lg btn-outline-light"><i class="fa fa-search"></i> <?= __("Search") ?></button>
                 </form><!--/.search-form-->
+                <button class="search-close-button">&times;</button>
             </div>
         </li>
     </ul><!--/.clearfix-->
