@@ -7,15 +7,15 @@
  */
 ?>
 <?php
-$img_logo = get_theme_mod('illdy_img_logo', esc_url(get_template_directory_uri() . '/layout/images/header-logo.png'));
-$text_logo = get_theme_mod('illdy_text_logo', __('qi-theme', 'qi-theme'));
-$jumbotron_general_image = get_theme_mod('illdy_jumbotron_general_image', esc_url(get_template_directory_uri() . '/layout/images/front-page/front-page-header.png'));
-$preloader_enable = get_theme_mod('illdy_preloader_enable', 1);
+$img_logo = get_theme_mod('qi-theme_img_logo', esc_url(get_template_directory_uri() . '/layout/images/header-logo.png'));
+$text_logo = get_theme_mod('qi-theme_text_logo', __('qi-theme', 'qi-theme'));
+$jumbotron_general_image = get_theme_mod('qi-theme_jumbotron_general_image', esc_url(get_template_directory_uri() . '/layout/images/front-page/front-page-header.png'));
+$preloader_enable = get_theme_mod('qi-theme_preloader_enable', 1);
 $category = get_query_var('cat') != '' ? get_query_var('cat') : 0;
 $object = $wp_query->get_queried_object();
 if (is_search())
     $title = esc_html__(get_search_query() . " - Search Results", 'qi-theme');
-elseif($object instanceof WP_Term)
+elseif ($object instanceof WP_Term)
     $title = single_term_title('', false) . ' - ' . get_bloginfo('name');
 else
     $title = get_the_title() . ' - ' . get_bloginfo('name');
@@ -73,28 +73,26 @@ if (!is_404()) {
 <header id="header" class="sticky page-start <?= $header_classes ?>"
     <?= $header_attr ?> >
     <div class="top-header fixed transparent-nav">
-        <div class="container">
-            <div class="d-flex">
-                <div class="logo-image">
-                    <?php if ($img_logo): ?>
-                        <a href="<?php echo esc_url(pll_home_url()); ?>"
-                           title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="header-logo"><img
-                                    src="<?php echo esc_url($img_logo); ?>"
-                                    alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                                    title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
-                    <?php else: ?>
-                        <a href="<?php echo esc_url(pll_home_url()); ?>"
-                           title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                           class="header-logo"><?php echo illdy_sanitize_html($text_logo); ?></a>
-                    <?php endif; ?>
-                </div><!--/.col-sm-2-->
-                <div class="navigation-wrapper">
-                    <?php
-                    get_template_part('template-parts/header', 'top-nav');
-                    ?>
-                </div><!--/.col-sm-10-->
-            </div><!--/.row-->
-        </div><!--/.container-->
+        <div class="d-flex">
+            <div class="logo-image">
+                <?php if ($img_logo): ?>
+                    <a href="<?php echo esc_url(pll_home_url()); ?>"
+                       title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="header-logo"><img
+                                src="<?php echo esc_url($img_logo); ?>"
+                                alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
+                                title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
+                <?php else: ?>
+                    <a href="<?php echo esc_url(pll_home_url()); ?>"
+                       title="<?php echo esc_attr(get_bloginfo('name')); ?>"
+                       class="header-logo"><?php echo illdy_sanitize_html($text_logo); ?></a>
+                <?php endif; ?>
+            </div><!--/.col-sm-2-->
+            <div class="navigation-wrapper">
+                <?php
+                get_template_part('template-parts/header', 'top-nav');
+                ?>
+            </div><!--/.col-sm-10-->
+        </div><!--/.row-->
     </div><!--/.top-header-->
     <nav class="responsive-menu">
         <div class="responsive-menu-overlay"></div>

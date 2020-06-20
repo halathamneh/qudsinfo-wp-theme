@@ -7,7 +7,7 @@
  */
 ?>
 <?php
-$img_logo = get_theme_mod('illdy_img_logo', esc_url(get_template_directory_uri() . '/layout/images/header-logo.png'));
+$img_logo = get_theme_mod('qi-theme_img_logo', esc_url(get_template_directory_uri() . '/layout/images/header-logo.png'));
 $text_logo = get_theme_mod('illdy_text_logo', __('qi-theme', 'qi-theme'));
 $jumbotron_general_image = get_theme_mod('illdy_jumbotron_general_image', esc_url(get_template_directory_uri() . '/layout/images/front-page/front-page-header.png'));
 $preloader_enable = get_theme_mod('illdy_preloader_enable', 1);

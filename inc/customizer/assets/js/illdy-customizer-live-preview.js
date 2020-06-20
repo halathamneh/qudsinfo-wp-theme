@@ -7,14 +7,14 @@
 	/* Company text logo */
 	wp.customize( 'illdy_text_logo', function( value ) {
 		value.bind( function( newval ) {
-			if( wp.customize._value.illdy_img_logo() == '' ) {
+			if( wp.customize._value['qi-theme_img_logo']() == '' ) {
 				$( '#header .top-header .header-logo' ).html( newval );
 			}
 		} );
 	} );
 
 	/* Company image logo */
-	wp.customize( 'illdy_img_logo', function( value ) {
+	wp.customize( 'qi-theme_img_logo', function( value ) {
 		value.bind( function( newval ) {
 			if( newval !== '' ) {
 				$( '#header .top-header .header-logo' ).empty();

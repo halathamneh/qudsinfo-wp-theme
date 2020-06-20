@@ -5,82 +5,80 @@
  * @package WordPress
  * @subpackage QudsInfoTheme
  */
+
+$categories = get_the_category();
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
-    <div class="row no-gutters">
-        <div class="col-sm-4">
-            <div class="blog-post-entry markup-format">
-                <div class="info-main-text d-sm-none">
-                    <h2><?php the_title() ?></h2>
-                    <?php
-                    the_content();
-
-                    if(pll_current_language() === 'ar') {
-	                    $source = get_field( 'source' );
-	                    if ( ! is_null( $source ) && $source !== '' ) : ?>
-                            <div class="alert alert-secondary mt-5">
-                                <b><?= __( 'Source:', 'qi-theme' ) ?></b>
-                                <p><?= $source ?></p>
-                            </div>
-	                    <?php endif;
-                    }?>
+    <div class="row">
+        <div class="col-sm-12 mx-auto">
+            <div class="info-head">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?= pll_home_url() ?>"><?= __('QudsInfo', 'qi-theme') ?></a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="/our-info"><?= __('Our Information', 'qi-theme') ?></a></li>
+                    <?php foreach ($categories as $category) : ?>
+                        <li class="breadcrumb-item"><a
+                                    href="<?= get_category_link($category) ?>"><?= $category->name ?></a></li>
+                    <?php endforeach; ?>
+                    <li class="breadcrumb-item active"><?= get_the_title() ?></li>
+                </ul>
+                <div class="sharing-buttons"><i><?= __("Share", 'qi-theme') ?>: </i>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
+            </div>
+            <div class="info-block">
                 <?php if (has_post_thumbnail()): ?>
-                    <div class="blog-post-image col-xs-12 col-sm-12">
-                        <?php //the_post_thumbnail( 'illdy-blog-list' ); ?>
+                    <div class="info-side">
                         <?php
-                        $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'team-list-item');
+                        $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'illdy-info-post');
                         $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
                         ?>
                         <a href="<?php echo esc_url($post_image[0]); ?>" data-fancybox
                            data-caption="<?= get_the_title() . '<br>' . wp_strip_all_tags(get_the_content()) ?>"><img
                                     src="<?php echo esc_url($post_thumbnail[0]); ?>"/></a>
-                    </div><!--/.blog-post-image-->
-                <?php endif; ?>
-                <div class="sharing-buttons"><i><?= __("Share", 'qi-theme') ?>: </i>
-                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                    <div class="addthis_inline_share_toolbox"></div>
-                </div>
-
-            </div><!--/.blog-post-entry.markup-format-->
-            <div class="py-3">
-                <?php dynamic_sidebar('infos-page'); ?>
-            </div>
-        </div>
-        <div class="col-sm-8">
-            <div class="info-main-text d-sm-block d-none">
-                <h2><?php the_title() ?></h2>
-                <?php
-                echo get_the_content();
-
-                if (!is_null($source) && $source !== '') : ?>
-                    <div class="alert alert-secondary mt-5">
-                        <b><?= __('Source:', 'qi-theme') ?></b>
-                        <p><?= $source ?></p>
+                        <?php if (pll_current_language() === 'ar') :
+                            $source = get_field('source');
+                            if (!is_null($source) && $source !== '') : ?>
+                                <div class="alert alert-light mt-3">
+                                    <b><?= __('Source:', 'qi-theme') ?></b><br/>
+                                    <span><?= $source ?></span>
+                                </div>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                        <?php
+                        if (pll_current_language() === "ar") {
+                            $wiki_args = array(
+                                'cat'       => $categories[0]->term_id,
+                                'post_type' => 'info-details',
+                            );
+                            $wiki_query = new WP_Query($wiki_args);
+                            if ($wiki_query->have_posts()) : $post = $wiki_query->next_post(); ?>
+                            <div class="mt-auto">
+                                <b class="d-block mb-3"><?= __('For more, read our article about:', 'qi-theme') ?></b>
+                                <a href="<?= get_permalink($post) ?>"
+                                   class="btn btn-outline-primary"><?= get_the_title($post) ?></a>
+                            </div>
+                            <?php endif;
+                        }
+                        ?>
                     </div>
                 <?php endif; ?>
+                <div class="info-main-text">
+                    <h1><?php the_title() ?></h1>
+                    <?= get_the_content(); ?>
+                </div>
             </div>
-            <div class="info-extra">
-                <?php
-                if(pll_current_language() === "ar") {
-	                $category   = get_the_category();
-	                $wiki_args  = array(
-		                'cat'       => $category[0]->term_id . ",-" . $thoughts_catid,
-		                'post_type' => 'info-details',
-	                );
-	                $wiki_query = new WP_Query( $wiki_args );
-	                if ( $wiki_query->have_posts() ) : $wiki_query->the_post(); ?>
-                        <a href="<?= get_permalink() ?>">اعرف أكثر</a>
-	                <?php endif;
-                }
-                ?>
 
-                <?php
-                do_action('mtl_single_after_content');
-                //                if ( comments_open() || get_comments_number() ) :
-                //                    comments_template();
-                //                endif;
-                ?>
+            <div class="info-extra">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <?php do_action('mtl_single_after_content'); ?>
+                    </div>
+                    <div class="col-sm-4">
+                        <?php dynamic_sidebar('infos-page'); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
