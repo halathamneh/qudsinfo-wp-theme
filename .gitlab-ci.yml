@@ -40,16 +40,30 @@ deploy-assets-to-S3:
   only:
     - master
 
-deploy-theme-to-vps:
+deploy-theme-to-production:
   stage: deploy
   script:
-    - echo "Copying files to deigital ocean droplet"
+    - echo "Copying files to DigitalOcean PRODUCTION droplet"
     - apt-get update -qy
     - apt-get install -y rsync
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - ssh -p22 $SERVER_USER@$SERVER_IP "rm -rf www/qudsinfo/wp-content/themes/_tmp && mkdir www/qudsinfo/wp-content/themes/_tmp"
-    - rsync -avh --exclude='*/node_modules/' ./ $SERVER_USER@$SERVER_IP:www/qudsinfo/wp-content/themes/_tmp
-    - ssh -p22 $SERVER_USER@$SERVER_IP "mv www/qudsinfo/wp-content/themes/qudsinfo-wp-theme www/qudsinfo/wp-content/themes/_old && mv www/qudsinfo/wp-content/themes/_tmp www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
-    - ssh -p22 $SERVER_USER@$SERVER_IP "rm -rf www/qudsinfo/wp-content/themes/_old"
+    - ssh -p22 $SERVER_USER@$PRODUCTION_HOST "rm -rf www/qudsinfo/wp-content/themes/_tmp && mkdir www/qudsinfo/wp-content/themes/_tmp"
+    - rsync -avh --exclude='*/node_modules/' ./ $SERVER_USER@$PRODUCTION_HOST:www/qudsinfo/wp-content/themes/_tmp
+    - ssh -p22 $SERVER_USER@$PRODUCTION_HOST "mv www/qudsinfo/wp-content/themes/qudsinfo-wp-theme www/qudsinfo/wp-content/themes/_old && mv www/qudsinfo/wp-content/themes/_tmp www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
+    - ssh -p22 $SERVER_USER@$PRODUCTION_HOST "rm -rf www/qudsinfo/wp-content/themes/_old"
   only:
     - master
+
+deploy-theme-to-staging:
+  stage: deploy
+  script:
+    - echo "Copying files to DigitalOcean STAGING droplet"
+    - apt-get update -qy
+    - apt-get install -y rsync
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - ssh -p22 $SERVER_USER@$STAGING_HOST "rm -rf www/qudsinfo/wp-content/themes/_tmp && mkdir www/qudsinfo/wp-content/themes/_tmp"
+    - rsync -avh --exclude='*/node_modules/' ./ $SERVER_USER@$STAGING_HOST:www/qudsinfo/wp-content/themes/_tmp
+    - ssh -p22 $SERVER_USER@$STAGING_HOST "mv www/qudsinfo/wp-content/themes/qudsinfo-wp-theme www/qudsinfo/wp-content/themes/_old && mv www/qudsinfo/wp-content/themes/_tmp www/qudsinfo/wp-content/themes/qudsinfo-wp-theme"
+    - ssh -p22 $SERVER_USER@$STAGING_HOST "rm -rf www/qudsinfo/wp-content/themes/_old"
+  only:
+    - staging
