@@ -13,7 +13,7 @@
                 <div class="info-main-text d-sm-none">
                     <h2><?php the_title() ?></h2>
                     <?php
-                    echo nl2br(get_the_content());
+                    the_content();
 
                     if(pll_current_language() === 'ar') {
 	                    $source = get_field( 'source' );
@@ -51,7 +51,7 @@
             <div class="info-main-text d-sm-block d-none">
                 <h2><?php the_title() ?></h2>
                 <?php
-                echo nl2br(get_the_content());
+                echo get_the_content();
 
                 if (!is_null($source) && $source !== '') : ?>
                     <div class="alert alert-secondary mt-5">

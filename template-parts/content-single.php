@@ -13,7 +13,7 @@
 
 	<div class="blog-post-entry markup-format">
 		<?php
-		echo wpautop( get_the_content() );
+		the_content();
 
 		wp_link_pages( array(
 			'before'	=> '<div class="link-pages">' . __( 'Pages:', 'qi-theme' ),

@@ -71,12 +71,16 @@ class Qudsinfo_Faq extends WP_Widget
                         var elem = document.querySelector(target);
                         elem.classList.remove("show"); 
                     })
-                    document.querySelector(".widget-faq-item-btn").addEventListener("click", function(e) {
-                        e.preventDefault();
-                        var target = e.target.dataset.target;
-                        var elem = document.querySelector(target);
-                        elem.classList.add("show"); 
-                    })
+                    document.querySelectorAll(".widget-faq-item-btn").forEach(
+                        el => el.addEventListener("click", 
+                            function(e) {
+                                e.preventDefault();
+                                var target = e.target.dataset.target;
+                                var elem = document.querySelector(target);
+                                elem.classList.add("show"); 
+                            }
+                        )
+                    )
                 </script>';
         } else {
             echo __('No FAQs found.', 'qi-theme');
