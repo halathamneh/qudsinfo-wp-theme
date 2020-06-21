@@ -20,7 +20,7 @@ generate-assets:
   script:
     - cd layout
     - npm install
-    - npm run dev
+    - npm run build
   artifacts:
     paths:
       - layout/dist/
