@@ -38,7 +38,7 @@ function render_infos( $page = 0, $category = null, $lang = null ) {
 				$out .= '<hr>' .
 				        '<div class="current-cat-wiki">' .
 				        wp_trim_words( get_sub_field( 'text' ), 100 ) .
-				        '<div class="read-more-part"><a href="' . get_permalink() . '" class="btn btn-success">' . __( 'Continue Reading', 'qi-theme' ) . '</a></div></div>';
+				        '<div class="read-more-part"><a href="' . get_permalink() . '" class="btn btn-primary">' . __( 'Continue Reading', 'qi-theme' ) . '</a></div></div>';
 			}
 		endif;
 	}
@@ -75,7 +75,7 @@ function render_infos( $page = 0, $category = null, $lang = null ) {
 			$out .= '<div class="card-body">' .
 			        '<h4>' . get_the_title() . '</h4>' .
 			        '<p class="card-text">' . get_the_excerpt() . '</p>' .
-			        '<a href="' . get_the_permalink() . '" class="btn btn-outline-success">' . __( 'Continue Reading', 'qi-theme' ) . ' <i class="fa fa-chevron-circle-left"></i></a>' .
+			        '<a href="' . get_the_permalink() . '" class="btn btn-outline-primary">' . __( 'Continue Reading', 'qi-theme' ) . ' <i class="fa fa-chevron-circle-left"></i></a>' .
 			        '</div>';
 			$out .= '</div><!--/.card-->';
 		endwhile;
@@ -136,7 +136,7 @@ function render_books( $page = 0, $section = 0 ) {
 			$out .= '<div class="card-body">' .
 			        '<h4>' . get_the_title() . '</h4>' .
 			        '<p class="card-text">' . get_the_excerpt() . '</p>' .
-			        '<a href="' . get_the_permalink() . '" class="btn btn-outline-success">قراءة وتنزيل الكتاب <i class="fa fa-chevron-circle-left"></i></a>' .
+			        '<a href="' . get_the_permalink() . '" class="btn btn-outline-primary">قراءة وتنزيل الكتاب <i class="fa fa-chevron-circle-left"></i></a>' .
 			        '</div>';
 			$out .= '</div><!--/.card-->';
 		endwhile;
@@ -224,7 +224,7 @@ function get_ajax_info() {
 function cat_description_before( WP_Term $item ) {
 
 	$content       = $item->description;
-	$readmore_link = '<button type="button" class="btn btn-outline-success d-block mt-3" data-toggle="modal" data-target="#catWiki">
+	$readmore_link = '<button type="button" class="btn btn-outline-primary d-block mt-3" data-toggle="modal" data-target="#catWiki">
   أكمل القراءة
 </button>';
 	if ( preg_match( '/<!--more(.*?)?-->/', $content, $matches ) ) {

@@ -9,8 +9,8 @@
  * -------------------------- */
 @font-face {
   font-family: "FontAwesome";
-  src: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.abb21f4a.eot?v=4.7.0");
-  src: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.abb21f4a.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.8e3f1312.woff2?v=4.7.0") format("woff2"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.3f00cace.woff?v=4.7.0") format("woff"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.32d90269.ttf?v=4.7.0") format("truetype"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.ea89a6d9.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.a16b4b15.eot?v=4.7.0");
+  src: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.a16b4b15.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.328ae129.woff2?v=4.7.0") format("woff2"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.83d56cc7.woff?v=4.7.0") format("woff"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.c6670704.ttf?v=4.7.0") format("truetype"), url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/fontawesome-webfont.79dd36ce.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12191,6 +12191,7 @@ body.rtl {
   .responsive-menu .responsive-menu-content .responsive-menu-search {
     height: 4rem;
     background: #efefef;
+    position: relative;
   }
   .responsive-menu .responsive-menu-content .responsive-menu-search input {
     height: 100%;
@@ -12205,8 +12206,10 @@ body.rtl {
   }
   .responsive-menu .responsive-menu-content .responsive-menu-search .sbutton {
     position: absolute;
-    top: 0;
+    top: 50%;
+    right: 0;
     padding: 1rem 1.5rem;
+    transform: translateY(-50%);
   }
   .responsive-menu .responsive-menu-content > ul {
     list-style: none;
@@ -12380,7 +12383,7 @@ body.rtl {
 
 #about {
   width: 100%;
-  background: transparent url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/about-bg.44960fc2.png") repeat-x center -57px;
+  background: transparent url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/about-bg.ee63b616.png") repeat-x center -57px;
   padding: 65px 0 65px 0;
   text-align: center;
   margin-bottom: 30px;
@@ -12520,14 +12523,14 @@ body.rtl {
   width: 100%;
   padding: 150px 0 0 0;
   text-align: center;
-  background: #fbfbfb url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/about-bg.44960fc2.png") repeat-x 50% -115px;
+  background: #fbfbfb url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/about-bg.ee63b616.png") repeat-x 50% -115px;
   position: relative;
 }
 #projects .top-pr-image {
   display: block;
   width: 100%;
   height: 595px;
-  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/projects.2848dc7f.png") no-repeat bottom center;
+  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/projects.26271568.png") no-repeat bottom center;
   position: absolute;
   top: 37px;
 }
@@ -12660,7 +12663,7 @@ body.rtl {
 
 #services {
   width: 100%;
-  background: #015222 url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/services2.bd2ec992.png") no-repeat right 45px;
+  background: #015222 url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/services2.3d09cfa8.png") no-repeat right 45px;
   padding: 115px 0 3rem 0;
   text-align: center;
   position: relative;
@@ -12745,7 +12748,7 @@ body.rtl {
 }
 #latest-news {
   width: 100%;
-  background: #efefef url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/latest-news.82ab1f94.png") no-repeat right 60px;
+  background: #efefef url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/latest-news.b84bab58.png") no-repeat right 60px;
   padding: 75px 0 0 0;
   text-align: center;
   position: relative;
@@ -13337,7 +13340,7 @@ body.rtl {
 }
 #footer {
   width: 100%;
-  background: #2F2F2F url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.ce27689a.png") repeat-x center bottom;
+  background: #2F2F2F url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.97ed69b3.png") repeat-x center bottom;
   padding: 40px 0 90px;
   position: relative;
   overflow: hidden;
@@ -14128,10 +14131,10 @@ body.rtl {
 .widget.toc-widget .widget-container ul.toc-items li {
   padding: 0.5rem 0 0.5rem 1rem;
 }
-.widget.toc-widget .widget-container ul.toc-items .rtl {
+.rtl .widget.toc-widget .widget-container ul.toc-items {
   padding: 0.25rem 1.5rem 1rem 0.5rem;
 }
-.widget.toc-widget .widget-container ul.toc-items .rtl li {
+.rtl .widget.toc-widget .widget-container ul.toc-items li {
   padding: 0.5rem 1rem 0.5rem 0;
 }
 @media (max-width: 767.98px) {
@@ -14737,11 +14740,6 @@ a:not(.btn)[data-fancybox]:after, a:not(.btn)[data-fancybox]:before {
   opacity: 0;
   z-index: 90;
 }
-@media (max-width: 575.98px) {
-  a:not(.btn)[data-fancybox]:after, a:not(.btn)[data-fancybox]:before {
-    opacity: 0.5;
-  }
-}
 a:not(.btn)[data-fancybox]:hover:after, a:not(.btn)[data-fancybox]:hover:before {
   opacity: 1;
 }
@@ -14788,7 +14786,7 @@ a:not(.btn)[data-fancybox]:after {
 }
 
 .aqsa-distance {
-  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.7d5980cd.png) 0 0 repeat;
+  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.c8ebeab4.png) 0 0 repeat;
   padding: 2rem 0;
   text-align: center;
   font-size: 1.5rem;
@@ -15508,10 +15506,8 @@ a:not(.btn)[data-fancybox]:after {
     font-size: 2rem;
   }
 }
-@media (min-width: 576px) {
-  .info-post .info-extra {
-    margin-top: 2rem;
-  }
+.info-post .info-extra {
+  margin-top: 2rem;
 }
 .info-post .sharing-buttons {
   display: flex;
@@ -15631,8 +15627,12 @@ a:not(.btn)[data-fancybox]:after {
 }
 .info-head .breadcrumb {
   margin-bottom: 0;
-  margin-left: 8px;
+  margin-right: 8px;
   flex: 1;
+}
+.rtl .info-head .breadcrumb {
+  margin-left: 8px;
+  margin-right: 0;
 }
 @media (max-width: 767.98px) {
   .info-head {
@@ -15666,11 +15666,16 @@ a:not(.btn)[data-fancybox]:after {
   flex: 0;
 }
 .info-block .info-image {
-  width: 360px;
-  max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
 .info-block .info-image img {
-  max-width: 100%;
+  width: 360px;
+}
+@media (max-width: 991.98px) {
+  .info-block .info-image img {
+    max-width: 100%;
+  }
 }
 .info-block .info-main-text {
   flex: 1;
@@ -16194,7 +16199,7 @@ a:not(.btn)[data-fancybox]:after {
   background: #fe6648;
 }
 #socialmedia.container .social-icons .icon.askfm i {
-  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/askfm-ico.f78021cd.png") no-repeat right;
+  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/askfm-ico.88131060.png") no-repeat right;
   width: 51px;
   height: 51px;
   transition: none;
@@ -16722,7 +16727,7 @@ a:not(.btn)[data-fancybox]:after {
 }
 
 #slider-section {
-  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.7d5980cd.png") 0 0 repeat;
+  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/footer.c8ebeab4.png") 0 0 repeat;
   padding: 3rem 0;
 }
 #slider-section .header-quick {
@@ -17672,7 +17677,7 @@ select.selectpicker {
 }
 .news-team__top {
   position: relative;
-  background-image: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/bg2.ba6ea65b.jpg);
+  background-image: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/bg2.04ed6363.jpg);
   background-position: 50% 70%;
   background-size: cover;
 }
@@ -17708,7 +17713,7 @@ select.selectpicker {
 }
 .news-team__image {
   height: 450px;
-  background-image: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/bg3.4d19acaa.jpg);
+  background-image: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/bg3.679b1ee8.jpg);
   background-attachment: fixed;
   background-position: center top;
   position: relative;
@@ -18118,7 +18123,7 @@ select.selectpicker {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/owl.video.play.9d3ca54e.png") no-repeat;
+  background: url("/wp-content/themes/qudsinfo-wp-theme/layout/dist/owl.video.play.cc8240de.png") no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -18217,7 +18222,7 @@ select.selectpicker {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/aqsa-distance-earth.a97ca118.png) no-repeat 90% 5%;
+  background: url(/wp-content/themes/qudsinfo-wp-theme/layout/dist/aqsa-distance-earth.c639104f.png) no-repeat 90% 5%;
   background-size: 50%;
 }
 .rtl #aqsa-distance:before {
@@ -18410,6 +18415,49 @@ svg #jerusalemMask {
   }
 }
 
+.page-template-page-news #news-bar {
+  background: none;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#news-bar {
+  background-color: #eee;
+}
+
+.news-bar-content {
+  display: flex;
+  align-items: center;
+}
+.news-bar-content h3 {
+  display: flex;
+  align-items: center;
+  background-color: #a10e00;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 12px 4px;
+  font-size: 16px;
+  flex: 0;
+}
+.news-bar-content .news-list-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+.news-bar-content ul.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.news-bar-content ul.news-list li {
+  padding: 0 16px;
+  white-space: nowrap;
+}
+.news-bar-content ul.news-list li a {
+  color: #000;
+}
+
 [dir=ltr] {
   direction: ltr;
   text-align: left;
@@ -18550,43 +18598,6 @@ svg #jerusalemMask {
 .btn.btn-outline-info.mixitup-control-active {
   background-color: #17a2b8;
   color: #fff;
-}
-
-#news-bar {
-  background-color: #eee;
-}
-
-.news-bar-content {
-  display: flex;
-  align-items: center;
-}
-.news-bar-content h3 {
-  display: flex;
-  align-items: center;
-  background-color: #a10e00;
-  color: #fff;
-  font-weight: bold;
-  margin: 0;
-  padding: 8px 12px 4px;
-  font-size: 16px;
-  flex: 0;
-}
-.news-bar-content .news-list-wrapper {
-  overflow: hidden;
-  min-width: 100%;
-}
-.news-bar-content ul.news-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.news-bar-content ul.news-list li {
-  padding: 0 16px;
-  white-space: nowrap;
-}
-.news-bar-content ul.news-list li a {
-  color: #000;
 }
 
 /*# sourceMappingURL=/wp-content/themes/qudsinfo-wp-theme/layout/dist/main.css.map */

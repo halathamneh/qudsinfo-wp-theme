@@ -53,6 +53,10 @@ if (isset($_GET['group']) && !empty($_GET['group'])) {
         </div>
     </div>
 
+<?php
+get_template_part('sections/front-page', 'news-bar');
+?>
+
     <div class="container">
 
         <?php foreach ($terms as $term) : ?>
@@ -111,7 +115,7 @@ if (isset($_GET['group']) && !empty($_GET['group'])) {
                                         </div><!--/.post-entry-->
                                         <a href="<?php the_permalink(); ?>"
                                            title="<?php _e('أكمل القراءة', 'qi-theme'); ?>"
-                                           class="btn btn-outline-success mb-3 mt-auto"><?php _e('أكمل القراءة ', 'qi-theme'); ?>
+                                           class="btn btn-outline-primary mb-3 mt-auto"><?php _e('أكمل القراءة ', 'qi-theme'); ?>
                                             <i
                                                     class="fa fa-chevron-circle-left"></i></a>
                                     </div>

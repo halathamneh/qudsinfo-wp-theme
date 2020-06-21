@@ -26,7 +26,7 @@
             <button class="toggle-search"><i class="fa fa-search"></i></button>
             <div class="search-menu-content">
                 <form role="search" method="get" class="search-form header-menu"
-                      action="<?php echo home_url('/'); ?>">
+                      action="<?php echo pll_home_url(); ?>">
                     <?php
                     $placeholder = __('Search...', 'qi-theme'); ?>
                     <input type="search" id="s"

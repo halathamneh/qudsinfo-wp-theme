@@ -38,9 +38,11 @@
     font-size: 1rem;
     padding: 2rem;
     color: #000;
+
     h1 {
       margin: 8px 0 32px;
     }
+
     p {
       color: #565656;
     }
@@ -53,9 +55,7 @@
   }
 
   .info-extra {
-    @include media-breakpoint-up(sm) {
-      margin-top: 2rem;
-    }
+    margin-top: 2rem;
   }
 
   .sharing-buttons {
@@ -206,11 +206,17 @@
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+
   .breadcrumb {
     margin-bottom: 0;
-    margin-left: 8px;
+    margin-right: 8px;
     flex: 1;
+    .rtl & {
+      margin-left: 8px;
+      margin-right: 0;
+    }
   }
+
   @include media-breakpoint-down(sm) {
     flex-direction: column;
     margin-bottom: 0;
@@ -231,6 +237,7 @@
   @include media-breakpoint-down(sm) {
     flex-direction: column-reverse;
   }
+
   .info-side {
     background-color: #eee;
     padding: 16px;
@@ -240,10 +247,13 @@
   }
 
   .info-image {
-    width: 360px;
-    max-width: 100%;
+    width: 100%;
+    text-align: center;
     img {
-      max-width: 100%;
+      width: 360px;
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -257,6 +267,7 @@
   .breadcrumb-item + .breadcrumb-item {
     padding-left: 0;
     padding-right: 0.5rem;
+
     &::before {
       padding-right: 0;
       padding-left: 0.5rem;
