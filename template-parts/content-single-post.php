@@ -13,8 +13,6 @@ $categories = get_the_category();
         <div class="col-sm-12 mx-auto">
             <div class="info-head">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?= pll_home_url() ?>"><?= __('QudsInfo', 'qi-theme') ?></a>
-                    </li>
                     <li class="breadcrumb-item"><a href="/our-info"><?= __('Our Information', 'qi-theme') ?></a></li>
                     <?php foreach ($categories as $category) : ?>
                         <li class="breadcrumb-item"><a
@@ -48,6 +46,7 @@ $categories = get_the_category();
                         <?php endif; ?>
                         <?php
                         if (pll_current_language() === "ar") {
+                            $main_post = $GLOBALS['post'];
                             $wiki_args = array(
                                 'cat'       => $categories[0]->term_id,
                                 'post_type' => 'info-details',
@@ -59,7 +58,9 @@ $categories = get_the_category();
                                 <a href="<?= get_permalink($post) ?>"
                                    class="btn btn-outline-primary"><?= get_the_title($post) ?></a>
                             </div>
-                            <?php endif;
+                            <?php
+                            $GLOBALS['post'] = $main_post;
+                            endif;
                         }
                         ?>
                     </div>
