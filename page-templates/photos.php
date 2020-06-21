@@ -31,7 +31,6 @@ get_template_part('sections/blog', 'bottom-header');
                                 class="btn btn-lg btn-outline-info<?php echo ($checked ? " mixitup-control-active" : "") ?>"><?= $cat->name ?></button>
                     </li>
                     <?php
-                    $i++;
                 endif;
             endforeach; ?>
         </ul>

@@ -610,6 +610,7 @@
       .responsive-menu-search {
         height: 4rem;
         background: #efefef;
+        position: relative;
 
         input {
           height: 100%;
@@ -626,8 +627,10 @@
 
         .sbutton {
           position: absolute;
-          top: 0;
+          top: 50%;
+          right: 0;
           padding: 1rem 1.5rem;
+          transform: translateY(-50%);
         }
       }
 

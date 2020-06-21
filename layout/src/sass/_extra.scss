@@ -435,9 +435,6 @@ a:not(.btn)[data-fancybox] {
     transition: opacity .2s;
     opacity: 0;
     z-index: 90;
-    @include media-breakpoint-down(xs) {
-      opacity: 0.5;
-    }
   }
   &:hover {
     &:after, &:before {

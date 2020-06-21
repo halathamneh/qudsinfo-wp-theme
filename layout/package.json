@@ -9,8 +9,8 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "owl.carousel": "^2.3.4",
-    "postcss-modules": "^1.4.1",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -19,6 +19,7 @@
     "sass": "^1.22.3"
   },
   "scripts": {
+    "dev": "./node_modules/.bin/parcel watch src/index.js --out-file main --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
     "css:watch": "./node_modules/.bin/parcel watch src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist",
     "css:build": "./node_modules/.bin/parcel build src/sass/main.scss --public-url /wp-content/themes/qudsinfo-wp-theme/layout/dist"
   },
