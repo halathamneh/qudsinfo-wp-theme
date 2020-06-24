@@ -4,8 +4,8 @@
   "description": "Frontend code for qudsinfo-wp-theme",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "staging": "webpack -p",
-    "build": "webpack -p"
+    "staging": "webpack -p --env.staging --progrss",
+    "prod": "webpack -p --progrss"
   },
   "keywords": [
     "Qudsinfo",

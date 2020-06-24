@@ -15,15 +15,28 @@ before_script:
   - eval $(ssh-agent -s)
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-generate-assets:
+generate-stag-assets:
   stage: build
   script:
     - cd layout
     - npm install
-    - npm run build
+    - npm run staging
   artifacts:
     paths:
       - layout/dist/
+  only:
+    - master
+generate-prod-assets:
+  stage: build
+  script:
+    - cd layout
+    - npm install
+    - npm run prod
+  artifacts:
+    paths:
+      - layout/dist/
+  only:
+    - master
 
 deploy-assets-to-S3:
   stage: deploy
