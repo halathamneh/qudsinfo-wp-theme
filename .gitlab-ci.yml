@@ -25,7 +25,8 @@ generate-stag-assets:
     paths:
       - layout/dist/
   only:
-    - master
+    - staging
+
 generate-prod-assets:
   stage: build
   script:
