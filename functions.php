@@ -134,7 +134,7 @@ if (!function_exists('illdy_enqueue_stylesheets')) {
     function illdy_enqueue_stylesheets()
     {
         // WP Enqueue Style
-        wp_enqueue_style('fancybox', get_template_directory_uri() . '/layout/stylesheets/jquery.fancybox.min.css', array(), filemtime(get_template_directory() . '/layout/stylesheets/jquery.fancybox.min.css') + 1, 'all');
+//        wp_enqueue_style('fancybox', get_template_directory_uri() . '/layout/stylesheets/jquery.fancybox.min.css', array(), filemtime(get_template_directory() . '/layout/stylesheets/jquery.fancybox.min.css') + 1, 'all');
         $deps = [];
         wp_enqueue_style('illdy-style', get_template_directory_uri() . '/layout/dist/main.css', $deps, filemtime(get_template_directory() . '/layout/dist/main.css') + 2, 'all');
     }
@@ -148,29 +148,26 @@ if (!function_exists('illdy_enqueue_javascripts')) {
 
     function illdy_enqueue_javascripts()
     {
-        $scripts_deps = ['jquery', 'masonry'];
-        if (get_theme_mod('illdy_preloader_enable', 1) == 1) {
-            wp_enqueue_script('illdy-pace', get_template_directory_uri() . '/layout/js/pace/pace.min.js', array('jquery'), '', false);
-        }
-        wp_enqueue_script('popper', get_template_directory_uri() . '/layout/js/popper.min.js', false, '1', true);
-        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/layout/js/bootstrap.min.js', array('jquery', 'popper'), '1.0.8', true);
-        wp_enqueue_script('bootstrap-select', get_template_directory_uri() . '/layout/js/bootstrap-select/bootstrap-select.min.js', array('bootstrap'), '1.12.4', true);
-        wp_enqueue_script('parallax-js', get_template_directory_uri() . '/layout/js/parallax.min.js', array('jquery'), '', true);
-        wp_enqueue_script('owl-thumbs', get_template_directory_uri() . '/layout/js/owl-carousel/owl.carousel2.thumbs.min.js', array('jquery'), '', true);
+        wp_enqueue_script('masonry');
+
+        wp_enqueue_script('my-scripts', get_template_directory_uri() . '/layout/dist/main.bundle.js', [],filemtime(get_template_directory() . '/layout/dist/main.bundle.js') + 3, true);
+
+//        wp_enqueue_script('popper', get_template_directory_uri() . '/layout/js/popper.min.js', false, '1', true);
+//        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/layout/js/bootstrap.min.js', array('popper'), '1.0.8', true);
+//        wp_enqueue_script('bootstrap-select', get_template_directory_uri() . '/layout/js/bootstrap-select/bootstrap-select.min.js', array('bootstrap'), '1.12.4', true);
+        wp_enqueue_script('parallax-js', get_template_directory_uri() . '/layout/js/parallax.min.js', '', true);
+        wp_enqueue_script('owl-thumbs', get_template_directory_uri() . '/layout/js/owl-carousel/owl.carousel2.thumbs.min.js', '', true);
         if (is_front_page()) {
             $scripts_deps[] = 'typed-js';
             wp_enqueue_script('typed-js', get_template_directory_uri() . '/layout/js/typed.min.js', false, '1.2', true);
-            wp_enqueue_script('illdy-count-to', get_template_directory_uri() . '/layout/js/count-to/count-to.min.js', array('jquery'), '1.0.8', true);
-            wp_enqueue_script('illdy-visible', get_template_directory_uri() . '/layout/js/visible/visible.min.js', array('jquery'), '', true);
+            wp_enqueue_script('illdy-count-to', get_template_directory_uri() . '/layout/js/count-to/count-to.min.js', '1.0.8', true);
+            wp_enqueue_script('illdy-visible', get_template_directory_uri() . '/layout/js/visible/visible.min.js', '', true);
         }
         if (function_exists('otd_get_events'))
             $scripts_deps[] = 'onthisday-script';
 
-        wp_enqueue_script('fancybox-js', get_template_directory_uri() . '/layout/js/jquery.fancybox.min.js', array('jquery'), '4', true);
+//        wp_enqueue_script('fancybox-js', get_template_directory_uri() . '/layout/js/jquery.fancybox.min.js', array('jquery'), '4', true);
 
-        wp_enqueue_script('masonry');
-
-        wp_enqueue_script('my-scripts', get_template_directory_uri() . '/layout/dist/main.js', $scripts_deps, filemtime(get_template_directory() . '/layout/dist/main.js') + 3, true);
 
         wp_localize_script('my-scripts', 'scripts_data', array(
             'ajaxurl'    => home_url() . '/wp-admin/admin-ajax.php',

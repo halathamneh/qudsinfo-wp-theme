@@ -31,8 +31,24 @@ if( get_option( 'show_on_front' ) == 'page'  ):
 	endif;
 else:
 */
-
-get_template_part('sections/front-page', 'bottom-header');
+get_template_part('sections/front-page', 'hero');
+?>
+    <div id="hero-component"></div>
+    <section class="info-of-today-section">
+        <div class="container">
+            <div class="row">
+                <div class="mb-4 col-lg-9">
+                    <div id="info-of-today"></div>
+                </div>
+                <div class="mb-4 col-lg-3">
+                    <div id="on-this-day"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="info-of-today-section"></div>
+<?php
+//get_template_part('sections/front-page', 'bottom-header');
 
 get_template_part('sections/front-page', 'news-bar');
 

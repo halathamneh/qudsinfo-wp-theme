@@ -13,7 +13,6 @@ $footer_copyright = get_theme_mod('illdy_footer_copyright', __('&copy; Copyright
 $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_directory_uri() . '/layout/images/footer-logo.png'));
 ?>
 
-<?= do_shortcode("[on-this-day]") ?>
 <?php //get_template_part('template-parts/user','utils'); ?>
 <footer id="footer">
     <div class="container">
@@ -134,16 +133,6 @@ $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_d
             });
         })(jQuery);
     </script>
-    <?php if ( ! wp_is_mobile() ) : ?>
-        <script>
-            var options = {
-                stringsElement: "#to_type",
-                typeSpeed: 40
-            };
-
-            var typed = new Typed(".iot-data span", options);
-        </script>
-    <?php endif; ?>
 <?php endif; ?>
 
 <?php if ( is_page_template('page-templates/lectures.php') ) : ?>

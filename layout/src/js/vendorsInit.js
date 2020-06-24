@@ -1,4 +1,9 @@
 import { isRtl } from "./functions";
+import "bootstrap";
+import "@fancyapps/fancybox";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel";
+import "jquery-countto";
 
 function fancyboxInit() {
   $("[data-fancybox]").fancybox({

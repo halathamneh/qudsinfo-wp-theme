@@ -18,7 +18,7 @@
     border-top: 0 solid;
     height: 3.5rem;
     background-color: #fff;
-    transition: all 0.3s;
+    transition: border 0.3s, height 0.3s, padding 0.3s;
 
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 
@@ -181,20 +181,19 @@
   }
 
   &.sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 990;
+
+    .admin-bar & {
+      top: 32px;
+    }
 
     &.header-front-page {
       padding: 0;
     }
 
     .top-header {
-
-      .admin-bar & {
-        top: 32px;
-      }
-
       &.fixed {
         .open-responsive-menu {
           padding: 0.8rem 1rem;

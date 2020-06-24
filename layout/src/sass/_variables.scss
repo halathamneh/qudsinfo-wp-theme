@@ -1,0 +1,106 @@
+$primary-dark: #42287c;
+$primary-light: #714091;
+$primary-gradient: linear-gradient(
+  180deg,
+  $primary-dark 0%,
+  $primary-light 106.61%
+);
+$btn-primary-bg: linear-gradient(
+  120.32deg,
+  $primary-dark -9.19%,
+  $primary-light 85.83%
+);
+
+$brand-dark: #016533;
+$brand-light: #59af30;
+$brand-gradient: linear-gradient(
+  238.54deg,
+  $brand-light 2.29%,
+  $brand-dark 92.88%
+);
+
+$footer-bg: #313157;
+$footer-color: #bfc4d8;
+$footer-color-secondary: #8e94c0;
+
+$white: #fff;
+$divider: #c4c4c4;
+
+$body-color: #4e4e4e;
+
+$card-shadow: rgba(0, 0, 0, 0.15);
+
+$newsbar-gradient: linear-gradient(270deg, #920f0f 0%, #d70e0e 100%);
+
+$text-muted: #a0a0a0;
+
+$aqsa-distance-dark: #ff642f;
+$aqsa-distance-light: #efca54;
+$aqsa-distance-gradient: linear-gradient(
+  128.71deg,
+  $aqsa-distance-dark 4.01%,
+  $aqsa-distance-light 113.82%
+);
+$aqsa-distance-shadow: rgba(253, 111, 51, 0.33);
+$aqsa-distance-shadow-hover: rgba(253, 111, 51, 0.73);
+
+$font-family-base: 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: #fff;
+
+$header-height: 65px;
+
+$hamburger-padding-x: 15px !default;
+$hamburger-padding-y: 15px !default;
+$hamburger-layer-width: 40px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: #000 !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+$hamburger-types: (
+  3dx,
+  3dx-r,
+  3dy,
+  3dy-r,
+  3dxy,
+  3dxy-r,
+  arrow,
+  arrow-r,
+  arrowalt,
+  arrowalt-r,
+  arrowturn,
+  arrowturn-r,
+  boring,
+  collapse,
+  collapse-r,
+  elastic,
+  elastic-r,
+  emphatic,
+  emphatic-r,
+  minus,
+  slider,
+  slider-r,
+  spin,
+  spin-r,
+  spring,
+  spring-r,
+  stand,
+  stand-r,
+  squeeze,
+  vortex,
+  vortex-r
+) !default;

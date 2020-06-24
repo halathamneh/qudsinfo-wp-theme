@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: haitham
@@ -26,8 +27,24 @@ class TodayInfo
 
         register_setting('frontpage_settings', 'todays_info');
 
-        $this->today_info = $this->getTodaysInfo();
+//        $this->today_info = $this->getTodaysInfo();
+        add_action('rest_api_init', [$this, 'registerToApi']);
+    }
 
+    function registerToApi()
+    {
+        try {
+            global $qudsinfoWpApi;
+            if (!($qudsinfoWpApi instanceof \QWA\QudsinfoWpApi)) {
+                return;
+            }
+            $todayInfoEndpoint = new \QWA\lib\EndPoint([
+                'path' => '/today-info/',
+                'method' => 'GET',
+                'callback' => [$this, 'getTodaysInfoApi'],
+            ]);
+            $qudsinfoWpApi->registerCustomEndPoint('v2', $todayInfoEndpoint);
+        } catch (\Exception $e) {}
     }
 
     public function enqueueAdminScripts($hook)
@@ -84,8 +101,9 @@ class TodayInfo
     public function getTodaysInfo()
     {
         $info_id = get_option('todays_info', null);
+
         if ($info_id !== null && function_exists('pll_get_post')) {
-            $info_id = pll_get_post($info_id);
+            $info_id = pll_get_post($info_id, 'ar');
             return get_post($info_id);
         }
         $query_args = array(
@@ -102,6 +120,17 @@ class TodayInfo
             return $res->post;
 
         return false;
+    }
+
+    public function getTodaysInfoApi() {
+        $wp_post = $this->getTodaysInfo();
+        if($wp_post === false) {
+            return [
+                'error' => "Cannot find today's post",
+            ];
+        }
+        $post = new \QWA\v2\Models\Post($wp_post);
+        return $post->toArray(false, ['imageSize' => 'info-of-the-day-image']);
     }
 
     public function get_posts_array($offset = 0, $s = false)

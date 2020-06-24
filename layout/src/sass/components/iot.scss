@@ -1,0 +1,43 @@
+.info-of-today-section {
+  margin: 28px 0 50px;
+}
+
+.iot-badge {
+  background-color: $brand-dark;
+  color: $white;
+  font-size: 20px;
+  border-radius: 28px;
+  font-weight: normal;
+  padding: 12px 24px;
+}
+
+.iot-card {
+  overflow: hidden;
+
+  .card-img-right {
+    object-fit: cover;
+    @include media-breakpoint-up(md) {
+      max-width: 35%;
+    }
+  }
+
+  @include media-breakpoint-down('sm') {
+    flex-direction: column-reverse !important;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 16px;
+  }
+
+  .card-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-text {
+    margin: 8px 0 16px;
+  }
+}

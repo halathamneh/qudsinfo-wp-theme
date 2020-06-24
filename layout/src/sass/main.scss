@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lobster");
 $fa-font-path: "../fonts";
-@import "~font-awesome/scss/font-awesome";
+@import "~font-awesome/scss/font-awesome.scss";
 
 /*$dropdown-link-active-color: #fff;
 $dropdown-link-active-bg: #59af30;*/
-$primary: #4e3a84;
-$link-color: $primary;
-@import "bs4/bootstrap";
 
 $hover-green: rgba(0, 107, 16, 0.8);
+
+@import "variables";
+@import "my-bootstrap";
 
 @keyframes moving {
   from {
@@ -33,7 +31,7 @@ body {
   display: block;
   direction: ltr;
   line-height: 1.5;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-family: "Almarai", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -46,91 +44,93 @@ body {
   }
 }
 
-@import "header";
+@import "header.scss";
 
-@import "front-page/about";
+@import "front-page/about.scss";
 
-@import "front-page/projects";
+@import "front-page/projects.scss";
 
-@import "post-types/testimonials";
+@import "post-types/testimonials.scss";
 
-@import "front-page/services";
+@import "front-page/services.scss";
 
-@import "front-page/latest_news";
+@import "front-page/latest_news.scss";
 
-@import "front-page/counter";
+@import "front-page/counter.scss";
 
-@import "pages/team";
+@import "pages/team.scss";
 
-@import "pages/contactus";
+@import "pages/contactus.scss";
 
-@import "footer";
+@import "footer.scss";
 
-@import "pages/blog";
+@import "pages/blog.scss";
 
-@import "sidebar";
+@import "sidebar.scss";
 
-@import "widgets";
+@import "widgets.scss";
 
-@import "extra";
+@import "extra.scss";
 
-@import "post-types/comments";
+@import "post-types/comments.scss";
 
-@import "front-page/latest_info";
+@import "front-page/latest_info.scss";
 
-@import "post-types/info_list";
+@import "post-types/info_list.scss";
 
-@import "post-types/single-item";
+@import "post-types/single-item.scss";
 
-@import "post-types/single-photo";
+@import "post-types/single-photo.scss";
 
-@import "pages/cats-page";
+@import "pages/cats-page.scss";
 
-@import "pages/search-page";
+@import "pages/search-page.scss";
 
-@import "pages/socialmedia-page";
+@import "pages/socialmedia-page.scss";
 
-@import "pages/lectures-page";
+@import "pages/lectures-page.scss";
 
-@import "pages/content-page";
+@import "pages/content-page.scss";
 
-@import "post-types/audio-post";
+@import "post-types/audio-post.scss";
 
-@import "post-types/video-post";
+@import "post-types/video-post.scss";
 
-@import "pages/products-page";
+@import "pages/products-page.scss";
 
-@import "pages/team-page";
+@import "pages/team-page.scss";
 
-@import "front-page/main-slider";
+@import "front-page/main-slider.scss";
 
-@import "front-page/header-info-of-today";
+@import "front-page/header-info-of-today.scss";
 
-@import "post-types/news-items";
+@import "post-types/news-items.scss";
 
-@import "post-types/single-book";
+@import "post-types/single-book.scss";
 
-@import "post-types/quizzes";
+@import "post-types/quizzes.scss";
 
-@import "user-utils";
+@import "user-utils.scss";
 
-@import "image-points";
+@import "image-points.scss";
 
-@import "bootstrap-select/bootstrap-select";
+@import "bootstrap-select/bootstrap-select.scss";
 
-@import "./pages/news-team";
+@import "./pages/news-team.scss";
 
-@import "./pages/faq";
+@import "./pages/faq.scss";
 
-@import "./pages/wallpapers";
+@import "./pages/wallpapers.scss";
 
-@import "./owl.carousel/scss/owl.carousel";
-@import "./owl.carousel/scss/owl.theme.default";
+@import "./owl.carousel/scss/owl.carousel.scss";
+@import "./owl.carousel/scss/owl.theme.default.scss";
 
-@import "./pages/aqsa-distance";
-@import "./pages/news-page";
+@import "./pages/aqsa-distance.scss";
+@import "./pages/news-page.scss";
 
-@import "./components/newsbar";
+@import "./components/all";
+
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
 
 [dir="ltr"] {
   direction: ltr;
