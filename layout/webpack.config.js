@@ -4,6 +4,8 @@ const path = require("path");
 const webpack = require("webpack");
 const FriendlyErrorsPlugin = require("friendly-errors-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const WebpackNotifierPlugin = require("webpack-notifier");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const environmentConfig = require("./.env");
 
@@ -17,14 +19,33 @@ module.exports = function (env, argv) {
     : "development";
   const environmentVars = environmentConfig(environment);
 
+  const plugins = [
+    new CleanWebpackPlugin(),
+    new webpack.DefinePlugin(environmentVars),
+    new FriendlyErrorsPlugin(),
+    new VueLoaderPlugin(),
+    new MiniCSSExtractPlugin({
+      filename: "main.style.[hash].css",
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+    }),
+  ];
+
+  if (isDev) {
+    plugins.push(new WebpackNotifierPlugin());
+  }
+
   return {
     mode: !isDev ? "production" : "development",
     entry: "./src/entry",
     devtool: !isDev ? "source-maps" : "cheap-module-eval-source-map",
     output: {
       path: path.resolve(__dirname, "dist"),
-      chunkFilename: "[id].main.js",
-      filename: "main.bundle.js",
+      chunkFilename: "[id].main.[hash].js",
+      filename: "main.bundle.[hash].js",
       publicPath: "/wp-content/themes/qudsinfo-wp-theme/layout/dist/",
     },
     resolve: {
@@ -95,18 +116,6 @@ module.exports = function (env, argv) {
         },
       ],
     },
-    plugins: [
-      new webpack.DefinePlugin(environmentVars),
-      new FriendlyErrorsPlugin(),
-      new VueLoaderPlugin(),
-      new MiniCSSExtractPlugin({
-        filename: "[name].css",
-      }),
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery",
-      }),
-    ],
+    plugins,
   };
 };

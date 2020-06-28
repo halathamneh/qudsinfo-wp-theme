@@ -32,6 +32,9 @@ if( get_option( 'show_on_front' ) == 'page'  ):
 else:
 */
 get_template_part('sections/front-page', 'hero');
+
+get_template_part('sections/front-page', 'news-bar');
+
 ?>
     <div id="hero-component"></div>
     <section class="info-of-today-section">
@@ -46,11 +49,9 @@ get_template_part('sections/front-page', 'hero');
             </div>
         </div>
     </section>
-    <div id="info-of-today-section"></div>
 <?php
 //get_template_part('sections/front-page', 'bottom-header');
 
-get_template_part('sections/front-page', 'news-bar');
 
 get_template_part('sections/front-page', 'aqsa-distance');
 

@@ -3,41 +3,40 @@
     <div class="otd-title">{{ $t("otd-title") }}</div>
     <b-card no-body class="rounded no-shadow">
       <template v-slot:header>
-        <b>05 حزيران</b>
+        <b>{{ $d(date, "short") }}</b>
         <br />
-        <span>الموافق 12 ربيع الأول</span>
+        <span>الموافق {{ hijriDate }}</span>
       </template>
-      <b-list-group flush>
-        <b-list-group-item
-          v-b-tooltip.hover.bottom="'Description here for OTD'"
-          action
-          href="#"
-        >
-          Test
-          <i class="fa fa-angle-left" />
-        </b-list-group-item>
-        <b-list-group-item
-          v-b-tooltip.hover.bottom="'Description here for OTD'"
-          action
-          href="#"
-        >
-          Test 2
-          <i class="fa fa-angle-left" />
+      <b-list-group v-if="events.length > 0" flush>
+        <b-list-group-item v-for="(event, i) in events" :key="i">
+          {{ event.title }}
+          <div class="mt-2 small text-muted">
+            {{ event.content }}
+          </div>
         </b-list-group-item>
       </b-list-group>
-      <b-card-body>
-        <b-button variant="link" href="#">
-          {{ $t("learn more") }}
-          <i class="fa fa-angle-double-left" />
-        </b-button>
-      </b-card-body>
+      <div v-else class="text-center text-muted py-3">
+        {{ $t("no events") }}
+      </div>
+      <b-card-body></b-card-body>
     </b-card>
   </div>
 </template>
 
 <script>
+import { getShortHijri } from "../../utils";
+import { getTodayEvents } from "../../api/getOnThisDay";
+
 export default {
   name: "OnThisDay",
+  data: () => ({
+    date: new Date(),
+    hijriDate: getShortHijri(new Date()),
+    events: [],
+  }),
+  mounted() {
+    getTodayEvents().then((events) => (this.events = events));
+  },
 };
 </script>
 

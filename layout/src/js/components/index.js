@@ -9,13 +9,20 @@ import english from "@/lang/en-US.js";
 Vue.use(VueI18n);
 Vue.use(BootstrapVue);
 
-// Create VueI18n instance with options
 const i18n = new VueI18n({
-  locale: "ar", // set locale
+  locale: "ar-jo",
+  dateTimeFormats: {
+    "ar-jo": {
+      short: { month: "long", day: "numeric" },
+    },
+    en: {
+      short: { month: "long", day: "numeric" },
+    },
+  },
   messages: {
-    ar: arabic,
+    "ar-jo": arabic,
     en: english,
-  }, // set locale messages
+  },
 });
 
 if (document.querySelector("#info-of-today")) {
