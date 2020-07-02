@@ -1,5 +1,11 @@
 .info-of-today-section {
   margin: 28px 0 50px;
+  .card-subtitle a {
+    color: $text-muted;
+  }
+  .card-title a {
+    color: $dark;
+  }
 }
 
 .iot-badge {

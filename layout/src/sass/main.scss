@@ -38,6 +38,10 @@ body {
   color: #222222;
   text-align: left;
 
+  &:not(.home) {
+    margin-top: 88px;
+  }
+
   &.rtl {
     direction: rtl;
     text-align: right;
@@ -131,6 +135,10 @@ body {
 @import "./components/all";
 
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+.breadcrumb {
+  background-color: #fff;
+}
 
 [dir="ltr"] {
   direction: ltr;

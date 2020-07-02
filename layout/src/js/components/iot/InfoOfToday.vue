@@ -10,8 +10,14 @@
       <b-card-body>
         <div v-if="loading" class="loader">Loading</div>
         <template v-else>
-          <b-card-sub-title>{{ info.category }}</b-card-sub-title>
-          <b-card-title>{{ info.title }}</b-card-title>
+          <b-card-sub-title>
+            <a :href="`/category/${info.category.slug}`">
+              {{ info.category.label }}
+            </a>
+          </b-card-sub-title>
+          <b-card-title>
+            <a :href="info.url">{{ info.title }}</a>
+          </b-card-title>
           <b-card-text v-html="info.content" />
         </template>
       </b-card-body>
