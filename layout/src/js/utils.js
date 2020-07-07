@@ -1,4 +1,4 @@
-import hijri from "hijri";
+import convertToHijri from "./utils/hijri-date";
 
 export const throttle = (func, limit) => {
   let inThrottle;
@@ -14,6 +14,6 @@ export const throttle = (func, limit) => {
 };
 
 export const getShortHijri = (date) => {
-  const hijriDate = hijri.convert(date, -1);
+  const hijriDate = convertToHijri(date, -1, scripts_data.langCode);
   return `${hijriDate.dayOfMonth} ${hijriDate.monthText}`;
 };

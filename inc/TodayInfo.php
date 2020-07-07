@@ -39,12 +39,13 @@ class TodayInfo
                 return;
             }
             $todayInfoEndpoint = new \QWA\lib\EndPoint([
-                'path' => '/today-info/',
-                'method' => 'GET',
+                'path'     => '/today-info/',
+                'method'   => 'GET',
                 'callback' => [$this, 'getTodaysInfoApi'],
             ]);
             $qudsinfoWpApi->registerCustomEndPoint('v2', $todayInfoEndpoint);
-        } catch (\Exception $e) {}
+        } catch (\Exception $e) {
+        }
     }
 
     public function enqueueAdminScripts($hook)
@@ -98,21 +99,24 @@ class TodayInfo
         wp_redirect($redirect_to);
     }
 
-    public function getTodaysInfo()
+    public function getTodaysInfo($lang = 'ar')
     {
         $info_id = get_option('todays_info', null);
+        if (function_exists('pll_get_post')) {
+            $info_id = pll_get_post($info_id, $lang);
+        }
 
-        if ($info_id !== null && function_exists('pll_get_post')) {
-            $info_id = pll_get_post($info_id, 'ar');
+        if ($info_id) {
             return get_post($info_id);
         }
+
         $query_args = array(
             'post_type'        => 'post',
             'post_status'      => 'publish',
             'posts_per_page'   => 1,
-            'orderby'          => 'post_date',
-            'order'            => 'desc',
+            'orderby'          => 'rand',
             'category__not_in' => $this->excluded,
+            'lang'             => $lang,
 
         );
         $res = new WP_Query($query_args);
@@ -122,15 +126,17 @@ class TodayInfo
         return false;
     }
 
-    public function getTodaysInfoApi() {
-        $wp_post = $this->getTodaysInfo();
-        if($wp_post === false) {
-            return [
+    public function getTodaysInfoApi(WP_REST_Request $request)
+    {
+        $lang = $request->get_header('Accept-Language');
+        $wp_post = $this->getTodaysInfo($lang);
+        if (!$wp_post) {
+            return new \QWA\v2\Response([
                 'error' => "Cannot find today's post",
-            ];
+            ]);
         }
         $post = new \QWA\v2\Models\Post($wp_post);
-        return $post->toArray(false, ['imageSize' => 'info-of-the-day-image']);
+        return new \QWA\v2\Response($post->toArray(false, ['imageSize' => 'info-of-the-day-image']), 200);
     }
 
     public function get_posts_array($offset = 0, $s = false)
@@ -156,7 +162,7 @@ class TodayInfo
     public function load_more_infos()
     {
         $offset = $_GET['offset'] ?? false;
-        if ( ! $offset ) {
+        if (!$offset) {
             echo json_encode(['status' => 1, 'result' => 'some thing wrong']);
             exit;
         }
@@ -168,12 +174,12 @@ class TodayInfo
     public function search_infos()
     {
         $s = $_GET['s'] ?? false;
-        if ( ! $s ) {
+        if (!$s) {
             echo json_encode(['status' => 1, 'result' => 'some thing wrong']);
             exit;
         }
 
-        echo json_encode(['status' => 0, 'result' => $this->get_posts_array(0,$s)]);
+        echo json_encode(['status' => 0, 'result' => $this->get_posts_array(0, $s)]);
         exit;
     }
 

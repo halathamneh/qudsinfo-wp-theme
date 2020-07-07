@@ -51,4 +51,6 @@ export default {
   "please select subject": "الرجاء اختيار الموضوع",
   "continue reading": "أكمل القراءة",
   "no events": "لا أحداث في هذا اليوم!",
+  "info of today": "معلومة اليوم",
+  "hijri": 'هجري'
 };

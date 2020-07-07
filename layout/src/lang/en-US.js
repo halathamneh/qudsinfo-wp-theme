@@ -23,4 +23,6 @@ export default {
   "please select subject": "Please select subject",
   "continue reading": "Continue Reading",
   "no events": "No events today!",
+  "info of today": "Today's Info",
+  hijri: "Hijri",
 };

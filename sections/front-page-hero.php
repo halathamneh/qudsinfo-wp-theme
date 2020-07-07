@@ -5,13 +5,13 @@
                 class="overlay-image">
         <div class="container" style="height: 90%; padding-top: 65px;">
             <div class="d-flex align-items-center h-100 flex-column flex-md-row">
-                <div class="text-md-right text-center">
+                <div class="<?= pll_current_language() === 'en' ? 'text-md-left' : 'text-md-right' ?> text-center">
                     <img src="/wp-content/themes/qudsinfo-wp-theme/layout/src/images/logo.png"
                             alt="" class="logo d-none d-md-block">
                     <h1>QudsInfo.com</h1>
-                    <p class="slogan">أكبر موقع مقدسي على الانترنت</p>
+                    <p class="slogan"><?= __('Biggest Quds Site on the Internet', 'qi-theme') ?></p>
                 </div>
-                <div class="hero-laptop mt-md-0 mt-auto mr-auto ml-auto ml-md-0">
+                <div class="hero-laptop mt-md-0 mt-auto mx-auto <?= pll_current_language() === 'en' ? 'mr-md-0' : 'ml-md-0' ?>">
                     <img src="/wp-content/themes/qudsinfo-wp-theme/layout/src/images/laptop-clouds.svg"
                             alt="" class="laptop-clouds">
                     <img src="/wp-content/themes/qudsinfo-wp-theme/layout/src/images/laptop.svg"

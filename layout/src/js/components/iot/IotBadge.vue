@@ -1,3 +1,3 @@
 <template>
-  <b-badge class="iot-badge">معلومة اليوم</b-badge>
+  <b-badge class="iot-badge">{{ $t('info of today') }}</b-badge>
 </template>
