@@ -5,7 +5,7 @@ const api = axios.create({
   baseURL: BASE_URL,
   headers: {
     Authorization: `Bearer ${API_TOKEN}`,
-    "Accept-Language": "ar",
+    "Accept-Language": scripts_data.langCode,
   },
 });
 

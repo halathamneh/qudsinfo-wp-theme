@@ -2969,6 +2969,9 @@ msgstr ""
 msgid "Product Categories"
 msgstr "تصنيفات المنتجات"
 
+msgid "Biggest Quds Site on the Internet"
+msgstr "أكبر موقع مقدسي على الإنترنت"
+
 #~ msgid "More about"
 #~ msgstr "المزيد عن"
 

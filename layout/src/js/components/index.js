@@ -10,7 +10,7 @@ Vue.use(VueI18n);
 Vue.use(BootstrapVue);
 
 const i18n = new VueI18n({
-  locale: "ar-jo",
+  locale: scripts_data.langCode,
   dateTimeFormats: {
     "ar-jo": {
       short: { month: "long", day: "numeric" },

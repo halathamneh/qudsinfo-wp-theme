@@ -5,7 +5,7 @@
       <template v-slot:header>
         <b>{{ $d(date, "short") }}</b>
         <br />
-        <span>الموافق {{ hijriDate }}</span>
+        <span>{{ $t("hijri") }}: {{ hijriDate }}</span>
       </template>
       <b-list-group v-if="events.length > 0" flush>
         <b-list-group-item v-for="(event, i) in events" :key="i">
