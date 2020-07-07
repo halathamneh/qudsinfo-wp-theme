@@ -12,7 +12,7 @@ Vue.use(BootstrapVue);
 const i18n = new VueI18n({
   locale: scripts_data.langCode,
   dateTimeFormats: {
-    "ar-jo": {
+    ar: {
       short: { month: "long", day: "numeric" },
     },
     en: {
@@ -20,7 +20,7 @@ const i18n = new VueI18n({
     },
   },
   messages: {
-    "ar-jo": arabic,
+    ar: arabic,
     en: english,
   },
 });
