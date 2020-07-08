@@ -71,5 +71,4 @@ get_template_part('sections/blog', 'bottom-header');
 
     </div><!--/.container-->
 <?php
-wp_enqueue_script('mixitup', get_template_directory_uri() . '/layout/js/mixitup.min.js', [], '3', true);
 get_footer(); ?>
