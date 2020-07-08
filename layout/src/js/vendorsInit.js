@@ -1,4 +1,5 @@
 import { isRtl } from "./functions";
+import mixitup from "mixitup";
 import "bootstrap";
 import "@fancyapps/fancybox";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -56,7 +57,7 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-if (typeof mixitup !== "undefined") {
+if (document.body.classList.contains("page-template-photos")) {
   var elementMixitup = document.querySelector(".cats-container");
   var toggleDefault = elementMixitup.dataset.default;
   var mixer = mixitup(elementMixitup, {
