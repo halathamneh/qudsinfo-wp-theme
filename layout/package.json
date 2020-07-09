@@ -26,7 +26,8 @@
     "owl.carousel": "^2.3.4",
     "vue": "~2.6",
     "vue-i18n": "^8.18.2",
-    "vue-router": "~3.0"
+    "vue-router": "~3.0",
+    "vue-stripe-menu": "^1.2.11"
   },
   "devDependencies": {
     "@babel/core": "~7.2",

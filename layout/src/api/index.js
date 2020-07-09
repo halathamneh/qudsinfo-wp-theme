@@ -1,7 +1,7 @@
 import axios from "axios";
-import { API_TOKEN, BASE_URL } from "../consts";
+import { API_TOKEN, BASE_URL } from "../js/consts";
 
-const api = axios.create({
+const http = axios.create({
   baseURL: BASE_URL,
   headers: {
     Authorization: `Bearer ${API_TOKEN}`,
@@ -9,4 +9,4 @@ const api = axios.create({
   },
 });
 
-export default api;
+export default http;

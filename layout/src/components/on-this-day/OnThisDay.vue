@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { getShortHijri } from "../../utils";
+import { getShortHijri } from "../../js/utils";
 import { getTodayEvents } from "../../api/getOnThisDay";
 
 export default {
