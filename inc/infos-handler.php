@@ -48,6 +48,7 @@ function render_infos( $page = 0, $category = null, $lang = null ) {
 	$info_args  = array(
 		'paged' => $paged,
 		'cat'   => $category !== null ? $category->term_id : null,
+        'category__not_in' => [QI_THOUGHTS_CAT_ID],
         'lang'  => $lang
 	);
 	if($category === null) {
