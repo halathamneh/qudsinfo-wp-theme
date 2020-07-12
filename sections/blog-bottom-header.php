@@ -19,15 +19,14 @@ if (function_exists('z_taxonomy_image_url') && !empty($image = z_taxonomy_image_
 elseif (has_post_thumbnail())://(get_post_type() == 'news' || get_post_type() == 'pics'):
     $image_bg = esc_url($post_thumbnail[0]);
 endif;
-if(Helpers::is_avi()) {
+if (Helpers::is_avi()) {
     $rand_image = get_rnd_header_image();
     $image_bg = esc_url($rand_image["img_url"]);
 }
-if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(get_post_type() == 'blogs' && is_single()) || is_search()) {
-    $header_attr = ' data-z-index="0" data-parallax="scroll" data-image-src="' . $image_bg . '" ';
-} elseif (Helpers::is_lectures() || (get_post_type() == 'blogs' && is_single())) {
+
+if ($image_bg != "")
     $header_attr = ' style="background-image: url(' . $image_bg . ')"';
-}
+
 ?>
 <div class="bottom-header parallax-window blog<?= $BH_classes ?>" <?= $header_attr ?>>
     <div class="header-overlay"></div>
@@ -73,7 +72,8 @@ if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'infos.php' || get_query_var('cat') != '' ? ' active' : '' ?>"
-                       href="<?= home_url('/our-info/') ?>"><i class="fa fa-database"></i> <span><?= __("Written", "qi-theme") ?></span></a>
+                       href="<?= home_url('/our-info/') ?>"><i class="fa fa-database"></i>
+                        <span><?= __("Written", "qi-theme") ?></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'videos.php' ? ' active' : '' ?>"
@@ -82,7 +82,8 @@ if (!Helpers::is_lectures() && !(get_post_type() == 'pics' && is_single()) && !(
                 </li>
                 <li class="nav-item">
                     <a class="nav-link<?= $pt == 'audio.php' ? ' active' : '' ?>"
-                       href="<?= home_url('/our-info/audio/') ?>"><i class="fa fa-headphones"></i> <span><?= __("Audio", "qi-theme") ?></span></a>
+                       href="<?= home_url('/our-info/audio/') ?>"><i class="fa fa-headphones"></i>
+                        <span><?= __("Audio", "qi-theme") ?></span></a>
                 </li>
             </ul>
         <?php endif; ?>

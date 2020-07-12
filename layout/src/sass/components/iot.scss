@@ -15,6 +15,10 @@
   border-radius: 28px;
   font-weight: normal;
   padding: 12px 24px;
+  &.small {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
 }
 
 .iot-card {

@@ -74,26 +74,7 @@ if (!is_404()) {
 <header id="header" class="sticky page-start <?= $header_classes ?>"
     <?= $header_attr ?> >
     <div class="top-header fixed transparent-nav">
-        <div class="d-flex">
-            <div class="logo-image">
-                <?php if ($img_logo): ?>
-                    <a href="<?php echo esc_url(pll_home_url()); ?>"
-                       title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="header-logo"><img
-                                src="<?php echo esc_url($img_logo); ?>"
-                                alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                                title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
-                <?php else: ?>
-                    <a href="<?php echo esc_url(pll_home_url()); ?>"
-                       title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                       class="header-logo"><?php echo illdy_sanitize_html($text_logo); ?></a>
-                <?php endif; ?>
-            </div><!--/.col-sm-2-->
-            <div class="navigation-wrapper">
-                <?php
-                get_template_part('template-parts/header', 'top-nav');
-                ?>
-            </div><!--/.col-sm-10-->
-        </div><!--/.row-->
+        <div id="header-component"></div>
     </div><!--/.top-header-->
     <?php
     get_template_part('template-parts/header', 'responsive-menu');
