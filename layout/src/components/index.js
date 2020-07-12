@@ -1,44 +1,40 @@
 import Vue from "vue";
-import VueI18n from "vue-i18n";
 import BootstrapVue from "bootstrap-vue";
-import InfoOfToday from "./iot/InfoOfToday";
-import OnThisDay from "./on-this-day/OnThisDay";
-import arabic from "@/lang/ar-JO.js";
-import english from "@/lang/en-US.js";
+import { Plugin } from "vue-fragment";
+import Header from "./Header/Header";
+import store from "../store";
+import i18n from "../lang/i18n";
 
-Vue.use(VueI18n);
+Vue.use(Plugin);
 Vue.use(BootstrapVue);
 
-const i18n = new VueI18n({
-  locale: scripts_data.langCode,
-  dateTimeFormats: {
-    ar: {
-      short: { month: "long", day: "numeric" },
-    },
-    en: {
-      short: { month: "long", day: "numeric" },
-    },
-  },
-  messages: {
-    ar: arabic,
-    en: english,
-  },
-});
-
-if (document.querySelector("#info-of-today")) {
+if (document.querySelector("#header-component")) {
   new Vue({
     i18n,
-    el: "#info-of-today",
-    components: { InfoOfToday },
-    render: (h) => h(InfoOfToday),
+    store,
+    el: "#header-component",
+    render: (h) => h(Header),
   });
 }
 
+if (document.querySelector("#info-of-today")) {
+  import(/* webpackChunkName: "home-comps" */ "./iot/InfoOfToday").then(
+    ({ default: InfoOfToday }) =>
+      new Vue({
+        i18n,
+        el: "#info-of-today",
+        render: (h) => h(InfoOfToday),
+      })
+  );
+}
+
 if (document.querySelector("#on-this-day")) {
-  new Vue({
-    i18n,
-    el: "#on-this-day",
-    components: { OnThisDay },
-    render: (h) => h(OnThisDay),
-  });
+  import(/* webpackChunkName: "home-comps" */ "./on-this-day/OnThisDay").then(
+    ({ default: OnThisDay }) =>
+      new Vue({
+        i18n,
+        el: "#on-this-day",
+        render: (h) => h(OnThisDay),
+      })
+  );
 }

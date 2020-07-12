@@ -135,7 +135,7 @@ class TodayInfo
                 'error' => "Cannot find today's post",
             ]);
         }
-        $post = new \QWA\v2\Models\Post($wp_post);
+        $post = new \QWA\v2\Models\Info($wp_post);
         return new \QWA\v2\Response($post->toArray(false, ['imageSize' => 'info-of-the-day-image']), 200);
     }
 
