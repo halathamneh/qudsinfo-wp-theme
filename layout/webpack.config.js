@@ -9,6 +9,7 @@ const WebpackNotifierPlugin = require("webpack-notifier");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const environmentConfig = require("./.env");
 
 module.exports = function (env, argv) {
@@ -38,6 +39,19 @@ module.exports = function (env, argv) {
 
   if (isDev) {
     plugins.push(new WebpackNotifierPlugin());
+  } else {
+    plugins.push(
+      new ImageminPlugin({
+        maxFileSize: 10000, // Only apply this one to files equal to or under 10kb
+        jpegtran: { progressive: false }
+      }),
+    );
+    plugins.push(
+      new ImageminPlugin({
+        minFileSize: 10000, // Only apply this one to files over 10kb
+        jpegtran: { progressive: true }
+      }),
+    );
   }
 
   return {
