@@ -7,6 +7,8 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WebpackNotifierPlugin = require("webpack-notifier");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const environmentConfig = require("./.env");
 
 module.exports = function (env, argv) {
@@ -48,6 +50,9 @@ module.exports = function (env, argv) {
       filename: "main.bundle.[hash].js",
       publicPath: "/wp-content/themes/qudsinfo-wp-theme/layout/dist/",
     },
+    optimization: {
+      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },  
     resolve: {
       extensions: [".js", ".vue"],
       alias: {
