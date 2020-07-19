@@ -25,7 +25,7 @@
         <lang-switcher class="vsm-mob-hide" />
         <search-btn class="vsm-mob-hide" />
         <vsm-mob>
-          <mobile-menu />
+          <mobile-menu :menu-config="menu" />
         </vsm-mob>
       </li>
     </template>
