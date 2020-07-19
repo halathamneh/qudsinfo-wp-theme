@@ -3,12 +3,12 @@
     <iot-badge />
     <b-card
       class="rounded shadow mt-3 iot-card"
-      :img-src="loading ? placeholder : info.image"
+      :img-src="!info ? placeholder : info.image"
       img-end
       no-body
     >
       <b-card-body>
-        <div v-if="loading" class="loader">Loading</div>
+        <div v-if="!info" class="loader">Loading</div>
         <template v-else>
           <b-card-sub-title>
             <a :href="`/category/${info.category.slug}`">
@@ -22,16 +22,13 @@
         </template>
       </b-card-body>
     </b-card>
-    <!--      <div class="d-flex justify-content-end">-->
-    <!--        <img src="/images/placeholder.svg" alt="" />-->
-    <!--      </div>-->
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
 import IotBadge from "./IotBadge.vue";
 import placeholder from "@/images/placeholder.svg";
-import getInfoOfToday from "../../api/getInfoOfToday";
 
 export default {
   components: {
@@ -39,14 +36,15 @@ export default {
   },
   data: () => ({
     placeholder,
-    info: {},
-    loading: true,
   }),
+  computed: {
+    ...mapGetters({ info: "getTodayInfo" }),
+  },
   mounted() {
-    getInfoOfToday().then((info) => {
-      this.info = info;
-      this.loading = false;
-    });
+    this.loadTodayInfo();
+  },
+  methods: {
+    ...mapActions(["loadTodayInfo"]),
   },
 };
 </script>

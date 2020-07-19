@@ -22,6 +22,7 @@ if (document.querySelector("#info-of-today")) {
     ({ default: InfoOfToday }) =>
       new Vue({
         i18n,
+        store,
         el: "#info-of-today",
         render: (h) => h(InfoOfToday),
       })
