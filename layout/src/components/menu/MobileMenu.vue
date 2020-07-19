@@ -3,7 +3,10 @@
     <mobile-search />
     <ul>
       <li v-for="menuItem in menuConfig">
-        <follow-buttons v-if="menuItem.dropdown === 'about'" />
+        <template v-if="menuItem.dropdown === 'about'">
+          <lang-switcher class="text-center" />
+          <follow-buttons />
+        </template>
         <template v-else>
           <a
             v-if="!menuItem.subItems || menuItem.subItems.length <= 1"
@@ -33,10 +36,11 @@
 import menuConfig from "./menu-config-ar";
 import FollowButtons from "../FollowButtons/FollowButtons";
 import MobileSearch from "../Search/MobileSearch";
+import LangSwitcher from "./LangSwitcher";
 
 export default {
   name: "MobileMenu",
-  components: { MobileSearch, FollowButtons },
+  components: { LangSwitcher, MobileSearch, FollowButtons },
   data: () => ({
     menuConfig,
   }),
@@ -45,7 +49,8 @@ export default {
 
 <style lang="scss" scoped>
 .mobile-menu {
-  padding: 32px 0;
+  margin-top: 32px;
+  padding-bottom: 32px;
   max-height: 90vh;
   overflow-y: auto;
   > ul {
