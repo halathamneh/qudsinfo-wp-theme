@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 .mobile-menu {
-  margin-top: 32px;
+  margin-top: 42px;
   padding-bottom: 32px;
   max-height: 90vh;
   overflow-y: auto;
