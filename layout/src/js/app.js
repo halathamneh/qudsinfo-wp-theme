@@ -1,6 +1,6 @@
 import "./vendorsInit";
 import * as fn from "./functions";
-// import "./menu";
+import "./menu";
 import "./newsbar";
 // import "./search";
 import "./aqsa-distance";
