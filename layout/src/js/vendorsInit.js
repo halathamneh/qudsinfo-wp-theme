@@ -1,20 +1,20 @@
 import { isRtl } from "./functions";
-import mixitup from "mixitup";
 import "bootstrap";
-import "@fancyapps/fancybox";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel";
-import "jquery-countto";
 
-function fancyboxInit() {
-  $("[data-fancybox]").fancybox({
-    loop: true,
-    thumbs: {
-      autoStart: false, // Display thumbnails on opening
-      hideOnClose: true, // Hide thumbnail grid when closing animation starts
-    },
-    buttons: ["share", "download", "thumbs", "close"],
-  });
+if (document.querySelectorAll("data-fancybox").length > 0) {
+  import(/* webpackChunkName: "common-vendors" */ "@fancyapps/fancybox").then(
+    () => {
+      $("[data-fancybox]").fancybox({
+        loop: true,
+        thumbs: {
+          autoStart: false, // Display thumbnails on opening
+          hideOnClose: true, // Hide thumbnail grid when closing animation starts
+        },
+        buttons: ["share", "download", "thumbs", "close"],
+      });
+    }
+  );
 }
 
 export function masonryInit() {
@@ -30,46 +30,48 @@ export function masonryInit() {
   }
 }
 
-function counterNumber() {
-  if ($("#counter .counter-number").length) {
-    $("#counter .counter-number").countTo();
-  }
+if ($("#counter .counter-number").length) {
+  import("jquery-countto").then(() => $("#counter .counter-number").countTo());
 }
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$(".owl-carousel").owlCarousel({
-  rtl: isRtl(),
-  autoHeight: false,
-  responsive: {
-    // breakpoint from 0 up
-    0: {
-      items: 1,
-    },
-    // breakpoint from 480 up
-    480: {
-      items: 2,
-    },
-    // breakpoint from 768 up
-    960: {
-      items: 3,
-    },
-  },
-});
-
-if (document.body.classList.contains("page-template-photos")) {
-  var elementMixitup = document.querySelector(".cats-container");
-  var toggleDefault = elementMixitup.dataset.default;
-  var mixer = mixitup(elementMixitup, {
-    controls: {
-      toggleDefault: toggleDefault,
-    },
-  });
-  mixer.toggleOn(toggleDefault).then(function () {
-    return mixer.toggleOff("all");
+if (document.querySelectorAll(".owl-carousel").length > 0) {
+  import(/* webpackChunkName: "common-vendors" */ "owl.carousel").then(() => {
+    $(".owl-carousel").owlCarousel({
+      rtl: isRtl(),
+      autoHeight: false,
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+        },
+        // breakpoint from 480 up
+        480: {
+          items: 2,
+        },
+        // breakpoint from 768 up
+        960: {
+          items: 3,
+        },
+      },
+    });
   });
 }
 
-fancyboxInit();
+if (document.body.classList.contains("page-template-photos")) {
+  import("mixitup").then(({ default: mixitup }) => {
+    var elementMixitup = document.querySelector(".cats-container");
+    var toggleDefault = elementMixitup.dataset.default;
+    var mixer = mixitup(elementMixitup, {
+      controls: {
+        toggleDefault: toggleDefault,
+      },
+    });
+    mixer.toggleOn(toggleDefault).then(function () {
+      return mixer.toggleOff("all");
+    });
+  });
+}
+
 masonryInit();
-counterNumber();

@@ -60,7 +60,7 @@ module.exports = function (env, argv) {
     devtool: !isDev ? "source-maps" : "cheap-module-eval-source-map",
     output: {
       path: path.resolve(__dirname, "dist"),
-      chunkFilename: "[id].main.[hash].js",
+      chunkFilename: "[name].chunk.[hash].js",
       filename: "main.bundle.[hash].js",
       publicPath: "/wp-content/themes/qudsinfo-wp-theme/layout/dist/",
     },

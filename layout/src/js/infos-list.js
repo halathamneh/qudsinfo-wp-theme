@@ -65,7 +65,7 @@ $(".cats-list").on("click", "li:not(.active) a", function (e) {
 
   // initialize vars
   var $infolist = $(".info-list");
-  var $header = $("#header");
+  var header = document.querySelector(".bottom-header");
   var $this = $(this);
   var $current = $(this).closest("li");
   var cat_name = $this.find(".front-cat-name").text();
@@ -134,21 +134,14 @@ $(".cats-list").on("click", "li:not(.active) a", function (e) {
           scripts_data.lang["pleaseWait"] +
           "</div>"
       );
-      $header.removeAttr("data-image-src");
-      $header.removeAttr("data-parallax");
     },
     success: function (data) {
       if (data != "" && data != 0) {
         var _json = $.parseJSON(data);
         history.pushState(_data, _json.title, _json.url);
-        var $imageEl = $header
-          .siblings(".parallax-mirror")
-          .find("img.parallax-slider");
-        if ($imageEl.length) {
-          if (_json.image && _json.image !== "") $imageEl[0].src = _json.image;
-          else $imageEl[0].src = "";
-        }
-        //$header.parallax({imageSrc: _json.image});
+        if (_json.image && _json.image !== "")
+          header.style.backgroundImage = `url(${_json.image})`;
+        else header.style.backgroundImage = "";
 
         document.title = _json.title;
         $(".top-page-title h2").text(_json.term_name);

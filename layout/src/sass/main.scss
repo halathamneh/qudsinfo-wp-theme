@@ -5,6 +5,8 @@ $fa-font-path: "../fonts";
 $dropdown-link-active-bg: #59af30;*/
 
 $hover-green: rgba(0, 107, 16, 0.8);
+// You can resize for "@media only screen":
+$vsm-media: 980px;
 
 @import "variables";
 @import "my-bootstrap";
@@ -135,6 +137,8 @@ body {
 @import "./components/all";
 
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+@import "~vue-stripe-menu/src/scss/index";
 
 .breadcrumb {
   background-color: #fff;
