@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import menuConfig from "./menu-config-ar";
 import FollowButtons from "../FollowButtons/FollowButtons";
 import MobileSearch from "../Search/MobileSearch";
 import LangSwitcher from "./LangSwitcher";
@@ -41,9 +40,12 @@ import LangSwitcher from "./LangSwitcher";
 export default {
   name: "MobileMenu",
   components: { LangSwitcher, MobileSearch, FollowButtons },
-  data: () => ({
-    menuConfig,
-  }),
+  props: {
+    menuConfig: {
+      type: Object,
+      default: {},
+    },
+  },
 };
 </script>
 
