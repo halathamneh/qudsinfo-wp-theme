@@ -53,7 +53,7 @@ export default {
 .mobile-menu {
   margin-top: 42px;
   padding-bottom: 32px;
-  max-height: 90vh;
+  max-height: 80vh;
   overflow-y: auto;
   > ul {
     padding: 0;
