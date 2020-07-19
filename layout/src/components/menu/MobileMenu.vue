@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import menuConfig from "./menu-config";
+import menuConfig from "./menu-config-ar";
 import FollowButtons from "../FollowButtons/FollowButtons";
 import MobileSearch from "../Search/MobileSearch";
 

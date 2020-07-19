@@ -2,13 +2,13 @@
   <div class="wrap-content">
     <div class="d-flex justify-content-between mb-3">
       <iot-badge small />
-      <small v-if="!loading" class="text-muted">
+      <small v-if="infoOfToday" class="text-muted">
         <a :href="`/category/${infoOfToday.category.slug}`">
           {{ infoOfToday.category.label }}
         </a>
       </small>
     </div>
-    <div v-if="loading" class="loader">Loading</div>
+    <div v-if="!infoOfToday" class="loader">Loading</div>
     <template v-else>
       <h4>
         <a :href="infoOfToday.url">{{ infoOfToday.title }}</a>
@@ -21,21 +21,21 @@
 </template>
 
 <script>
-import getInfoOfToday from "../../../api/getInfoOfToday";
+import getInfoOfToday from "../../../api/fetchInfoOfToday";
 import IotBadge from "../../iot/IotBadge";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "InfosSecondaryDropdown",
   components: { IotBadge },
-  data: () => ({
-    infoOfToday: null,
-    loading: true,
-  }),
+  computed: {
+    ...mapGetters({ infoOfToday: "getTodayInfo" }),
+  },
   mounted() {
-    getInfoOfToday().then((iot) => {
-      this.infoOfToday = iot;
-      this.loading = false;
-    });
+    this.loadTodayInfo();
+  },
+  methods: {
+    ...mapActions(["loadTodayInfo"]),
   },
 };
 </script>
