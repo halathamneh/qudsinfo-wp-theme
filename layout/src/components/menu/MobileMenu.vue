@@ -42,7 +42,7 @@ export default {
   components: { LangSwitcher, MobileSearch, FollowButtons },
   props: {
     menuConfig: {
-      type: Object,
+      type: Array,
       default: {},
     },
   },

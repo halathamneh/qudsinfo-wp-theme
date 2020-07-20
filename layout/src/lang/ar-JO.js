@@ -78,4 +78,14 @@ export default {
     "فريق شبابي يسعى لنشر المعلومات المتعلقة بالمسجد الأقصى والقدس لنشر الثقافة المقدسية في المجتمع.",
   "search placeholder": "ابحث في معلومة مقدسية ...",
   search: "بحث",
+  cancel: "إلغاء",
+  km: "كم",
+  "calculating distance, please wait": "يرجى الإنتظار، جاري حساب المسافة...",
+  "something went wrong please try again": "حدث خطأ ما، يرجى المحاولة لاحقاً",
+  "getting your location": "جاري معرفة موقعك...",
+  "please try again and allow location permission to find your distance from aqsa":
+    "لنستطيع حساب بعدك عن الأقصى يجب أن تقوم بالسماح لنا بالوصول إلى موقعك",
+  "please make sure you have enabled location on your device":
+    "يرجى التأكد من أن خدمة الموقع مفعلة على جهازك...",
+  "your browser is not supported": "عذراً، متصفحك غير مدعوم...",
 };

@@ -39,3 +39,16 @@ if (document.querySelector("#on-this-day")) {
       })
   );
 }
+
+if (document.querySelector("#aqsa-distance-section")) {
+  import(
+    /* webpackChunkName: "home-comps" */ "./aqsa-distance/AqsaDistanceSection"
+  ).then(
+    ({ default: AqsaDistanceSection }) =>
+      new Vue({
+        i18n,
+        el: "#aqsa-distance-section",
+        render: (h) => h(AqsaDistanceSection),
+      })
+  );
+}
