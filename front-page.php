@@ -36,7 +36,6 @@ get_template_part('sections/front-page', 'hero');
 get_template_part('sections/front-page', 'news-bar');
 
 ?>
-    <div id="hero-component"></div>
     <section class="info-of-today-section">
         <div class="container">
             <div class="row">
@@ -49,11 +48,14 @@ get_template_part('sections/front-page', 'news-bar');
             </div>
         </div>
     </section>
+    <section id="aqsa-distance-section"></section>
 <?php
 //get_template_part('sections/front-page', 'bottom-header');
 
 
-get_template_part('sections/front-page', 'aqsa-distance');
+//get_template_part('sections/front-page', 'aqsa-distance');
+
+
 
 if (is_rtl()) {
     get_template_part('sections/front-page', 'slider');

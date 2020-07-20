@@ -9,7 +9,7 @@ const WebpackNotifierPlugin = require("webpack-notifier");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const environmentConfig = require("./.env");
 
 module.exports = function (env, argv) {
@@ -43,14 +43,14 @@ module.exports = function (env, argv) {
     plugins.push(
       new ImageminPlugin({
         maxFileSize: 10000, // Only apply this one to files equal to or under 10kb
-        jpegtran: { progressive: false }
-      }),
+        jpegtran: { progressive: false },
+      })
     );
     plugins.push(
       new ImageminPlugin({
         minFileSize: 10000, // Only apply this one to files over 10kb
-        jpegtran: { progressive: true }
-      }),
+        jpegtran: { progressive: true },
+      })
     );
   }
 
@@ -66,9 +66,9 @@ module.exports = function (env, argv) {
     },
     optimization: {
       minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-    },  
+    },
     resolve: {
-      extensions: [".js", ".vue"],
+      extensions: ["*", ".js", ".vue", ".json"],
       alias: {
         vue$: isDev ? "vue/dist/vue.runtime.js" : "vue/dist/vue.runtime.min.js",
         "@": path.resolve(__dirname, "src"),
@@ -79,7 +79,6 @@ module.exports = function (env, argv) {
         {
           test: /\.vue$/,
           loader: "vue-loader",
-          exclude: /node_modules/,
         },
         {
           test: /\.js$/,
