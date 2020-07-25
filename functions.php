@@ -369,10 +369,11 @@ function orderby_post_title_int( $orderby ) {
 
 include_once "inc/featured-posts.php";
 
-require 'inc/Helpers.php';
+require_once 'inc/autoloader.php';
+require 'inc/theme.classes.php';
+
 require 'inc/register.sidebars.php';
 require 'inc/infos-handler.php';
 require 'inc/custom_posts_types.php';
 require 'inc/acf.php';
-require 'inc/theme.classes.php';
 

@@ -9,7 +9,7 @@
 
 <?php
 /** @var NewsBar $newsBar */
-global $newsBar;
+$newsBar = \QITheme\NewsBar::getInstance();
 $newsList = $newsBar->getNewsList(pll_current_language());
 if(count($newsList)) :
 ?>

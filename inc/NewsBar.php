@@ -1,14 +1,40 @@
 <?php
 
+namespace QITheme;
+
 class NewsBar
 {
-    public function __construct()
+
+    private static $instance;
+
+    protected function __construct()
     {
         add_action('admin_enqueue_scripts', [$this, 'enqueueAdminScripts']);
         add_action('admin_post_set_newsbar_settings', [$this, 'set_newsbar_settings']);
         add_action('admin_menu', [$this, 'register_admin_pages']);
         register_setting('newsbar_settings', 'news_list');
     }
+
+    private function __clone()
+    {
+    }
+
+    private function __wakeup()
+    {
+    }
+
+    /**
+     * @return static
+     */
+    public static function getInstance()
+    {
+        if (!isset(static::$instance) || !(static::$instance instanceof self)) {
+            self::$instance = new static();
+        }
+
+        return self::$instance;
+    }
+
 
     public function enqueueAdminScripts($hook)
     {
@@ -73,4 +99,3 @@ class NewsBar
     }
 }
 
-$GLOBALS['newsBar'] = new NewsBar();

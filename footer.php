@@ -14,65 +14,7 @@ $img_footer_logo = get_theme_mod('illdy_img_footer_logo', esc_url(get_template_d
 ?>
 
 <?php //get_template_part('template-parts/user','utils'); ?>
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <?php
-            $the_widget_args = array(
-                'before_widget' => '<div class="widget">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<div class="widget-title"><h3>',
-                'after_title'   => '</h3></div>',
-            );
-            ?>
-            <div class="col-sm-3">
-                <?php
-                echo Helpers::polylang_languages();
-
-                if ( is_active_sidebar('footer-sidebar-1') ):
-                    dynamic_sidebar('footer-sidebar-1');
-                else:
-                    the_widget('WP_Widget_Text', 'title=' . __('Products', 'qi-theme') . '&text=<ul><li><a href="' . esc_url('#') . '" title="' . __('Our work', 'qi-theme') . '">' . __('Our work', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Club', 'qi-theme') . '">' . __('Club', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('News', 'qi-theme') . '">' . __('News', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Announcement', 'qi-theme') . '">' . __('Announcement', 'qi-theme') . '</a></li></ul>', $the_widget_args);
-                endif;
-                ?>
-            </div><!--/.col-sm-3-->
-            <div class="col-sm-3">
-                <?php
-                if ( is_active_sidebar('footer-sidebar-2') ):
-                    dynamic_sidebar('footer-sidebar-2');
-                else:
-                    the_widget('WP_Widget_Text', 'title=' . __('Information', 'qi-theme') . '&text=<ul><li><a href="' . esc_url('#') . '" title="' . __('Pricing', 'qi-theme') . '">' . __('Pricing', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Terms', 'qi-theme') . '">' . __('Terms', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Affiliates', 'qi-theme') . '">' . __('Affiliates', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Blog', 'qi-theme') . '">' . __('Blog', 'qi-theme') . '</a></li></ul>', $the_widget_args);
-                endif;
-                ?>
-            </div><!--/.col-sm-3-->
-            <div class="col-sm-3">
-                <?php
-                if ( is_active_sidebar('footer-sidebar-3') ):
-                    dynamic_sidebar('footer-sidebar-3');
-                else:
-                    the_widget('WP_Widget_Text', 'title=' . __('Support', 'qi-theme') . '&text=<ul><li><a href="' . esc_url('#') . '" title="' . __('Documentation', 'qi-theme') . '">' . __('Documentation', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('FAQs', 'qi-theme') . '">' . __('FAQs', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Forums', 'qi-theme') . '">' . __('Forums', 'qi-theme') . '</a></li><li><a href="' . esc_url('#') . '" title="' . __('Contact', 'qi-theme') . '">' . __('Contact', 'qi-theme') . '</a></li></ul>', $the_widget_args);
-                endif;
-                ?>
-            </div><!--/.col-sm-3-->
-            <div class="col-sm-3">
-                <?php if ( $img_footer_logo ): ?>
-                    <a href="<?php echo esc_url(home_url()); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                       class="footer-logo text-center"><img src="<?php echo esc_url($img_footer_logo); ?>"
-                                                alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                                                title="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
-                <?php endif; ?>
-                <?php if ( $display_copyright == 1 ): ?>
-                    <p class="copyright"><span
-                                data-customizer="copyright-credit"><?php printf('%s <a href="%s" title="%s" target="_blank">%s</a>.', __('Theme:', 'qi-theme'), esc_url('http://colorlib.com/wp/themes/illdy'), __('qi-theme', 'qi-theme'), __('qi-theme', 'qi-theme')); ?></span> <?php echo illdy_sanitize_html($footer_copyright); ?>
-                    </p>
-                <?php else: ?>
-                    <p class="copyright">© <?= __('All rights reserved - Qudsinfo.com', 'qi-theme') ?> <?= date("Y") ?></p>
-                <?php endif; ?>
-            </div><!--/.col-sm-3-->
-        </div><!--/.row-->
-    </div><!--/.container-->
-<!--    <div class="green-m"></div>-->
-</footer><!--/#footer-->
+<footer id="footer"></footer><!--/#footer-->
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;

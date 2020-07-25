@@ -23,7 +23,10 @@ module.exports = function (env, argv) {
   const environmentVars = environmentConfig(environment);
 
   const plugins = [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: true,
+      protectWebpackAssets: true,
+    }),
     new webpack.DefinePlugin(environmentVars),
     new FriendlyErrorsPlugin(),
     new VueLoaderPlugin(),

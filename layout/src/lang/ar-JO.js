@@ -88,4 +88,12 @@ export default {
   "please make sure you have enabled location on your device":
     "يرجى التأكد من أن خدمة الموقع مفعلة على جهازك...",
   "your browser is not supported": "عذراً، متصفحك غير مدعوم...",
+  total_followers: "عدد المتابعين",
+  total_reach: "وصول المنشورات",
+  lectures_count: "عدد المحاضرات",
+  students_count: "عدد الطلاب",
+  infos_count: "عدد المعلومات",
+  stories_count: "عدد القصص",
+  published_count: "عدد الأخبار",
+  reports_count: "عدد التقارير",
 };

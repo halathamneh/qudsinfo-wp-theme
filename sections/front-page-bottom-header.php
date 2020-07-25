@@ -6,7 +6,7 @@
  * @subpackage QudsInfoTheme
  */
 
-global $todayInfo;
+$todayInfo = \QITheme\TodayInfo::getInstance();
 $image = wp_get_attachment_image_src(get_post_thumbnail_id($todayInfo->today_info->ID), 'large');
 $image_bg = esc_url($image[0]);
 $header_attr = ' style="background-image: url(' . $image_bg . ')" ';

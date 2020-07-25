@@ -2,6 +2,7 @@
   <section
     :class="{ 'overlay-visible': status !== 'idle' }"
     class="aqsa-distance-section"
+    id="aqsa-distance-section"
   >
     <transition :appear="true" name="aqsa-distance-overlay">
       <aqsa-distance-overlay

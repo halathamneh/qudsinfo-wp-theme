@@ -19,7 +19,7 @@ elseif ($object instanceof WP_Term)
     $title = single_term_title('', false) . ' - ' . get_bloginfo('name');
 else
     $title = get_the_title() . ' - ' . get_bloginfo('name');
-if (Helpers::is_avi() && $category)
+if (\QITheme\Helpers::is_avi() && $category)
     $title = get_term($category)->name . " - " . $title;
 ?>
 <!DOCTYPE html>

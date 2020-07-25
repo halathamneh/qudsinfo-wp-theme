@@ -1,20 +1,16 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: haitham
- * Date: 10/16/17
- * Time: 8:27 PM
- */
+namespace QITheme;
 
 class TodayInfo
 {
 
+    private static $instance;
     public $today_info;
 
     private $excluded = [QI_THOUGHTS_CAT_ID, QI_POETRY_CAT_ID];
 
-    public function __construct()
+    protected function __construct()
     {
 
         add_action('admin_enqueue_scripts', [$this, 'enqueueAdminScripts']);
@@ -31,12 +27,33 @@ class TodayInfo
         add_action('rest_api_init', [$this, 'registerToApi']);
     }
 
+    private function __clone()
+    {
+    }
+
+    private function __wakeup()
+    {
+    }
+
+    /**
+     * @return static
+     */
+    public static function getInstance()
+    {
+        if (!isset(static::$instance) || !(static::$instance instanceof self)) {
+            self::$instance = new static();
+        }
+
+        return self::$instance;
+    }
+
+
     function registerToApi()
     {
         try {
             global $qudsinfoWpApi;
             if (!($qudsinfoWpApi instanceof \QWA\QudsinfoWpApi)) {
-                return;
+                throw new \Exception('Qudsinfo API is not found!');
             }
             $todayInfoEndpoint = new \QWA\lib\EndPoint([
                 'path'     => '/today-info/',
@@ -45,6 +62,8 @@ class TodayInfo
             ]);
             $qudsinfoWpApi->registerCustomEndPoint('v2', $todayInfoEndpoint);
         } catch (\Exception $e) {
+            echo $e->getMessage();
+            exit;
         }
     }
 
@@ -126,7 +145,7 @@ class TodayInfo
         return false;
     }
 
-    public function getTodaysInfoApi(WP_REST_Request $request)
+    public function getTodaysInfoApi(\WP_REST_Request $request)
     {
         $lang = $request->get_header('Accept-Language');
         $wp_post = $this->getTodaysInfo($lang);
@@ -184,5 +203,3 @@ class TodayInfo
     }
 
 }
-
-$GLOBALS['todayInfo'] = new TodayInfo();

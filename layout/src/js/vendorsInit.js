@@ -30,10 +30,6 @@ export function masonryInit() {
   }
 }
 
-if ($("#counter .counter-number").length) {
-  import("jquery-countto").then(() => $("#counter .counter-number").countTo());
-}
-
 $('[data-toggle="tooltip"]').tooltip();
 
 if (document.querySelectorAll(".owl-carousel").length > 0) {

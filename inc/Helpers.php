@@ -1,5 +1,6 @@
 <?php
 
+namespace QITheme;
 
 class Helpers
 {

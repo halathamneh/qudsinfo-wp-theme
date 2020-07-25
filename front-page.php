@@ -49,6 +49,8 @@ get_template_part('sections/front-page', 'news-bar');
         </div>
     </section>
     <section id="aqsa-distance-section"></section>
+    <section id="services-section"></section>
+    <section id="teams-section"></section>
 <?php
 //get_template_part('sections/front-page', 'bottom-header');
 
@@ -57,44 +59,44 @@ get_template_part('sections/front-page', 'news-bar');
 
 
 
-if (is_rtl()) {
-    get_template_part('sections/front-page', 'slider');
-}
+//if (is_rtl()) {
+//    get_template_part('sections/front-page', 'slider');
+//}
 
-if ($sections_order_first_section):
-    illdy_sections_order($sections_order_first_section);
-endif;
+//if ($sections_order_first_section):
+//    illdy_sections_order($sections_order_first_section);
+//endif;
 
-if ($sections_order_second_section):
-    illdy_sections_order($sections_order_second_section);
-endif;
-
-if ($sections_order_third_section):
-    illdy_sections_order($sections_order_third_section);
-endif;
-
-if ($sections_order_fourth_section):
-    illdy_sections_order($sections_order_fourth_section);
-endif;
-
-if ($sections_order_fifth_section):
-    illdy_sections_order($sections_order_fifth_section);
-endif;
-
-if ($sections_order_sixth_section):
-    illdy_sections_order($sections_order_sixth_section);
-endif;
-
-if ($sections_order_seventh_section):
-    illdy_sections_order($sections_order_seventh_section);
-endif;
-
-if ($sections_order_eighth_section):
-    illdy_sections_order($sections_order_eighth_section);
-endif;
-if ($sections_order_ninth_section):
-    illdy_sections_order($sections_order_ninth_section);
-endif;
+//if ($sections_order_second_section):
+//    illdy_sections_order($sections_order_second_section);
+//endif;
+//
+//if ($sections_order_third_section):
+//    illdy_sections_order($sections_order_third_section);
+//endif;
+//
+//if ($sections_order_fourth_section):
+//    illdy_sections_order($sections_order_fourth_section);
+//endif;
+//
+//if ($sections_order_fifth_section):
+//    illdy_sections_order($sections_order_fifth_section);
+//endif;
+//
+//if ($sections_order_sixth_section):
+//    illdy_sections_order($sections_order_sixth_section);
+//endif;
+//
+//if ($sections_order_seventh_section):
+//    illdy_sections_order($sections_order_seventh_section);
+//endif;
+//
+//if ($sections_order_eighth_section):
+//    illdy_sections_order($sections_order_eighth_section);
+//endif;
+//if ($sections_order_ninth_section):
+//    illdy_sections_order($sections_order_ninth_section);
+//endif;
 //endif;
 
 get_footer();

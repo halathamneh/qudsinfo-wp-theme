@@ -13,7 +13,7 @@
     background-color: rgba(#f9f9f9, 0.95);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     z-index: 99;
@@ -21,6 +21,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .rtl & {
+      right: auto;
+      left: 0;
+    }
+
     .cancel-btn {
       margin-top: 50px;
     }
@@ -38,7 +44,7 @@
       top: 50%;
       transform: translateY(-50%);
       left: auto;
-      right: 20%;
+      right: 20% !important;
       transition: all 0.3s;
       @include media-breakpoint-down(md) {
         top: 100px;
@@ -50,7 +56,7 @@
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
-      left: 20%;
+      left: 20% !important;
       transition: all 0.3s;
       @include media-breakpoint-down(md) {
         top: calc(100% - 200px);;
@@ -100,12 +106,20 @@
   }
   .dome-svg {
     position: absolute;
-    left: 489px;
+    right: 489px;
     top: 168px;
     @include media-breakpoint-down(md) {
-      left: 10px;
+      left: auto;
       top: 30px;
       transform: scale(0.85);
+    }
+    .rtl & {
+      right: auto;
+      left: 489px;
+      @include media-breakpoint-down(md) {
+        right: auto;
+        left: 10px;
+      }
     }
   }
 }

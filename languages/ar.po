@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2020-06-20 21:42+0300\n"
-"PO-Revision-Date: 2020-06-20 21:43+0300\n"
+"POT-Creation-Date: 2020-07-25 17:37+0300\n"
+"PO-Revision-Date: 2020-07-25 17:38+0300\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -55,116 +55,48 @@ msgstr "الرسالة"
 msgid "&copy; Copyright 2016. All Rights Reserved."
 msgstr "&copy; حقوق الطبع والنشر 2019. جميع الحقوق محفوظه."
 
-#: footer.php:36
-msgid "Products"
-msgstr "المنتجات"
-
-#: footer.php:36
-msgid "Our work"
-msgstr "أعمالنا"
-
-#: footer.php:36
-msgid "Club"
-msgstr "النادي"
-
-#: footer.php:36 search.php:47 searchform.php:26
-msgid "News"
-msgstr "الأخبار"
-
-#: footer.php:36
-msgid "Announcement"
-msgstr "إعلان"
-
-#: footer.php:45 search.php:43 searchform.php:23
-msgid "Information"
-msgstr "معلومات"
-
-#: footer.php:45
-msgid "Pricing"
-msgstr "الأسعار"
-
-#: footer.php:45
-msgid "Terms"
-msgstr "الشروط"
-
-#: footer.php:45
-msgid "Affiliates"
-msgstr ""
-
-#: footer.php:45
-msgid "Blog"
-msgstr "المدونة"
-
-#: footer.php:54
-msgid "Support"
-msgstr "الدعم"
-
-#: footer.php:54
-msgid "Documentation"
-msgstr ""
-
-#: footer.php:54 widgets/class-widget-faq.php:11
-msgid "FAQs"
-msgstr "الأسئلة الشائعة"
-
-#: footer.php:54
-msgid "Forums"
-msgstr "المنتدى"
-
-#: footer.php:54
-msgid "Contact"
-msgstr ""
-
-#: footer.php:67
-msgid "Theme:"
-msgstr ""
-
-#: footer.php:67 header-quizzes.php:11 header.php:11
-#: inc/customizer/panels/general-options.php:155
-msgid "qi-theme"
-msgstr ""
-
-#: footer.php:70
-msgid "All rights reserved - Qudsinfo.com"
-msgstr "جميع الحقوق محفوظة - معلومة مقدسية"
-
 #: functions.php:84
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:314 yarpp-template-thumbnail.php:7
+#: functions.php:322 yarpp-template-thumbnail.php:7
 msgid "See more:"
 msgstr "اقرأ أيضاً:"
 
-#: functions.php:338
+#: functions.php:346
 msgid "Please allow location permission to find your distance from Aqsa"
 msgstr "لحساب بعدك عن الأقصى، اسمح الوصول إلى موقعك"
 
-#: functions.php:339
+#: functions.php:347
 msgid "Please enable location to find your distance from Aqsa"
 msgstr "قم بتفعيل خدمة الموقع لحساب بعدك عن الأقصى"
 
-#: functions.php:340
+#: functions.php:348
 msgid "Something went wrong, please try again!"
-msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى"
+msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى!"
 
-#: functions.php:341
+#: functions.php:349
 msgid "Please wait"
 msgstr "الرجاء الانتظار"
 
-#: functions.php:342
+#: functions.php:350
 msgid "KM"
 msgstr "كيلو متر"
+
+#: header-quizzes.php:11 header.php:11
+#: inc/customizer/panels/general-options.php:155
+msgid "qi-theme"
+msgstr ""
 
 #: header-quizzes.php:17
 msgid " - نتائج البحث"
 msgstr ""
 
-#: header-quizzes.php:128
+#: header-quizzes.php:130
 msgid "بحث..."
 msgstr ""
 
-#: header-quizzes.php:132
+#: header-quizzes.php:134
 msgid "بحث عن:"
 msgstr ""
 
@@ -172,21 +104,39 @@ msgstr ""
 msgid " - Search Results"
 msgstr " - نتائج البحث"
 
-#: header.php:103 template-parts/header-top-nav.php:30
-msgid "Search..."
-msgstr "بحث..."
-
-#: header.php:107 searchform.php:18 template-parts/header-top-nav.php:34
-msgid "Search for:"
-msgstr "بحث عن:"
-
-#: inc/Helpers.php:53
+#: inc/Helpers.php:54
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
-#: inc/NewsBar.php:48 inc/NewsBar.php:49
+#: inc/NewsBar.php:74 inc/NewsBar.php:75
 msgid "News Bar"
 msgstr "شريط الأخبار"
+
+#: inc/TeamsSettings/ContentTeam.php:25
+msgid "Qudsinfo Content Team settings"
+msgstr "إعدادات فريق المحتوى"
+
+#: inc/TeamsSettings/LecturesTeam.php:25
+msgid "Qudsinfo Lectures Team settings"
+msgstr "إعدادات فريق المحاضرات"
+
+#: inc/TeamsSettings/MediaTeam.php:23
+msgid "Qudsinfo Media Team settings"
+msgstr "إعدادات فريق الميديا"
+
+#: inc/TeamsSettings/NewsTeam.php:23
+msgid "Qudsinfo News Team settings"
+msgstr "إعدادات فريق الأخبار"
+
+#: inc/TeamsSettings/TeamsSettings.php:70
+msgid "Qudsinfo Teams"
+msgstr "أفرقة معلومة مقدسية"
+
+#: inc/TeamsSettings/TeamsSettings.php:99
+msgid ""
+"There was an error adding this setting. Please try again.  If this persists, "
+"shoot us an email."
+msgstr ""
 
 #: inc/components/entry-meta/class.mt-entry-meta.php:67
 #: inc/components/entry-meta/class.mt-entry-meta.php:94
@@ -228,7 +178,7 @@ msgstr ""
 #: inc/components/entry-meta/class.mt-entry-meta.php:178
 #: inc/components/entry-meta/class.mt-entry-meta.php:199
 msgid "comments"
-msgstr " تعليقات"
+msgstr "تعليقات"
 
 #: inc/components/entry-meta/class.mt-entry-meta.php:157
 #: inc/components/entry-meta/class.mt-entry-meta.php:178
@@ -1083,7 +1033,6 @@ msgid "Contact Form Creation"
 msgstr ""
 
 #: inc/customizer/panels/contact-us.php:159
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2604
 msgid "Install"
 msgstr ""
 
@@ -1456,7 +1405,7 @@ msgstr ""
 #: inc/customizer/panels/sections-order.php:209
 #: inc/customizer/panels/sections-order.php:239
 #: inc/customizer/panels/sections-order.php:270
-#: sections/front-page-counter.php:51 sections/front-page-projects.php:10
+#: sections/front-page-counter.php:54 sections/front-page-projects.php:10
 msgid "Projects"
 msgstr ""
 
@@ -1744,7 +1693,7 @@ msgstr ""
 msgid "All Infos"
 msgstr "جميع المعلومات"
 
-#: inc/infos-handler.php:41 inc/infos-handler.php:78
+#: inc/infos-handler.php:41 inc/infos-handler.php:79
 #: page-templates/news-team.php:101 page-templates/news-team.php:102
 #: search.php:77 sections/front-page-slider.php:40
 msgid "Continue Reading"
@@ -1890,337 +1839,21 @@ msgstr ""
 msgid "الأرشيف"
 msgstr ""
 
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
-msgid "Install Required Plugins"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:334
-msgid "Install Plugins"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:335
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:336
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:398
-msgid "Return to the dashboard"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:399
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3030
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:400
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:401
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:402
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. Please "
-"update the plugin."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:403
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:404
-msgid "Dismiss this notice"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:405
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:521
-msgid "Update Required"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:635
-msgid "Set the parent_slug config variable instead."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:829
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3439
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:936
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug and "
-"renaming did not work."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:936
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:939
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:939
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1882
-#, php-format
-msgid "TGMPA v%s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2168
-msgid "Required"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2171
-msgid "Recommended"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2187
-msgid "WordPress Repository"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2190
-msgid "External Source"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2193
-msgid "Pre-Packaged"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2210
-msgid "Not Installed"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2214
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2216
-msgid "Active"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2222
-msgid "Required Update not Available"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2225
-msgid "Requires Update"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2228
-msgid "Update recommended"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2236
-#, php-format
-msgid "%1$s, %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2372
-msgid "unknown"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2380
-msgid "Installed version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
-msgid "Minimum required version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
-msgid "Available version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2423
-#, php-format
-msgid ""
-"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
-"Dashboard</a>"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2437
-msgid "Plugin"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2438
-msgid "Source"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2439
-msgid "Type"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2443
-msgid "Version"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2444
-msgid "Status"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2492
-#, php-format
-msgid "Install %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2496
-#, php-format
-msgid "Update %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2501
-#, php-format
-msgid "Activate %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2571
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2610
-msgid "Update"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2613
-msgid "Activate"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2644
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2646
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2682
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2684
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2789
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2815
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3029
-msgid "Plugin activation failed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3363
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3365
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3366
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3370
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3371
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3371
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3377
-msgid "Show Details"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3371
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3377
-msgid "Hide Details"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3372
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3373
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3376
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3377
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3378
-msgid "All installations have been completed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3379
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/tgm-plugin-activation/tgm-plugin-activation.php:49
-msgid "JetPack"
-msgstr ""
-
-#: inc/tgm-plugin-activation/tgm-plugin-activation.php:56
-msgid "Contact Form 7"
-msgstr ""
-
 #: page-news.php:51
 msgid "Quds News"
 msgstr "الأخبار المقدسية"
 
-#: page-news.php:113 sections/front-page-latest-news.php:68
+#: page-news.php:117 sections/front-page-latest-news.php:68
 #: template-parts/content-blog.php:35 template-parts/content-blog.php:36
 #: template-parts/content-infos.php:20 template-parts/content.php:21
 msgid "أكمل القراءة"
 msgstr ""
 
-#: page-news.php:114 sections/front-page-latest-news.php:68
+#: page-news.php:118 sections/front-page-latest-news.php:68
 msgid "أكمل القراءة "
 msgstr ""
 
-#: page-news.php:137
+#: page-news.php:141
 msgid "Show More"
 msgstr "عرض المزيد"
 
@@ -2300,7 +1933,7 @@ msgstr "طالب مستفيد"
 
 #: page-templates/lectures.php:59
 msgid "Team's Services"
-msgstr "ماذا نقدم؟"
+msgstr "ماذا نقدم"
 
 #: page-templates/lectures.php:79
 msgid "Goals of the team"
@@ -2332,7 +1965,7 @@ msgstr "صفحتنا على الفيسبوك"
 
 #: page-templates/lectures.php:150
 msgid "Get a specialized material for the lectures."
-msgstr "احصل على مادة مخصصة للمحاضرات"
+msgstr "احصل على مادة مخصصة للمحاضرات."
 
 #: page-templates/lectures.php:153
 msgid ""
@@ -2398,9 +2031,17 @@ msgstr "سطح المكتب"
 msgid "Mobile"
 msgstr "موبايل"
 
+#: search.php:43 searchform.php:23
+msgid "Information"
+msgstr "معلومات"
+
 #: search.php:44 searchform.php:24
 msgid "Photos"
 msgstr "الصور"
+
+#: search.php:47 searchform.php:26
+msgid "News"
+msgstr "الأخبار"
 
 #: search.php:48 searchform.php:27
 msgid "Books"
@@ -2409,6 +2050,10 @@ msgstr "الكتب"
 #: searchform.php:10
 msgid "Search in infos, pictures..."
 msgstr "بحث في المعلومات والصور والأخبار ..."
+
+#: searchform.php:18 template-parts/header-responsive-menu.php:11
+msgid "Search for:"
+msgstr "بحث عن:"
 
 #: searchform.php:21
 msgid "Search in:"
@@ -2422,7 +2067,7 @@ msgstr "كل شيء"
 msgid "Video"
 msgstr "المرئية"
 
-#: searchform.php:29 sections/blog-bottom-header.php:85
+#: searchform.php:29 sections/blog-bottom-header.php:89
 msgid "Audio"
 msgstr "المسموعة"
 
@@ -2430,19 +2075,19 @@ msgstr "المسموعة"
 msgid "Search"
 msgstr "بحث"
 
-#: sections/blog-bottom-header.php:57 template-parts/content-single-post.php:18
+#: sections/blog-bottom-header.php:59 template-parts/content-single-post.php:16
 msgid "Our Information"
 msgstr "معلوماتنا"
 
-#: sections/blog-bottom-header.php:61
+#: sections/blog-bottom-header.php:63
 msgid "Milestones and Pictures"
 msgstr "المعالم والصور"
 
-#: sections/blog-bottom-header.php:76
+#: sections/blog-bottom-header.php:79
 msgid "Written"
 msgstr "المكتوبة"
 
-#: sections/blog-bottom-header.php:81
+#: sections/blog-bottom-header.php:84
 msgid "Videos"
 msgstr "المرئية"
 
@@ -2522,13 +2167,17 @@ msgstr ""
 msgid "إرسال"
 msgstr ""
 
-#: sections/front-page-counter.php:52
+#: sections/front-page-counter.php:55
 msgid "Clients"
 msgstr ""
 
-#: sections/front-page-counter.php:53
+#: sections/front-page-counter.php:56
 msgid "Coffes"
 msgstr ""
+
+#: sections/front-page-hero.php:12
+msgid "Biggest Quds Site on the Internet"
+msgstr "أكبر موقع مقدسي على الإنترنت"
 
 #: sections/front-page-latest-info.php:10
 msgid "Our Info"
@@ -2538,7 +2187,7 @@ msgstr "معلوماتنا"
 msgid "Browse all Our Info"
 msgstr "تصفح جميع معلوماتنا"
 
-#: sections/front-page-lectures.php:26 template-parts/content-single-post.php:16
+#: sections/front-page-lectures.php:26
 msgid "QudsInfo"
 msgstr "معلومة مقدسية"
 
@@ -2714,7 +2363,7 @@ msgstr "حاول بكلمات مختلفة"
 #: template-parts/content-single-info-details.php:47
 #: template-parts/content-single.php:19
 msgid "Pages:"
-msgstr "الصفحات"
+msgstr "الصفحات:"
 
 #: template-parts/content-single-info-details.php:15
 msgid "Index"
@@ -2748,17 +2397,21 @@ msgstr "سبب التسمية:"
 msgid "Builder Name:"
 msgstr "اسم الباني:"
 
-#: template-parts/content-single-post.php:25
+#: template-parts/content-single-post.php:23
 msgid "Share"
 msgstr "مشاركة"
 
-#: template-parts/content-single-post.php:44
+#: template-parts/content-single-post.php:42
 msgid "Source:"
 msgstr "المصدر:"
 
-#: template-parts/content-single-post.php:58
+#: template-parts/content-single-post.php:57
 msgid "For more, read our article about:"
 msgstr "للمزيد اقرأ مقالنا عن:"
+
+#: template-parts/header-responsive-menu.php:7
+msgid "Search..."
+msgstr "بحث..."
 
 #: template-parts/knowquds-list.php:26
 msgid "Select"
@@ -2832,6 +2485,10 @@ msgstr ""
 #: widgets/class-widget-counter.php:77
 msgid "How often the element should be updated."
 msgstr ""
+
+#: widgets/class-widget-faq.php:11
+msgid "FAQs"
+msgstr "الأسئلة الشائعة"
 
 #: widgets/class-widget-faq.php:11
 msgid "This widget will show random FAQs."
@@ -2969,8 +2626,74 @@ msgstr ""
 msgid "Product Categories"
 msgstr "تصنيفات المنتجات"
 
-msgid "Biggest Quds Site on the Internet"
-msgstr "أكبر موقع مقدسي على الإنترنت"
+#~ msgid "Total Infos"
+#~ msgstr "عدد المعلومات"
+
+#~ msgid "Total Stories"
+#~ msgstr "عدد القصص"
+
+#~ msgid "Total Lectures"
+#~ msgstr "عدد المحاضرات"
+
+#~ msgid "Total Students"
+#~ msgstr "عدد الطلاب المستفيدين"
+
+#~ msgid "Total Followers"
+#~ msgstr "عدد المتابعين"
+
+#~ msgid "Total Post Reach"
+#~ msgstr "وصول المنشورات"
+
+#~ msgid "Total Published"
+#~ msgstr "عدد الأخبار المنشورة"
+
+#~ msgid "Total Reports"
+#~ msgstr "عدد التقارير الاخبارية"
+
+#~ msgid "Arabic Page"
+#~ msgstr "صفحة الفريق (عربي)"
+
+#~ msgid "English Page"
+#~ msgstr "صفحة الفريق (انجليزي)"
+
+#~ msgid "Arabic Description"
+#~ msgstr "الوصف (عربي)"
+
+#~ msgid "English Description"
+#~ msgstr "الوصف (انجليزي)"
+
+#~ msgid "Qudsinfo"
+#~ msgstr "معلومة مقدسية"
+
+#~ msgid "Products"
+#~ msgstr "المنتجات"
+
+#~ msgid "Our work"
+#~ msgstr "أعمالنا"
+
+#~ msgid "Club"
+#~ msgstr "النادي"
+
+#~ msgid "Announcement"
+#~ msgstr "إعلان"
+
+#~ msgid "Pricing"
+#~ msgstr "الأسعار"
+
+#~ msgid "Terms"
+#~ msgstr "الشروط"
+
+#~ msgid "Blog"
+#~ msgstr "المدونة"
+
+#~ msgid "Support"
+#~ msgstr "الدعم"
+
+#~ msgid "Forums"
+#~ msgstr "المنتدى"
+
+#~ msgid "All rights reserved - Qudsinfo.com"
+#~ msgstr "جميع الحقوق محفوظة - معلومة مقدسية"
 
 #~ msgid "More about"
 #~ msgstr "المزيد عن"
