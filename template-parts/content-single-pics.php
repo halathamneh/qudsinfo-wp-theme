@@ -6,7 +6,8 @@
  * @subpackage QudsInfoTheme
  */
 
-$post_term = wp_get_post_terms(get_the_ID(), 'pics-cats')[0];
+$post_terms = get_the_terms(get_the_ID(), 'pics-cats');
+$post_term = $post_terms !== false ? $post_terms[0] : false;
 $is_building = $post_term instanceof WP_Term && $post_term->slug != 'beauty';
 $location_to_dome = $history = $name_reason = $builtby = false;
 if ($is_building) {
@@ -20,62 +21,68 @@ if ($is_building) {
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
     <div class="row">
         <div class="col-md-7 image-col col-sm-12">
-                <h2 class="d-md-none"><?php the_title(); ?></h2>
-                <div class="image-holder">
+            <h2 class="d-md-none"><?php the_title(); ?></h2>
+            <div class="image-holder">
+                <?php
+                $images = [];
+                $originalPostId = get_the_ID();
+                if (has_post_thumbnail()) {
+                    $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($originalPostId), 'large');
+                    $thumb_image = wp_get_attachment_image_src(get_post_thumbnail_id($originalPostId), 'thumbnail');
+                }
+                ?>
+                <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
                     <?php
-                    $images = [];
-                    $originalPostId = get_the_ID();
-                    if (has_post_thumbnail()) {
-	                    $post_image  = wp_get_attachment_image_src( get_post_thumbnail_id( $originalPostId ), 'large' );
-	                    $thumb_image = wp_get_attachment_image_src( get_post_thumbnail_id( $originalPostId ), 'thumbnail' );
+                    if (pll_current_language() === 'ar') {
+                        $images = get_field('gallery_images');
+                    } else {
+                        global $polylang;
+                        $translationIds = $polylang->model->get_translations('post', $originalPostId);
+                        $images = get_field('gallery_images', $translationIds['ar']);
                     }
-                    ?>
-                    <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
-                        <?php
-                        if(pll_current_language() === 'ar') {
-                            $images = get_field('gallery_images');
-                        } else {
-                            global $polylang;
-                            $translationIds = $polylang->model->get_translations('post', $originalPostId);
-                            $images = get_field('gallery_images', $translationIds['ar']);
-                        }
-                        if (!empty($images) && is_array($images) && count($images)) {
-                            foreach ($images as $image) : ?>
-                                <a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fancybox="images"
-                                   data-caption="<?= get_the_title() ?>"><img
-                                            src="<?php echo esc_url($image['sizes']['large']); ?>"/></a>
-                            <?php endforeach;
-                        } elseif(isset($post_image)) { ?>
-                            <a href="<?php echo esc_url($post_image[0]); ?>"
-                               data-fancybox="images"
+                    if (!empty($images) && is_array($images) && count($images)) {
+                        foreach ($images as $image) : ?>
+                            <a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fancybox="images"
                                data-caption="<?= get_the_title() ?>"><img
-                                        src="<?php echo esc_url($post_image[0]); ?>"/></a>
-                        <?php } ?>
-                    </div>
-                    <div class="owl-thumbs" data-slider-id="1">
-                        <?php
-                        if (!empty($images) && is_array($images) && count($images)) {
-                            foreach ($images as $image) : ?>
-                                <button class="owl-thumb-item"><img src="<?= $image['sizes']['thumbnail'] ?>" alt="">
-                                </button>
-                            <?php endforeach;
-                        } elseif (isset($thumb_image)) { ?>
-                            <button class="owl-thumb-item"><img src="<?= $thumb_image[0] ?>" alt=""></button>
-                        <?php } ?>
-                    </div>
-
+                                        src="<?php echo esc_url($image['sizes']['large']); ?>"/></a>
+                        <?php endforeach;
+                    } elseif (isset($post_image)) { ?>
+                        <a href="<?php echo esc_url($post_image[0]); ?>"
+                           data-fancybox="images"
+                           data-caption="<?= get_the_title() ?>"><img
+                                    src="<?php echo esc_url($post_image[0]); ?>"/></a>
+                    <?php } ?>
                 </div>
+                <div class="owl-thumbs" data-slider-id="1">
+                    <?php
+                    if (!empty($images) && is_array($images) && count($images)) {
+                        foreach ($images as $image) : ?>
+                            <button class="owl-thumb-item"><img src="<?= $image['sizes']['thumbnail'] ?>" alt="">
+                            </button>
+                        <?php endforeach;
+                    } elseif (isset($thumb_image)) { ?>
+                        <button class="owl-thumb-item"><img src="<?= $thumb_image[0] ?>" alt=""></button>
+                    <?php } ?>
+                </div>
+
+            </div>
         </div>
         <div class="col-md-5 content-col col-sm-12">
             <div class="d-flex flex-wrap-reverse">
                 <div>
                     <nav aria-label="breadcrumb" role="navigation">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="<?= site_url('photos') ?>"><?= __("Photos & Landmarks", 'qi-theme') ?></a></li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                <a href="<?php echo get_term_link(get_the_terms(get_the_ID(), 'pics-cats')[0]); ?>"
-                                ><?php echo get_the_terms(get_the_ID(), 'pics-cats')[0]->name; ?></a>
+                            <li class="breadcrumb-item"><a
+                                        href="<?= site_url('photos') ?>"><?= __("Photos & Landmarks", 'qi-theme') ?></a>
                             </li>
+                            <?php if ($post_terms !== false) :
+                                foreach ($post_terms as $term) : ?>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        <a href="<?php echo get_term_link($term); ?>"
+                                        ><?php echo $term->name; ?></a>
+                                    </li>
+                                <?php endforeach;
+                            endif; ?>
                         </ol>
                     </nav>
 
