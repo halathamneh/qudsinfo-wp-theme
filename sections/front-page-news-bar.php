@@ -5,11 +5,13 @@
  * @package WordPress
  * @subpackage QudsInfoTheme
  */
+
+use QITheme\Components\NewsBar;
+
 ?>
 
 <?php
-/** @var NewsBar $newsBar */
-$newsBar = \QITheme\NewsBar::getInstance();
+$newsBar = NewsBar::getInstance();
 $newsList = $newsBar->getNewsList(pll_current_language());
 if(count($newsList)) :
 ?>

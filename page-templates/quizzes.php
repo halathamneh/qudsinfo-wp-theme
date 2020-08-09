@@ -101,7 +101,7 @@
             </div><!--/.row-->
         </div><!--/.container-->
 
-        <?php //do_action( 'mtl_after_content_above_footer' ); ?>
+        <?php //do_action( 'QITheme/AfterContentAboveFooter' ); ?>
 
     </div><!--/.container-->
     <script>

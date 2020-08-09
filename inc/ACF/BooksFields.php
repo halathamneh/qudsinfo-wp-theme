@@ -1,0 +1,155 @@
+<?php
+
+namespace QITheme\ACF;
+
+class BooksFields extends BaseFields {
+
+    public function fields()
+    {
+        acf_add_local_field_group(array(
+            'key' => 'group_596f648e74a9a',
+            'title' => 'معلومات الكتاب',
+            'fields' => array(
+                array(
+                    'key' => 'field_580b97ed0f8fb',
+                    'label' => 'مؤلف الكتاب',
+                    'name' => 'book_author_f',
+                    'type' => 'taxonomy',
+                    'instructions' => '',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'taxonomy' => 'book_authors',
+                    'field_type' => 'select',
+                    'allow_null' => 0,
+                    'add_term' => 1,
+                    'save_terms' => 1,
+                    'load_terms' => 1,
+                    'return_format' => 'object',
+                    'multiple' => 0,
+                ),
+                array(
+                    'key' => 'field_580b9a0550fc9',
+                    'label' => 'ارفع الكتاب هنا',
+                    'name' => 'download_link',
+                    'type' => 'file',
+                    'instructions' => 'ارفع الكتاب إن كان موجود',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '50',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'return_format' => 'url',
+                    'library' => 'uploadedTo',
+                    'min_size' => '',
+                    'max_size' => '',
+                    'mime_types' => '',
+                ),
+                array(
+                    'key' => 'field_580bbebcf617a',
+                    'label' => 'رابط خارجي للكتاب',
+                    'name' => 'external_link',
+                    'type' => 'link_picker',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '50',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                ),
+                array(
+                    'key' => 'field_59d7d103a8d15',
+                    'label' => 'سنة النشر',
+                    'name' => 'release_date',
+                    'type' => 'number',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '50',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => 2017,
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
+                ),
+                array(
+                    'key' => 'field_59d7d18ca8d16',
+                    'label' => 'عدد الصفحات',
+                    'name' => 'num_pages',
+                    'type' => 'number',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '50',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => 0,
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => 0,
+                    'max' => '',
+                    'step' => '',
+                ),
+                array(
+                    'key' => 'field_5b37d8a80dc7c',
+                    'label' => 'اقتباس',
+                    'name' => 'quote',
+                    'type' => 'textarea',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => 'اقتباس مختصر من الكتاب...',
+                    'maxlength' => '',
+                    'rows' => '',
+                    'new_lines' => 'br',
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'book',
+                    ),
+                ),
+            ),
+            'menu_order' => 0,
+            'position' => 'acf_after_title',
+            'style' => 'default',
+            'label_placement' => 'left',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => array(
+                0 => 'discussion',
+                1 => 'categories',
+                2 => 'tags',
+                3 => 'send-trackbacks',
+            ),
+            'active' => 1,
+            'description' => '',
+        ));
+
+    }
+}

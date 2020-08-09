@@ -67,7 +67,7 @@ if (!is_404()) {
     elseif (has_post_thumbnail())://(get_post_type() == 'news' || get_post_type() == 'pics'):
         $image_bg = esc_url($post_thumbnail[0]);
     else:
-        $rand_image = get_rnd_header_image();
+        $rand_image = \QITheme\Helpers::getRandomHeaderImage();
         $image_bg = esc_url($rand_image["img_url"]);
     endif;
 

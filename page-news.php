@@ -133,7 +133,7 @@ get_template_part('sections/front-page', 'news-bar');
                 ?>
 
                 <?php if ($singleGroup) : ?>
-                    <?php do_action('mtl_after_content_above_footer'); ?>
+                    <?php do_action('QITheme/AfterContentAboveFooter'); ?>
                 <?php else: ?>
                     <div class="d-flex align-items-center justify-content-center my-4">
                         <a href="/qudsnews/?group=<?= $term->slug ?>"

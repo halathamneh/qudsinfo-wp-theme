@@ -24,7 +24,7 @@ get_template_part('sections/blog', 'bottom-header');
 					get_template_part( 'template-parts/content', 'none' );
 				endif;
 				?>
-				<?php do_action( 'mtl_after_content_above_footer' ); ?>
+				<?php do_action( 'QITheme/AfterContentAboveFooter' ); ?>
 			</section><!--/#blog-->
 		</div><!--/.col-sm-7-->
 		<?php get_sidebar(); ?>

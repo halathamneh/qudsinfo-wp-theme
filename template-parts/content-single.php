@@ -27,7 +27,7 @@
         </div><!--/.blog-post-image-->
     <?php endif; ?>
 
-	<?php do_action( 'mtl_single_after_content' );
+	<?php do_action( 'QITheme/SingleAfterContent' );
 
 	if ( comments_open() || get_comments_number() ) :
 		comments_template();

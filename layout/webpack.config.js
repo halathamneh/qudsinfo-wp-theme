@@ -11,6 +11,7 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const environmentConfig = require("./.env");
+const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = function (env, argv) {
   const isDev = argv.mode === "development";
@@ -38,6 +39,7 @@ module.exports = function (env, argv) {
       jQuery: "jquery",
       "window.jQuery": "jquery",
     }),
+    new AssetsPlugin(),
   ];
 
   if (isDev) {
@@ -66,6 +68,9 @@ module.exports = function (env, argv) {
       chunkFilename: "[name].chunk.[hash].js",
       filename: "main.bundle.[hash].js",
       publicPath: "/wp-content/themes/qudsinfo-wp-theme/layout/dist/",
+    },
+    externals: {
+      jquery: "jQuery",
     },
     optimization: {
       minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],

@@ -2,7 +2,7 @@
   <div class="team-slideshow-item">
     <div class="item-content">
       <div class="item-text">
-        <h3>{{ item.title }}</h3>
+        <h3>{{ $t(item.title.toLowerCase()) }}</h3>
         <p>{{ item.description }}</p>
       </div>
     </div>
