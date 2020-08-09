@@ -31,12 +31,12 @@ export default [
       {
         title: i18n.t("audio info"),
         url: "/our-info/audio",
-        icon: "fa fa-video-camera",
+        icon: "fa fa-headphones",
       },
       {
         title: i18n.t("video info"),
         url: "/our-info/videos",
-        icon: "fa fa-headphones",
+        icon: "fa fa-video-camera",
       },
     ],
   },
