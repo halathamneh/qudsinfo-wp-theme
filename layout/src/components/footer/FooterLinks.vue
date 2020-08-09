@@ -13,7 +13,12 @@
     >
       <ul v-show="toggled" class="links-list">
         <li v-for="(link, i) in links" :key="i">
-          <i class="fa fa-angle-left" />
+          <i
+            :class="[
+              'fa',
+              `fa-angle-${currentLang === 'en' ? 'right' : 'left'}`,
+            ]"
+          />
           <a :href="link.href">{{ $t(link.title) }}</a>
         </li>
       </ul>
@@ -22,6 +27,8 @@
 </template>
 
 <script>
+import { currentLang } from "../../lang/utils";
+
 export default {
   name: "FooterLinks",
   props: {
@@ -36,6 +43,7 @@ export default {
   },
   data: () => ({
     toggled: true,
+    currentLang,
   }),
   mounted() {
     this.toggled = this.$mq !== "sm";

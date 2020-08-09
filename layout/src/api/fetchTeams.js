@@ -17,16 +17,22 @@ const trimNumber = (number) => {
   number = parseInt(number);
   if (number < 10000) return `<span class="stats-item-number">${number}</span>`;
   if (number < 1000000)
-    return `<span class="stats-item-number">${(number / 1000).toFixed(
+    if (currentLang === "ar")
+      return `<span class="stats-item-number">${(number / 1000).toFixed(
+        0
+      )}+</span><span class="stats-item-unit">ألف</span>`;
+    else
+      return `<span class="stats-item-number">${(number / 1000).toFixed(
+        0
+      )}K+</span>`;
+  if (currentLang === "ar")
+    return `<span class="stats-item-number">${(number / 1000000).toFixed(
       0
-    )}+</span><span class="stats-item-unit">${
-      currentLang === "ar" ? "ألف" : "K"
-    }</span>`;
-  return `<span class="stats-item-number">${(number / 1000000).toFixed(
-    0
-  )}+</span><span class="stats-item-unit">${
-    currentLang === "ar" ? "مليون" : "M"
-  }</span>`;
+    )}+</span><span class="stats-item-unit">مليون</span>`;
+  else
+    return `<span class="stats-item-number">${(number / 1000000).toFixed(
+      0
+    )}M+</span>`;
 };
 
 export default () => {

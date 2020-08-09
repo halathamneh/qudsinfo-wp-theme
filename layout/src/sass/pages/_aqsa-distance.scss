@@ -28,7 +28,7 @@
     }
 
     .cancel-btn {
-      margin-top: 50px;
+      margin-top: 30px;
     }
     .overlay-content {
       width: 100%;
@@ -47,7 +47,7 @@
       right: 20% !important;
       transition: all 0.3s;
       @include media-breakpoint-down(md) {
-        top: 100px;
+        top: 50px;
         transform: none;
       }
     }
@@ -59,7 +59,7 @@
       left: 20% !important;
       transition: all 0.3s;
       @include media-breakpoint-down(md) {
-        top: calc(100% - 200px);;
+        top: calc(100% - 150px);;
         transform: scale(0.85);
         transform-origin: 50% 0;
       }

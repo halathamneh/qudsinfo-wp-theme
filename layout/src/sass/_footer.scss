@@ -102,7 +102,11 @@ footer {
       line-height: 1;
       margin-top: 10px;
       i.fa {
-        margin-left: 4px;
+        margin-right: 4px;
+        .rtl & {
+          margin-right: 0;
+          margin-left: 4px;
+        }
         color: $footer-color-secondary;
       }
     }

@@ -1,6 +1,6 @@
 export default {
   qudsinfo: "Qudsinfo",
-  slogan: "test",
+  slogan: "Biggest Quds Site on the Internet",
   "otd-title": "On this day in Jerusalem",
   "learn more": "Learn More",
   "latest news": "Latest News",
@@ -43,6 +43,7 @@ export default {
   "about description":
     "A team of young people who cares about sharing and spreading information about Jerusalem and Al Aqsa mosque.",
   landmarks: "Photos & Landmarks",
+  quizzes: "Quizzes",
   "aqsa landmarks": "Al-Aqsa Landmarks",
   "old city landmarks": "Old City Landmarks",
   "beauty landmarks": "Beauty of Jerusalem",
@@ -67,4 +68,27 @@ export default {
   library: "Library",
   "know quds": "Closer to Jerusalem",
   about: "About Us",
+  "infos description short": "Written, audio and video Jerusalem information",
+  "aqsa distance description short": "Find your distance from Al-Aqsa Mosque",
+  "on this day description short":
+    "Find what events happened in Jerusalem on this any day",
+  "knowquds description short":
+    "Get a closer view to Jerusalem and Aqsa landmarks",
+  "news description short": "Be the first to know latest Jerusalem news",
+  "library description short":
+    "Find, read and download any book related to Aqsa and Jerusalem",
+  "landmarks description short":
+    "Photos for any landmark in Jerusalem and Aqsa",
+  "quizzes description short": "Test your knowledge about Al-Aqsa Mosque",
+  "wallpapers description short":
+    "Search for a new wallpaper for your computer or phone",
+  copyrights: "© All rights reserved - Qudsinfo",
+  total_followers: "Total followers",
+  total_reach: "Post reach",
+  lectures_count: "No. of lectures",
+  students_count: "No. of Students",
+  infos_count: "No. of Infos",
+  stories_count: "No. of Stories",
+  published_count: "Published News",
+  reports_count: "Published reports",
 };

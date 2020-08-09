@@ -28,20 +28,33 @@
     position: relative;
     background: $primary-light;
     background: linear-gradient(
-      -110deg,
-      rgba($primary-light, 1) 33.33%,
-      rgba($white, 1) 33.34%,
-      rgba($white, 1) 50%,
-      rgba($white, 0) 66.67%
-    );
+                    -70deg,
+                    rgba($white, 0) 0,
+                    $white 33.33%,
+                    $white 66.66%,
+                    rgba($primary-light, 1) 66.67%
+    ) 200% 0;
     background-repeat: no-repeat;
-    background-position: -100% 0;
     background-size: 220%;
+    .rtl & {
+      background: linear-gradient(
+                      -110deg,
+                      rgba($primary-light, 1) 33.33%,
+                      $white 33.34%,
+                      $white 50%,
+                      rgba($white, 0) 66.67%
+      ) -100% 0;
+      background-repeat: no-repeat;
+      background-size: 220%;
+    }
     &:hover,
     &:active,
     &:focus {
       text-decoration: none;
-      background-position: 100% 0;
+      background-position: 0 0;
+      .rtl & {
+        background-position: 100% 0;
+      }
       color: $white;
       transform: scale(1.15);
       z-index: 9;
@@ -68,6 +81,7 @@
     }
     p {
       font-size: 12px;
+      margin-bottom: 0;
     }
   }
 }

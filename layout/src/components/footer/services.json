@@ -1,38 +1,30 @@
 [
   {
     "title": "our info",
-    "href": "#"
+    "href": "/our-info"
   },
   {
     "title": "news",
-    "href": "#"
+    "href": "/qudsnews"
   },
   {
     "title": "library",
-    "href": "#"
+    "href": "/library"
   },
   {
     "title": "know quds",
-    "href": "#"
-  },
-  {
-    "title": "quizzes",
-    "href": "#"
+    "href": "/knowquds/alaqsa-mosque"
   },
   {
     "title": "landmarks",
-    "href": "#"
+    "href": "/photos"
   },
   {
     "title": "your aqsa distance",
-    "href": "#"
+    "href": "/#aqsa-distance-section"
   },
   {
     "title": "wallpapers",
-    "href": "#"
-  },
-  {
-    "title": "on this day",
-    "href": "#"
+    "href": "/wallpapers"
   }
 ]

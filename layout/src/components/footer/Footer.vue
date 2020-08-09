@@ -22,20 +22,20 @@
           <div class="copyrights mt-5 d-none d-lg-block">
             <b>{{ $t("copyrights") }} {{ new Date().getFullYear() }}</b>
             <a href="/privacy-policy" class="privacy-policy-link">{{
-              $t("privacy policy")
+              $t("Privacy Policy")
             }}</a>
           </div>
         </b-col>
         <b-col cols="12" sm="4" lg="2">
           <footer-links
-            :title="$t('services')"
+            :title="$t('our services')"
             :links="servicesLinks"
             class="mx-4 mx-sm-0"
           />
         </b-col>
         <b-col cols="12" sm="4" lg="2" class="footer-links">
           <footer-links
-            :title="$t('about')"
+            :title="$t('teams')"
             :links="aboutLinks"
             class="mx-4 mx-sm-0"
           />
@@ -47,7 +47,7 @@
           <div class="copyrights mt-5 mx-4 mx-sm-0">
             <b>{{ $t("copyrights") }} {{ new Date().getFullYear() }}</b>
             <a href="#" class="privacy-policy-link">{{
-              $t("privacy policy")
+              $t("Privacy Policy")
             }}</a>
           </div>
         </b-col>

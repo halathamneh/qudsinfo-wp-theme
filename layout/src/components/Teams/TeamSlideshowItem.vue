@@ -16,7 +16,13 @@
       </div>
       <a :href="item.pageLink" class="stats-item stats-read-more">
         <div class="stats-item-circle">
-          <i class="fa fa-arrow-left fa-2x" />
+          <i
+            :class="[
+              'fa',
+              `fa-arrow-${currentLang === 'en' ? 'right' : 'left'}`,
+              'fa-2x',
+            ]"
+          />
         </div>
         <span class="stats-item-label">{{ $t("know more") }}</span>
       </a>
@@ -25,8 +31,13 @@
 </template>
 
 <script>
+import { currentLang } from "../../lang/utils";
+
 export default {
   name: "TeamSlideshowItem",
+  data: () => ({
+    currentLang,
+  }),
   props: {
     item: {
       type: Object,

@@ -1,34 +1,26 @@
 [
   {
-    "title": "who are we",
-    "href": "#"
+    "title": "Media Team",
+    "href": "/socialmedia-team"
   },
   {
-    "title": "our products",
-    "href": "#"
+    "title": "Lectures Team",
+    "href": "lectures team"
   },
   {
-    "title": "media team",
-    "href": "#"
+    "title": "Content Team",
+    "href": "/content-team"
   },
   {
-    "title": "lectures team",
-    "href": "#"
+    "title": "News Team",
+    "href": "/news-team"
   },
   {
-    "title": "content team",
-    "href": "#"
+    "title": "Site Team",
+    "href": "/site-team"
   },
   {
-    "title": "news team",
-    "href": "#"
-  },
-  {
-    "title": "site team",
-    "href": "#"
-  },
-  {
-    "title": "join us",
-    "href": "#"
+    "title": "Join Us",
+    "href": "/join-us"
   }
 ]
