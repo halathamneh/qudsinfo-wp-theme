@@ -160,7 +160,6 @@ $(".cats-list").on("click", "li:not(.active) a", function (e) {
 window.onpopstate = function (event) {
   if (event.state != "" && event.state != 0) {
     var _data = event.state;
-    console.log(JSON.stringify(_data));
     if (_data.action == "ajax_info") {
       var $infolist = $(".info-list");
       $.ajax({

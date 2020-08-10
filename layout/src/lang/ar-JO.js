@@ -24,7 +24,7 @@ export default {
   video: "فيديو",
   "written info": "المعلومات المكتوبة",
   "audio info": "المعلومات المسموعة",
-  "video info": "المعلموات المرئية",
+  "video info": "المعلومات المرئية",
   copyrights: "© جميع الحقوق محفوظة - معلومة مقدسية",
   "privacy policy": "سياسة الخصوصية وشروط الاستخدام",
   services: "خدماتنا",
