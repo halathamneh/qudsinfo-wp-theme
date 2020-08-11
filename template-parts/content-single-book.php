@@ -63,7 +63,7 @@
                     <?php the_post_thumbnail('illdy-blog-list'); ?>
                 </div><!--/.blog-post-image-->
             <?php endif; ?>
-            <?php //do_action( 'mtl_single_after_content' ); ?>
+            <?php //do_action( 'QITheme/SingleAfterContent' ); ?>
         </div>
         <div class="col-md-3">
             <div class="bk-download-links">

@@ -29,10 +29,11 @@ const store = new Vuex.Store({
       commit("setSearch", val);
     },
     loadTodayInfo({ commit, state }) {
-      if (state.todayInfo) return;
+      if (state.todayInfo !== null) return;
       fetchInfoOfToday().then((info) => {
         commit("setTodayInfo", info);
       });
+      commit("setTodayInfo", false);
     },
   },
 });

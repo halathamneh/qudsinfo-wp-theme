@@ -93,10 +93,10 @@ get_template_part('sections/front-page', 'news-bar');
                 $wp_query = new WP_Query($wp_query_args);
 
                 if ($wp_query->have_posts()): ?>
-                    <div class="<?= $singleGroup ? 'row' : 'owl-carousel' ?>">
+                    <div class="row">
                         <?php while ($wp_query->have_posts()): $wp_query->the_post(); ?>
                             <?php $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'illdy-front-page-latest-news'); ?>
-                            <div class="<?= $singleGroup ? 'col-md-4 col-sm-6 col-12 mb-5' : 'owl-item' ?>">
+                            <div class="col-md-4 col-sm-6 col-12 mb-5">
                                 <div class="post card shadow h-100 <?= $singleGroup ?: 'm-3' ?>"
                                      style="<?php if (!$post_thumbnail): echo 'padding-top: 40px;'; endif; ?>">
                                     <?php if ($post_thumbnail): ?>
@@ -133,7 +133,7 @@ get_template_part('sections/front-page', 'news-bar');
                 ?>
 
                 <?php if ($singleGroup) : ?>
-                    <?php do_action('mtl_after_content_above_footer'); ?>
+                    <?php do_action('QITheme/AfterContentAboveFooter'); ?>
                 <?php else: ?>
                     <div class="d-flex align-items-center justify-content-center my-4">
                         <a href="/qudsnews/?group=<?= $term->slug ?>"

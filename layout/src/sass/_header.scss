@@ -79,6 +79,9 @@
 
     .admin-bar & {
       top: 32px;
+      @include media-breakpoint-down(md) {
+        top: 46px;
+      }
     }
 
     &.header-front-page {
@@ -470,4 +473,8 @@
     font-weight: 700;
     font-size: 3rem;
   }
+}
+
+@include media-breakpoint-down(md) {
+  #wpadminbar { position: fixed; }
 }

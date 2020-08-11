@@ -168,7 +168,8 @@ $cats = get_terms(array(
             <div class="col-sm-9 info-list">
                 <div class="content">
 
-                    <?php echo render_infos($page, $term); ?>
+                    <?php
+                    echo \QITheme\Components\InfosHandler::getInstance()->renderInfos($page, $term); ?>
                 </div>
                 <?php
                 wp_reset_postdata();
@@ -178,4 +179,4 @@ $cats = get_terms(array(
         </div><!--/.row-->
     </div><!--/.container-->
 
-<?php //do_action( 'mtl_after_content_above_footer' ); ?>
+<?php //do_action( 'QITheme/AfterContentAboveFooter' ); ?>

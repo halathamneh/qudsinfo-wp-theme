@@ -30,31 +30,31 @@ export function masonryInit() {
   }
 }
 
-if ($("#counter .counter-number").length) {
-  import("jquery-countto").then(() => $("#counter .counter-number").countTo());
-}
-
 $('[data-toggle="tooltip"]').tooltip();
 
 if (document.querySelectorAll(".owl-carousel").length > 0) {
   import(/* webpackChunkName: "common-vendors" */ "owl.carousel").then(() => {
-    $(".owl-carousel").owlCarousel({
-      rtl: isRtl(),
-      autoHeight: false,
-      responsive: {
-        // breakpoint from 0 up
-        0: {
-          items: 1,
+    import(
+      /* webpackChunkName: "common-vendors" */ "owl.carousel2.thumbs"
+    ).then(() => {
+      $(".owl-carousel").owlCarousel({
+        rtl: isRtl(),
+        autoHeight: false,
+        responsive: {
+          // breakpoint from 0 up
+          0: {
+            items: 1,
+          },
+          // breakpoint from 480 up
+          480: {
+            items: 2,
+          },
+          // breakpoint from 768 up
+          960: {
+            items: 3,
+          },
         },
-        // breakpoint from 480 up
-        480: {
-          items: 2,
-        },
-        // breakpoint from 768 up
-        960: {
-          items: 3,
-        },
-      },
+      });
     });
   });
 }

@@ -93,14 +93,14 @@ get_template_part('sections/blog', 'bottom-header');
                                 <?php endif; ?>
                                 <div class="col-sm-9 info-list books">
                                     <div class="content">
-                                        <?php echo render_books($page,$category); ?>
+                                        <?php echo \QITheme\Components\InfosHandler::getInstance()->renderBooks($page,$category); ?>
                                     </div>
                                 </div>
                             </div><!--/.row-->
                         </div><!--/.container-->
                     </div><!--/.section-content-->
                     
-                    <?php //do_action( 'mtl_after_content_above_footer' ); ?>
+                    <?php //do_action( 'QITheme/AfterContentAboveFooter' ); ?>
                 </section><!--/#blog-->
             </div><!--/.col-sm-12-->
         </div><!--/.row-->

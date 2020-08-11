@@ -5,6 +5,9 @@
  * @package WordPress
  * @subpackage QudsInfoTheme
  */
+
+use QITheme\Helpers;
+
 ?>
 <?php
 
@@ -20,7 +23,7 @@ elseif (has_post_thumbnail())://(get_post_type() == 'news' || get_post_type() ==
     $image_bg = esc_url($post_thumbnail[0]);
 endif;
 if (Helpers::is_avi()) {
-    $rand_image = get_rnd_header_image();
+    $rand_image = \QITheme\Helpers::getRandomHeaderImage();
     $image_bg = esc_url($rand_image["img_url"]);
 }
 
@@ -63,7 +66,7 @@ if ($image_bg != "")
                 get_template_part('template-parts/lectures', 'header');
             else : ?>
                 <div class="col-sm-12 top-page-title">
-                    <?php illdy_archive_title('<h2>', '</h2>'); ?>
+                    <?php Helpers::archive_title('<h2>', '</h2>'); ?>
                 </div><!--/.col-sm-12-->
             <?php endif; ?>
         </div><!--/.row-->

@@ -2,13 +2,13 @@
   <div class="wrap-content">
     <div class="d-flex justify-content-between mb-3">
       <iot-badge small />
-      <small v-if="infoOfToday" class="text-muted">
+      <small v-if="loaded" class="text-muted">
         <a :href="`/category/${infoOfToday.category.slug}`">
           {{ infoOfToday.category.label }}
         </a>
       </small>
     </div>
-    <div v-if="!infoOfToday" class="loader">Loading</div>
+    <div v-if="!loaded" class="loader">Loading</div>
     <template v-else>
       <h4>
         <a :href="infoOfToday.url">{{ infoOfToday.title }}</a>
@@ -30,6 +30,11 @@ export default {
   components: { IotBadge },
   computed: {
     ...mapGetters({ infoOfToday: "getTodayInfo" }),
+  },
+  data() {
+    return {
+      loaded: typeof this.infoOfToday === "object",
+    };
   },
   mounted() {
     this.loadTodayInfo();

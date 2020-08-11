@@ -74,7 +74,7 @@ $categories = get_the_category();
             <div class="info-extra">
                 <div class="row">
                     <div class="col-sm-8">
-                        <?php do_action('mtl_single_after_content'); ?>
+                        <?php do_action('QITheme/SingleAfterContent'); ?>
                     </div>
                     <div class="col-sm-4">
                         <?php dynamic_sidebar('infos-page'); ?>

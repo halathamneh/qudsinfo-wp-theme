@@ -1,11 +1,17 @@
 import axios from "axios";
 import { API_TOKEN, BASE_URL } from "../js/consts";
+import { currentLang } from "../lang/utils";
+
+let baseUrl = BASE_URL;
+if (currentLang !== "ar") {
+  baseUrl = baseUrl.replace("https://", "https://en.");
+}
 
 const http = axios.create({
-  baseURL: BASE_URL,
+  baseURL: baseUrl,
   headers: {
     Authorization: `Bearer ${API_TOKEN}`,
-    "Accept-Language": scripts_data.langCode,
+    "Accept-Language": currentLang,
   },
 });
 

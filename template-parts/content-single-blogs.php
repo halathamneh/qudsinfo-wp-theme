@@ -31,7 +31,7 @@
         ));
         ?>
     </div><!--/.blog-post-entry.markup-format-->
-    <?php do_action('mtl_single_after_content'); ?>
+    <?php do_action('QITheme/SingleAfterContent'); ?>
     <div class="py-5">
         <?php
         if (comments_open() || get_comments_number()) :

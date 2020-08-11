@@ -2,8 +2,7 @@ import http from "./index";
 
 export default (lat, lon) =>
   http
-    .post("/calculate-aqsa-distance/", {
-      action: "ajax_distance",
+    .post("/aqsa-distance/", {
       lat,
       lon,
     })

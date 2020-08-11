@@ -1,100 +1,110 @@
-#services {
-  width: 100%;
-  background: #015222 url("../images/services2.png") no-repeat right 45px;
-  padding: 115px 0 3rem 0;
-  text-align: center;
-  position: relative;
-  z-index: 0;
-  .section-header {
-    width: 100%;
-    margin-bottom: 65px;
-    h3 {
-      color: #fff;
+.services-section {
+  padding: 75px 16px;
+
+  .section-title {
+    color: $primary-light;
+  }
+
+  .service-items-list {
+    display: flex;
+  }
+
+  .row {
+    margin-right: -8px;
+    margin-left: -8px;
+
+    [class*="col-"] {
+      padding: 0 8px;
     }
+  }
+
+  .service-item {
+    border: 1px solid $primary-light;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    height: 148px;
+    color: #000;
+    transition: background 0.3s, transform 0.1s ease-in-out;
+    position: relative;
+    background: $primary-light;
+    background: linear-gradient(
+                    -70deg,
+                    rgba($white, 0) 0,
+                    $white 33.33%,
+                    $white 66.66%,
+                    rgba($primary-light, 1) 66.67%
+    ) 200% 0;
+    background-repeat: no-repeat;
+    background-size: 220%;
+
+    .rtl & {
+      background: linear-gradient(
+                      -110deg,
+                      rgba($primary-light, 1) 33.33%,
+                      $white 33.34%,
+                      $white 50%,
+                      rgba($white, 0) 66.67%
+      ) -100% 0;
+      background-repeat: no-repeat;
+      background-size: 220%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      background-position: 0 0;
+
+      .rtl & {
+        background-position: 100% 0;
+      }
+
+      color: $white;
+      transform: scale(1.15);
+      z-index: 9;
+      outline: none;
+      box-shadow: 0 0 40px rgba(150, 150, 150, 0.75);
+
+      h3 {
+        color: inherit;
+      }
+    }
+
+    .item-text {
+      padding: 16px 30px;
+      @include media-breakpoint-down(md) {
+        padding: 10px 15px;
+      }
+    }
+
+    .item-image {
+      align-self: flex-end;
+
+      img {
+        max-height: 100%;
+      }
+
+      @include media-breakpoint-down(md) {
+        align-self: center;
+        margin: 0 16px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: $primary-dark;
+    }
+
     p {
-      color: #D4D4D4;
-    }
-  }
-  .section-content {
-    width: 100%;
-    .service {
-      width: 100%;
-      height: 285px;
-      background: #fff;
-      padding: 1.2rem;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-      color: black;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -ms-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s;
-      border: 4px solid #fff;
-      .service-icon-w {
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 34px;
-        .fa {
-          display: block;
-        }
-      }
-      .service-title {
-        width: 100%;
-        margin-bottom: 1rem;
-        line-height: 1.611;
-        font-weight: 700;
-        font-size: 18px;
-        text-transform: uppercase;
-      }
-      .service-entry {
-        width: 100%;
-        line-height: 1.6;
-        color: #656565;
-      }
-    }
-    .service-link {
-      &:hover {
-        text-decoration: none !important;
-        .service {
-          box-shadow: 0 0 20px #fff;
-        }
-      }
-    }
-  }
-  .widget_illdy_service {
-    margin-top: 40px;
-    &:nth-child(1) {
-      margin-top: 0;
-    }
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  #services {
-    .widget_illdy_service {
-      &:nth-child(1) {
-        margin-top: 0;
-      }
-      &:nth-child(2) {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-  #services {
-    .widget_illdy_service {
-      &:nth-child(1) {
-        margin-top: 0;
-      }
-      &:nth-child(2) {
-        margin-top: 0;
-      }
-      &:nth-child(3) {
-        margin-top: 0;
-      }
+      font-size: 12px;
+      margin-bottom: 0;
     }
   }
 }

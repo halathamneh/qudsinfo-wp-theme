@@ -24,7 +24,7 @@ export default {
   video: "فيديو",
   "written info": "المعلومات المكتوبة",
   "audio info": "المعلومات المسموعة",
-  "video info": "المعلموات المرئية",
+  "video info": "المعلومات المرئية",
   copyrights: "© جميع الحقوق محفوظة - معلومة مقدسية",
   "privacy policy": "سياسة الخصوصية وشروط الاستخدام",
   services: "خدماتنا",
@@ -74,6 +74,7 @@ export default {
     "هنا تجد أي كتاب مختص في القدس والمسجد الأقصى، حيث تستطيع قراءته وتنزيله مجاناً",
   "landmarks description":
     "ابحث في أكثر من 1400 صورة للمسجد الأقصى والبلدة القديمة ومعالمهما تم تصويرها من قبل مصورين محترفين بإشراف فريق معلومة مقدسية",
+  "quizzes description": "اختبر معلوماتك المقدسية وتحدى أصدقاءك",
   "about description":
     "فريق شبابي يسعى لنشر المعلومات المتعلقة بالمسجد الأقصى والقدس لنشر الثقافة المقدسية في المجتمع.",
   "search placeholder": "ابحث في معلومة مقدسية ...",
@@ -88,4 +89,25 @@ export default {
   "please make sure you have enabled location on your device":
     "يرجى التأكد من أن خدمة الموقع مفعلة على جهازك...",
   "your browser is not supported": "عذراً، متصفحك غير مدعوم...",
+  total_followers: "عدد المتابعين",
+  total_reach: "وصول المنشورات",
+  lectures_count: "عدد المحاضرات",
+  students_count: "عدد الطلاب",
+  infos_count: "عدد المعلومات",
+  stories_count: "عدد القصص",
+  published_count: "عدد الأخبار",
+  reports_count: "عدد التقارير",
+  "infos description short": "معلومات مقدسية مكتوبة ومسموعة ومرئية",
+  "aqsa distance description short": "اعرف بعدك عن الأقصى من أي نقطة في العالم",
+  "on this day description short":
+    "تعرف على الأحداث التي حصلت في المسجد الأقصى والقدس",
+  "knowquds description short": "تعرف عن قرب على معالم الأقصى والبلدة القديمة",
+  "news description short": "كن أول من يعرف أخبار القدس والمسجد الأقصى",
+  "library description short": "أكبر مكتبة الكترونية مختصة في المسجد الأقصى",
+  "landmarks description short": "صور لجميع معالم الأقصى والبلدة القديمة",
+  "quizzes description short": "اختبر معلوماتك المقدسية وتحدى أصدقاءك",
+  "wallpapers description short":
+    "ابحث عن صورة الأقصى المناسبة لهاتفك أو كمبيوترك",
+  "Contact Us": "تواصل معنا",
+  "Privacy Policy": "سياسة الخصوصية",
 };

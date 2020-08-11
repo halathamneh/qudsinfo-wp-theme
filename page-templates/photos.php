@@ -67,7 +67,7 @@ get_template_part('sections/blog', 'bottom-header');
             </div><!--/.container-->
         </div><!--/.section-content-->
 
-        <?php //do_action( 'mtl_after_content_above_footer' ); ?>
+        <?php //do_action( 'QITheme/AfterContentAboveFooter' ); ?>
 
     </div><!--/.container-->
 <?php

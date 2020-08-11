@@ -11,6 +11,7 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const environmentConfig = require("./.env");
+const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = function (env, argv) {
   const isDev = argv.mode === "development";
@@ -23,7 +24,10 @@ module.exports = function (env, argv) {
   const environmentVars = environmentConfig(environment);
 
   const plugins = [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: true,
+      protectWebpackAssets: true,
+    }),
     new webpack.DefinePlugin(environmentVars),
     new FriendlyErrorsPlugin(),
     new VueLoaderPlugin(),
@@ -35,22 +39,14 @@ module.exports = function (env, argv) {
       jQuery: "jquery",
       "window.jQuery": "jquery",
     }),
+    new AssetsPlugin(),
   ];
 
   if (isDev) {
     plugins.push(new WebpackNotifierPlugin());
   } else {
     plugins.push(
-      new ImageminPlugin({
-        maxFileSize: 10000, // Only apply this one to files equal to or under 10kb
-        jpegtran: { progressive: false },
-      })
-    );
-    plugins.push(
-      new ImageminPlugin({
-        minFileSize: 10000, // Only apply this one to files over 10kb
-        jpegtran: { progressive: true },
-      })
+      new ImageminPlugin()
     );
   }
 
@@ -63,6 +59,9 @@ module.exports = function (env, argv) {
       chunkFilename: "[name].chunk.[hash].js",
       filename: "main.bundle.[hash].js",
       publicPath: "/wp-content/themes/qudsinfo-wp-theme/layout/dist/",
+    },
+    externals: {
+      jquery: "jQuery",
     },
     optimization: {
       minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],

@@ -87,7 +87,7 @@ if ($is_building) {
                     </nav>
 
                 </div>
-                <?php navigation_links(true, false); ?>
+                <?php \QITheme\Helpers::navigationLinks(true, false, 'pics-cats'); ?>
             </div>
             <h2><?php the_title(); ?></h2>
             <div class="sharing-buttons"><i><?= __("Share Image:", 'qi-theme') ?> </i>
@@ -134,7 +134,7 @@ if ($is_building) {
             </div>
 
             <?php
-            do_action("mtl_single_after_content");
+            do_action("QITheme/SingleAfterContent");
 
 
             //            if ( comments_open() || get_comments_number() ) :

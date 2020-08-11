@@ -57,28 +57,44 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .art-parallax-wrapper {
   height: 100%;
 }
 .globe-svg {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -50px;
+  .rtl & {
+    left: 0;
+    right: auto;
+  }
 }
 .cloud-svg {
   position: absolute;
 }
 .cloud-1 {
-  left: 16px;
-  top: 185px;
+  right: 316px;
+  top: 45px;
+  .rtl & {
+    left: 316px;
+    right: auto;
+  }
 }
 .cloud-2 {
   left: 347px;
   top: 8px;
+  .rtl & {
+    left: auto;
+    right: 347px;
+  }
 }
 .cloud-3 {
   left: 693px;
   top: 94px;
+  .rtl & {
+    left: auto;
+    right: 693px;
+  }
 }
 </style>

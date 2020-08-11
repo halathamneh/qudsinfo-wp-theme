@@ -5,6 +5,9 @@
  *	@package WordPress
  *	@subpackage QudsInfoTheme
  */
+
+use QITheme\Helpers;
+
 ?>
 
 <?php
