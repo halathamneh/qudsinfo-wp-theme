@@ -23,39 +23,48 @@ class ServicesSettings extends \QITheme\Lib\Singleton
         return [
             'our_info' => [
                 'title' => __('Our Info', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'news' => [
                 'title' => __('News', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'library' => [
                 'title' => __('Library', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'know_quds' => [
                 'title' => __('Closer to Jerusalem', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'quizzes' => [
                 'title' => __('Quizzes', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'landmarks' => [
                 'title' => __('Landmarks', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'aqsa_distance' => [
                 'title' => __('Aqsa Distance', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'wallpapers' => [
                 'title' => __('Wallpapers', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
             'onthisday' => [
                 'title' => __('On this day', 'qi-theme'),
-                'enable' => false,
+                'ar' => false,
+                'en' => false,
             ],
         ];
     }
@@ -73,7 +82,8 @@ class ServicesSettings extends \QITheme\Lib\Singleton
     {
         $services = $_POST['services'];
         foreach ($services as $name => $service) {
-            $services[$name]['enable'] = isset($service['enable']);
+            $services[$name]['ar'] = isset($service['ar']) && $service['ar'] == 'on';
+            $services[$name]['en'] = isset($service['en']) && $service['en'] == 'on';
         }
         $data = array_replace_recursive($this->defaultServices(), $services);
         update_option(self::SERVICES_OPTION_NAME, $data);

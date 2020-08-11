@@ -239,9 +239,15 @@
 .cats-list.dropdown {
   background-color: transparent;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
 
   button {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    &::after, &::before {
+      position: static;
+    }
   }
   .dropdown-menu {
     width: 100%;
