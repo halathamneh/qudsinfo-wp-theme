@@ -95,4 +95,67 @@
       }
     }
   }
+
+  .team-slideshow-item {
+    &.media-team {
+      h3,
+      .stats-item {
+        color: $color-media-dark;
+      }
+      .stats-item-label {
+        color: $color-media-light;
+      }
+      .stats-item-circle {
+        border-color: $color-media-light;
+      }
+      .stats-read-more .stats-item-circle {
+        background-color: $color-media-dark;
+      }
+    }
+    &.lectures-team {
+      h3,
+      .stats-item {
+        color: $color-lectures-dark;
+      }
+      .stats-item-label {
+        color: $color-lectures-light;
+      }
+      .stats-item-circle {
+        border-color: $color-lectures-light;
+      }
+      .stats-read-more .stats-item-circle {
+        background-color: $color-lectures-dark;
+      }
+    }
+    &.content-team {
+      h3,
+      .stats-item {
+        color: $color-content-dark;
+      }
+      .stats-item-label {
+        color: $color-content-light;
+      }
+      .stats-item-circle {
+        border-color: $color-content-light;
+      }
+      .stats-read-more .stats-item-circle {
+        background-color: $color-content-dark;
+      }
+    }
+    &.news-team {
+      h3,
+      .stats-item {
+        color: $color-news-dark;
+      }
+      .stats-item-label {
+        color: $color-news-light;
+      }
+      .stats-item-circle {
+        border-color: $color-news-light;
+      }
+      .stats-read-more .stats-item-circle {
+        background-color: $color-news-dark;
+      }
+    }
+  }
 }
