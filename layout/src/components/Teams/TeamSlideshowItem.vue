@@ -1,5 +1,5 @@
 <template>
-  <div class="team-slideshow-item">
+  <div :class="['team-slideshow-item', `${item.name}-team`]">
     <div class="item-content">
       <div class="item-text">
         <h3>{{ $t(item.title.toLowerCase()) }}</h3>
