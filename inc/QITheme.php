@@ -33,6 +33,8 @@ class QITheme extends Singleton
         // language
         $this->loadTextDomain();
 
+        Extras::getInstance();
+        
         Widgets::register();
         Sidebars::register();
         Assets::register();
@@ -46,7 +48,6 @@ class QITheme extends Singleton
         Pagination::getInstance();
         RelatedPosts::getInstance();
         ImageSizes::getInstance();
-        Extras::getInstance();
         NewsBar::getInstance();
         TodayInfo::getInstance();
         InfosHandler::getInstance();
