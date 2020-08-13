@@ -2,6 +2,7 @@
 
 namespace QITheme\Components;
 
+use QITheme\Helpers;
 use QITheme\Lib\Singleton;
 
 class TodayInfo extends Singleton
