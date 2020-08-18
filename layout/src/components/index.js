@@ -6,6 +6,12 @@ import Footer from "./footer/Footer";
 import store from "../store";
 import i18n from "../lang/i18n";
 import VueMq from "vue-mq";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
+Vue.component("v-select", vSelect);
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -46,16 +52,16 @@ if (document.querySelector("footer#footer")) {
     render: (h) => h(Footer),
   });
 }
-
-if (document.querySelector("#aqsa-distance-section")) {
-  import(
-    /* webpackChunkName: "home-comps" */ "./aqsa-distance/AqsaDistanceSection"
-  ).then(
-    ({ default: AqsaDistanceSection }) =>
+const imageSliderEl = document.querySelector("#pics-image-slider");
+if (imageSliderEl) {
+  const data = JSON.parse(imageSliderEl.dataset["pics"]);
+  import(/* webpackChunkName: "photos-comps" */ "./photos/PicsSlider").then(
+    ({ default: PicsSlider }) =>
       new Vue({
         i18n,
-        el: "#aqsa-distance-section",
-        render: (h) => h(AqsaDistanceSection),
+        store,
+        el: "#pics-image-slider",
+        render: (h) => h(PicsSlider, { props: { picData: data } }),
       })
   );
 }
