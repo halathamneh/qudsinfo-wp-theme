@@ -27,44 +27,27 @@ if ($is_building) {
                 $images = [];
                 $originalPostId = get_the_ID();
                 if (has_post_thumbnail()) {
+                    $original_image = wp_get_attachment_image_src(get_post_thumbnail_id($originalPostId), 'full');
                     $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($originalPostId), 'large');
                     $thumb_image = wp_get_attachment_image_src(get_post_thumbnail_id($originalPostId), 'thumbnail');
                 }
-                ?>
-                <div class="pics-carousel owl-carousel owl-theme" data-slider-id="1">
-                    <?php
-                    if (pll_current_language() === 'ar') {
-                        $images = get_field('gallery_images');
-                    } else {
-                        global $polylang;
-                        $translationIds = $polylang->model->get_translations('post', $originalPostId);
-                        $images = get_field('gallery_images', $translationIds['ar']);
-                    }
-                    if (!empty($images) && is_array($images) && count($images)) {
-                        foreach ($images as $image) : ?>
-                            <a href="<?php echo esc_url($image['sizes']['large']); ?>" data-fancybox="images"
-                               data-caption="<?= get_the_title() ?>"><img
-                                        src="<?php echo esc_url($image['sizes']['large']); ?>"/></a>
-                        <?php endforeach;
-                    } elseif (isset($post_image)) { ?>
-                        <a href="<?php echo esc_url($post_image[0]); ?>"
-                           data-fancybox="images"
-                           data-caption="<?= get_the_title() ?>"><img
-                                    src="<?php echo esc_url($post_image[0]); ?>"/></a>
-                    <?php } ?>
-                </div>
-                <div class="owl-thumbs" data-slider-id="1">
-                    <?php
-                    if (!empty($images) && is_array($images) && count($images)) {
-                        foreach ($images as $image) : ?>
-                            <button class="owl-thumb-item"><img src="<?= $image['sizes']['thumbnail'] ?>" alt="">
-                            </button>
-                        <?php endforeach;
-                    } elseif (isset($thumb_image)) { ?>
-                        <button class="owl-thumb-item"><img src="<?= $thumb_image[0] ?>" alt=""></button>
-                    <?php } ?>
-                </div>
 
+                if (pll_current_language() === 'ar') {
+                    $images = get_field('gallery_images');
+                } else {
+                    global $polylang;
+                    $translationIds = $polylang->model->get_translations('post', $originalPostId);
+                    $images = get_field('gallery_images', $translationIds['ar']);
+                }
+                $json = ['title' => get_the_title(), 'images' => []];
+                if (!empty($images) && is_array($images) && count($images)) {
+                    foreach ($images as $image) {
+                        $json['images'][] = ['original' => $image['url'], 'large' => $image['sizes']['large']];
+                    }
+                } elseif (isset($post_image)) {
+                    $json['images'][] = ['original' => $original_image[0], 'large' => $post_image[0]];
+                } ?>
+                <div id="pics-image-slider" data-pics="<?= htmlspecialchars(json_encode($json)) ?>"></div>
             </div>
         </div>
         <div class="col-md-5 content-col col-sm-12">
