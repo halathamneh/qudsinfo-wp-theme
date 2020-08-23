@@ -59,19 +59,4 @@ if (document.querySelectorAll(".owl-carousel").length > 0) {
   });
 }
 
-if (document.body.classList.contains("page-template-photos")) {
-  import("mixitup").then(({ default: mixitup }) => {
-    var elementMixitup = document.querySelector(".cats-container");
-    var toggleDefault = elementMixitup.dataset.default;
-    var mixer = mixitup(elementMixitup, {
-      controls: {
-        toggleDefault: toggleDefault,
-      },
-    });
-    mixer.toggleOn(toggleDefault).then(function () {
-      return mixer.toggleOff("all");
-    });
-  });
-}
-
 masonryInit();

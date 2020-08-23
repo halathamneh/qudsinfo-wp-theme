@@ -75,19 +75,45 @@ body {
 @import "front-page/services.scss";
 @import "front-page/teams";
 
-@import "pages/team.scss";
-
-@import "pages/contactus.scss";
-
 @import "footer.scss";
 
-@import "pages/blog.scss";
 
 @import "sidebar.scss";
 
 @import "widgets.scss";
 
 @import "extra.scss";
+
+/************* PAGES ****************/
+
+@import "pages/team.scss";
+@import "pages/contactus.scss";
+@import "pages/blog.scss";
+@import "pages/cats-page.scss";
+@import "pages/search-page.scss";
+@import "pages/socialmedia-page.scss";
+@import "pages/lectures-page.scss";
+@import "pages/content-page.scss";
+@import "pages/products-page.scss";
+@import "pages/team-page.scss";
+@import "./pages/news-team.scss";
+@import "./pages/faq.scss";
+@import "./pages/wallpapers.scss";
+@import "./pages/aqsa-distance.scss";
+@import "./pages/news-page.scss";
+@import "./pages/photos-page";
+
+/************* POST TYPES ****************/
+
+@import "post-types/audio-post.scss";
+
+@import "post-types/video-post.scss";
+
+@import "post-types/news-items.scss";
+
+@import "post-types/single-book.scss";
+
+@import "post-types/quizzes.scss";
 
 @import "post-types/comments.scss";
 
@@ -97,47 +123,14 @@ body {
 
 @import "post-types/single-photo.scss";
 
-@import "pages/cats-page.scss";
-
-@import "pages/search-page.scss";
-
-@import "pages/socialmedia-page.scss";
-
-@import "pages/lectures-page.scss";
-
-@import "pages/content-page.scss";
-
-@import "post-types/audio-post.scss";
-
-@import "post-types/video-post.scss";
-
-@import "pages/products-page.scss";
-
-@import "pages/team-page.scss";
-
-@import "post-types/news-items.scss";
-
-@import "post-types/single-book.scss";
-
-@import "post-types/quizzes.scss";
-
 @import "user-utils.scss";
 
 @import "image-points.scss";
 
 @import "bootstrap-select/bootstrap-select.scss";
 
-@import "./pages/news-team.scss";
-
-@import "./pages/faq.scss";
-
-@import "./pages/wallpapers.scss";
-
 @import "./owl.carousel/scss/owl.carousel.scss";
 @import "./owl.carousel/scss/owl.theme.default.scss";
-
-@import "./pages/aqsa-distance.scss";
-@import "./pages/news-page.scss";
 
 @import "./components/all";
 

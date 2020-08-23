@@ -5,7 +5,7 @@ import "./newsbar";
 // import "./search";
 import "./aqsa-distance";
 import "./infos-list";
-import "../components";
+import "./components";
 
 fn.smoothScrollAnchors();
 fn.setColorOnFrontPageService();
