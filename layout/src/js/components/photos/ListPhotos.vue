@@ -126,8 +126,7 @@ export default {
       if (
         this.photos.length > 0 &&
         prevRoute &&
-        prevRoute.params.cat === route.params.cat &&
-        prevRoute.params.child === route.params.child
+        prevRoute.name === "view-photo"
       )
         return;
 

@@ -6,6 +6,7 @@ export default {
   "latest news": "آخر الأخبار",
   "all news": "كل الأخبار",
   share: "مشاركة",
+  "Share:": "مشاركة:",
   "your aqsa distance": "بعدك عن الأقصى",
   "click aqsa distance": "اضغط هنا لحساب بعدك!",
   "our services": "ماذا نقدم؟",

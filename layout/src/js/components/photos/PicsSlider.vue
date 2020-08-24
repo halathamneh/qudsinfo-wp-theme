@@ -1,9 +1,20 @@
 <template>
-  <VueSlickCarousel v-bind="sliderSettings">
-    <div class="image-slide" v-for="(image, i) in picData.images" :key="i">
-      <img :src="image.large" :alt="picData.title" />
+  <div class="h-100">
+    <VueSlickCarousel v-if="picData.images.length > 1" v-bind="sliderSettings">
+      <div class="image-slide" v-for="(image, i) in picData.images" :key="i">
+        <img :src="image.large" :alt="picData.title" />
+      </div>
+    </VueSlickCarousel>
+    <div v-else-if="picData.images.length === 1" class="image-slide">
+      <img :src="picData.images[0].large" :alt="picData.title" />
     </div>
-  </VueSlickCarousel>
+    <div v-else-if="picData.fallbackImage" class="image-slide">
+      <img :src="picData.fallbackImage" :alt="picData.title" />
+    </div>
+    <div v-else class="d-flex align-items-center justify-content-center h-100">
+      <span class="text-muted">{{ $t("No images uploaded.") }}</span>
+    </div>
+  </div>
 </template>
 
 <script>
