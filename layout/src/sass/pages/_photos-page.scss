@@ -237,7 +237,7 @@ $greyed-primary: #3D354F;
   flex-direction: column;
 
   @include media-breakpoint-down(sm) {
-    padding: 25px 16px;
+    padding: 25px 0;
   }
 
   .image-details-container {
@@ -369,8 +369,11 @@ $greyed-primary: #3D354F;
 
     .images-sticky-wrapper {
       width: 100%;
-      height: calc(100vh - 250px);
+      height: calc(100vh - 350px);
       min-height: 450px;
+      @include media-breakpoint-down(sm) {
+        min-height: 250px;
+      }
     }
 
     .slick-slider {
