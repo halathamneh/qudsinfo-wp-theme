@@ -18,7 +18,7 @@
               menuItem.title
             }}</small>
             <ul>
-              <li v-for="item in menuItem.subItems">
+              <li v-for="item in menuItem.subItems" @click="closeMenu">
                 <a :href="item.url">
                   <i v-if="item.icon" :class="item.icon"></i>
                   {{ item.title }}
@@ -44,6 +44,10 @@ export default {
     menuConfig: {
       type: Array,
       default: {},
+    },
+    closeMenu: {
+      type: Function,
+      default: () => {},
     },
   },
 };

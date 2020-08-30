@@ -24,8 +24,8 @@
       <li class="vsm-section vsm-last-section">
         <lang-switcher class="vsm-mob-hide" />
         <search-btn class="vsm-mob-hide" />
-        <vsm-mob>
-          <mobile-menu :menu-config="menu" />
+        <vsm-mob v-model="mobileOpen">
+          <mobile-menu :menu-config="menu" :close-menu="closeMenu" />
         </vsm-mob>
       </li>
     </template>
@@ -49,6 +49,7 @@ export default {
     return {
       menu: null,
       currentLang,
+      mobileOpen: false,
     };
   },
   mounted() {
@@ -60,6 +61,11 @@ export default {
       import("./menu-config-en.js").then(({ default: menuConfig }) => {
         this.menu = menuConfig;
       });
+  },
+  methods: {
+    closeMenu() {
+      this.mobileOpen = false;
+    },
   },
 };
 </script>
