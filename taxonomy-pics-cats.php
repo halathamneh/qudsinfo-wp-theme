@@ -6,6 +6,23 @@
  * @subpackage QudsInfoTheme
  */
 
+
+$id = get_queried_object_id();
+$term = get_term($id);
+
+$url = '/photos/#/';
+
+if($term->parent !== 0) {
+    $parent = get_term($term->parent);
+    $url .= $parent->slug . '/' . $term->slug;
+} else {
+    $url .= $term->slug;
+}
+
+wp_redirect($url, 301);
+
+exit;
+
 ?>
 <?php get_header();
 get_template_part('sections/blog', 'bottom-header');
