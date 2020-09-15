@@ -45,14 +45,12 @@ module.exports = function (env, argv) {
   if (isDev) {
     plugins.push(new WebpackNotifierPlugin());
   } else {
-    plugins.push(
-      new ImageminPlugin()
-    );
+    plugins.push(new ImageminPlugin());
   }
 
   return {
     mode: !isDev ? "production" : "development",
-    entry: "./src/entry",
+    entry: "./src/App",
     devtool: !isDev ? "source-maps" : "cheap-module-eval-source-map",
     output: {
       path: path.resolve(__dirname, "dist"),
