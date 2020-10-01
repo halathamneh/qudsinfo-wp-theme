@@ -7,8 +7,8 @@
  */
 ?>
 <?php get_header();
-get_template_part('sections/blog', 'bottom-header');
 ?>
+    <div id="knowquds-wrapper"></div>
 <?php
 if (have_posts()):
     while (have_posts()):
