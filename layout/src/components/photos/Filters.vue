@@ -7,7 +7,9 @@
         :ref="item.id"
         :class="{ active: selected && item.id === selected.id }"
       >
-        <button @click="goToCategory(item)">{{ item.label }}</button>
+        <button @click="goToCategory(item)">
+          {{ item.label }}
+        </button>
       </li>
     </ul>
     <div
@@ -34,11 +36,7 @@
 
 <script>
 export default {
-  name: "Filters",
-  data: () => ({
-    selected: undefined,
-    selectedChild: undefined,
-  }),
+  name: 'Filters',
   props: {
     categories: {
       type: Array,
@@ -49,50 +47,16 @@ export default {
       required: true,
     },
   },
-  methods: {
-    setSelectedChild(item) {
-      if (item === "")
-        this.selectedChild = this.selected.children.find((c) => c.slug === "");
-      else if (typeof item === "string") {
-        this.selectedChild = this.selected.children.find(
-          (c) => decodeURI(c.slug) === item
-        );
-      } else this.selectedChild = item;
-    },
-    setSelected(item) {
-      if (item === "")
-        this.selected = this.categories.find((c) => c.slug === "");
-      else if (typeof item === "string") {
-        this.selected = this.categories.find((c) => decodeURI(c.slug) === item);
-      } else if (item !== this.selected) {
-        this.selected = item;
-      }
-      this.setSelectedChild("");
-    },
-    goToCategory(item) {
-      this.$router.push(`/${item.slug}`);
-    },
-    goToSubCategory(item) {
-      this.$router.push(`/${this.selected.slug}/${item.slug}`);
-    },
-    apply() {
-      this.onFilterChange(this.selected, this.selectedChild);
-    },
-    scrollToItem(item) {
-      if (!this.$refs[item.id] || this.$refs[item.id].length === 0) return;
-      const element = this.$refs[item.id][0];
-      element.scrollIntoView({
-        block: "nearest",
-        inline: "center",
-      });
-    },
-  },
+  data: () => ({
+    selected: undefined,
+    selectedChild: undefined,
+  }),
   watch: {
-    $route(to) {
-      if (to.name === "list-all-photos") {
-        this.setSelected("");
-        this.setSelectedChild("");
-      } else if (to.name === "list-photos") {
+    $route (to) {
+      if (to.name === 'list-all-photos') {
+        this.setSelected('');
+        this.setSelectedChild('');
+      } else if (to.name === 'list-photos') {
         if (to.params.cat !== this.selected.slug) {
           this.setSelected(to.params.cat);
         }
@@ -103,8 +67,8 @@ export default {
       this.apply();
     },
   },
-  created() {
-    if (this.selected) return;
+  created () {
+    if (this.selected) {return;}
     if (this.$route.params.cat) {
       const mainSlug = this.$route.params.cat;
       this.setSelected(mainSlug);
@@ -113,19 +77,57 @@ export default {
         this.setSelectedChild(childSlug);
       }
     } else {
-      this.setSelected("");
+      this.setSelected('');
     }
     if (this.selected) {
       this.apply();
     }
   },
-  updated() {
+  updated () {
     if (this.selected) {
       this.scrollToItem(this.selected);
     }
     if (this.selectedChild) {
       this.scrollToItem(this.selectedChild);
     }
+  },
+  methods: {
+    setSelectedChild (item) {
+      if (item === '')
+      {this.selectedChild = this.selected.children ? this.selected.children.find((c) => c.slug === '') : '';}
+      else if (typeof item === 'string') {
+        this.selectedChild = this.selected.children ? this.selected.children.find(
+          (c) => decodeURI(c.slug) === item
+        ) : '';
+      } else {this.selectedChild = item;}
+    },
+    setSelected (item) {
+      if (item === '')
+      {this.selected = this.categories.find((c) => c.slug === '');}
+      else if (typeof item === 'string') {
+        this.selected = this.categories.find((c) => decodeURI(c.slug) === item);
+      } else if (item !== this.selected) {
+        this.selected = item;
+      }
+      this.setSelectedChild('');
+    },
+    goToCategory (item) {
+      this.$router.push(`/${item.slug}`);
+    },
+    goToSubCategory (item) {
+      this.$router.push(`/${this.selected.slug}/${item.slug}`);
+    },
+    apply () {
+      this.onFilterChange(this.selected, this.selectedChild);
+    },
+    scrollToItem (item) {
+      if (!this.$refs[item.id] || this.$refs[item.id].length === 0) {return;}
+      const element = this.$refs[item.id][0];
+      element.scrollIntoView({
+        block: 'nearest',
+        inline: 'center',
+      });
+    },
   },
 };
 </script>

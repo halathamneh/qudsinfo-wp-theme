@@ -91,4 +91,5 @@ export default {
   stories_count: "No. of Stories",
   published_count: "Published News",
   reports_count: "Published reports",
+  loading: "Loading ...",
 };

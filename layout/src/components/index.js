@@ -49,6 +49,14 @@ if (document.querySelector("#photos-page-wrapper")) {
   );
 }
 
+if (document.querySelector("#knowquds-page-wrapper")) {
+  import(/* webpackChunkName: "photos-comps" */ "../pages/knowquds/index").then(
+    ({ default: initKnowQudsPage }) => {
+      initKnowQudsPage();
+    }
+  );
+}
+
 if (document.querySelector("footer#footer")) {
   new Vue({
     i18n,

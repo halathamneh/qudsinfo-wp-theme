@@ -14,3 +14,13 @@ export default {
   name: "HeaderLogo",
 };
 </script>
+
+<style lang="scss">
+.header-logo {
+  //display: block;
+  height: 100%;
+}
+.logo-image img {
+  width: 113px;
+}
+</style>

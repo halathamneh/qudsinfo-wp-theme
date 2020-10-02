@@ -49,10 +49,10 @@ export default [
     dropdown: "knowquds",
     content: KnowqudsDropdown,
     secondary: KnowqudsSecondaryDropdown,
-    url: "/knowquds/alaqsa-mosque",
+    url: "/knowquds",
     element: "a",
     attributes: {
-      href: "/knowquds/alaqsa-mosque",
+      href: "/knowquds",
     },
     subItems: [
       {

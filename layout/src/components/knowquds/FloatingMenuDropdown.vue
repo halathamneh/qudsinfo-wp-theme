@@ -1,0 +1,110 @@
+<template>
+  <div :class="{ 'floating-menu-dropdown': true, open }">
+    <ul>
+      <li
+        v-for="post in posts"
+        :key="post.id"
+        :class="{'list-item': true, 'active': selected.id === post.id}"
+        @click="$emit('change')"
+      >
+        <router-link
+          tag="button"
+          :to="getItemUrl(post)"
+        >
+          <i class="fa fa-angle-left" />
+          {{ post.title }}
+          <span class="badge badge-info">
+            {{ post.count }}
+          </span>
+        </router-link>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'FloatingMenuDropdown',
+  props: {
+    posts: { type: Array, default: () => [] },
+    selected: { type: Object, default: () => ({}) },
+    open: { type: Boolean, default: () => false },
+    onChange: { type: Function, default: () => () => {} },
+  },
+  data: () => ({
+    loading: true,
+    filtered: [],
+  }),
+  methods: {
+    getItemUrl (post) {
+      return {
+        name: 'knowquds-viewer',
+        params: {
+          cat: this.$route.params.cat,
+          post: decodeURIComponent(post.slug),
+        },
+      };
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.floating-menu-dropdown {
+  width: 100%;
+  height: 100vh;
+  max-height: calc(100vh - 104px);
+  transform-origin: 50% 0;
+  transform: scaleY(0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  &.open {
+    transition-delay: 0.2s;
+    transform: none;
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  ul {
+    overflow: auto;
+    max-height: 100%;
+    padding: 16px;
+    margin: 0;
+    list-style: none;
+  }
+}
+.list-item {
+  & + & {
+    border-top: 1px solid #eee;
+  }
+  &.active {
+    color: #42287c;
+    border: 1px solid #714091 !important;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  button {
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+
+    i.fa {
+      margin-left: 16px;
+      color: #aaa;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  .badge {
+    margin-right: auto;
+  }
+}
+</style>
