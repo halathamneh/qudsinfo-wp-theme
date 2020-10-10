@@ -8,6 +8,7 @@
         :key="point.description_images[0].id"
         :src="point.description_images[0].thumb"
         alt=""
+        @load="$emit('inner-image-loaded')"
       />
     </div>
     <div class="popup-content">

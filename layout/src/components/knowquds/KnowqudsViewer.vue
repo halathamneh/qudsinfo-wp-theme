@@ -203,5 +203,13 @@ export default {
     right: auto;
     left: 16px;
   }
+
+  @media screen and (max-width: 500px) {
+    left: 16px;
+    .rtl & {
+      left: auto;
+      right: 16px;
+    }
+  }
 }
 </style>

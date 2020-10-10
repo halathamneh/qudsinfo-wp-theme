@@ -68,15 +68,24 @@ export default {
   position: fixed;
   bottom: 56px;
   right: 32px;
+  @media screen and (max-width: 500px) {
+    bottom: 16px;
+    right: 16px;
+  }
 
   .rtl & {
     left: 32px;
     right: auto;
+    @media screen and (max-width: 500px) {
+      left: 16px;
+      right: auto;
+    }
   }
 
   .btn {
     padding: 6px 10px;
     height: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     &:after,
     &:before {
       content: none;

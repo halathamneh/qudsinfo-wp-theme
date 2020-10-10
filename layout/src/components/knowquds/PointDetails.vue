@@ -60,6 +60,9 @@ export default {
   z-index: 30;
   padding: 64px 32px 100px;
   background-color: rgba(50, 50, 50, 0.5);
+  @media screen and (max-width: 500px) {
+    padding: 64px 16px 100px;
+  }
 }
 .point-details {
   position: relative;
@@ -85,11 +88,15 @@ export default {
   background-color: #222;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
+  @media screen and (max-width: 500px) {
+    height: 300px;
+  }
 }
 .close-btn {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 8px;
+  position: fixed;
+  top: 32px;
+  left: 22px;
+  z-index: 99;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;

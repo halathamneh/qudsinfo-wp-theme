@@ -19,6 +19,7 @@
         :active="activePoint.id && point.id === activePoint.id"
         :current-scale="currentScale"
         @hover="pointHover($event, point)"
+        :ref="`point-${point.id}`"
       />
     </div>
     <ViewerControls :panzoomInstance="panzoomInstance" />
@@ -38,6 +39,7 @@
         v-if="activePoint.id"
         :point="activePoint"
         @select-point="pointSelect"
+        @inner-image-loaded="adjustPopupPosition"
       />
     </div>
   </div>
@@ -93,21 +95,8 @@ export default {
     },
     pointHover(e, point) {
       this.activePoint = point;
-      const popupEl = this.$refs["infoPopupEl"];
       setTimeout(() => {
-        const elRect = e.target.getBoundingClientRect();
-        let yPos = elRect.y - popupEl.clientHeight;
-        if (yPos < -8) {
-          yPos += popupEl.clientHeight;
-          this.popupAtBottom = true;
-        } else {
-          this.popupAtBottom = false;
-        }
-        this.popupPos = [
-          elRect.x + elRect.width / 2 - popupEl.clientWidth / 2,
-          yPos,
-        ];
-        this.popupVisible = true;
+        this.adjustPopupPosition();
       }, 1);
     },
     pointClickOutside() {
@@ -122,6 +111,24 @@ export default {
       setTimeout(() => {
         this.panzoomInstance.pan((-1 * targetEl.scrollWidth) / 2, -10);
       }, 10);
+    },
+    adjustPopupPosition() {
+      if (!this.activePoint) return;
+      const popupEl = this.$refs["infoPopupEl"];
+      const pointEl = this.$refs[`point-${this.activePoint.id}`];
+      const elRect = pointEl[0].$el.getBoundingClientRect();
+      let yPos = elRect.y - popupEl.clientHeight;
+      if (yPos < -8) {
+        yPos += popupEl.clientHeight;
+        this.popupAtBottom = true;
+      } else {
+        this.popupAtBottom = false;
+      }
+      this.popupPos = [
+        elRect.x + elRect.width / 2 - popupEl.clientWidth / 2,
+        yPos,
+      ];
+      this.popupVisible = true;
     },
   },
 };
