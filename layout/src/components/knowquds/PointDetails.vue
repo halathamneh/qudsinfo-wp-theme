@@ -1,13 +1,10 @@
 <template>
   <div class="point-details-wrapper">
     <div class="point-details">
-      <button
-        class="close-btn"
-        @click="$emit('close')"
-      >
+      <button class="close-btn" @click="$emit('close')">
         {{ $t("close") }}
       </button>
-      <div class="point-images">
+      <div v-if="imagesData.images.length" class="point-images">
         <PicsSlider :pic-data="imagesData" />
       </div>
       <h2 class="point-title">
@@ -21,10 +18,10 @@
 </template>
 
 <script>
-import PicsSlider from '../photos/PicsSlider';
+import PicsSlider from "../photos/PicsSlider";
 
 export default {
-  name: 'PointDetails',
+  name: "PointDetails",
   components: { PicsSlider },
   props: {
     point: {
@@ -33,7 +30,7 @@ export default {
     },
   },
   computed: {
-    imagesData () {
+    imagesData() {
       let images = [];
       if (
         this.point.description_images &&
@@ -78,8 +75,8 @@ export default {
   padding: 32px;
 }
 .point-title {
-  padding: 32px;
-  font-size: 22px;
+  padding: 32px 32px 0;
+  font-size: 32px;
   font-weight: bold;
 }
 .point-images {
@@ -91,10 +88,10 @@ export default {
 }
 .close-btn {
   position: absolute;
-  bottom: calc(100% + 8px); 
+  bottom: calc(100% + 8px);
   left: 8px;
   color: #fff;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   outline: 0;
   border: none;

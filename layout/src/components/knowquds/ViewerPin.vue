@@ -4,7 +4,7 @@
     :style="{
       left: `calc(${point.left}% - 10px)`,
       top: `calc(${point.top}% - 10px)`,
-      transform: `scale(${1/currentScale})`
+      transform: `scale(${1 / currentScale})`,
     }"
     :title="point.name"
     @mouseenter="$emit('hover', $event)"
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import MarkerIcon from '../../images/location.svg?inline';
+import MarkerIcon from "../../images/location.svg?inline";
 
 export default {
-  name: 'ViewerPin',
+  name: "ViewerPin",
   components: { MarkerIcon },
   props: {
     point: {
@@ -40,12 +40,14 @@ export default {
 .point {
   cursor: pointer;
   position: absolute;
+  transition: all 0.25s 0.25s;
+
   svg {
     transition: all 0.15s;
     transform: translateY(-20px);
     width: 30px;
   }
-  &:hover,
+  //&:hover,
   &.active {
     svg {
       opacity: 0;

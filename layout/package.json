@@ -16,6 +16,7 @@
   "dependencies": {
     "@babel/polyfill": "~7.2",
     "@fancyapps/fancybox": "^3.5.7",
+    "@panzoom/panzoom": "^4.3.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.15.0",
@@ -27,7 +28,6 @@
     "mixitup": "^3.3.1",
     "owl.carousel": "^2.3.4",
     "owl.carousel2.thumbs": "^0.1.8",
-    "panzoom": "^9.2.5",
     "swiper": "^6.0.4",
     "terser-webpack-plugin": "^3.0.7",
     "vue": "~2.6",

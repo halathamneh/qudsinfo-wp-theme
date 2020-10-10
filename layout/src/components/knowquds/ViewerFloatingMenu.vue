@@ -3,35 +3,39 @@
     <div class="floating-menu-header">
       <TermSwitcher :selected="term" />
 
-      <div
-        class="search-box"
-        @click="isOpen = !dropdownOpen"
-      >
-        <div
-          v-if="post && post.title"
-          class="floating-menu-toggle"
-        >
+      <div class="search-box" @click="isOpen = !dropdownOpen">
+        <div v-if="post && post.title" class="floating-menu-toggle">
           <i class="fa fa-bars" />
         </div>
         <div class="content">
           <span v-if="post && post.title">
             {{ post.title }}
           </span>
-          <span
-            v-else
-            class="text-muted"
-          >
+          <span v-else class="text-muted">
             {{ $t("please select") }}
           </span>
         </div>
       </div>
       <div
         v-if="!dropdownOpen && post && post.content"
-        class="post-description"
-        v-html="post.content"
-      />
+        :class="{
+          'post-description-wrapper': true,
+          collapsed: !descriptionVisible,
+        }"
+      >
+        <div class="post-description" v-html="post.content" />
+        <button @click="descriptionVisible = !descriptionVisible">
+          <span v-if="descriptionVisible"
+            >{{ $t("hide description") }} <i class="fa fa-angle-double-up"></i
+          ></span>
+          <span v-else
+            >{{ $t("show description") }} <i class="fa fa-angle-double-down"></i
+          ></span>
+        </button>
+      </div>
     </div>
     <FloatingMenuDropdown
+      :loading="loading"
       :posts="posts"
       :open="dropdownOpen"
       :selected="post || {}"
@@ -41,22 +45,24 @@
 </template>
 
 <script>
-import FloatingMenuDropdown from './FloatingMenuDropdown';
-import TermSwitcher from './TermSwitcher';
+import FloatingMenuDropdown from "./FloatingMenuDropdown";
+import TermSwitcher from "./TermSwitcher";
 
 export default {
-  name: 'ViewerFloatingMenu',
+  name: "ViewerFloatingMenu",
   components: { FloatingMenuDropdown, TermSwitcher },
   props: {
+    loading: { type: Boolean, default: () => true },
     posts: { type: Array, default: () => [] },
     term: { type: Object, default: () => {} },
     post: { type: Object, default: () => {} },
   },
   data: () => ({
     isOpen: false,
+    descriptionVisible: false,
   }),
   computed: {
-    dropdownOpen () {
+    dropdownOpen() {
       if (!this.post || !this.post.id) {
         return true;
       }
@@ -70,11 +76,12 @@ export default {
 .viewer-floating-menu {
   position: absolute;
   top: 16px;
-  right: 8px;
+  left: 0;
   z-index: 25;
   display: flex;
   flex-direction: column;
   width: 400px;
+  max-width: calc(100vw - 16px);
   height: 0;
   padding-top: 104px;
   background-color: transparent;
@@ -87,15 +94,25 @@ export default {
     height: 100vh;
     width: 416px;
   }
+  .rtl & {
+    left: auto;
+    right: 0;
+  }
 }
 .floating-menu-header {
   position: fixed;
   margin: 8px;
   top: 0;
-  right: 0;
+  left: 0;
   width: 400px;
+  max-width: calc(100vw - 16px);
   color: #555;
   z-index: 30;
+
+  .rtl & {
+    right: 0;
+    left: auto;
+  }
 }
 .search-box {
   align-items: center;
@@ -131,9 +148,14 @@ export default {
 .content {
   padding: 4px 8px;
   flex: 1 1 100%;
-  margin-right: 32px;
+  margin-left: 32px;
   .floating-menu-toggle + & {
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .rtl & {
+    margin-left: 0;
+    margin-right: 32px;
   }
 }
 h3 {
@@ -141,13 +163,34 @@ h3 {
   font-weight: 700;
   margin: 0;
 }
-.post-description {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #eee;
-  padding: 32px 16px 16px;
+.post-description-wrapper {
   margin-top: -16px;
-  border-radius: 0 0 8px 8px;
   position: relative;
-  z-index: 0;
+
+  .post-description {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    padding: 32px 16px 16px;
+    border-radius: 0 0 8px 8px;
+    z-index: 0;
+  }
+  button {
+    margin-top: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px 8px;
+    outline: none;
+  }
+
+  &.collapsed {
+    .post-description {
+      display: none;
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
 }
 </style>

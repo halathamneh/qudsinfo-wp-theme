@@ -92,4 +92,5 @@ export default {
   published_count: "Published News",
   reports_count: "Published reports",
   loading: "Loading ...",
+  "please select": "Please select",
 };

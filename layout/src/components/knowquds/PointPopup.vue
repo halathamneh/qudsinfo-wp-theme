@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-if="point"
-    class="info-popup"
-  >
+  <div v-if="point" class="info-popup">
     <div
       v-if="point.description_images && point.description_images.length > 0"
       class="popup-image-wrapper"
@@ -11,26 +8,26 @@
         :key="point.description_images[0].id"
         :src="point.description_images[0].thumb"
         alt=""
-      >
+      />
     </div>
     <div class="popup-content">
       {{ point.popup_title }}
-      <br>
+      <br />
       <button
         class="btn btn-sm btn-link more-link"
         type="button"
         @click="$emit('select-point', point)"
       >
-        {{ $t('know more') }}
+        {{ $t("know more") }}
         <i class="fa fa-angle-double-left" />
-      </button> 
+      </button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PointPopup',
+  name: "PointPopup",
   props: {
     point: {
       type: Object,
@@ -50,6 +47,11 @@ export default {
   display: flex;
   flex-direction: column;
 
+  .popup-wrapper.bottom & {
+    flex-direction: column-reverse;
+    transform: translateY(15px);
+  }
+
   .popup-image-wrapper {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
@@ -64,6 +66,10 @@ export default {
     img {
       width: 100%;
       object-fit: cover;
+    }
+
+    .popup-wrapper.bottom & {
+      border-radius: 0 0 8px 8px;
     }
   }
 
@@ -87,8 +93,15 @@ export default {
     transform: translate(-50%, 0);
     width: 10px;
     height: 10px;
-    border: 4px solid transparent;
-    border-top-color: rgba(255, 255, 255, 0.75);
+    border: 8px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.75);
+
+    .popup-wrapper.bottom & {
+      top: auto;
+      bottom: 100%;
+      border-top: 8px solid transparent;
+      border-bottom: 10px solid rgba(255, 255, 255, 0.75);
+    }
   }
 }
 </style>
