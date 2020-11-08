@@ -16,24 +16,22 @@
 
     <div class="knowquds-types">
       <div class="container">
-        <h4>{{ $t("ready to knowquds") }}</h4>
-        <div
-          v-if="!loading"
-          class="row"
-        > 
-          <div
-            v-for="term in terms"
-            :key="term.id"
-            class="col-md-6"
-          >
-            <KnowqudsListItem
-              :title="term.label"
-              :btn-text="metadata[term.slug].btnText"
-              :image="metadata[term.slug].image"
-              :term="term"
-              :description="term.description"
-            />
+        <template v-if="!loading">
+          <h4>{{ $t("ready to knowquds") }}</h4>
+          <div class="row">
+            <div v-for="term in terms" :key="term.id" class="col-md-6">
+              <KnowqudsListItem
+                :title="term.label"
+                :btn-text="metadata[term.slug].btnText"
+                :image="metadata[term.slug].image"
+                :term="term"
+                :description="term.description"
+              />
+            </div>
           </div>
+        </template>
+        <div class="d-flex justify-content-center" v-else>
+          <dual-ring-loader />
         </div>
       </div>
     </div>
@@ -41,30 +39,31 @@
 </template>
 
 <script>
-import KnowqudsListItem from './KnowqudsListItem';
-import KnowqudsImage from '../../images/knowquds/knowquds.svg?inline';
-import AqsaImage from '../../images/knowquds/aqsa.png';
-import OldTownImage from '../../images/knowquds/old-city.jpg';
-import { getTerms } from '../../api/knowquds';
+import KnowqudsListItem from "./KnowqudsListItem";
+import KnowqudsImage from "../../images/knowquds/knowquds.svg?inline";
+import AqsaImage from "../../images/knowquds/aqsa.png";
+import OldTownImage from "../../images/knowquds/old-city.jpg";
+import { getTerms } from "../../api/knowquds";
+import DualRingLoader from "../loaders/DualRingLoader";
 
 export default {
-  name: 'KnowqudsTerms',
-  components: { KnowqudsListItem, KnowqudsImage },
+  name: "KnowqudsTerms",
+  components: { DualRingLoader, KnowqudsListItem, KnowqudsImage },
   data: () => ({
     terms: [],
     loading: true,
     metadata: {
-      'alaqsa-mosque': {
-        btnText: 'دخول للمسجد الأقصى',
+      "alaqsa-mosque": {
+        btnText: "دخول للمسجد الأقصى",
         image: AqsaImage,
       },
-      'old-city': {
-        btnText: 'دخول للبلدة القديمة',
+      "old-city": {
+        btnText: "دخول للبلدة القديمة",
         image: OldTownImage,
       },
     },
   }),
-  mounted () {
+  mounted() {
     getTerms().then((terms) => {
       this.terms = terms;
       this.loading = false;

@@ -30,9 +30,8 @@ export default {
   align-items: center;
   font-size: 12px;
   color: #444;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 -1px 0px rgba(0, 0, 0, 0.02),
-    0 -2px 6px rgba(80, 80, 80, 0.2);
+  background-color: rgba(200, 200, 200, 0.75);
+  border: 1px solid #aaa;
   transition: all 0.2s;
   svg {
     width: 24px;
@@ -44,6 +43,21 @@ export default {
     width: 60px;
     margin-left: 8px;
   }
+  @media screen and (max-width: 500px) {
+    padding: 6px 14px;
+    font-size: 10px;
+    svg {
+      width: 24px;
+      height: 24px;
+      transform: rotate(-90deg);
+      margin-right: 4px;
+    }
+    img {
+      width: 45px;
+      margin-left: 4px;
+    }
+  }
+
   &:hover {
     text-decoration: none;
     background-color: rgba(200, 200, 200, 1);

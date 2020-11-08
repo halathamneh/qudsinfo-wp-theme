@@ -57,11 +57,11 @@ export default [
     subItems: [
       {
         title: i18n.t("alaqsa mosque milestones"),
-        url: "/knowquds/alaqsa-mosque",
+        url: "/knowquds/#/alaqsa-mosque",
       },
       {
         title: i18n.t("old city milestones"),
-        url: "/knowquds/old-city",
+        url: "/knowquds/#/old-city",
       },
     ],
   },
