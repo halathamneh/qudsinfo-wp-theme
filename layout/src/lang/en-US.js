@@ -92,4 +92,10 @@ export default {
   published_count: "Published News",
   reports_count: "Published reports",
   loading: "Loading ...",
+  "please select": "Please select",
+  "ready to knowquds": "Are you ready to go in a tour in Jerusalem?",
+  "knowquds enter aqsa": "Enter Alaqsa Mosque",
+  "knowquds enter old-town": "Enter The ancient town",
+  "show description": "Show description",
+  "hide description": "Hide description",
 };

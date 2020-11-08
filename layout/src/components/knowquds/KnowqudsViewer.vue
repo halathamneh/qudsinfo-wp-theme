@@ -2,15 +2,13 @@
   <div class="knowquds-viewer-container">
     <BackToSite />
     <ViewerFloatingMenu
+      :loading="loading"
       :posts="termData.posts || []"
       :term="termData"
       :post="currentPost"
     />
 
-    <div
-      v-if="loading"
-      class="loading-wrapper"
-    >
+    <div v-if="loading" class="loading-wrapper">
       <FulfillingBouncingCircleSpinner
         :animation-duration="4000"
         :size="60"
@@ -22,21 +20,19 @@
     </div>
     <KnowqudsViewerBody
       v-if="showPost"
+      :loading="loading"
       :current-post="currentPost || {}"
       @imageLoaded="loading = false"
       @select-point="selectPoint"
     />
-    <div
-      v-else-if="showTerm"
-      class="knowquds-viewer"
-    >
+    <div v-else-if="showTerm" class="knowquds-viewer">
       <div class="image-container">
         <img
           class="term-image"
           alt=""
-          :src="termData.image"
+          :src="termData.image || ''"
           @load="onImageLoaded"
-        >
+        />
       </div>
     </div>
     <PointDetails
@@ -51,15 +47,15 @@
 </template>
 
 <script>
-import { getPostDetails, getTermDetails } from '../../api/knowquds';
-import { FulfillingBouncingCircleSpinner } from 'epic-spinners';
-import ViewerFloatingMenu from './ViewerFloatingMenu';
-import KnowqudsViewerBody from './KnowqudsViewerBody';
-import PointDetails from './PointDetails';
-import BackToSite from './BackToSite';
+import { getPostDetails, getTermDetails } from "../../api/knowquds";
+import { FulfillingBouncingCircleSpinner } from "epic-spinners";
+import ViewerFloatingMenu from "./ViewerFloatingMenu";
+import KnowqudsViewerBody from "./KnowqudsViewerBody";
+import PointDetails from "./PointDetails";
+import BackToSite from "./BackToSite";
 
 export default {
-  name: 'KnowqudsViewer',
+  name: "KnowqudsViewer",
   components: {
     KnowqudsViewerBody,
     ViewerFloatingMenu,
@@ -75,8 +71,8 @@ export default {
     showPost: false,
     selectedPointDetails: null,
   }),
-  mounted () {
-    document.body.style.overflow = 'hidden';
+  mounted() {
+    document.body.style.overflow = "hidden";
     this.showPost = false;
     this.showTerm = false;
     this.getTerm(this.$route.params.cat).then(() => {
@@ -91,10 +87,10 @@ export default {
       }
     });
   },
-  beforeDestroy () {
+  beforeDestroy() {
     document.body.style.overflow = null;
   },
-  beforeRouteUpdate (to, from, next) {
+  beforeRouteUpdate(to, from, next) {
     console.log(to);
     this.loading = true;
     this.showPost = false;
@@ -137,22 +133,25 @@ export default {
     next();
   },
   methods: {
-    getTerm (term) {
+    getTerm(term) {
       return getTermDetails(term).then((data) => {
         this.termData = data;
+        if (!data.image) {
+          this.loading = false;
+        }
       });
     },
-    getPost (post) {
+    getPost(post) {
       return getPostDetails(post.id).then((data) => {
         this.currentPost = data;
       });
     },
-    onImageLoaded (e) {
+    onImageLoaded(e) {
       this.loading = false;
     },
-    selectPoint (point) {
+    selectPoint(point) {
       this.selectedPointDetails = point;
-    }
+    },
   },
 };
 </script>
@@ -197,11 +196,24 @@ export default {
 .copyrights {
   color: #222;
   position: fixed;
-  left: 16px;
+  right: 16px;
   bottom: 16px;
-  z-index: 99;
+  z-index: 20;
   font-size: 10px;
   padding: 4px 10px;
   background-color: rgba(255, 255, 255, 0.5);
+  .rtl & {
+    right: auto;
+    left: 16px;
+  }
+
+  @media screen and (max-width: 500px) {
+    right: auto;
+    left: 16px;
+    .rtl & {
+      left: auto;
+      right: 16px;
+    }
+  }
 }
 </style>

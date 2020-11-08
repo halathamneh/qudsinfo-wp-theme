@@ -23,21 +23,27 @@ import VueSlickCarousel from "vue-slick-carousel";
 export default {
   name: "PicsSlider",
   components: { VueSlickCarousel },
-  data: () => ({
-    sliderSettings: {
-      arrows: true,
-      dots: true,
-      infinite: true,
-      slidesToScroll: 1,
-      rtl: true,
-      autoplay: true,
-      lazyLoad: "progressive",
-    },
-  }),
+  data() {
+    return {
+      sliderSettings: {
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToScroll: 1,
+        rtl: true,
+        autoplay: !this.disabledAutoplay,
+        lazyLoad: "progressive",
+      },
+    };
+  },
   props: {
     picData: {
       type: Object,
       default: () => ({}),
+    },
+    disabledAutoplay: {
+      type: Boolean,
+      default: () => false,
     },
   },
   mounted() {

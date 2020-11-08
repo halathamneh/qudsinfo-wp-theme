@@ -13,7 +13,7 @@
       <li
         v-for="term in terms"
         :key="term.id"
-        :class="{active: term.id === selected.id}"
+        :class="{ active: term.id === selected.id }"
       >
         <router-link
           :to="{ name: 'knowquds-viewer', params: { cat: term.slug } }"
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import { getTerms } from '../../api/knowquds';
-import ChevronDownIcon from '../../images/chevron-down.svg?inline';
+import { getTerms } from "../../api/knowquds";
+import ChevronDownIcon from "../../images/chevron-down.svg?inline";
 
 export default {
-  name: 'TermSwitcher',
+  name: "TermSwitcher",
   components: { ChevronDownIcon },
   props: {
     selected: {
@@ -42,13 +42,13 @@ export default {
     terms: [],
     collapsed: true,
   }),
-  mounted () {
+  mounted() {
     getTerms().then((terms) => {
       this.terms = terms;
     });
   },
   methods: {
-    toggleTermSwitcher () {
+    toggleTermSwitcher() {
       this.collapsed = !this.collapsed;
     },
   },
@@ -66,7 +66,7 @@ export default {
   outline: none;
   border: 1px solid #d0d0d0;
   border-bottom: none;
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
 
   > span {
@@ -76,10 +76,14 @@ export default {
   svg {
     width: 24px;
     height: 24px;
-    margin-left: 4px;
+    margin-right: 4px;
     transition: all 0.2s;
     &.flipped {
       transform: rotate(180deg);
+    }
+    .rtl & {
+      margin-left: 4px;
+      margin-right: 0;
     }
   }
   &:hover {
@@ -103,6 +107,10 @@ ul {
     &.active {
       font-weight: bold;
     }
+  }
+
+  .rtl & {
+    padding: 0 0 0 8px;
   }
 }
 </style>

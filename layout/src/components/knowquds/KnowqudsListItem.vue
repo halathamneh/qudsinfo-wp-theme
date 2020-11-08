@@ -1,8 +1,10 @@
 <template>
   <div class="knowquds-list-item">
-    <div class="img-wrapper">
-      <img :src="image" alt="" />
-    </div>
+    <router-link :to="{ name: 'knowquds-viewer', params: { cat: term.slug } }">
+      <div class="img-wrapper">
+        <img :src="image" alt="" />
+      </div>
+    </router-link>
     <h3>
       {{ title }}
     </h3>
@@ -10,7 +12,7 @@
     <router-link
       :to="{ name: 'knowquds-viewer', params: { cat: term.slug } }"
       class="btn btn-light"
-      >{{ btnText }}</router-link
+      >{{ $t(btnText) }}</router-link
     >
   </div>
 </template>

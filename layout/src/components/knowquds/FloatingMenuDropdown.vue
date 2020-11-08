@@ -1,17 +1,22 @@
 <template>
   <div :class="{ 'floating-menu-dropdown': true, open }">
-    <ul>
+    <div v-if="loading" class="loading-wrapper">
+      <VclList :rtl="currentLang === 'ar'" />
+    </div>
+    <ul v-else>
       <li
         v-for="post in posts"
         :key="post.id"
-        :class="{'list-item': true, 'active': selected.id === post.id}"
+        :class="{ 'list-item': true, active: selected.id === post.id }"
         @click="$emit('change')"
       >
-        <router-link
-          tag="button"
-          :to="getItemUrl(post)"
-        >
-          <i class="fa fa-angle-left" />
+        <router-link tag="button" :to="getItemUrl(post)">
+          <i
+            :class="[
+              'fa',
+              `fa-angle-${currentLang === 'ar' ? 'left' : 'right'}`,
+            ]"
+          />
           {{ post.title }}
           <span class="badge badge-info">
             {{ post.count }}
@@ -23,22 +28,27 @@
 </template>
 
 <script>
+import { VclList } from "vue-content-loading";
+import { currentLang } from "../../lang/utils";
+
 export default {
-  name: 'FloatingMenuDropdown',
+  name: "FloatingMenuDropdown",
+  components: { VclList },
   props: {
+    loading: { type: Boolean, default: () => true },
     posts: { type: Array, default: () => [] },
     selected: { type: Object, default: () => ({}) },
     open: { type: Boolean, default: () => false },
     onChange: { type: Function, default: () => () => {} },
   },
   data: () => ({
-    loading: true,
     filtered: [],
+    currentLang,
   }),
   methods: {
-    getItemUrl (post) {
+    getItemUrl(post) {
       return {
-        name: 'knowquds-viewer',
+        name: "knowquds-viewer",
         params: {
           cat: this.$route.params.cat,
           post: decodeURIComponent(post.slug),
@@ -94,7 +104,7 @@ export default {
     align-items: center;
 
     i.fa {
-      margin-left: 16px;
+      margin-right: 16px;
       color: #aaa;
     }
 
@@ -104,7 +114,22 @@ export default {
   }
 
   .badge {
-    margin-right: auto;
+    margin-left: auto;
   }
+
+  .rtl & {
+    i.fa {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+    .badge {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+.loading-wrapper {
+  padding: 32px;
 }
 </style>
