@@ -208,6 +208,7 @@ export default {
   }
 
   @media screen and (max-width: 500px) {
+    right: auto;
     left: 16px;
     .rtl & {
       left: auto;
