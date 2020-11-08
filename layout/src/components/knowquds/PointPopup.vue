@@ -20,15 +20,27 @@
         @click="$emit('select-point', point)"
       >
         {{ $t("know more") }}
-        <i class="fa fa-angle-double-left" />
+        <i
+          :class="[
+            'fa',
+            `fa-angle-double-${currentLang === 'ar' ? 'left' : 'right'}`,
+          ]"
+        />
       </button>
     </div>
   </div>
 </template>
 
 <script>
+import { currentLang } from "../../lang/utils";
+
 export default {
   name: "PointPopup",
+  data() {
+    return {
+      currentLang,
+    };
+  },
   props: {
     point: {
       type: Object,

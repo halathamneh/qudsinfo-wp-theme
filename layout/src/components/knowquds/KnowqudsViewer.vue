@@ -30,7 +30,7 @@
         <img
           class="term-image"
           alt=""
-          :src="termData.image"
+          :src="termData.image || ''"
           @load="onImageLoaded"
         />
       </div>
@@ -136,6 +136,9 @@ export default {
     getTerm(term) {
       return getTermDetails(term).then((data) => {
         this.termData = data;
+        if (!data.image) {
+          this.loading = false;
+        }
       });
     },
     getPost(post) {

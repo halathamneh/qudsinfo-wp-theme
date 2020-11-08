@@ -54,11 +54,11 @@ export default {
     loading: true,
     metadata: {
       "alaqsa-mosque": {
-        btnText: "دخول للمسجد الأقصى",
+        btnText: "knowquds enter aqsa",
         image: AqsaImage,
       },
       "old-city": {
-        btnText: "دخول للبلدة القديمة",
+        btnText: "knowquds enter old-town",
         image: OldTownImage,
       },
     },

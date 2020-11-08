@@ -119,6 +119,8 @@ export default {
   "Reason of the name": "سبب التسمية",
   "Builder Name": "اسم الباني",
   "ready to knowquds": "هل أنت مستعد لتذهب في جولة داخل القدس؟",
+  "knowquds enter aqsa": "دخول للمسجد الأقصى",
+  "knowquds enter old-town": "دخول للبلدة القديمة",
   loading: "جار التحميل ...",
   "please select": "الرجاء الاختيار",
   close: "إغلاق",

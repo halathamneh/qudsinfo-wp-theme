@@ -137,12 +137,16 @@ export default {
   padding: 2px 8px;
   border: none;
   outline: 0;
-  margin-right: 12px;
+  margin-left: 12px;
   transition: all 0.2s;
   &:hover,
   &:focus,
   &:active {
     color: #42287c;
+  }
+  .rtl & {
+    margin-left: 0;
+    margin-right: 12px;
   }
 }
 .content {

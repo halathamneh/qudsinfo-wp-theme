@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import { currentLang } from "../../lang/utils";
+
 export default {
   name: "ViewerControls",
   props: {
@@ -39,6 +41,11 @@ export default {
       type: Object,
       default: () => ({}),
     },
+  },
+  data() {
+    return {
+      currentLang,
+    };
   },
   methods: {
     panLeft() {
@@ -112,9 +119,7 @@ export default {
   .horizontal-container {
     display: flex;
     justify-content: space-between;
-    .rtl & {
-      flex-direction: row-reverse;
-    }
+    flex-direction: row-reverse;
   }
 }
 </style>

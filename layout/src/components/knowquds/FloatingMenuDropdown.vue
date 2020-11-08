@@ -1,7 +1,7 @@
 <template>
   <div :class="{ 'floating-menu-dropdown': true, open }">
     <div v-if="loading" class="loading-wrapper">
-      <VclList :rtl="true" />
+      <VclList :rtl="currentLang === 'ar'" />
     </div>
     <ul v-else>
       <li
@@ -11,7 +11,12 @@
         @click="$emit('change')"
       >
         <router-link tag="button" :to="getItemUrl(post)">
-          <i class="fa fa-angle-left" />
+          <i
+            :class="[
+              'fa',
+              `fa-angle-${currentLang === 'ar' ? 'left' : 'right'}`,
+            ]"
+          />
           {{ post.title }}
           <span class="badge badge-info">
             {{ post.count }}
@@ -24,6 +29,7 @@
 
 <script>
 import { VclList } from "vue-content-loading";
+import { currentLang } from "../../lang/utils";
 
 export default {
   name: "FloatingMenuDropdown",
@@ -37,6 +43,7 @@ export default {
   },
   data: () => ({
     filtered: [],
+    currentLang,
   }),
   methods: {
     getItemUrl(post) {
