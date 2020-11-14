@@ -26,7 +26,10 @@
 
   .card-img-right {
     object-fit: cover;
+    max-height: 300px;
+    object-position: center center;
     @include media-breakpoint-up(md) {
+      max-height: none;
       max-width: 35%;
     }
   }
