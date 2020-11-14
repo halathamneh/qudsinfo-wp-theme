@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: QudsInfo\n"
-"POT-Creation-Date: 2020-07-25 17:37+0300\n"
-"PO-Revision-Date: 2020-07-25 17:38+0300\n"
+"POT-Creation-Date: 2020-11-14 16:12+0200\n"
+"PO-Revision-Date: 2020-11-14 16:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: Haitham Alathamneh\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -51,40 +51,11 @@ msgstr "الموقع الالكتروني"
 msgid "Message"
 msgstr "الرسالة"
 
-#: footer.php:12 inc/customizer/panels/general-options.php:377
+#: footer.php:12
 msgid "&copy; Copyright 2016. All Rights Reserved."
 msgstr "&copy; حقوق الطبع والنشر 2019. جميع الحقوق محفوظه."
 
-#: functions.php:84
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:322 yarpp-template-thumbnail.php:7
-msgid "See more:"
-msgstr "اقرأ أيضاً:"
-
-#: functions.php:346
-msgid "Please allow location permission to find your distance from Aqsa"
-msgstr "لحساب بعدك عن الأقصى، اسمح الوصول إلى موقعك"
-
-#: functions.php:347
-msgid "Please enable location to find your distance from Aqsa"
-msgstr "قم بتفعيل خدمة الموقع لحساب بعدك عن الأقصى"
-
-#: functions.php:348
-msgid "Something went wrong, please try again!"
-msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى!"
-
-#: functions.php:349
-msgid "Please wait"
-msgstr "الرجاء الانتظار"
-
-#: functions.php:350
-msgid "KM"
-msgstr "كيلو متر"
-
 #: header-quizzes.php:11 header.php:11
-#: inc/customizer/panels/general-options.php:155
 msgid "qi-theme"
 msgstr ""
 
@@ -104,1739 +75,1027 @@ msgstr ""
 msgid " - Search Results"
 msgstr " - نتائج البحث"
 
-#: inc/Helpers.php:54
-msgid "Language"
-msgstr "اللغة"
+#: inc/ACF/SiteTeamFields.php:6
+msgid "Photographer"
+msgstr "مصور"
 
-#: inc/NewsBar.php:74 inc/NewsBar.php:75
-msgid "News Bar"
-msgstr "شريط الأخبار"
+#: inc/ACF/SiteTeamFields.php:7
+msgid "Main Website Developer"
+msgstr "مبرمج ومصمم الموقع"
 
-#: inc/TeamsSettings/ContentTeam.php:25
-msgid "Qudsinfo Content Team settings"
-msgstr "إعدادات فريق المحتوى"
+#: inc/ACF/SiteTeamFields.php:8
+msgid "Content Editor"
+msgstr "محرر محتوى"
 
-#: inc/TeamsSettings/LecturesTeam.php:25
-msgid "Qudsinfo Lectures Team settings"
-msgstr "إعدادات فريق المحاضرات"
+#: inc/ACF/SiteTeamFields.php:9
+msgid "News Publisher"
+msgstr "ناشر أخبار"
 
-#: inc/TeamsSettings/MediaTeam.php:23
-msgid "Qudsinfo Media Team settings"
-msgstr "إعدادات فريق الميديا"
+#: inc/Assets.php:80
+msgid "Please allow location permission to find your distance from Aqsa"
+msgstr "لحساب بعدك عن الأقصى، اسمح الوصول إلى موقعك"
 
-#: inc/TeamsSettings/NewsTeam.php:23
-msgid "Qudsinfo News Team settings"
-msgstr "إعدادات فريق الأخبار"
+#: inc/Assets.php:81
+msgid "Please enable location to find your distance from Aqsa"
+msgstr "قم بتفعيل خدمة الموقع لحساب بعدك عن الأقصى"
 
-#: inc/TeamsSettings/TeamsSettings.php:70
-msgid "Qudsinfo Teams"
-msgstr "أفرقة معلومة مقدسية"
+#: inc/Assets.php:82
+msgid "Something went wrong, please try again!"
+msgstr "حدث خطأ ما، الرجاء المحاولة مرة اخرى!"
 
-#: inc/TeamsSettings/TeamsSettings.php:99
-msgid ""
-"There was an error adding this setting. Please try again.  If this persists, "
-"shoot us an email."
-msgstr ""
+#: inc/Assets.php:83
+msgid "Please wait"
+msgstr "الرجاء الانتظار"
 
-#: inc/components/entry-meta/class.mt-entry-meta.php:67
-#: inc/components/entry-meta/class.mt-entry-meta.php:94
-#: inc/components/entry-meta/class.mt-entry-meta.php:121
-msgid ", "
-msgstr ""
+#: inc/Assets.php:84
+msgid "KM"
+msgstr "كيلو متر"
 
-#: inc/components/entry-meta/class.mt-entry-meta.php:81
-#: inc/components/entry-meta/class.mt-entry-meta.php:108
-#: inc/components/entry-meta/class.mt-entry-meta.php:135
-msgid "لا تعليقات بعد!"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:81
-#: inc/components/entry-meta/class.mt-entry-meta.php:108
-#: inc/components/entry-meta/class.mt-entry-meta.php:135
-msgid "تعليقات"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:81
-#: inc/components/entry-meta/class.mt-entry-meta.php:108
-#: inc/components/entry-meta/class.mt-entry-meta.php:135
-msgid "تعليق واحد"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:81
-#: inc/components/entry-meta/class.mt-entry-meta.php:108
-#: inc/components/entry-meta/class.mt-entry-meta.php:135
-msgid "التعليقات مغلقة"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:157
-#: inc/components/entry-meta/class.mt-entry-meta.php:178
-#: inc/components/entry-meta/class.mt-entry-meta.php:199
-msgid "No comments"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:157
-#: inc/components/entry-meta/class.mt-entry-meta.php:178
-#: inc/components/entry-meta/class.mt-entry-meta.php:199
-msgid "comments"
-msgstr "تعليقات"
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:157
-#: inc/components/entry-meta/class.mt-entry-meta.php:178
-#: inc/components/entry-meta/class.mt-entry-meta.php:199
-msgid "1 comment"
-msgstr "تعليق واحد"
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:157
-#: inc/components/entry-meta/class.mt-entry-meta.php:178
-#: inc/components/entry-meta/class.mt-entry-meta.php:199
-msgid "Comments are off for this post"
-msgstr ""
-
-#: inc/components/entry-meta/class.mt-entry-meta.php:217
-#: inc/components/entry-meta/class.mt-entry-meta.php:223
-msgid "Tags:  "
-msgstr ""
-
-#: inc/components/nav-walker/class.mt-nav-walker.php:132
-msgid "Add a menu"
-msgstr ""
-
-#: inc/components/related-posts/class.mt-related-posts.php:122
-msgid "معلومات ذات صلة"
-msgstr ""
-
-#: inc/custom_posts_types.php:17 inc/custom_posts_types.php:19
-#: inc/custom_posts_types.php:20 inc/custom_posts_types.php:37
-msgid "الموضوعات"
-msgstr ""
-
-#: inc/custom_posts_types.php:18
-msgid "موضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:21 inc/custom_posts_types.php:24
-msgid "موضوع جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:22
-msgid "إضافة موضوع جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:23
-msgid "تعديل موضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:25
-msgid "عرض الموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:26
-msgid "بحث عن موضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:27
-msgid "لم نجد الموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:28
-msgid "صورة الموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:29
-msgid "استعملها ك صورة للموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:30
-msgid "أرشيف الموضوعات"
-msgstr ""
-
-#: inc/custom_posts_types.php:31
-msgid "إضافة إلى الموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:32
-msgid "المرفوع لهذا الموضوع"
-msgstr ""
-
-#: inc/custom_posts_types.php:33
-msgid "قائمة الموضوعات"
-msgstr ""
-
-#: inc/custom_posts_types.php:78 inc/custom_posts_types.php:80
-#: inc/custom_posts_types.php:98
-msgid "الأخبار"
-msgstr ""
-
-#: inc/custom_posts_types.php:79
-msgid "خبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:81
-msgid "كل الأخبار"
-msgstr ""
-
-#: inc/custom_posts_types.php:82 inc/custom_posts_types.php:85
-msgid "خبر جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:83
-msgid "إضافة خبر جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:84
-msgid "تعديل خبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:86
-msgid "عرض الخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:87
-msgid "بحث عن خبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:88
-msgid "لم نجد الخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:89
-msgid "صورة الخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:90
-msgid "استعملها ك صورة للخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:91
-msgid "أرشيف الأخبار"
-msgstr ""
-
-#: inc/custom_posts_types.php:92
-msgid "إضافة إلى الخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:93
-msgid "المرفوع لهذا الخبر"
-msgstr ""
-
-#: inc/custom_posts_types.php:94
-msgid "قائمة الأخبار"
-msgstr ""
-
-#: inc/custom_posts_types.php:132 inc/custom_posts_types.php:142
-#: inc/custom_posts_types.php:146
-msgid "أرشيف المعالم والصور"
-msgstr ""
-
-#: inc/custom_posts_types.php:133
-msgid "صورة/معلم"
-msgstr ""
-
-#: inc/custom_posts_types.php:134
-msgid "المعالم والصور"
-msgstr ""
-
-#: inc/custom_posts_types.php:135
-msgid "كل الصور"
-msgstr ""
-
-#: inc/custom_posts_types.php:136 inc/custom_posts_types.php:139
-msgid "معلم/صورة جديدة"
-msgstr ""
-
-#: inc/custom_posts_types.php:137
-msgid "إضافة معلم/صورة جديدة"
-msgstr ""
-
-#: inc/custom_posts_types.php:138
-msgid "تعديل معلم/صورة"
-msgstr ""
-
-#: inc/custom_posts_types.php:140
-msgid "عرض المعلم/الصورة"
-msgstr ""
-
-#: inc/custom_posts_types.php:141
-msgid "اختر الصورة من هنا"
-msgstr ""
-
-#: inc/custom_posts_types.php:179 inc/custom_posts_types.php:184
+#: inc/CPT/AudioPostType.php:19 inc/CPT/AudioPostType.php:27
 msgid "المعلومات الصوتية"
 msgstr ""
 
-#: inc/custom_posts_types.php:180
+#: inc/CPT/AudioPostType.php:20
 msgid "معلومة صوتية"
 msgstr ""
 
-#: inc/custom_posts_types.php:217 inc/custom_posts_types.php:222
-msgid "المعلومات المرئية"
-msgstr ""
-
-#: inc/custom_posts_types.php:218
-msgid "معلومة مرئية"
-msgstr ""
-
-#: inc/custom_posts_types.php:255 inc/custom_posts_types.php:260
-msgid "منتجاتنا"
-msgstr ""
-
-#: inc/custom_posts_types.php:256
-msgid "منتج"
-msgstr ""
-
-#: inc/custom_posts_types.php:293 inc/custom_posts_types.php:311
-msgid "الكتب"
-msgstr ""
-
-#: inc/custom_posts_types.php:294
-msgid "كتاب"
-msgstr ""
-
-#: inc/custom_posts_types.php:295
-msgid "المكتبة"
-msgstr ""
-
-#: inc/custom_posts_types.php:296
-msgid "جميع الكتب"
-msgstr ""
-
-#: inc/custom_posts_types.php:297 inc/custom_posts_types.php:300
-msgid "كتاب جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:298
-msgid "إضافة كتاب جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:299
-msgid "تعديل كتاب"
-msgstr ""
-
-#: inc/custom_posts_types.php:301
-msgid "عرض الكتاب"
-msgstr ""
-
-#: inc/custom_posts_types.php:302
-msgid "بحص عن كتاب"
-msgstr ""
-
-#: inc/custom_posts_types.php:303
-msgid "لم نجد الكتاب الذي تبحث عنه"
-msgstr ""
-
-#: inc/custom_posts_types.php:304
-msgid "غلاف الكتاب"
-msgstr ""
-
-#: inc/custom_posts_types.php:305
-msgid "اختر صورة غلاف"
-msgstr ""
-
-#: inc/custom_posts_types.php:306
-msgid "إزالة صورة الغلاف"
-msgstr ""
-
-#: inc/custom_posts_types.php:307
-msgid "اختيار كصورة غلاف"
-msgstr ""
-
-#: inc/custom_posts_types.php:345 inc/custom_posts_types.php:347
-#: inc/custom_posts_types.php:369
+#: inc/CPT/BlogPostType.php:22 inc/CPT/BlogPostType.php:24
+#: inc/CPT/BlogPostType.php:49
 msgid "المدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:346
+#: inc/CPT/BlogPostType.php:23
 msgid "مدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:348
+#: inc/CPT/BlogPostType.php:25
 msgid "كل المدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:349 inc/custom_posts_types.php:352
+#: inc/CPT/BlogPostType.php:26 inc/CPT/BlogPostType.php:29
 msgid "مدونة جديدة"
 msgstr ""
 
-#: inc/custom_posts_types.php:350
+#: inc/CPT/BlogPostType.php:27
 msgid "إضافة مدونة جديدة"
 msgstr ""
 
-#: inc/custom_posts_types.php:351
+#: inc/CPT/BlogPostType.php:28
 msgid "تعديل المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:353
+#: inc/CPT/BlogPostType.php:30
 msgid "عرض المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:354
+#: inc/CPT/BlogPostType.php:31
 msgid "بحث عن مدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:355
+#: inc/CPT/BlogPostType.php:32
 msgid "لا يوجد مدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:356
+#: inc/CPT/BlogPostType.php:33
 msgid "لا يوجد مدونات في المحذوفات"
 msgstr ""
 
-#: inc/custom_posts_types.php:357
+#: inc/CPT/BlogPostType.php:34
 msgid "صورة المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:358
+#: inc/CPT/BlogPostType.php:35
 msgid "تحديد صورة المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:359
+#: inc/CPT/BlogPostType.php:36
 msgid "إزالة صورة المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:360
+#: inc/CPT/BlogPostType.php:37
 msgid "استخدام كصورة للمدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:361
+#: inc/CPT/BlogPostType.php:38
 msgid "أرشيف المدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:362
+#: inc/CPT/BlogPostType.php:39
 msgid "إدراج في المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:363
+#: inc/CPT/BlogPostType.php:40
 msgid "مرفوع لهذه المدونة"
 msgstr ""
 
-#: inc/custom_posts_types.php:364
+#: inc/CPT/BlogPostType.php:41
 msgid "تصفية قائمة المدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:365
+#: inc/CPT/BlogPostType.php:42
 msgid "قائمة المدونات"
 msgstr ""
 
-#: inc/custom_posts_types.php:404 inc/custom_posts_types.php:406
-#: inc/custom_posts_types.php:423
-msgid "الخلفيات"
+#: inc/CPT/BooksPostType.php:21 inc/CPT/BooksPostType.php:42
+msgid "الكتب"
 msgstr ""
 
-#: inc/custom_posts_types.php:405
-msgid "خلفية"
+#: inc/CPT/BooksPostType.php:22
+msgid "كتاب"
 msgstr ""
 
-#: inc/custom_posts_types.php:407
-msgid "كل الخلفيات"
+#: inc/CPT/BooksPostType.php:23
+msgid "المكتبة"
 msgstr ""
 
-#: inc/custom_posts_types.php:408 inc/custom_posts_types.php:411
-msgid "خلفية جديدة"
+#: inc/CPT/BooksPostType.php:24
+msgid "جميع الكتب"
 msgstr ""
 
-#: inc/custom_posts_types.php:409
-msgid "إضافة خلفية جديدة"
+#: inc/CPT/BooksPostType.php:25 inc/CPT/BooksPostType.php:28
+msgid "كتاب جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:410
-msgid "تعديل الخلفية"
+#: inc/CPT/BooksPostType.php:26
+msgid "إضافة كتاب جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:412
-msgid "عرض الخلفية"
+#: inc/CPT/BooksPostType.php:27
+msgid "تعديل كتاب"
 msgstr ""
 
-#: inc/custom_posts_types.php:413
-msgid "بحث عن خلفية"
+#: inc/CPT/BooksPostType.php:29
+msgid "عرض الكتاب"
 msgstr ""
 
-#: inc/custom_posts_types.php:414
-msgid "لا يوجد خلفيات"
+#: inc/CPT/BooksPostType.php:30
+msgid "بحص عن كتاب"
 msgstr ""
 
-#: inc/custom_posts_types.php:415
-msgid "لا يوجد خلفيات في المحذوفات"
+#: inc/CPT/BooksPostType.php:31
+msgid "لم نجد الكتاب الذي تبحث عنه"
 msgstr ""
 
-#: inc/custom_posts_types.php:416
-msgid "أرشيف الخلفيات"
+#: inc/CPT/BooksPostType.php:32
+msgid "غلاف الكتاب"
 msgstr ""
 
-#: inc/custom_posts_types.php:417
-msgid "مرفوع لهذه الخلفية"
+#: inc/CPT/BooksPostType.php:33
+msgid "اختر صورة غلاف"
 msgstr ""
 
-#: inc/custom_posts_types.php:418
-msgid "تصفية قائمة الخلفيات"
+#: inc/CPT/BooksPostType.php:34
+msgid "إزالة صورة الغلاف"
 msgstr ""
 
-#: inc/custom_posts_types.php:419
-msgid "قائمة الخلفيات"
+#: inc/CPT/BooksPostType.php:35
+msgid "اختيار كصورة غلاف"
 msgstr ""
 
-#: inc/custom_posts_types.php:457 inc/custom_posts_types.php:459
-#: inc/custom_posts_types.php:476
+#: inc/CPT/FaqPostType.php:20 inc/CPT/FaqPostType.php:22
+#: inc/CPT/FaqPostType.php:42
 msgid "الأسئلة الشائعة"
 msgstr ""
 
-#: inc/custom_posts_types.php:458
+#: inc/CPT/FaqPostType.php:21
 msgid "سؤال"
 msgstr ""
 
-#: inc/custom_posts_types.php:460
+#: inc/CPT/FaqPostType.php:23
 msgid "كل الأسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:461 inc/custom_posts_types.php:464
+#: inc/CPT/FaqPostType.php:24 inc/CPT/FaqPostType.php:27
 msgid "سؤال جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:462
+#: inc/CPT/FaqPostType.php:25
 msgid "إضافة سؤال جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:463
+#: inc/CPT/FaqPostType.php:26
 msgid "تعديل السؤال"
 msgstr ""
 
-#: inc/custom_posts_types.php:465
+#: inc/CPT/FaqPostType.php:28
 msgid "عرض السؤال"
 msgstr ""
 
-#: inc/custom_posts_types.php:466
+#: inc/CPT/FaqPostType.php:29
 msgid "بحث عن سؤال"
 msgstr ""
 
-#: inc/custom_posts_types.php:467
+#: inc/CPT/FaqPostType.php:30
 msgid "لا يوجد أسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:468
+#: inc/CPT/FaqPostType.php:31
 msgid "لا يوجد أسئلة في المحذوفات"
 msgstr ""
 
-#: inc/custom_posts_types.php:469
+#: inc/CPT/FaqPostType.php:32
 msgid "أرشيف الأسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:470
+#: inc/CPT/FaqPostType.php:33
 msgid "مرفوع لهذا السؤال"
 msgstr ""
 
-#: inc/custom_posts_types.php:471
+#: inc/CPT/FaqPostType.php:34
 msgid "تصفية قائمة الأسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:472
+#: inc/CPT/FaqPostType.php:35
 msgid "قائمة الأسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:512 inc/custom_posts_types.php:514
-#: inc/custom_posts_types.php:527
-msgid "تصنيفات الأخبار"
+#: inc/CPT/InfoDetailsPostType.php:30 inc/CPT/InfoDetailsPostType.php:32
+#: inc/CPT/InfoDetailsPostType.php:33 inc/CPT/InfoDetailsPostType.php:53
+msgid "الموضوعات"
 msgstr ""
 
-#: inc/custom_posts_types.php:513
-msgid "تصنيف الخبر"
+#: inc/CPT/InfoDetailsPostType.php:31
+msgid "موضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:515
-msgid "كل تصنيفات الأخبار"
+#: inc/CPT/InfoDetailsPostType.php:34 inc/CPT/InfoDetailsPostType.php:37
+msgid "موضوع جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:516
-msgid "تعديل التصنيف"
+#: inc/CPT/InfoDetailsPostType.php:35
+msgid "إضافة موضوع جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:517 inc/custom_posts_types.php:743
-msgid "عرض التصنيف"
+#: inc/CPT/InfoDetailsPostType.php:36
+msgid "تعديل موضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:518
-msgid "تحديث اسم التصنيف"
+#: inc/CPT/InfoDetailsPostType.php:38
+msgid "عرض الموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:519
-msgid "إضافة تصنيف خبر"
+#: inc/CPT/InfoDetailsPostType.php:39
+msgid "بحث عن موضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:520
-msgid "اسم التصنيف"
+#: inc/CPT/InfoDetailsPostType.php:40
+msgid "لم نجد الموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:521
-msgid "التصنيف الأب"
+#: inc/CPT/InfoDetailsPostType.php:41
+msgid "صورة الموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:522
-msgid "بحث في تصنيفات الأخبار"
+#: inc/CPT/InfoDetailsPostType.php:42
+msgid "استعملها ك صورة للموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:523
-msgid "تصنيفات أخبار مشهورة"
+#: inc/CPT/InfoDetailsPostType.php:43
+msgid "أرشيف الموضوعات"
 msgstr ""
 
-#: inc/custom_posts_types.php:549 inc/custom_posts_types.php:551
-#: inc/custom_posts_types.php:564
-msgid "مجموعات الأخبار"
+#: inc/CPT/InfoDetailsPostType.php:44
+msgid "إضافة إلى الموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:550
-msgid "مجموعة"
+#: inc/CPT/InfoDetailsPostType.php:45
+msgid "المرفوع لهذا الموضوع"
 msgstr ""
 
-#: inc/custom_posts_types.php:552
-msgid "كل مجموعات الأخبار"
+#: inc/CPT/InfoDetailsPostType.php:46
+msgid "قائمة الموضوعات"
 msgstr ""
 
-#: inc/custom_posts_types.php:553
-msgid "تعديل المجموعة"
+#: inc/CPT/NewsPostType.php:22 inc/CPT/NewsPostType.php:24
+#: inc/CPT/NewsPostType.php:45
+msgid "الأخبار"
 msgstr ""
 
-#: inc/custom_posts_types.php:554
-msgid "عرض المجموعة"
+#: inc/CPT/NewsPostType.php:23
+msgid "خبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:555
-msgid "تحديث اسم المجموعة"
+#: inc/CPT/NewsPostType.php:25
+msgid "كل الأخبار"
 msgstr ""
 
-#: inc/custom_posts_types.php:556
-msgid "إضافة مجموعة أخبار"
+#: inc/CPT/NewsPostType.php:26 inc/CPT/NewsPostType.php:29
+msgid "خبر جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:557
-msgid "اسم المجموعة"
+#: inc/CPT/NewsPostType.php:27
+msgid "إضافة خبر جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:558
-msgid "المجموعة الأب"
+#: inc/CPT/NewsPostType.php:28
+msgid "تعديل خبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:559
-msgid "بحث في مجموعات الأخبار"
+#: inc/CPT/NewsPostType.php:30
+msgid "عرض الخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:560
-msgid "مجموعات أخبار مشهورة"
+#: inc/CPT/NewsPostType.php:31
+msgid "بحث عن خبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:586 inc/custom_posts_types.php:591
-msgid "هاشتاجات الأخبار"
+#: inc/CPT/NewsPostType.php:32
+msgid "لم نجد الخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:587
-msgid "هاشتاج خبر"
+#: inc/CPT/NewsPostType.php:33
+msgid "صورة الخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:613 inc/custom_posts_types.php:615
-#: inc/custom_posts_types.php:620
-msgid "تصنيفات الصور"
+#: inc/CPT/NewsPostType.php:34
+msgid "استعملها ك صورة للخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:614
-msgid "تصنيف صورة"
+#: inc/CPT/NewsPostType.php:35
+msgid "أرشيف الأخبار"
 msgstr ""
 
-#: inc/custom_posts_types.php:616
-msgid "كل التصنفات"
+#: inc/CPT/NewsPostType.php:36
+msgid "إضافة إلى الخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:641 inc/custom_posts_types.php:643
-#: inc/custom_posts_types.php:648
-msgid "هاشتاجات الصور"
+#: inc/CPT/NewsPostType.php:37
+msgid "المرفوع لهذا الخبر"
 msgstr ""
 
-#: inc/custom_posts_types.php:642
-msgid "هاشتاج صورة"
+#: inc/CPT/NewsPostType.php:38
+msgid "قائمة الأخبار"
 msgstr ""
 
-#: inc/custom_posts_types.php:644
-msgid "كل الهاشتاجات"
+#: inc/CPT/PhotosPostType.php:21 inc/CPT/PhotosPostType.php:31
+#: inc/CPT/PhotosPostType.php:38
+msgid "أرشيف المعالم والصور"
 msgstr ""
 
-#: inc/custom_posts_types.php:669 inc/custom_posts_types.php:674
+#: inc/CPT/PhotosPostType.php:22
+msgid "صورة/معلم"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:23
+msgid "المعالم والصور"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:24
+msgid "كل الصور"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:25 inc/CPT/PhotosPostType.php:28
+msgid "معلم/صورة جديدة"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:26
+msgid "إضافة معلم/صورة جديدة"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:27
+msgid "تعديل معلم/صورة"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:29
+msgid "عرض المعلم/الصورة"
+msgstr ""
+
+#: inc/CPT/PhotosPostType.php:30
+msgid "اختر الصورة من هنا"
+msgstr ""
+
+#: inc/CPT/ProductsPostType.php:19 inc/CPT/ProductsPostType.php:27
+msgid "منتجاتنا"
+msgstr ""
+
+#: inc/CPT/ProductsPostType.php:20
+msgid "منتج"
+msgstr ""
+
+#: inc/CPT/Taxonomies/BookAuthors.php:18 inc/CPT/Taxonomies/BookAuthors.php:26
 msgid "مؤلفين الكتب"
 msgstr ""
 
-#: inc/custom_posts_types.php:670
+#: inc/CPT/Taxonomies/BookAuthors.php:19
 msgid "كاتب"
 msgstr ""
 
-#: inc/custom_posts_types.php:695 inc/custom_posts_types.php:697
-#: inc/custom_posts_types.php:716
-msgid "أقسام المكتبة"
-msgstr ""
-
-#: inc/custom_posts_types.php:696
-msgid "قسم"
-msgstr ""
-
-#: inc/custom_posts_types.php:698
-msgid "جميع الأقسام"
-msgstr ""
-
-#: inc/custom_posts_types.php:699
-msgid "تعديل قسم"
-msgstr ""
-
-#: inc/custom_posts_types.php:700
-msgid "عرض قسم"
-msgstr ""
-
-#: inc/custom_posts_types.php:701
-msgid "تغيير اسم القسم"
-msgstr ""
-
-#: inc/custom_posts_types.php:702
-msgid "إضافة قسم جديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:703
-msgid "اسم القسم الجديد"
-msgstr ""
-
-#: inc/custom_posts_types.php:704
-msgid "اسم القسم الأب"
-msgstr ""
-
-#: inc/custom_posts_types.php:705
-msgid "القسم الأب:"
-msgstr ""
-
-#: inc/custom_posts_types.php:706
-msgid "بحث في الأقسام"
-msgstr ""
-
-#: inc/custom_posts_types.php:707
-msgid "أكثر الأقسام تفاعلا"
-msgstr ""
-
-#: inc/custom_posts_types.php:708
-msgid "افصل الأقسام بفواصل"
-msgstr ""
-
-#: inc/custom_posts_types.php:709
-msgid "إضافة أو حذف قسم"
-msgstr ""
-
-#: inc/custom_posts_types.php:710
-msgid "اختر من أكثر الأقسام استخداما"
-msgstr ""
-
-#: inc/custom_posts_types.php:711 inc/custom_posts_types.php:712
-msgid "لا يوجد أقسام"
-msgstr ""
-
-#: inc/custom_posts_types.php:738 inc/custom_posts_types.php:740
-#: inc/custom_posts_types.php:759
+#: inc/CPT/Taxonomies/FaqCategories.php:18
+#: inc/CPT/Taxonomies/FaqCategories.php:20
+#: inc/CPT/Taxonomies/FaqCategories.php:42
 msgid "تصنيفات الأسئلة"
 msgstr ""
 
-#: inc/custom_posts_types.php:739
+#: inc/CPT/Taxonomies/FaqCategories.php:19
 msgid "تصنيف"
 msgstr ""
 
-#: inc/custom_posts_types.php:741
+#: inc/CPT/Taxonomies/FaqCategories.php:21
 msgid "جميع التصنيفات"
 msgstr ""
 
-#: inc/custom_posts_types.php:742
+#: inc/CPT/Taxonomies/FaqCategories.php:22
 msgid "تعديل تصنيف"
 msgstr ""
 
-#: inc/custom_posts_types.php:744
+#: inc/CPT/Taxonomies/FaqCategories.php:23
+#: inc/CPT/Taxonomies/NewsCategories.php:23
+msgid "عرض التصنيف"
+msgstr ""
+
+#: inc/CPT/Taxonomies/FaqCategories.php:24
 msgid "تغيير اسم التصنيف"
 msgstr ""
 
-#: inc/custom_posts_types.php:745
+#: inc/CPT/Taxonomies/FaqCategories.php:25
 msgid "إضافة تصنيف جديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:746
+#: inc/CPT/Taxonomies/FaqCategories.php:26
 msgid "اسم التصنيف الجديد"
 msgstr ""
 
-#: inc/custom_posts_types.php:747
+#: inc/CPT/Taxonomies/FaqCategories.php:27
 msgid "اسم التصنيف الأب"
 msgstr ""
 
-#: inc/custom_posts_types.php:748
+#: inc/CPT/Taxonomies/FaqCategories.php:28
 msgid "التصنيف الأب:"
 msgstr ""
 
-#: inc/custom_posts_types.php:749
+#: inc/CPT/Taxonomies/FaqCategories.php:29
 msgid "بحث في التصنيفات"
 msgstr ""
 
-#: inc/custom_posts_types.php:750
+#: inc/CPT/Taxonomies/FaqCategories.php:30
 msgid "أكثر التصنيفات تفاعلا"
 msgstr ""
 
-#: inc/custom_posts_types.php:751
+#: inc/CPT/Taxonomies/FaqCategories.php:31
 msgid "افصل التصنيفات بفواصل"
 msgstr ""
 
-#: inc/custom_posts_types.php:752
+#: inc/CPT/Taxonomies/FaqCategories.php:32
 msgid "إضافة أو حذف تصنيف"
 msgstr ""
 
-#: inc/custom_posts_types.php:753
+#: inc/CPT/Taxonomies/FaqCategories.php:33
 msgid "اختر من أكثر التصنيفات استخداما"
 msgstr ""
 
-#: inc/custom_posts_types.php:754 inc/custom_posts_types.php:755
+#: inc/CPT/Taxonomies/FaqCategories.php:34
+#: inc/CPT/Taxonomies/FaqCategories.php:35
 msgid "لا يوجد تصنيفات"
 msgstr ""
 
-#: inc/customizer/custom-controls.php:40
-msgid "No contact forms found"
-msgstr ""
-
-#: inc/customizer/custom-controls.php:52
-msgid "Select your contact form"
-msgstr ""
-
-#: inc/customizer/customizer.php:15
-msgid "Blog Header Image"
+#: inc/CPT/Taxonomies/LibrarySections.php:18
+#: inc/CPT/Taxonomies/LibrarySections.php:20
+#: inc/CPT/Taxonomies/LibrarySections.php:42
+msgid "أقسام المكتبة"
 msgstr ""
 
-#: inc/customizer/panels/about.php:16 inc/customizer/panels/about.php:54
-#: inc/customizer/panels/sections-order.php:28
-#: inc/customizer/panels/sections-order.php:58
-#: inc/customizer/panels/sections-order.php:88
-#: inc/customizer/panels/sections-order.php:118
-#: inc/customizer/panels/sections-order.php:148
-#: inc/customizer/panels/sections-order.php:178
-#: inc/customizer/panels/sections-order.php:208
-#: inc/customizer/panels/sections-order.php:238
-#: inc/customizer/panels/sections-order.php:269 sections/front-page-about.php:10
-msgid "About"
-msgstr "من نحن"
-
-#: inc/customizer/panels/about.php:17
-msgid "Control various options for about section from front page."
-msgstr ""
-
-#: inc/customizer/panels/about.php:26 inc/customizer/panels/counter.php:26
-#: inc/customizer/panels/projects.php:26 inc/customizer/panels/services.php:26
-#: inc/customizer/panels/team.php:26
-msgid "General"
-msgstr ""
-
-#: inc/customizer/panels/about.php:44 inc/customizer/panels/contact-us.php:48
-#: inc/customizer/panels/counter.php:44 inc/customizer/panels/latest-info.php:48
-#: inc/customizer/panels/latest-news.php:48
-#: inc/customizer/panels/lectures.php:38 inc/customizer/panels/projects.php:44
-#: inc/customizer/panels/services.php:44 inc/customizer/panels/team.php:44
-#: inc/customizer/panels/testimonials.php:49
-msgid "Show this section?"
-msgstr ""
-
-#: inc/customizer/panels/about.php:61 inc/customizer/panels/contact-us.php:65
-#: inc/customizer/panels/latest-info.php:65
-#: inc/customizer/panels/latest-news.php:65
-#: inc/customizer/panels/projects.php:61 inc/customizer/panels/services.php:61
-#: inc/customizer/panels/team.php:61 inc/customizer/panels/testimonials.php:66
-msgid "Title"
-msgstr "العنوان"
-
-#: inc/customizer/panels/about.php:62 inc/customizer/panels/contact-us.php:66
-#: inc/customizer/panels/latest-info.php:66
-#: inc/customizer/panels/latest-news.php:66
-#: inc/customizer/panels/projects.php:62 inc/customizer/panels/services.php:62
-#: inc/customizer/panels/team.php:62 inc/customizer/panels/testimonials.php:67
-msgid "Add the title for this section."
-msgstr ""
-
-#: inc/customizer/panels/about.php:72 sections/front-page-about.php:11
-msgid ""
-"It is an amazng one-page theme with great features that offers an incredible "
-"experience. It is easy to install, make changes, adapt for your business. A "
-"modern design with clean lines and styling for a wide variety of content, "
-"exactly how a business design should be. You can add as many images as you "
-"want to the main header area and turn them into slider."
-msgstr ""
-
-#: inc/customizer/panels/about.php:79 inc/customizer/panels/contact-us.php:83
-#: inc/customizer/panels/jumbotron.php:121
-#: inc/customizer/panels/latest-info.php:83
-#: inc/customizer/panels/latest-news.php:83
-#: inc/customizer/panels/projects.php:79 inc/customizer/panels/services.php:79
-#: inc/customizer/panels/team.php:79
-msgid "Entry"
-msgstr ""
-
-#: inc/customizer/panels/about.php:80 inc/customizer/panels/contact-us.php:84
-#: inc/customizer/panels/latest-info.php:84
-#: inc/customizer/panels/latest-news.php:84
-#: inc/customizer/panels/projects.php:80 inc/customizer/panels/services.php:80
-#: inc/customizer/panels/team.php:80
-msgid "Add the content for this section."
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:28
-#: inc/customizer/panels/contact-us.php:58
-#: inc/customizer/panels/sections-order.php:35
-#: inc/customizer/panels/sections-order.php:65
-#: inc/customizer/panels/sections-order.php:95
-#: inc/customizer/panels/sections-order.php:125
-#: inc/customizer/panels/sections-order.php:155
-#: inc/customizer/panels/sections-order.php:185
-#: inc/customizer/panels/sections-order.php:215
-#: inc/customizer/panels/sections-order.php:245
-#: inc/customizer/panels/sections-order.php:276
-#: sections/front-page-contact-us.php:17
-msgid "Contact us"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:29
-msgid "Control various options for contact us section from front page."
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:76 sections/front-page-contact-us.php:18
-msgid "And we will get in touch as son as possible."
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:95 sections/front-page-contact-us.php:20
-msgid "Address"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:102
-msgid "Address Title"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:103
-msgid "Add the title for address block from this section."
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:113
-#: sections/front-page-contact-us.php:21
-msgid "Customer Support"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:120
-msgid "Customer Support Title"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:121
-msgid "Add the title for customer support block from this section."
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:137
-msgid ""
-"Select the contact form you'd like to display (powered by Contact Form 7)"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:158
-msgid "Contact Form Creation"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:159
-msgid "Install"
-msgstr ""
-
-#: inc/customizer/panels/contact-us.php:159
-msgid "and select a contact form to work this setting."
-msgstr ""
-
-#: inc/customizer/panels/counter.php:16
-#: inc/customizer/panels/sections-order.php:33
-#: inc/customizer/panels/sections-order.php:63
-#: inc/customizer/panels/sections-order.php:93
-#: inc/customizer/panels/sections-order.php:123
-#: inc/customizer/panels/sections-order.php:153
-#: inc/customizer/panels/sections-order.php:183
-#: inc/customizer/panels/sections-order.php:213
-#: inc/customizer/panels/sections-order.php:243
-#: inc/customizer/panels/sections-order.php:274
-msgid "Counter"
-msgstr ""
-
-#: inc/customizer/panels/counter.php:17
-msgid "Control various options for counter section from front page."
-msgstr ""
-
-#: inc/customizer/panels/counter.php:55
-msgid "Background"
-msgstr ""
-
-#: inc/customizer/panels/counter.php:68
-msgid "Type of Background"
-msgstr ""
-
-#: inc/customizer/panels/counter.php:73 inc/customizer/panels/counter.php:92
-#: inc/customizer/panels/jumbotron.php:48
-msgid "Image"
-msgstr ""
-
-#: inc/customizer/panels/counter.php:74 inc/customizer/panels/counter.php:114
-msgid "Color"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:43
-msgid "General Options"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:44
-msgid ""
-"You can change the site layout in this area as well as your contact details "
-"(the ones displayed in the header & footer) "
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:54
-msgid "Preloader"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:71
-msgid "Enable the preloader?"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:90
-msgid "Background Color"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:110
-msgid "Primary Color"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:130
-msgid "Secondly Color"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:144
-msgid "Logo"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:163
-msgid "Enter company name"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:164
-msgid "This field is best used when you don't have a professional image logo"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:184
-msgid "Image Site Logo"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:199
-msgid "Contact Details"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:200
-msgid ""
-"These are the contact details displayed in the Contact us section from front "
-"page."
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:217
-msgid "Facebook URL"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:218
-#: inc/customizer/panels/general-options.php:237
-#: inc/customizer/panels/general-options.php:256
-#: inc/customizer/panels/general-options.php:275
-#: inc/customizer/panels/general-options.php:295
-#: inc/customizer/panels/general-options.php:316
-#: inc/customizer/panels/general-options.php:336
-msgid "Will be displayed in the contact section from front page."
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:236
-msgid "Twitter URL"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:255
-msgid "LinkedIN URL"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:267
-#: sections/front-page-contact-us.php:13
-msgid "contact@site.com"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:274
-msgid "Email addr."
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:287
-#: sections/front-page-contact-us.php:14
-msgid "(555) 555-5555"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:294
-msgid "Phone number"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:307
-#: sections/front-page-contact-us.php:15
-msgid "Street 221B Baker Street, "
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:315
-msgid "Address 1"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:327
-#: sections/front-page-contact-us.php:16
-msgid "London, UK"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:335
-msgid "Address 2"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:347
-msgid "Footer Details"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:348
-msgid "Change the footer copyright message from here. Note: no HTML allowed."
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:366
-msgid "Display theme copyright in the footer?"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:385
-msgid "Footer Copyright"
-msgstr ""
-
-#: inc/customizer/panels/general-options.php:405
-msgid "Footer Logo"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:28
-msgid "Jumbotron"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:60
-msgid "Clean"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:67
-msgid "First word from title"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:68
-msgid "Add first word in the title."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:78
-msgid "Slick"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:85
-msgid "Second word from title"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:86
-msgid "Add second word in the title."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:96
-msgid "Pixel Perfect"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:103
-msgid "Third word from title"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:104
-msgid "Add third word in the title."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:114
-msgid ""
-"lldy is a great one-page theme, perfect for developers and designers but also "
-"for someone who just wants a new website for his business. Try it now!"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:122
-msgid "The content added in this field will show below title."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:133
-msgid "Learn more"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:140
-msgid "First button title"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:141
-msgid "Add the text for first button."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:157
-msgid "First button URL"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:158
-msgid "Add the URL for first button."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:169
-msgid "Download"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:176
-msgid "Second button title"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:177
-msgid "Add the text for second button."
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:193
-msgid "Second button URL"
-msgstr ""
-
-#: inc/customizer/panels/jumbotron.php:194
-msgid "Add the URL for second button."
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:28
-#: inc/customizer/panels/latest-info.php:58
-#: inc/customizer/panels/sections-order.php:36
-#: inc/customizer/panels/sections-order.php:66
-#: inc/customizer/panels/sections-order.php:96
-#: inc/customizer/panels/sections-order.php:126
-#: inc/customizer/panels/sections-order.php:156
-#: inc/customizer/panels/sections-order.php:186
-#: inc/customizer/panels/sections-order.php:216
-#: inc/customizer/panels/sections-order.php:246
-#: inc/customizer/panels/sections-order.php:277
-msgid "Latest Info"
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:29
-msgid "Control various options for latest info section from front page."
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:76
-#: inc/customizer/panels/latest-news.php:76
-#: sections/front-page-latest-info.php:11 sections/front-page-latest-news.php:11
-msgid ""
-"If you are interested in the latest articles in the industry, take a sneak "
-"peek at our blog. You’ve got nothing to loose!"
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:95
-#: inc/customizer/panels/latest-news.php:95
-#: sections/front-page-latest-news.php:12
-msgid "See blog"
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:102
-#: inc/customizer/panels/latest-info.php:119
-#: inc/customizer/panels/latest-news.php:102
-#: inc/customizer/panels/latest-news.php:119
-msgid "Button Text"
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:103
-#: inc/customizer/panels/latest-news.php:103
-msgid "Add the button text for this section."
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:120
-#: inc/customizer/panels/latest-news.php:120
-msgid "Add the button URL for this section."
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:137
-#: inc/customizer/panels/latest-news.php:137
-#: inc/customizer/panels/testimonials.php:106
-msgid "Number of posts"
-msgstr ""
-
-#: inc/customizer/panels/latest-info.php:138
-#: inc/customizer/panels/latest-news.php:138
-#: inc/customizer/panels/testimonials.php:107
-msgid "Add the number of posts to show in this section."
-msgstr ""
-
-#: inc/customizer/panels/latest-news.php:28
-#: inc/customizer/panels/latest-news.php:58
-#: inc/customizer/panels/sections-order.php:32
-#: inc/customizer/panels/sections-order.php:62
-#: inc/customizer/panels/sections-order.php:92
-#: inc/customizer/panels/sections-order.php:122
-#: inc/customizer/panels/sections-order.php:152
-#: inc/customizer/panels/sections-order.php:182
-#: inc/customizer/panels/sections-order.php:212
-#: inc/customizer/panels/sections-order.php:242
-#: inc/customizer/panels/sections-order.php:273 page-templates/news-team.php:64
-#: sections/front-page-latest-news.php:10 sections/front-page-news-bar.php:19
-msgid "Latest News"
-msgstr "آخر الأخبار"
-
-#: inc/customizer/panels/latest-news.php:29
-msgid "Control various options for latest news section from front page."
-msgstr ""
-
-#: inc/customizer/panels/lectures.php:18
-#: inc/customizer/panels/sections-order.php:37
-#: inc/customizer/panels/sections-order.php:67
-#: inc/customizer/panels/sections-order.php:97
-#: inc/customizer/panels/sections-order.php:127
-#: inc/customizer/panels/sections-order.php:157
-#: inc/customizer/panels/sections-order.php:187
-#: inc/customizer/panels/sections-order.php:217
-#: inc/customizer/panels/sections-order.php:247
-#: inc/customizer/panels/sections-order.php:278
-msgid "Lectures"
+#: inc/CPT/Taxonomies/LibrarySections.php:19
+msgid "قسم"
 msgstr ""
 
-#: inc/customizer/panels/lectures.php:19
-msgid "Control various options for Lectures section from front page."
+#: inc/CPT/Taxonomies/LibrarySections.php:21
+msgid "جميع الأقسام"
 msgstr ""
 
-#: inc/customizer/panels/projects.php:16 inc/customizer/panels/projects.php:54
-#: inc/customizer/panels/sections-order.php:29
-#: inc/customizer/panels/sections-order.php:59
-#: inc/customizer/panels/sections-order.php:89
-#: inc/customizer/panels/sections-order.php:119
-#: inc/customizer/panels/sections-order.php:149
-#: inc/customizer/panels/sections-order.php:179
-#: inc/customizer/panels/sections-order.php:209
-#: inc/customizer/panels/sections-order.php:239
-#: inc/customizer/panels/sections-order.php:270
-#: sections/front-page-counter.php:54 sections/front-page-projects.php:10
-msgid "Projects"
+#: inc/CPT/Taxonomies/LibrarySections.php:22
+msgid "تعديل قسم"
 msgstr ""
 
-#: inc/customizer/panels/projects.php:17
-msgid "Control various options for projects section from front page."
+#: inc/CPT/Taxonomies/LibrarySections.php:23
+msgid "عرض قسم"
 msgstr ""
 
-#: inc/customizer/panels/projects.php:72 sections/front-page-projects.php:11
-msgid "You'll love our work. Check it out!"
+#: inc/CPT/Taxonomies/LibrarySections.php:24
+msgid "تغيير اسم القسم"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:7
-msgid "Sections Order"
+#: inc/CPT/Taxonomies/LibrarySections.php:25
+msgid "إضافة قسم جديد"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:23
-msgid "First section"
+#: inc/CPT/Taxonomies/LibrarySections.php:26
+msgid "اسم القسم الجديد"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:24
-msgid ""
-"Please select what you want to display on the first section from front page."
+#: inc/CPT/Taxonomies/LibrarySections.php:27
+msgid "اسم القسم الأب"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:30
-#: inc/customizer/panels/sections-order.php:60
-#: inc/customizer/panels/sections-order.php:90
-#: inc/customizer/panels/sections-order.php:120
-#: inc/customizer/panels/sections-order.php:150
-#: inc/customizer/panels/sections-order.php:180
-#: inc/customizer/panels/sections-order.php:210
-#: inc/customizer/panels/sections-order.php:240
-#: inc/customizer/panels/sections-order.php:271
-#: inc/customizer/panels/testimonials.php:28
-#: inc/customizer/panels/testimonials.php:59
-#: sections/front-page-testimonials.php:10
-msgid "Testimonials"
+#: inc/CPT/Taxonomies/LibrarySections.php:28
+msgid "القسم الأب:"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:31
-#: inc/customizer/panels/sections-order.php:61
-#: inc/customizer/panels/sections-order.php:91
-#: inc/customizer/panels/sections-order.php:121
-#: inc/customizer/panels/sections-order.php:151
-#: inc/customizer/panels/sections-order.php:181
-#: inc/customizer/panels/sections-order.php:211
-#: inc/customizer/panels/sections-order.php:241
-#: inc/customizer/panels/sections-order.php:272
-#: inc/customizer/panels/services.php:16 inc/customizer/panels/services.php:54
-#: sections/front-page-services.php:10
-msgid "Services"
+#: inc/CPT/Taxonomies/LibrarySections.php:29
+msgid "بحث في الأقسام"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:34
-#: inc/customizer/panels/sections-order.php:64
-#: inc/customizer/panels/sections-order.php:94
-#: inc/customizer/panels/sections-order.php:124
-#: inc/customizer/panels/sections-order.php:154
-#: inc/customizer/panels/sections-order.php:184
-#: inc/customizer/panels/sections-order.php:214
-#: inc/customizer/panels/sections-order.php:244
-#: inc/customizer/panels/sections-order.php:275
-#: inc/customizer/panels/team.php:16 inc/customizer/panels/team.php:54
-#: sections/front-page-team.php:10
-msgid "Team"
+#: inc/CPT/Taxonomies/LibrarySections.php:30
+msgid "أكثر الأقسام تفاعلا"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:53
-msgid "Second section"
+#: inc/CPT/Taxonomies/LibrarySections.php:31
+msgid "افصل الأقسام بفواصل"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:54
-msgid ""
-"Please select what you want to display on the second section from front page."
+#: inc/CPT/Taxonomies/LibrarySections.php:32
+msgid "إضافة أو حذف قسم"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:83
-msgid "Third section"
+#: inc/CPT/Taxonomies/LibrarySections.php:33
+msgid "اختر من أكثر الأقسام استخداما"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:84
-msgid ""
-"Please select what you want to display on the third section from front page."
+#: inc/CPT/Taxonomies/LibrarySections.php:34
+#: inc/CPT/Taxonomies/LibrarySections.php:35
+msgid "لا يوجد أقسام"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:113
-msgid "Fourth section"
+#: inc/CPT/Taxonomies/NewsCategories.php:18
+#: inc/CPT/Taxonomies/NewsCategories.php:20
+#: inc/CPT/Taxonomies/NewsCategories.php:36
+msgid "تصنيفات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:114
-msgid ""
-"Please select what you want to display on the fourth section from front page."
+#: inc/CPT/Taxonomies/NewsCategories.php:19
+msgid "تصنيف الخبر"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:143
-msgid "Fifth section"
+#: inc/CPT/Taxonomies/NewsCategories.php:21
+msgid "كل تصنيفات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:144
-msgid ""
-"Please select what you want to display on the fifth section from front page."
+#: inc/CPT/Taxonomies/NewsCategories.php:22
+msgid "تعديل التصنيف"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:173
-msgid "Sixth section"
+#: inc/CPT/Taxonomies/NewsCategories.php:24
+msgid "تحديث اسم التصنيف"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:174
-msgid ""
-"Please select what you want to display on the sixth section from front page."
+#: inc/CPT/Taxonomies/NewsCategories.php:25
+msgid "إضافة تصنيف خبر"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:203
-msgid "Seventh section"
+#: inc/CPT/Taxonomies/NewsCategories.php:26
+msgid "اسم التصنيف"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:204
-msgid ""
-"Please select what you want to display on the seventh section from front page."
+#: inc/CPT/Taxonomies/NewsCategories.php:27
+msgid "التصنيف الأب"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:233
-msgid "Eighth section"
+#: inc/CPT/Taxonomies/NewsCategories.php:28
+msgid "بحث في تصنيفات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:234
-msgid ""
-"Please select what you want to display on the eighth section from front page."
+#: inc/CPT/Taxonomies/NewsCategories.php:29
+msgid "تصنيفات أخبار مشهورة"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:264
-msgid "Ninth section"
+#: inc/CPT/Taxonomies/NewsGroups.php:18 inc/CPT/Taxonomies/NewsGroups.php:20
+#: inc/CPT/Taxonomies/NewsGroups.php:36
+msgid "مجموعات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/sections-order.php:265
-msgid ""
-"Please select what you want to display on the ninth section from front page."
+#: inc/CPT/Taxonomies/NewsGroups.php:19
+msgid "مجموعة"
 msgstr ""
 
-#: inc/customizer/panels/services.php:17
-msgid "Control various options for services section from front page."
+#: inc/CPT/Taxonomies/NewsGroups.php:21
+msgid "كل مجموعات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/services.php:72 sections/front-page-services.php:12
-msgid ""
-"In order to help you grow your business, our carefully selected experts can "
-"advise you in in the following areas:"
+#: inc/CPT/Taxonomies/NewsGroups.php:22
+msgid "تعديل المجموعة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:18
-msgid "Single Post Options"
+#: inc/CPT/Taxonomies/NewsGroups.php:23
+msgid "عرض المجموعة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:19
-msgid ""
-"Control various blog options from here. Most of the options from this panel "
-"refer to the blog single page view. If you're not familiar with that term, "
-"please perform a Google search."
+#: inc/CPT/Taxonomies/NewsGroups.php:24
+msgid "تحديث اسم المجموعة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:29
-msgid "Global"
+#: inc/CPT/Taxonomies/NewsGroups.php:25
+msgid "إضافة مجموعة أخبار"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:30
-msgid ""
-"This section allows you to control how certain elements are displayed on the "
-"blog single page."
+#: inc/CPT/Taxonomies/NewsGroups.php:26
+msgid "اسم المجموعة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:47
-msgid "Posted on meta on single blog post"
+#: inc/CPT/Taxonomies/NewsGroups.php:27
+msgid "المجموعة الأب"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:48
-msgid "This will disable the posted on zone as well as the author name"
+#: inc/CPT/Taxonomies/NewsGroups.php:28
+msgid "بحث في مجموعات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:65
-msgid "Category meta on single blog post"
+#: inc/CPT/Taxonomies/NewsGroups.php:29
+msgid "مجموعات أخبار مشهورة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:66
-msgid "This will disable the posted in zone."
+#: inc/CPT/Taxonomies/NewsHashtags.php:18 inc/CPT/Taxonomies/NewsHashtags.php:26
+msgid "هاشتاجات الأخبار"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:85
-msgid "Tags meta on single blog post"
+#: inc/CPT/Taxonomies/NewsHashtags.php:19
+msgid "هاشتاج خبر"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:86
-msgid "This will disable the tagged with zone."
+#: inc/CPT/Taxonomies/PhotosCategories.php:18
+#: inc/CPT/Taxonomies/PhotosCategories.php:20
+#: inc/CPT/Taxonomies/PhotosCategories.php:28
+msgid "تصنيفات الصور"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:104
-msgid "Coments meta on single blog post"
+#: inc/CPT/Taxonomies/PhotosCategories.php:19
+msgid "تصنيف صورة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:105
-msgid "This will disable the comments header zone."
+#: inc/CPT/Taxonomies/PhotosCategories.php:21
+msgid "كل التصنفات"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:124
-msgid "Social sharing?"
+#: inc/CPT/Taxonomies/PhotosTags.php:18 inc/CPT/Taxonomies/PhotosTags.php:20
+#: inc/CPT/Taxonomies/PhotosTags.php:28
+msgid "هاشتاجات الصور"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:125
-msgid "Displayed right under the post title"
+#: inc/CPT/Taxonomies/PhotosTags.php:19
+msgid "هاشتاج صورة"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:142
-msgid "Author info box on single blog post"
+#: inc/CPT/Taxonomies/PhotosTags.php:21
+msgid "كل الهاشتاجات"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:143
-msgid "Displayed right at the end of the post"
+#: inc/CPT/VideoPostType.php:19 inc/CPT/VideoPostType.php:27
+msgid "المعلومات المرئية"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:160
-msgid "Related posts on single blog post"
+#: inc/CPT/VideoPostType.php:20
+msgid "معلومة مرئية"
 msgstr ""
 
-#: inc/customizer/panels/single-post-options.php:161
-msgid "Displayed at the end of the post"
+#: inc/CPT/WallpapersPostType.php:22 inc/CPT/WallpapersPostType.php:24
+#: inc/CPT/WallpapersPostType.php:44
+msgid "الخلفيات"
 msgstr ""
 
-#: inc/customizer/panels/team.php:17
-msgid "Control various options for team section from front page."
+#: inc/CPT/WallpapersPostType.php:23
+msgid "خلفية"
 msgstr ""
 
-#: inc/customizer/panels/team.php:72 sections/front-page-team.php:11
-msgid "Meet the people that are going to take your business to the next level."
+#: inc/CPT/WallpapersPostType.php:25
+msgid "كل الخلفيات"
 msgstr ""
 
-#: inc/customizer/panels/testimonials.php:29
-msgid "Control various options for testimonials section from front page."
+#: inc/CPT/WallpapersPostType.php:26 inc/CPT/WallpapersPostType.php:29
+msgid "خلفية جديدة"
 msgstr ""
 
-#: inc/customizer/panels/testimonials.php:87
-msgid "Background Image"
+#: inc/CPT/WallpapersPostType.php:27
+msgid "إضافة خلفية جديدة"
 msgstr ""
 
-#: inc/customizer/panels/testimonials.php:127
-msgid "Install JetPack"
+#: inc/CPT/WallpapersPostType.php:28
+msgid "تعديل الخلفية"
 msgstr ""
 
-#: inc/customizer/panels/testimonials.php:128
-msgid ""
-"Install JetPack and enable Custom Post Type: Testimonials to work these "
-"settings."
+#: inc/CPT/WallpapersPostType.php:30
+msgid "عرض الخلفية"
 msgstr ""
 
-#: inc/extras.php:32
-msgid "Pingback:"
+#: inc/CPT/WallpapersPostType.php:31
+msgid "بحث عن خلفية"
 msgstr ""
 
-#: inc/extras.php:32
-msgid "(Edit)"
+#: inc/CPT/WallpapersPostType.php:32
+msgid "لا يوجد خلفيات"
 msgstr ""
 
-#: inc/extras.php:46 inc/template-tags.php:8
-#, php-format
-msgid "%s"
+#: inc/CPT/WallpapersPostType.php:33
+msgid "لا يوجد خلفيات في المحذوفات"
 msgstr ""
 
-#: inc/extras.php:47
-#, php-format
-msgid "%1$s at %2$s"
+#: inc/CPT/WallpapersPostType.php:34
+msgid "أرشيف الخلفيات"
 msgstr ""
 
-#: inc/extras.php:52
-msgid "Your comment is awaiting moderation."
+#: inc/CPT/WallpapersPostType.php:35
+msgid "مرفوع لهذه الخلفية"
 msgstr ""
 
-#: inc/featured-posts.php:3
-msgid "المنشورات المميزة"
+#: inc/CPT/WallpapersPostType.php:36
+msgid "تصفية قائمة الخلفيات"
 msgstr ""
 
-#: inc/featured-posts.php:13
-msgid "تحديد هذا التدوينة كمميزة"
+#: inc/CPT/WallpapersPostType.php:37
+msgid "قائمة الخلفيات"
 msgstr ""
 
-#: inc/infos-handler.php:25 template-parts/infos-drawer.php:35
+#: inc/Components/InfosHandler.php:35 template-parts/infos-drawer.php:35
 #: template-parts/infos-drawer.php:101 template-parts/infos-drawer.php:108
 msgid "All Infos"
 msgstr "جميع المعلومات"
 
-#: inc/infos-handler.php:41 inc/infos-handler.php:79
+#: inc/Components/InfosHandler.php:51 inc/Components/InfosHandler.php:89
 #: page-templates/news-team.php:101 page-templates/news-team.php:102
 #: search.php:77 sections/front-page-slider.php:40
 msgid "Continue Reading"
 msgstr "أكمل القراءة"
 
-#: inc/register.sidebars.php:11
+#: inc/Components/NewsBar.php:57 inc/Components/NewsBar.php:58
+msgid "News Bar"
+msgstr "شريط الأخبار"
+
+#: inc/Components/RelatedPosts.php:73
+msgid "معلومات ذات صلة"
+msgstr ""
+
+#: inc/Components/TeamsSettings/ContentTeam.php:25
+msgid "Qudsinfo Content Team settings"
+msgstr "إعدادات فريق المحتوى"
+
+#: inc/Components/TeamsSettings/LecturesTeam.php:25
+msgid "Qudsinfo Lectures Team settings"
+msgstr "إعدادات فريق المحاضرات"
+
+#: inc/Components/TeamsSettings/MediaTeam.php:23
+msgid "Qudsinfo Media Team settings"
+msgstr "إعدادات فريق الميديا"
+
+#: inc/Components/TeamsSettings/NewsTeam.php:23
+msgid "Qudsinfo News Team settings"
+msgstr "إعدادات فريق الأخبار"
+
+#: inc/Components/TeamsSettings/TeamsSettings.php:56
+#: inc/Components/TeamsSettings/TeamsSettings.php:57
+msgid "Qudsinfo Teams"
+msgstr "أفرقة معلومة مقدسية"
+
+#: inc/Components/TeamsSettings/TeamsSettings.php:85
+msgid ""
+"There was an error adding this setting. Please try again.  If this persists, "
+"shoot us an email."
+msgstr ""
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:25
+#: sections/front-page-latest-info.php:10
+msgid "Our Info"
+msgstr "معلوماتنا"
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:30 search.php:47
+#: searchform.php:26
+msgid "News"
+msgstr "الأخبار"
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:35
+msgid "Library"
+msgstr ""
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:40
+msgid "Closer to Jerusalem"
+msgstr ""
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:45
+#, fuzzy
+#| msgid "Quiz Type"
+msgid "Quizzes"
+msgstr "نوع المسابقة"
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:50
+#, fuzzy
+#| msgid "Landmark History:"
+msgid "Landmarks"
+msgstr "تاريخ المعلم:"
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:55
+msgid "Aqsa Distance"
+msgstr ""
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:60
+#, fuzzy
+#| msgid "Wallpaper type"
+msgid "Wallpapers"
+msgstr "نوع الصورة"
+
+#: inc/Components/ThemeSettings/ServicesSettings.php:65
+msgid "On this day"
+msgstr ""
+
+#: inc/Components/ThemeSettings/ThemeSettings.php:29
+#, fuzzy
+#| msgid "Qudsinfo News Team settings"
+msgid "Qudsinfo Settings"
+msgstr "إعدادات فريق الأخبار"
+
+#: inc/Components/ThemeSettings/ThemeSettings.php:53
+#: sections/front-page-services.php:11
+msgid "Our Services"
+msgstr "ماذا نقدم؟"
+
+#: inc/Helpers.php:38
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/Helpers.php:40
+#, php-format
+msgid "تاغ: %s"
+msgstr ""
+
+#: inc/Helpers.php:42
+#, php-format
+msgid "الكاتب: %s"
+msgstr ""
+
+#: inc/Helpers.php:44
+#, php-format
+msgid "السنة: %s"
+msgstr ""
+
+#: inc/Helpers.php:46
+#, php-format
+msgid "الشهر: %s"
+msgstr ""
+
+#: inc/Helpers.php:48
+#, php-format
+msgid "اليوم: %s"
+msgstr ""
+
+#: inc/Helpers.php:70
+#, php-format
+msgid "أرشيف: %s"
+msgstr ""
+
+#: inc/Helpers.php:74
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/Helpers.php:76
+#, php-format
+msgid "بحث عن : %1$s"
+msgstr ""
+
+#: inc/Helpers.php:78
+msgid "الأرشيف"
+msgstr ""
+
+#: inc/Helpers.php:124 yarpp-template-thumbnail.php:7
+msgid "See more:"
+msgstr "اقرأ أيضاً:"
+
+#: inc/Sidebars/Sidebars.php:27
 msgid "Blog Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:13 inc/register.sidebars.php:23
+#: inc/Sidebars/Sidebars.php:29 inc/Sidebars/Sidebars.php:39
 msgid "The widgets added in this sidebar will appear in blog page."
 msgstr ""
 
-#: inc/register.sidebars.php:21
+#: inc/Sidebars/Sidebars.php:37
 msgid "Info Page"
 msgstr ""
 
-#: inc/register.sidebars.php:32
+#: inc/Sidebars/Sidebars.php:48
 msgid "Footer Sidebar 1"
 msgstr ""
 
-#: inc/register.sidebars.php:34
+#: inc/Sidebars/Sidebars.php:50
 msgid ""
 "The widgets added in this sidebar will appear in first block from footer."
 msgstr ""
 
-#: inc/register.sidebars.php:43
+#: inc/Sidebars/Sidebars.php:59
 msgid "Footer Sidebar 2"
 msgstr ""
 
-#: inc/register.sidebars.php:45
+#: inc/Sidebars/Sidebars.php:61
 msgid ""
 "The widgets added in this sidebar will appear in second block from footer."
 msgstr ""
 
-#: inc/register.sidebars.php:54
+#: inc/Sidebars/Sidebars.php:70
 msgid "Footer Sidebar 3"
 msgstr ""
 
-#: inc/register.sidebars.php:56
+#: inc/Sidebars/Sidebars.php:72
 msgid ""
 "The widgets added in this sidebar will appear in third block from footer."
 msgstr ""
 
-#: inc/register.sidebars.php:65
+#: inc/Sidebars/Sidebars.php:81
 msgid "Front page - About Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:67
+#: inc/Sidebars/Sidebars.php:83
 msgid ""
 "The widgets added in this sidebar will appear in about section from front "
 "page."
 msgstr ""
 
-#: inc/register.sidebars.php:76
+#: inc/Sidebars/Sidebars.php:92
 msgid "Front page - Projects Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:78
+#: inc/Sidebars/Sidebars.php:94
 msgid ""
 "The widgets added in this sidebar will appear in projects section from front "
 "page."
 msgstr ""
 
-#: inc/register.sidebars.php:87
+#: inc/Sidebars/Sidebars.php:103
 msgid "Front page - Services Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:89
+#: inc/Sidebars/Sidebars.php:105
 msgid ""
 "The widgets added in this sidebar will appear in services section from front "
 "page."
 msgstr ""
 
-#: inc/register.sidebars.php:98
+#: inc/Sidebars/Sidebars.php:114
 msgid "Front page - Counter Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:100
+#: inc/Sidebars/Sidebars.php:116
 msgid ""
 "The widgets added in this sidebar will appear in counter section from front "
 "page."
 msgstr ""
 
-#: inc/register.sidebars.php:109
+#: inc/Sidebars/Sidebars.php:125
 msgid "Front page - Team Sidebar"
 msgstr ""
 
-#: inc/register.sidebars.php:111
+#: inc/Sidebars/Sidebars.php:127
 msgid ""
 "The widgets added in this sidebar will appear in team section from front page."
 msgstr ""
 
-#: inc/register.sidebars.php:121
-msgid "WooCommerce Sidebar"
+#: inc/Widgets/FaqWidget.php:13
+msgid "FAQs"
+msgstr "الأسئلة الشائعة"
+
+#: inc/Widgets/FaqWidget.php:13
+msgid "This widget will show random FAQs."
 msgstr ""
 
-#: inc/register.sidebars.php:123
-msgid "The widgets added in this sidebar will appear in WooCommerce pages."
+#: inc/Widgets/FaqWidget.php:35
+msgid "Frequent Questions"
+msgstr "أسئلة شائعة"
+
+#: inc/Widgets/FaqWidget.php:62
+msgid "Close"
+msgstr "إغلاق"
+
+#: inc/Widgets/FaqWidget.php:92
+msgid "No FAQs found."
 msgstr ""
 
-#: inc/template-tags.php:10
-#, php-format
-msgid "تاغ: %s"
+#: inc/Widgets/FaqWidget.php:110 inc/Widgets/RecentPostsWidget.php:83
+msgid "[Illdy] - Recent Posts"
 msgstr ""
 
-#: inc/template-tags.php:12
-#, php-format
-msgid "الكاتب: %s"
+#: inc/Widgets/FaqWidget.php:111 inc/Widgets/RecentPostsWidget.php:84
+msgid "4"
 msgstr ""
 
-#: inc/template-tags.php:14
-#, php-format
-msgid "السنة: %s"
+#: inc/Widgets/FaqWidget.php:119 inc/Widgets/RecentPostsWidget.php:89
+msgid "Display title?"
 msgstr ""
 
-#: inc/template-tags.php:16
-#, php-format
-msgid "الشهر: %s"
+#: inc/Widgets/FaqWidget.php:123 inc/Widgets/RecentPostsWidget.php:93
+msgid "Title:"
 msgstr ""
 
-#: inc/template-tags.php:18
-#, php-format
-msgid "اليوم: %s"
+#: inc/Widgets/FaqWidget.php:130 inc/Widgets/RecentPostsWidget.php:98
+msgid "Number of posts:"
 msgstr ""
 
-#: inc/template-tags.php:40
-#, php-format
-msgid "أرشيف: %s"
+#: inc/Widgets/RecentPostsWidget.php:11
+msgid "[QudsInfo] - Recent Infos"
 msgstr ""
 
-#: inc/template-tags.php:44
-#, php-format
-msgid "%1$s"
+#: inc/Widgets/RecentPostsWidget.php:11
+msgid ""
+"Thiw widget will display the latest infos with thumbnail image on the left "
+"side."
 msgstr ""
 
-#: inc/template-tags.php:46
-#, php-format
-msgid "بحث عن : %1$s"
-msgstr ""
-
-#: inc/template-tags.php:48
-msgid "الأرشيف"
+#: inc/Widgets/RecentPostsWidget.php:66
+msgid "No posts found."
 msgstr ""
 
 #: page-news.php:51
@@ -1995,6 +1254,11 @@ msgstr "عدد الأخبار التي تم نشرها"
 msgid "No. of reports written"
 msgstr "عدد التقارير التي تم إعدادها"
 
+#: page-templates/news-team.php:64 sections/front-page-latest-news.php:10
+#: sections/front-page-news-bar.php:21
+msgid "Latest News"
+msgstr "آخر الأخبار"
+
 #: page-templates/news-team.php:110
 msgid "Open News Page"
 msgstr "عرض كل اﻷخبار"
@@ -2023,6 +1287,10 @@ msgstr "ابدأ المسابقة"
 msgid "No quizzes yet."
 msgstr "لا يوجد أي مسابقات بعد."
 
+#: page-templates/team.php:32 page-templates/team.php:35
+msgid "Contact"
+msgstr "تواصل"
+
 #: page-templates/wallpapers.php:41 single-wallpapers.php:40
 msgid "Desktop"
 msgstr "سطح المكتب"
@@ -2039,10 +1307,6 @@ msgstr "معلومات"
 msgid "Photos"
 msgstr "الصور"
 
-#: search.php:47 searchform.php:26
-msgid "News"
-msgstr "الأخبار"
-
 #: search.php:48 searchform.php:27
 msgid "Books"
 msgstr "الكتب"
@@ -2051,7 +1315,7 @@ msgstr "الكتب"
 msgid "Search in infos, pictures..."
 msgstr "بحث في المعلومات والصور والأخبار ..."
 
-#: searchform.php:18 template-parts/header-responsive-menu.php:11
+#: searchform.php:18
 msgid "Search for:"
 msgstr "بحث عن:"
 
@@ -2090,6 +1354,19 @@ msgstr "المكتوبة"
 #: sections/blog-bottom-header.php:84
 msgid "Videos"
 msgstr "المرئية"
+
+#: sections/front-page-about.php:10
+msgid "About"
+msgstr "من نحن"
+
+#: sections/front-page-about.php:11
+msgid ""
+"It is an amazng one-page theme with great features that offers an incredible "
+"experience. It is easy to install, make changes, adapt for your business. A "
+"modern design with clean lines and styling for a wide variety of content, "
+"exactly how a business design should be. You can add as many images as you "
+"want to the main header area and turn them into slider."
+msgstr ""
 
 #: sections/front-page-about.php:12
 msgid ""
@@ -2139,6 +1416,38 @@ msgstr "عرض المعلومة"
 msgid "View All Information"
 msgstr "عرض جميع المعلومات"
 
+#: sections/front-page-contact-us.php:13
+msgid "contact@site.com"
+msgstr ""
+
+#: sections/front-page-contact-us.php:14
+msgid "(555) 555-5555"
+msgstr ""
+
+#: sections/front-page-contact-us.php:15
+msgid "Street 221B Baker Street, "
+msgstr ""
+
+#: sections/front-page-contact-us.php:16
+msgid "London, UK"
+msgstr ""
+
+#: sections/front-page-contact-us.php:17
+msgid "Contact us"
+msgstr ""
+
+#: sections/front-page-contact-us.php:18
+msgid "And we will get in touch as son as possible."
+msgstr ""
+
+#: sections/front-page-contact-us.php:20
+msgid "Address"
+msgstr ""
+
+#: sections/front-page-contact-us.php:21
+msgid "Customer Support"
+msgstr ""
+
 #: sections/front-page-contact-us.php:73
 msgid "البريد الإلكتروني :"
 msgstr ""
@@ -2147,15 +1456,15 @@ msgstr ""
 msgid "رقم الهاتف :"
 msgstr ""
 
-#: sections/front-page-contact-us.php:85 widgets/class-widget-person.php:93
+#: sections/front-page-contact-us.php:85
 msgid "Twitter"
 msgstr ""
 
-#: sections/front-page-contact-us.php:88 widgets/class-widget-person.php:92
+#: sections/front-page-contact-us.php:88
 msgid "Facebook"
 msgstr ""
 
-#: sections/front-page-contact-us.php:91 widgets/class-widget-person.php:94
+#: sections/front-page-contact-us.php:91
 msgid "LinkedIn"
 msgstr ""
 
@@ -2165,6 +1474,10 @@ msgstr ""
 
 #: sections/front-page-contact-us.php:119
 msgid "إرسال"
+msgstr ""
+
+#: sections/front-page-counter.php:54 sections/front-page-projects.php:10
+msgid "Projects"
 msgstr ""
 
 #: sections/front-page-counter.php:55
@@ -2179,13 +1492,19 @@ msgstr ""
 msgid "Biggest Quds Site on the Internet"
 msgstr "أكبر موقع مقدسي على الإنترنت"
 
-#: sections/front-page-latest-info.php:10
-msgid "Our Info"
-msgstr "معلوماتنا"
+#: sections/front-page-latest-info.php:11 sections/front-page-latest-news.php:11
+msgid ""
+"If you are interested in the latest articles in the industry, take a sneak "
+"peek at our blog. You’ve got nothing to loose!"
+msgstr ""
 
 #: sections/front-page-latest-info.php:12
 msgid "Browse all Our Info"
 msgstr "تصفح جميع معلوماتنا"
+
+#: sections/front-page-latest-news.php:12
+msgid "See blog"
+msgstr ""
 
 #: sections/front-page-lectures.php:26
 msgid "QudsInfo"
@@ -2207,6 +1526,10 @@ msgstr "ساعة قُدّمت"
 msgid "Student"
 msgstr "طالب مستفيد"
 
+#: sections/front-page-projects.php:11
+msgid "You'll love our work. Check it out!"
+msgstr ""
+
 #: sections/front-page-projects.php:47
 msgid "Project 1"
 msgstr ""
@@ -2223,9 +1546,15 @@ msgstr ""
 msgid "Project 4"
 msgstr ""
 
-#: sections/front-page-services.php:11
-msgid "Our Services"
-msgstr "ماذا نقدم؟"
+#: sections/front-page-services.php:10
+msgid "Services"
+msgstr ""
+
+#: sections/front-page-services.php:12
+msgid ""
+"In order to help you grow your business, our carefully selected experts can "
+"advise you in in the following areas:"
+msgstr ""
 
 #: sections/front-page-services.php:13
 msgid ""
@@ -2261,6 +1590,14 @@ msgstr "آخر الأخبار المقدسية"
 msgid "Thought of the day"
 msgstr "خاطرة اليوم"
 
+#: sections/front-page-team.php:10
+msgid "Team"
+msgstr ""
+
+#: sections/front-page-team.php:11
+msgid "Meet the people that are going to take your business to the next level."
+msgstr ""
+
 #: sections/front-page-team.php:46
 msgid "Mark Lawrance"
 msgstr ""
@@ -2295,6 +1632,10 @@ msgstr ""
 
 #: sections/front-page-team.php:48
 msgid "Enthusiastic, passionate with great sense of humor."
+msgstr ""
+
+#: sections/front-page-testimonials.php:10
+msgid "Testimonials"
 msgstr ""
 
 #: sections/front-page-testimonials.php:76
@@ -2369,31 +1710,31 @@ msgstr "الصفحات:"
 msgid "Index"
 msgstr "الفهرس"
 
-#: template-parts/content-single-pics.php:74
+#: template-parts/content-single-pics.php:59
 msgid "Photos & Landmarks"
 msgstr "الصور والمعالم"
 
-#: template-parts/content-single-pics.php:86
+#: template-parts/content-single-pics.php:76
 msgid "Share Image:"
 msgstr "شارك الصورة:"
 
-#: template-parts/content-single-pics.php:96
+#: template-parts/content-single-pics.php:86
 msgid "Landmark Location:"
 msgstr "موقع المعلم بالنسبة للمسجد الأقصى:"
 
-#: template-parts/content-single-pics.php:102
+#: template-parts/content-single-pics.php:92
 msgid "Landmark Location relative to Dome of the rock:"
 msgstr "موقع المعلم بالنسبة لقبة الصخرة:"
 
-#: template-parts/content-single-pics.php:108
+#: template-parts/content-single-pics.php:98
 msgid "Landmark History:"
 msgstr "تاريخ المعلم:"
 
-#: template-parts/content-single-pics.php:114
+#: template-parts/content-single-pics.php:104
 msgid "Reason of the name:"
 msgstr "سبب التسمية:"
 
-#: template-parts/content-single-pics.php:120
+#: template-parts/content-single-pics.php:110
 msgid "Builder Name:"
 msgstr "اسم الباني:"
 
@@ -2409,214 +1750,9 @@ msgstr "المصدر:"
 msgid "For more, read our article about:"
 msgstr "للمزيد اقرأ مقالنا عن:"
 
-#: template-parts/header-responsive-menu.php:7
-msgid "Search..."
-msgstr "بحث..."
-
 #: template-parts/knowquds-list.php:26
 msgid "Select"
 msgstr "اختر"
-
-#: widgets/class-widget-counter.php:8
-msgid "[Illdy] - Counter"
-msgstr ""
-
-#: widgets/class-widget-counter.php:8
-msgid "Add this widget in \"Front page - Counter Sidebar\"."
-msgstr ""
-
-#: widgets/class-widget-counter.php:46 widgets/class-widget-faq.php:108
-#: widgets/class-widget-recent-posts.php:8
-#: widgets/class-widget-recent-posts.php:80
-msgid "[Illdy] - Recent Posts"
-msgstr ""
-
-#: widgets/class-widget-counter.php:47
-msgid "1"
-msgstr ""
-
-#: widgets/class-widget-counter.php:48
-msgid "260"
-msgstr ""
-
-#: widgets/class-widget-counter.php:49
-msgid "2000"
-msgstr ""
-
-#: widgets/class-widget-counter.php:50
-msgid "100"
-msgstr ""
-
-#: widgets/class-widget-counter.php:53 widgets/class-widget-faq.php:121
-#: widgets/class-widget-person.php:123 widgets/class-widget-project.php:59
-#: widgets/class-widget-recent-posts.php:90 widgets/class-widget-service.php:722
-#: widgets/class-widget-skill.php:717
-msgid "Title:"
-msgstr ""
-
-#: widgets/class-widget-counter.php:58
-msgid "Data from:"
-msgstr ""
-
-#: widgets/class-widget-counter.php:59
-msgid "The number the element should start at."
-msgstr ""
-
-#: widgets/class-widget-counter.php:64
-msgid "Data to:"
-msgstr ""
-
-#: widgets/class-widget-counter.php:65
-msgid "The number the element should end at."
-msgstr ""
-
-#: widgets/class-widget-counter.php:70
-msgid "Data speed:"
-msgstr ""
-
-#: widgets/class-widget-counter.php:71
-msgid "How long it should take to count between the target numbers."
-msgstr ""
-
-#: widgets/class-widget-counter.php:76
-msgid "Data refresh interval:"
-msgstr ""
-
-#: widgets/class-widget-counter.php:77
-msgid "How often the element should be updated."
-msgstr ""
-
-#: widgets/class-widget-faq.php:11
-msgid "FAQs"
-msgstr "الأسئلة الشائعة"
-
-#: widgets/class-widget-faq.php:11
-msgid "This widget will show random FAQs."
-msgstr ""
-
-#: widgets/class-widget-faq.php:33
-msgid "Frequent Questions"
-msgstr "أسئلة شائعة"
-
-#: widgets/class-widget-faq.php:60
-msgid "Close"
-msgstr "إغلاق"
-
-#: widgets/class-widget-faq.php:90
-msgid "No FAQs found."
-msgstr ""
-
-#: widgets/class-widget-faq.php:109 widgets/class-widget-recent-posts.php:81
-msgid "4"
-msgstr ""
-
-#: widgets/class-widget-faq.php:117 widgets/class-widget-recent-posts.php:86
-msgid "Display title?"
-msgstr ""
-
-#: widgets/class-widget-faq.php:128 widgets/class-widget-recent-posts.php:95
-msgid "Number of posts:"
-msgstr ""
-
-#: widgets/class-widget-person.php:8 widgets/class-widget-person.php:112
-msgid "[Illdy] - Person"
-msgstr ""
-
-#: widgets/class-widget-person.php:8
-msgid "Add this widget in \"Front page - Team Sidebar\"."
-msgstr ""
-
-#: widgets/class-widget-person.php:128 widgets/class-widget-project.php:64
-msgid "Image:"
-msgstr ""
-
-#: widgets/class-widget-person.php:130 widgets/class-widget-project.php:66
-msgid "Upload Image"
-msgstr ""
-
-#: widgets/class-widget-person.php:134
-msgid "Position:"
-msgstr ""
-
-#: widgets/class-widget-person.php:139 widgets/class-widget-service.php:737
-msgid "Entry:"
-msgstr ""
-
-#: widgets/class-widget-person.php:144
-msgid "Facebook URL:"
-msgstr ""
-
-#: widgets/class-widget-person.php:149
-msgid "Twitter URL:"
-msgstr ""
-
-#: widgets/class-widget-person.php:154
-msgid "LinkedIn URL:"
-msgstr ""
-
-#: widgets/class-widget-person.php:159 widgets/class-widget-service.php:762
-#: widgets/class-widget-skill.php:737
-msgid "Color:"
-msgstr ""
-
-#: widgets/class-widget-project.php:8 widgets/class-widget-project.php:54
-msgid "[Illdy] - Project"
-msgstr ""
-
-#: widgets/class-widget-project.php:8
-msgid "Add this widget in \"Front page - Projects Sidebar\"."
-msgstr ""
-
-#: widgets/class-widget-project.php:70
-msgid "URL:"
-msgstr ""
-
-#: widgets/class-widget-recent-posts.php:8
-msgid ""
-"Thiw widget will display the latest posts with thumbnail image on the left "
-"side."
-msgstr ""
-
-#: widgets/class-widget-recent-posts.php:63
-msgid "No posts found."
-msgstr ""
-
-#: widgets/class-widget-service.php:8
-msgid "[Illdy] - Service"
-msgstr ""
-
-#: widgets/class-widget-service.php:8
-msgid "Add this widget in \"Front page - Services Sidebar\"."
-msgstr ""
-
-#: widgets/class-widget-service.php:712 widgets/class-widget-skill.php:8
-#: widgets/class-widget-skill.php:708
-msgid "[Illdy] - Skill"
-msgstr ""
-
-#: widgets/class-widget-service.php:727 widgets/class-widget-skill.php:727
-msgid "Icon:"
-msgstr ""
-
-#: widgets/class-widget-service.php:729 widgets/class-widget-skill.php:729
-msgid "All Font Awesome Icons"
-msgstr ""
-
-#: widgets/class-widget-service.php:742
-msgid "Link to page:"
-msgstr ""
-
-#: widgets/class-widget-service.php:745
-msgid "Select page..."
-msgstr ""
-
-#: widgets/class-widget-skill.php:8
-msgid "Add this widget in \"Front page - About Sidebar\"."
-msgstr ""
-
-#: widgets/class-widget-skill.php:722
-msgid "Percentage:"
-msgstr ""
 
 #: woocommerce.php:34
 msgid "WooCommerce Title"
@@ -2625,6 +1761,21 @@ msgstr ""
 #: woocommerce.php:35
 msgid "Product Categories"
 msgstr "تصنيفات المنتجات"
+
+#~ msgid "Language"
+#~ msgstr "اللغة"
+
+#~ msgid "comments"
+#~ msgstr "تعليقات"
+
+#~ msgid "1 comment"
+#~ msgstr "تعليق واحد"
+
+#~ msgid "Title"
+#~ msgstr "العنوان"
+
+#~ msgid "Search..."
+#~ msgstr "بحث..."
 
 #~ msgid "Total Infos"
 #~ msgstr "عدد المعلومات"
@@ -2643,9 +1794,6 @@ msgstr "تصنيفات المنتجات"
 
 #~ msgid "Total Post Reach"
 #~ msgstr "وصول المنشورات"
-
-#~ msgid "Total Published"
-#~ msgstr "عدد الأخبار المنشورة"
 
 #~ msgid "Total Reports"
 #~ msgstr "عدد التقارير الاخبارية"
@@ -2700,9 +1848,6 @@ msgstr "تصنيفات المنتجات"
 
 #~ msgid "Nothing found"
 #~ msgstr "لم يتم العثور على شيء"
-
-#~ msgid "Wallpaper type"
-#~ msgstr "نوع الصورة"
 
 #~ msgid "Your results"
 #~ msgstr "نتيجتك"

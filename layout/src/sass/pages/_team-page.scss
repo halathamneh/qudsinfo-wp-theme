@@ -11,7 +11,9 @@
   .btn-link {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
+    i.fa {
+      margin: 0 4px;
+    }
   }
   .card-title {
     font-weight: bold;
