@@ -32,16 +32,16 @@ export default [
         url: "/our-info",
         icon: "fa fa-database",
       },
-      {
-        title: i18n.t("audio info"),
-        url: "/our-info/audio",
-        icon: "fa fa-headphones",
-      },
-      {
-        title: i18n.t("video info"),
-        url: "/our-info/videos",
-        icon: "fa fa-video-camera",
-      },
+      // {
+      //   title: i18n.t("audio info"),
+      //   url: "/our-info/audio",
+      //   icon: "fa fa-headphones",
+      // },
+      // {
+      //   title: i18n.t("video info"),
+      //   url: "/our-info/videos",
+      //   icon: "fa fa-video-camera",
+      // },
     ],
   },
   {
