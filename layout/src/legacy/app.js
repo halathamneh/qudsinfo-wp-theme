@@ -5,7 +5,11 @@ import './newsbar';
 // import "./search";
 import './aqsa-distance';
 
-if (window.location.pathname.includes('/our-info') || window.location.pathname.includes('/category/')) {
+if (
+  window.location.pathname.includes('/our-info') ||
+  window.location.pathname.includes('/category/') ||
+  window.location.pathname.includes('/library')
+) {
   import('./infos-list');
 }
 
