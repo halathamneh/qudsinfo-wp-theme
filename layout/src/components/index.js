@@ -6,8 +6,14 @@ import Footer from "./footer/Footer";
 import store from "../store";
 import i18n from "../lang/i18n";
 import VueMq from "vue-mq";
+import "@/plugins/registerIcons";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
+import PerfectScrollbar from "vue2-perfect-scrollbar";
+import "@/plugins/String.format";
+
+Vue.use(PerfectScrollbar);
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -50,9 +56,17 @@ if (document.querySelector("#photos-page-wrapper")) {
 }
 
 if (document.querySelector("#knowquds-page-wrapper")) {
-  import(/* webpackChunkName: "photos-comps" */ "../pages/knowquds/index").then(
-    ({ default: initKnowQudsPage }) => {
-      initKnowQudsPage();
+  import(
+    /* webpackChunkName: "knowquds-comps" */ "../pages/knowquds/index"
+  ).then(({ default: initKnowQudsPage }) => {
+    initKnowQudsPage();
+  });
+}
+
+if (document.querySelector("#infos-list-page")) {
+  import(/* webpackChunkName: "infos-comps" */ "../pages/information").then(
+    ({ default: initInfosPage }) => {
+      initInfosPage();
     }
   );
 }

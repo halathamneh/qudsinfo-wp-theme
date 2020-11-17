@@ -96,6 +96,7 @@ body {
 @import "pages/content-page.scss";
 @import "pages/products-page.scss";
 @import "pages/team-page.scss";
+@import "./pages/infos-page";
 @import "./pages/news-team.scss";
 @import "./pages/faq.scss";
 @import "./pages/wallpapers.scss";
@@ -284,4 +285,99 @@ $computer-color: #c2c5c5;
 .btn.btn-outline-info.mixitup-control-active {
   background-color: $info;
   color: $white;
+}
+
+.tree-loader {
+  display: flex;
+  flex-direction: column;
+
+  .placeholder-primary,
+  .placeholder-secondary {
+    height: 14px;
+    border-radius: 14px;
+    margin-top: 28px;
+    background: rgba($text-muted, 0.4);
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -65px;
+      top: 0;
+      width: 65px;
+      height: 100%;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+                      90deg,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgba(230, 230, 230, 0.75) 50%,
+                      rgba(255, 255, 255, 0) 100%
+      );
+      animation: 2s rotating infinite;
+    }
+  }
+
+  .placeholder-secondary {
+    margin-right: 30px;
+  }
+
+  @keyframes rotating {
+    from {
+      right: -45px;
+    }
+    to {
+      right: calc(100% + 45px);
+    }
+  }
+
+}
+
+
+
+.box-loader {
+  display: flex;
+  width: 100%;
+
+  .placeholder-primary,
+  .placeholder-secondary {
+    height: 14px;
+    border-radius: 14px;
+    margin-top: 28px;
+    background: rgba($text-muted, 0.4);
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -65px;
+      top: 0;
+      width: 65px;
+      height: 100%;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+                      90deg,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgba(230, 230, 230, 0.75) 50%,
+                      rgba(255, 255, 255, 0) 100%
+      );
+      animation: 2s rotating infinite;
+    }
+  }
+
+  .loader-image {
+    width: 125px;
+    height: 125px;
+    background: rgba($text-muted, 0.4);
+  }
+
+  @keyframes rotating {
+    from {
+      right: -45px;
+    }
+    to {
+      right: calc(100% + 45px);
+    }
+  }
 }

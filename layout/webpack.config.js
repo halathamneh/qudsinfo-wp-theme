@@ -14,7 +14,7 @@ const environmentConfig = require("./.env");
 const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = function (env, argv) {
-  const isDev = argv.mode === "development";
+  const isDev = argv && argv.mode === "development";
   const isStaging = env && env.staging;
   const environment = !isDev
     ? !isStaging
