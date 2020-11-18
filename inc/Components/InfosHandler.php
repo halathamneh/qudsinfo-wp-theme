@@ -189,7 +189,7 @@ class InfosHandler extends Singleton {
                         $image     = function_exists( 'z_taxonomy_image_url' ) ? z_taxonomy_image_url( $tid ) : "";
                     } else {
                         $html      = $this->renderInfos( $page_num );
-                        $url       = pll_home_url( '/our-info/' . $page_url );
+                        $url       = pll_home_url( '/our-info/' . $page_url, $lang );
                         $term_name = 'معلوماتنا';
                         $title     = 'معلوماتنا - ' . get_bloginfo( 'name' );
                     }
@@ -199,13 +199,13 @@ class InfosHandler extends Singleton {
                     if ( $tid ) {
                         $term      = get_term( $tid );
                         $html      = $this->renderBooks( $page_num, $term->term_id );
-                        $url       = pll_home_url( '/library/section/' . $term->term_id . '/' . $term->slug . '/' . $page_url );
+                        $url       = '/library/section/' . $term->term_id . '/' . $term->slug . '/' . $page_url;
                         $term_name = $term->name;
                         $title     = $term->name . ' - المكتبة - ' . get_bloginfo( 'name' );
                         $image     = function_exists( 'z_taxonomy_image_url' ) ? z_taxonomy_image_url( $tid ) : "";
                     } else {
                         $html      = $this->renderBooks( $page_num );
-                        $url       = pll_home_url( '/library/' . $page_url );
+                        $url       = pll_home_url( '/library/' . $page_url, $lang );
                         $term_name = 'المكتبة';
                         $title     = 'معلوماتنا - ' . get_bloginfo( 'name' );
                     }

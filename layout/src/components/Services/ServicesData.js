@@ -23,7 +23,7 @@ export default {
     title: i18n.t("know quds"),
     description: i18n.t("knowquds description short"),
     image: require("@/images/services/knowquds.svg"),
-    href: "/knowquds/alaqsa-mosque",
+    href: "/knowquds",
   },
   quizzes: {
     title: i18n.t("quizzes"),
