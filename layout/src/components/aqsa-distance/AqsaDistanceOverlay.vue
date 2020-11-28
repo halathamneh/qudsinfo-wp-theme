@@ -7,8 +7,31 @@
           class="aqsa-distance-result"
           v-if="status === 'success'"
         >
-          <b>{{ result }}</b>
-          <span class="text-muted">{{ $t("km") }}</span>
+          <header-logo />
+          <small>{{ $t("your aqsa distance") }}</small>
+          <div class="distance-number-result">
+            <b>{{ result }}</b>
+            <span class="text-muted">{{ $t("km") }}</span>
+          </div>
+          <div
+            class="mt-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="my-3">{{ $t("share") }}</div>
+            <share-buttons
+              :title="`${$t('my aqsa distance')} ${result} ${$t('km')}\n\n${$t(
+                'find yours on'
+              )} https://qudsinfo.com/\n#${$t('your_distance_from_aqsa')}`"
+              :quote="`${$t('my aqsa distance')} ${result} ${$t('km')}\n\n${$t(
+                'find yours on'
+              )} https://qudsinfo.com/\n#${$t('your_distance_from_aqsa')} #${$t(
+                'qudsinfo_tag'
+              )}`"
+              url="https://qudsinfo.com/"
+              :hashtags="`${$t('your_distance_from_aqsa')},${$t(
+                'qudsinfo_tag'
+              )}`"
+            />
+          </div>
         </div>
         <div key="other" v-else>
           <b>{{ statusMessage }}</b>
@@ -24,10 +47,12 @@
 
 <script>
 import DotsHorizontalLoader from "../loaders/DotsHorizontalLoader.vue";
+import HeaderLogo from "../Header/HeaderLogo";
+import ShareButtons from "../share/ShareButtons";
 
 export default {
   name: "AqsaDistanceOverlay",
-  components: { DotsHorizontalLoader },
+  components: { ShareButtons, HeaderLogo, DotsHorizontalLoader },
   props: {
     cancel: {
       type: Function,

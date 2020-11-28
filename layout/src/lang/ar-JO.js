@@ -126,4 +126,8 @@ export default {
   close: "إغلاق",
   "show description": "عرض الوصف",
   "hide description": "إخفاء الوصف",
+  "my aqsa distance": "بعدي عن الأقصى هو",
+  "find yours on": "اعرف بعدك على",
+  your_distance_from_aqsa: "بعدك_عن_الأقصى",
+  qudsinfo_tag: "معلومة_مقدسية",
 };
