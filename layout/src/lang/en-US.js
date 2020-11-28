@@ -98,4 +98,8 @@ export default {
   "knowquds enter old-town": "Enter The ancient town",
   "show description": "Show description",
   "hide description": "Hide description",
+  "my aqsa distance": "My distance from Al-Aqsa is",
+  "find yours on": "Find your distance on",
+  your_distance_from_aqsa: "distance_from_aqsa",
+  qudsinfo_tag: "qudsinfo",
 };

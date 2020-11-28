@@ -32,7 +32,7 @@
     }
     .overlay-content {
       width: 100%;
-      margin-top: 72px;
+      //margin-top: 72px;
       text-align: center;
     }
   }
@@ -50,6 +50,11 @@
         top: 50px;
         transform: none;
       }
+      @media screen and (max-height: 655px) {
+        top: 20px;
+        right: 10% !important;
+        transform: scale(0.5);
+      }
     }
     .dome-svg {
       z-index: 99;
@@ -63,10 +68,24 @@
         transform: scale(0.85);
         transform-origin: 50% 0;
       }
+      @media screen and (max-height: 655px) {
+        top: calc(100% - 100px);
+        transform: scale(0.5);
+      }
     }
   }
 
   .aqsa-distance-result {
+    max-width: 400px;
+    margin: auto;
+    small {
+      display: block;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .distance-number-result {
     font-size: 64px;
   }
 
