@@ -7,8 +7,7 @@
           class="aqsa-distance-result"
           v-if="status === 'success'"
         >
-          <header-logo />
-          <small>{{ $t("your aqsa distance") }}</small>
+          <span>{{ $t("your aqsa distance") }}</span>
           <div class="distance-number-result">
             <b>{{ result }}</b>
             <span class="text-muted">{{ $t("km") }}</span>
