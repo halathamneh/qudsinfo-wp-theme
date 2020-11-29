@@ -4,9 +4,9 @@
       data-src="/wp-content/themes/qudsinfo-wp-theme/layout/src/images/bg2.jpg"
       class="overlay-image lazy"
     />
-    <b-container>
-      <b-row>
-        <b-col lg="6" sm="12" cols="12" class="mb-4 mb-lg-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
           <div
             class="footer-brand justify-content-center justify-content-md-start"
           >
@@ -25,34 +25,34 @@
               $t("Privacy Policy")
             }}</a>
           </div>
-        </b-col>
-        <b-col cols="12" sm="4" lg="2">
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
           <footer-links
             :title="$t('our services')"
             :links="servicesLinks"
             class="mx-4 mx-sm-0"
           />
-        </b-col>
-        <b-col cols="12" sm="4" lg="2" class="footer-links">
+        </div>
+        <div class="footer-links col-12 col-sm-4 col-lg-2">
           <footer-links
             :title="$t('teams')"
             :links="aboutLinks"
             class="mx-4 mx-sm-0"
           />
-        </b-col>
-        <b-col cols="12" sm="4" lg="2">
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
           <footer-contact class="mx-4 mx-sm-0" />
-        </b-col>
-        <b-col cols="12" class="d-block d-lg-none">
+        </div>
+        <div class="col-12 d-block d-lg-none">
           <div class="copyrights mt-5 mx-4 mx-sm-0">
             <b>{{ $t("copyrights") }} {{ new Date().getFullYear() }}</b>
             <a href="#" class="privacy-policy-link">{{
               $t("Privacy Policy")
             }}</a>
           </div>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 

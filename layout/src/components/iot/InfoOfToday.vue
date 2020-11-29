@@ -1,27 +1,27 @@
 <template>
   <div>
     <iot-badge />
-    <b-card
-      class="rounded shadow mt-3 iot-card"
-      :img-src="!info ? placeholder : info.image"
-      img-end
-      no-body
-    >
-      <b-card-body>
+    <div class="card rounded shadow mt-3 iot-card flex-row-reverse" no-body>
+      <img
+        :src="!info ? placeholder : info.image"
+        alt=""
+        class="card-img-right"
+      />
+      <div class="card-body">
         <div v-if="!info" class="loader">Loading</div>
         <template v-else>
-          <b-card-sub-title>
+          <h6 class="card-subtitle text-muted">
             <a :href="`/category/${info.category.slug}`">
               {{ info.category.label }}
             </a>
-          </b-card-sub-title>
-          <b-card-title>
+          </h6>
+          <h4 class="card-title">
             <a :href="info.url">{{ info.title }}</a>
-          </b-card-title>
-          <b-card-text v-html="info.content" />
+          </h4>
+          <p class="card-text" v-html="info.content" />
         </template>
-      </b-card-body>
-    </b-card>
+      </div>
+    </div>
   </div>
 </template>
 

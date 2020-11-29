@@ -1,7 +1,7 @@
 <template>
-  <b-badge :class="{ 'iot-badge': true, small }">{{
-    $t("info of today")
-  }}</b-badge>
+  <div :class="{ 'badge badge-secondary': true, 'iot-badge': true, small }">
+    {{ $t("info of today") }}
+  </div>
 </template>
 
 <script>

@@ -1,15 +1,15 @@
 <template>
   <div class="search-box">
     <form action="/" method="get">
-      <b-input
-        size="sm"
+      <input
+        class="form-control form-control-sm"
         type="text"
         name="s"
         :placeholder="$t('search placeholder')"
       />
-      <b-button size="sm" variant="outline-dark" type="submit">
+      <button class="btn btn-outline-dark btn-sm" type="submit">
         <i class="fa fa-search"></i>
-      </b-button>
+      </button>
     </form>
   </div>
 </template>

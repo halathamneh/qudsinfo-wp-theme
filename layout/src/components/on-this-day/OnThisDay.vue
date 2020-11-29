@@ -1,31 +1,30 @@
 <template>
   <div class="on-this-day-banner">
     <div class="otd-title">{{ $t("otd-title") }}</div>
-    <b-card no-body class="rounded no-shadow">
-      <template v-slot:header>
+    <div class="card rounded no-shadow">
+      <div class="card-header">
         <b>{{ $d(date, "short") }}</b>
         <br />
         <span>{{ $t("hijri") }}: {{ hijriDate }}</span>
-      </template>
-      <b-list-group v-if="events.length > 0" flush>
-        <b-list-group-item v-for="(event, i) in events" :key="i">
+      </div>
+      <div class="list-group list-group-flush" v-if="events.length > 0">
+        <div class="list-group-item" v-for="(event, i) in events" :key="i">
           {{ event.title }}
           <div class="mt-2 small text-muted">
             {{ event.content }}
           </div>
-        </b-list-group-item>
-      </b-list-group>
+        </div>
+      </div>
       <div v-else class="text-center text-muted py-3">
         {{ $t("no events") }}
       </div>
-      <b-card-body></b-card-body>
-    </b-card>
+    </div>
   </div>
 </template>
 
 <script>
-import { getShortHijri } from "../../legacy/utils";
-import { getTodayEvents } from "../../api/getOnThisDay";
+import { getShortHijri } from "@/legacy/utils";
+import { getTodayEvents } from "@/api/getOnThisDay";
 
 export default {
   name: "OnThisDay",

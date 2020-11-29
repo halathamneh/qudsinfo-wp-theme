@@ -37,9 +37,9 @@
           <dots-horizontal-loader v-show="status !== 'fail'" />
         </div>
       </transition>
-      <b-button variant="light" class="cancel-btn" @click="cancel">
-        {{ $t("back") }}</b-button
-      >
+      <button class="btn btn-light cancel-btn" @click="cancel">
+        {{ $t("back") }}
+      </button>
     </div>
   </div>
 </template>

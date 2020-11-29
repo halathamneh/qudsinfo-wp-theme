@@ -6,20 +6,9 @@
       active: isActive,
     }"
   >
-    <router-link
-      :to="node.to"
-      :id="`tree-item-${node.id}`"
-      @click="update(node.slug)"
-      >{{ node.label }}</router-link
-    >
-    <b-tooltip
-      :target="`tree-item-${node.id}`"
-      triggers="hover"
-      placement="left"
-      boundary="viewport"
-    >
-      {{ node.label }}
-    </b-tooltip>
+    <router-link :to="node.to" :title="node.label" @click="update(node.slug)">{{
+      node.label
+    }}</router-link>
     <tree
       v-if="isExpandable"
       :subtree="true"

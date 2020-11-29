@@ -6,9 +6,9 @@
           <div class="info-body">
             <h3 class="info-title">{{ info.title }}</h3>
             <div v-html="info.excerpt" class="info-text"></div>
-            <b-button variant="light" size="sm" class="mt-3">{{
-              $t("view info")
-            }}</b-button>
+            <button class="btn btn-sm btn-light mt-3">
+              {{ $t("view info") }}
+            </button>
           </div>
           <img :src="info.thumbnail" />
         </div>

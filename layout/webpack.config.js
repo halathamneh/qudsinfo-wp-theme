@@ -12,6 +12,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const environmentConfig = require("./.env");
 const AssetsPlugin = require("assets-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = function (env, argv) {
   const isDev = argv && argv.mode === "development";
@@ -40,6 +42,7 @@ module.exports = function (env, argv) {
       "window.jQuery": "jquery",
     }),
     new AssetsPlugin(),
+    new BundleAnalyzerPlugin(),
   ];
 
   if (isDev) {

@@ -1,14 +1,14 @@
 <template>
   <div class="infos-page page-container container-fluid">
-    <b-row>
-      <b-col cols="12" md="2">
+    <div class="row">
+      <div class="col-12 col-md-2">
         <infos-tree />
-      </b-col>
-      <b-col>
+      </div>
+      <div class="col">
         <category-body v-if="slug" :slug="slug" />
         <span v-else>{{ $t("please select subject") }}</span>
-      </b-col>
-    </b-row>
+      </div>
+    </div>
   </div>
 </template>
 

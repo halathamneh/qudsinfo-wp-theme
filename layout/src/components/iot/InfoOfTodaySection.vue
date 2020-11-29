@@ -1,22 +1,22 @@
 <template>
   <section class="info-of-today-section">
-    <b-container>
-      <b-row>
-        <b-col lg="9" class="mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="mb-4 col-lg-9">
           <info-of-today />
-        </b-col>
-        <b-col lg="3" class="mb-4">
+        </div>
+        <div class="mb-4 col-lg-3">
           <slot name="extra" />
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
-import InfoOfToday from './InfoOfToday'
+import InfoOfToday from "./InfoOfToday";
 export default {
-  name: 'InfoOfTodaySection',
-  components: { InfoOfToday }
-}
+  name: "InfoOfTodaySection",
+  components: { InfoOfToday },
+};
 </script>

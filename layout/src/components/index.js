@@ -1,5 +1,4 @@
 import Vue from "vue";
-import BootstrapVue from "bootstrap-vue";
 import { Plugin } from "vue-fragment";
 import Header from "./Header/Header";
 import Footer from "./footer/Footer";
@@ -24,7 +23,6 @@ Vue.use(VueMq, {
 });
 
 Vue.use(Plugin);
-Vue.use(BootstrapVue);
 
 if (document.querySelector("#header-component")) {
   new Vue({

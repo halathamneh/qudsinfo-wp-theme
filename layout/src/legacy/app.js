@@ -1,12 +1,12 @@
-import './vendorsInit';
-import * as fn from './functions';
-import './menu';
-import './newsbar';
+import "./vendorsInit";
+import * as fn from "./functions";
+import "./menu";
+import "./newsbar";
 // import "./search";
-import './aqsa-distance';
+// import './aqsa-distance';
 
-if (window.location.pathname.includes('/library')) {
-  import('./infos-list');
+if (window.location.pathname.includes("/library")) {
+  import("./infos-list");
 }
 
 fn.smoothScrollAnchors();

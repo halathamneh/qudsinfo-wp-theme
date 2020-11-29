@@ -8,16 +8,17 @@
         </h2>
         <div v-if="hasDescription" class="mr-auto">
           <transition name="fade">
-            <b-button
+            <button
               v-if="!isInfosMode"
               @click="toggleInfos"
-              variant="success"
-              >{{ $t("show infos") }}</b-button
+              class="btn btn-success"
             >
-            <b-button v-else @click="toggleInfos" variant="light">
+              {{ $t("show infos") }}
+            </button>
+            <button v-else @click="toggleInfos" class="btn btn-light">
               <fa :icon="['fas', 'arrow-right']" />
               <span class="mr-2">{{ $t("back") }}</span>
-            </b-button>
+            </button>
           </transition>
         </div>
       </div>

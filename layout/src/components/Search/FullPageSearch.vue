@@ -3,10 +3,10 @@
     <button class="search-close-button" @click="hideSearch">&times;</button>
     <form action="/" method="get">
       <input type="text" name="s" :placeholder="$t('search placeholder')" />
-      <b-button size="lg" variant="outline-light" type="submit">
+      <button class="btn btn-outline-light btn-lg" type="submit">
         <i class="fa fa-search"></i>
         {{ $t("search") }}
-      </b-button>
+      </button>
     </form>
   </div>
 </template>

@@ -26,9 +26,9 @@
       <dots-loader />
     </div>
     <div v-else-if="photos.length > 0 && !noMore" class="text-center">
-      <b-button variant="info" @click="loadMore"
-        >{{ $t("Load more") }}
-      </b-button>
+      <button class="btn btn-info" @click="loadMore">
+        {{ $t("Load more") }}
+      </button>
     </div>
   </div>
 </template>

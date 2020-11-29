@@ -27,6 +27,7 @@ export function masonryInit() {
       gutter: ".grid-gutter",
       isOriginLeft: false,
     });
+    li;
   }
 }
 

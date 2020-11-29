@@ -1,29 +1,44 @@
 <template>
   <div class="infos-header">
-    <b-nav pills>
-      <b-nav-text class="title">{{ $t("our info") }}:</b-nav-text>
-      <b-nav-item
-        :to="{ name: 'written-cat' }"
-        :active="['written-index', 'written-cat'].includes($route.name)"
-      >
-        <fa :icon="['fas', 'eye']" />
-        {{ $t("written") }}
-      </b-nav-item>
-      <b-nav-item
-        :to="localePath('information-audio')"
-        :active="$route.path === localePath('information-audio')"
-      >
-        <fa :icon="['fas', 'headphones']" />
-        {{ $t("audio") }}
-      </b-nav-item>
-      <b-nav-item
-        :to="localePath('information-video')"
-        :active="$route.path === localePath('information-video')"
-      >
-        <fa :icon="['fas', 'video']" />
-        {{ $t("video") }}
-      </b-nav-item>
-    </b-nav>
+    <ul class="nav nav-pills">
+      <li class="navbar-text title">{{ $t("our info") }}:</li>
+      <li class="nav-item">
+        <router-link
+          :class="{
+            'nav-link': true,
+            active: ['written-index', 'written-cat'].includes($route.name),
+          }"
+          :to="{ name: 'written-cat' }"
+        >
+          <fa :icon="['fas', 'eye']" />
+          {{ $t("written") }}
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link
+          :class="{
+            'nav-link': true,
+            active: $route.path === localePath('information-audio'),
+          }"
+          :to="localePath('information-audio')"
+        >
+          <fa :icon="['fas', 'headphones']" />
+          {{ $t("audio") }}
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link
+          :class="{
+            'nav-link': true,
+            active: $route.path === localePath('information-video'),
+          }"
+          :to="localePath('information-video')"
+        >
+          <fa :icon="['fas', 'video']" />
+          {{ $t("video") }}
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
