@@ -1,5 +1,5 @@
 <template>
-  <div
+  <button
     :class="{ point: true, active }"
     :style="{
       left: `calc(${point.left}% - 10px)`,
@@ -10,7 +10,7 @@
     @mouseenter="$emit('hover', $event)"
   >
     <MarkerIcon />
-  </div>
+  </button>
 </template>
 
 <script>
@@ -41,6 +41,13 @@ export default {
   cursor: pointer;
   position: absolute;
   transition: all 0.25s 0.25s;
+  appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
 
   svg {
     transition: all 0.15s;

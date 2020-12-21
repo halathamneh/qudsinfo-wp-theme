@@ -19,6 +19,7 @@
         :active="activePoint.id && point.id === activePoint.id"
         :current-scale="currentScale"
         @hover="pointHover($event, point)"
+        @click="pointHover($event, point)"
         :ref="`point-${point.id}`"
       />
     </div>
@@ -94,6 +95,7 @@ export default {
       this.$emit("imageLoaded");
     },
     pointHover(e, point) {
+      e.stopImmediatePropagation();
       this.activePoint = point;
       setTimeout(() => {
         this.adjustPopupPosition();
