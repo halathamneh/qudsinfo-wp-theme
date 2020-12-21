@@ -233,8 +233,8 @@ $greyed-primary: #3D354F;
   z-index: 99;
   background-color: rgba(185, 185, 185, .75);
   padding: 50px;
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
 
   @include media-breakpoint-down(sm) {
     padding: 25px 0;
