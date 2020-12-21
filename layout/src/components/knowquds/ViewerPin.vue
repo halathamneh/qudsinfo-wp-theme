@@ -41,6 +41,7 @@ export default {
   cursor: pointer;
   position: absolute;
   transition: all 0.25s 0.25s;
+  touch-action: auto;
 
   svg {
     transition: all 0.15s;
