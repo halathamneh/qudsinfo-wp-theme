@@ -46,6 +46,8 @@ export default {
   border: 0;
   outline: 0;
   padding: 0;
+  width: 30px;
+  height: 30px;
 
   svg {
     transition: all 0.15s;

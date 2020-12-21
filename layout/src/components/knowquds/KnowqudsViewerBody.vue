@@ -95,6 +95,7 @@ export default {
       this.$emit("imageLoaded");
     },
     pointHover(e, point) {
+      e.stopImmediatePropagation();
       this.activePoint = point;
       setTimeout(() => {
         this.adjustPopupPosition();
