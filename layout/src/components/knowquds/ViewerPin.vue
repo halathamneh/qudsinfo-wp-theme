@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ point: true, active }"
+    :class="{ point: true, 'panzoom-exclude': true, active }"
     :style="{
       left: `calc(${point.left}% - 10px)`,
       top: `calc(${point.top}% - 10px)`,
