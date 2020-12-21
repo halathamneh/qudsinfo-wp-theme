@@ -19,6 +19,7 @@
         :active="activePoint.id && point.id === activePoint.id"
         :current-scale="currentScale"
         @hover="pointHover($event, point)"
+        @click="pointHover($event, point)"
         :ref="`point-${point.id}`"
       />
     </div>
