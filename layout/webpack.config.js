@@ -42,7 +42,7 @@ module.exports = function (env, argv) {
       "window.jQuery": "jquery",
     }),
     new AssetsPlugin(),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ];
 
   if (isDev) {
