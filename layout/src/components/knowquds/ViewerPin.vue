@@ -1,6 +1,6 @@
 <template>
-  <div
-    :class="{ point: true, 'panzoom-exclude': true, active }"
+  <button
+    :class="{ point: true, active }"
     :style="{
       left: `calc(${point.left}% - 10px)`,
       top: `calc(${point.top}% - 10px)`,
@@ -10,7 +10,7 @@
     @mouseenter="$emit('hover', $event)"
   >
     <MarkerIcon />
-  </div>
+  </button>
 </template>
 
 <script>
@@ -41,7 +41,11 @@ export default {
   cursor: pointer;
   position: absolute;
   transition: all 0.25s 0.25s;
-  touch-action: auto;
+  appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
 
   svg {
     transition: all 0.15s;
